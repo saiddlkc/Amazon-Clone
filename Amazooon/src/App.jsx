@@ -1,10 +1,11 @@
 import "./App.css";
+import Banner from "./pages/home/Banner";
 
 function App() {
   return (
     <>
       <div>
-        <h1>Amazon hallo durmus siehst du das</h1>
+        <Banner />
       </div>
     </>
   );
