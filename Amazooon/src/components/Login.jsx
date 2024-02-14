@@ -46,9 +46,7 @@ const Login = () => {
               />
               {errPassword && (
                 <p className="text-red-600 text-xs font-semibold tracking-wide flex items-center gap-2 -mt-1.5">
-                  <span className="italic font-titleFont font-extrabold text-base">
-                    !
-                  </span>
+                  <span className="italic font-titleFont font-extrabold text-base"></span>
                   {errPassword}
                 </p>
               )}
