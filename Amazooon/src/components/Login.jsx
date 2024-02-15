@@ -64,9 +64,10 @@ const Login = () => {
               </button>
             </div>
             <p className="text-xs text-black leading-4 mt-4">
-              By Continuing, you agree to Amazon'<s></s>
-              <span className="text-blue-600">Conditions of Use </span>and{" "}
-              <span className="text-blue-600">Privace Notice.</span>
+              By Continuing, you agree to Amazon
+              <br />
+              <span className="text-blue-600">Conditions of Use </span>and
+              <span className="text-blue-600"> Privace Notice.</span>
             </p>
           </div>
           <p className="w-full text-xs text-gray-600 mt-4 flex items-center">
@@ -74,8 +75,8 @@ const Login = () => {
             <span className="w-1/3 text-center">New to Amazon?</span>
             <span className="w-1/3 h-[1px] bg-zinc-400 inline-flex"></span>
           </p>
-          <Link className="w-full" to="">
-            <button className="w-full py-1.5 mt-4 text-sm font-normal rounded-sm bg-gradient-to-t from-slate-200 to-slate-100 hover:bg-gradient-to-b border border-zinc-400 active:border-yellow-800 active:shadow-amazonInput">
+          <Link className="w-full" to="/RegistrationPage">
+            <button className="w-full py-1.5 mt-4 text-sm font-normal rounded-sm bg-gradient-to-t from-[#f7dea5c3] to-[#f0c14bc6] hover:bg-gradient-to-b border border-zinc-400 active:border-yellow-800 active:shadow-amazonInput">
               Create your Amazon account
             </button>
           </Link>
@@ -94,7 +95,7 @@ const Login = () => {
           </p>
         </div>
         <p className="text-xs text-gray-600">
-          © 1996-2023, Saiddlkc.com, Inc. or its affiliates
+          © 2024, Saiddlkc.com, Inc. or its affiliates
         </p>
       </div>
     </div>
