@@ -4,9 +4,10 @@ import "swiper/css";
 import "swiper/css/navigation";
 
 import "./Banner.css";
-import { Navigation } from "swiper/modules";
+import { Autoplay, Pagination, Navigation } from "swiper/modules";
 
 const banners = [
+  "https://m.media-amazon.com/images/I/7195oHPNnTL._SX3000_.jpg",
   "https://m.media-amazon.com/images/I/61-t7nfD-rL._SX3000_.jpg",
   "https://m.media-amazon.com/images/I/71erLF1rQsL._SX3000_.jpg",
   "https://images-eu.ssl-images-amazon.com/images/G/31/prime/Gateway/2020/May/gaming_3000x1200._CB431281466_.jpg",
@@ -17,7 +18,20 @@ const banners = [
 function Banner() {
   return (
     <div className="banner">
-      <Swiper navigation={true} modules={[Navigation]} className="mySwiper">
+      <Swiper
+        spaceBetween={30}
+        centeredSlides={true}
+        autoplay={{
+          delay: 2500,
+          disableOnInteraction: false,
+        }}
+        pagination={{
+          clickable: true,
+        }}
+        navigation={true}
+        modules={[Autoplay, Pagination, Navigation]}
+        className="mySwiper"
+      >
         {" "}
         {banners.map((banner, index) => (
           <SwiperSlide>
