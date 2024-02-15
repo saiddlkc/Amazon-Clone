@@ -1,11 +1,27 @@
 import "./App.css";
+import Login from "./components/Login";
+import {
+  BrowserRouter,
+  Route,
+  BrowserRouter as Router,
+  Routes,
+} from "react-router-dom";
+import Registration from "./components/Registration";
+import RegistrationPage from "./pages/RegistrationPage";
+import LoginPage from "./pages/LoginPage";
 
 function App() {
   return (
     <>
-      <div>
-        <h1>Amazon hallo durmus siehst du das</h1>
-      </div>
+      <BrowserRouter>
+        <Routes>
+          <Route path="/" element={<LoginPage />}></Route>
+          <Route
+            path="/RegistrationPage"
+            element={<RegistrationPage />}
+          ></Route>
+        </Routes>
+      </BrowserRouter>
     </>
   );
 }
