@@ -1,11 +1,13 @@
+import { Route, Routes, BrowserRouter } from "react-router-dom";
 import "./App.css";
+
+import Layout from "./layout/Layout";
+import Ok from "./pages/Ok";
 
 function App() {
   return (
     <>
-      <div>
-        <h1>Amazon hallo durmus siehst du das</h1>
-      </div>
+      <Layout></Layout>
     </>
   );
 }
