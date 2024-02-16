@@ -3,20 +3,25 @@ import { products } from "../../database/products";
 import "./ProductList.css";
 
 const Main = () => {
-  // Rastgele 4 ürün seçmek için bir dizi oluştur
   const randomProducts = [];
   while (randomProducts.length < 4) {
     const randomIndex = Math.floor(Math.random() * products.length);
     const randomProduct = products[randomIndex];
-    // Eğer daha önce seçilmediyse, rastgele ürünü ekle
     if (!randomProducts.some((product) => product.id === randomProduct.id)) {
       randomProducts.push(randomProduct);
     }
   }
+  const renderRatingStars = (rating) => {
+    const stars = [];
+    for (let i = 0; i < rating; i++) {
+      stars.push(<span key={i}>⭐</span>);
+    }
+    return stars;
+  };
 
   return (
     <>
-      <h2 className="product-name">Unsere Bestseller-Angebote für dich</h2>
+      <h2 className="product-name">Category</h2>
       <div className="product-container">
         {randomProducts.map((product) => (
           <div key={product.id} className="product-item">
@@ -26,17 +31,9 @@ const Main = () => {
               alt={product.title}
             />
             <h3 className="product-title">{product.title}</h3>
-            <p
-              style={{
-                backgroundColor: "#CC0C39",
-                color: "#fff",
-                display: "inline-block",
-                padding: "5px",
-                textAlign: "left",
-                margin: "0",
-              }}
-            >
-              Bis zu 50% Rabatt
+            <p className="product-rating">
+              {renderRatingStars(product.rating.value)}
+              {product.rating.value} ({product.rating.count})
             </p>
             <p className="product-price">
               <span style={{ textDecoration: "line-through" }}>

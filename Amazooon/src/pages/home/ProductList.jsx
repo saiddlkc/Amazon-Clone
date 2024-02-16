@@ -1,6 +1,7 @@
 import React from "react";
 import { useProductContext } from "./ProductContext";
 import "./ProductList.css";
+
 function ProductList() {
   const { products, showProductDetails } = useProductContext();
 
@@ -13,29 +14,35 @@ function ProductList() {
   };
 
   return (
-    <div className="product-container">
-      {products.map((product, index) => (
-        <div
-          key={index}
-          className="product-item"
-          onClick={() => showProductDetails(product)}
-        >
-          <img
-            src={product.image}
-            alt={product.title}
-            className="product-image"
-          />
-          <div className="product-details">
-            <h3 className="product-title">{product.title}</h3>
-            <p className="product-rating">
-              {renderRatingStars(product.rating)} ({product.reviews})
-            </p>
-            <p className="product-price">{product.price} €</p>
+    <>
+      <div className="product-container">
+        {products.map((product) => (
+          <div key={product.id} className="product-item">
+            <img
+              src={product.images[0]}
+              alt={product.title}
+              className="product-image"
+            />
+            <div className="product-details">
+              <h3 className="product-title">{product.title}</h3>
+              <p className="product-rating">
+                {renderRatingStars(product.rating.value)}
+                {product.rating.value} ({product.rating.count})
+              </p>
+              <p className="product-price">
+                {product.price.value} {product.price.currency}
+              </p>
+            </div>
+            <button
+              className="product__button"
+              onClick={() => showProductDetails(product)}
+            >
+              Add to basket
+            </button>
           </div>
-          <button className="product__button">Add to basket</button>
-        </div>
-      ))}
-    </div>
+        ))}
+      </div>
+    </>
   );
 }
 
