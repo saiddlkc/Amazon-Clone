@@ -3,7 +3,7 @@ import { useProductContext } from "./ProductContext";
 import "./ProductList.css";
 
 function ProductList() {
-  const { products, showProductDetails } = useProductContext();
+  const { json, showProductDetails } = useProductContext();
 
   const renderRatingStars = (rating) => {
     const stars = [];
@@ -16,7 +16,7 @@ function ProductList() {
   return (
     <>
       <div className="product-container">
-        {products.map((product) => (
+        {json.Cameras.map((product) => (
           <div key={product.id} className="product-item">
             <img
               src={product.images[0]}
@@ -37,7 +37,7 @@ function ProductList() {
               className="product__button"
               onClick={() => showProductDetails(product)}
             >
-              Add to basket
+              View Details
             </button>
           </div>
         ))}
