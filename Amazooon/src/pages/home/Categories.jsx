@@ -1,16 +1,29 @@
-import React from "react";
-import { products } from "../../database/products";
+import React, { useState, useEffect } from "react";
 import "./ProductList.css";
 
-const Main = () => {
-  const randomProducts = [];
-  while (randomProducts.length < 4) {
-    const randomIndex = Math.floor(Math.random() * products.length);
-    const randomProduct = products[randomIndex];
-    if (!randomProducts.some((product) => product.id === randomProduct.id)) {
-      randomProducts.push(randomProduct);
-    }
-  }
+const Category = () => {
+  const [randomProducts, setRandomProducts] = useState([]);
+
+  useEffect(() => {
+    const fetchData = async () => {
+      try {
+        const response = await fetch("data.json");
+        if (!response.ok) {
+          throw new Error("Network response was not ok");
+        }
+        const data = await response.json();
+        const allProducts = Object.values(data).flat();
+        const shuffledProducts = shuffleArray(allProducts);
+        const randomProducts = shuffledProducts.slice(0, 4);
+        setRandomProducts(randomProducts);
+      } catch (error) {
+        console.error("Error fetching data: ", error);
+      }
+    };
+
+    fetchData();
+  }, []);
+
   const renderRatingStars = (rating) => {
     const stars = [];
     for (let i = 0; i < rating; i++) {
@@ -44,12 +57,7 @@ const Main = () => {
                 {product.price.currency}
               </span>
             </p>
-            <button
-              className="product__button"
-              onClick={() => showProductDetails(product)}
-            >
-              Add to basket
-            </button>
+            <button className="product__button">Add to basket</button>
           </div>
         ))}
       </div>
@@ -57,4 +65,13 @@ const Main = () => {
   );
 };
 
-export default Main;
+// Diziyi karıştırmak için kullanılacak yardımcı fonksiyon
+function shuffleArray(array) {
+  for (let i = array.length - 1; i > 0; i--) {
+    const j = Math.floor(Math.random() * (i + 1));
+    [array[i], array[j]] = [array[j], array[i]];
+  }
+  return array;
+}
+
+export default Category;

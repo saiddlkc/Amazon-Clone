@@ -3,7 +3,8 @@ import Banner from "./Banner";
 import Home from "./Home";
 import Main from "./Main";
 import Sidebar from "./Sidebar";
-import Categories from "./Categories";
+import Category from "./Categories";
+import Cameras from "./Cameras";
 
 const HomePage = () => {
   return (
@@ -17,8 +18,9 @@ const HomePage = () => {
         <Main />
       </div>
       <div>
-        <Categories />
+        <Category />
       </div>
+      <Cameras />
     </div>
   );
 };
