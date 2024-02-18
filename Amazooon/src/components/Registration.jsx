@@ -8,14 +8,11 @@ const Registration = () => {
   const [password, setPassword] = useState("");
   const [cPassword, setCPassword] = useState("");
 
-  // Error Message start
   const [errClientName, setErrClientName] = useState("");
   const [errEmail, setErrEmail] = useState("");
   const [errPassword, setErrPassword] = useState("");
   const [errCPassword, setErrCPassword] = useState("");
-  // Loading State start
 
-  // Handle funtion start
   const handleName = (e) => {
     setClientName(e.target.value);
     setErrClientName("");
@@ -33,16 +30,15 @@ const Registration = () => {
     setErrCPassword("");
   };
 
-  // Email validation start
   const emailValidation = (email) => {
     return String(email)
       .toLowerCase()
       .match(/^\w+([-]?\w+)*@\w+([-]?\w+)*(\.\w{2,3})+$/);
   };
 
-  // Submit button start
   const handleRegistration = (e) => {
     e.preventDefault();
+    // console.log(clientName);
     if (!clientName) {
       setErrClientName("Enter your name");
     }
@@ -77,12 +73,27 @@ const Registration = () => {
       cPassword &&
       cPassword === password
     ) {
-      // =========== Firebase Registration End here ===============
+      console.log(clientName, email, password);
       setClientName("");
       setEmail("");
       setPassword("");
       setCPassword("");
       setErrCPassword("");
+      fetch("http://localhost:3004/users", {
+        method: "POST",
+        body: JSON.stringify({
+          name: clientName,
+          email: email,
+          password: password,
+        }),
+        headers: {
+          "Content-Type": "application/json",
+        },
+      })
+        .then((response) => response.json())
+        .then((user) => {
+          console.log("registered", user);
+        });
     }
   };
   return (
@@ -107,9 +118,6 @@ const Registration = () => {
                 />
                 {errClientName && (
                   <p className="text-red-600 text-xs font-semibold tracking-wide flex items-center gap-2 -mt-1.5">
-                    <span className="italic font-titleFont font-extrabold text-base">
-                      !
-                    </span>
                     {errClientName}
                   </p>
                 )}
@@ -124,9 +132,6 @@ const Registration = () => {
                 />
                 {errEmail && (
                   <p className="text-red-600 text-xs font-semibold tracking-wide flex items-center gap-2 -mt-1.5">
-                    <span className="italic font-titleFont font-extrabold text-base">
-                      !
-                    </span>
                     {errEmail}
                   </p>
                 )}
@@ -141,9 +146,6 @@ const Registration = () => {
                 />
                 {errPassword && (
                   <p className="text-red-600 text-xs font-semibold tracking-wide flex items-center gap-2 -mt-1.5">
-                    <span className="italic font-titleFont font-extrabold text-base">
-                      !
-                    </span>
                     {errPassword}
                   </p>
                 )}
@@ -158,9 +160,6 @@ const Registration = () => {
                 />
                 {errCPassword && (
                   <p className="text-red-600 text-xs font-semibold tracking-wide flex items-center gap-2 -mt-1.5">
-                    <span className="italic font-titleFont font-extrabold text-base">
-                      !
-                    </span>
                     {errCPassword}
                   </p>
                 )}
