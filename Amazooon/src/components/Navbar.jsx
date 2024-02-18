@@ -43,7 +43,7 @@ const Navbar = () => {
 
   return (
     <nav className="bg-gray-900 ">
-      <div className="max-w-7xl mx-auto flex flex-wrap justify-between items-center">
+      <div className=" mx-auto flex flex-wrap justify-between items-center">
         <div className="flex items-center">
           <a href="/" className="text-white text-lg font-bold">
             <img className="w-24 text-white" src={Img} alt="" />
@@ -107,7 +107,7 @@ const Navbar = () => {
             <FiSearch />
           </button>
           {/* Dropdown */}
-          <div className="relative mt-4 mx-3 md:mt-0 flex">
+          <div className="relative mt-4 mx-2 md:mt-0 flex">
             <button className="text-white  items-center">
               <p>Hallo, ...</p>
               <p>Konto und Liste</p>
@@ -133,7 +133,7 @@ const Navbar = () => {
             </p>
           </div>
           {/* Warenkorb */}
-          <div className="ml-4 text-white">
+          <div className="ml-4 text-white mr-4">
             <button
               className="flex items-center bg-slate-600  p-2 rounded-md hover:bg-slate-500"
               onClick={() => addToCart({ label: "Artikel 1", price: 10 })}
