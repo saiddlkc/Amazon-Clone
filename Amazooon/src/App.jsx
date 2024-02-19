@@ -10,17 +10,12 @@ import Ok from "./pages/Ok";
 function App() {
   return (
     <>
-      <BrowserRouter>
-        <Routes>
-          <Route path="/" element={<HomePage />}></Route>
-          <Route path="/nav" element={<Layout />}></Route>
-          <Route path="/Login" element={<LoginPage />}></Route>
-          <Route
-            path="/RegistrationPage"
-            element={<RegistrationPage />}
-          ></Route>
-        </Routes>
-      </BrowserRouter>
+      <Routes>
+        <Route exact path="/" element={<HomePage />}></Route>
+        <Route path="/nav" element={<Layout />}></Route>
+        <Route path="/Login" element={<LoginPage />}></Route>
+        <Route path="/RegistrationPage" element={<RegistrationPage />}></Route>
+      </Routes>
     </>
   );
 }
