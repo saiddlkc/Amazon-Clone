@@ -1,8 +1,9 @@
 /** @type {import('tailwindcss').Config} */
 
 module.exports = {
-  content: ["./src/**/*.{js,jsx,ts,tsx}"],
+  content: ["./src/**/*.{html,js}"],
   theme: {
+
     extend: {
       maxWidth: {
         container: "1440px",
@@ -35,6 +36,7 @@ module.exports = {
         amazonInput: "0 0 3px 2px rgb(228 121 17 / 50%)",
       },
     },
+
 
   },
   plugins: [],
