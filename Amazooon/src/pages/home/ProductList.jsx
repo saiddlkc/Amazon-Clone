@@ -13,10 +13,26 @@ function ProductList() {
     return stars;
   };
 
+  const getRandomProducts = () => {
+    const allProducts = Object.values(json).flat();
+    const randomProducts = [];
+    while (
+      randomProducts.length < 4 &&
+      randomProducts.length < allProducts.length
+    ) {
+      const randomIndex = Math.floor(Math.random() * allProducts.length);
+      const randomProduct = allProducts[randomIndex];
+      if (!randomProducts.some((product) => product.id === randomProduct.id)) {
+        randomProducts.push(randomProduct);
+      }
+    }
+    return randomProducts;
+  };
+
   return (
     <>
       <div className="product-container">
-        {json.Cameras.map((product) => (
+        {getRandomProducts().map((product) => (
           <div key={product.id} className="product-item">
             <img
               src={product.images[0]}
