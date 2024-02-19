@@ -14,8 +14,7 @@
 }
 
 .product-item {
-    width: calc(25% - 20px); /* 4 ürünü yatayda hizalayın */
-    height: auto;
+    width: calc(25% - 20px);
     border: 1px solid #ffffff;
     background-color: #ffffff;
     display: flex;
@@ -101,12 +100,12 @@
 
 @media screen and (max-width: 800px) {
     .product-item {
-        width: calc(50% - 20px); /* 2 ürünü yatayda hizalayın */
+        width: calc(50% - 20px);
     }
 }
 
 @media screen and (max-width: 600px) {
     .product-item {
-        width: calc(100% - 20px); /* 1 ürünü yatayda hizalayın */
+        width: calc(100% - 20px);
     }
 }

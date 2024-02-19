@@ -2,13 +2,13 @@ import React from "react";
 import { products } from "../../database/products";
 import "./ProductList.css";
 
-const Main = () => {
-  // Rastgele 4 ürün seçmek için bir dizi oluştur
+const Angebot = () => {
+ 
   const randomProducts = [];
   while (randomProducts.length < 4) {
     const randomIndex = Math.floor(Math.random() * products.length);
     const randomProduct = products[randomIndex];
-    // Eğer daha önce seçilmediyse, rastgele ürünü ekle
+
     if (!randomProducts.some((product) => product.id === randomProduct.id)) {
       randomProducts.push(randomProduct);
     }
@@ -60,4 +60,4 @@ const Main = () => {
   );
 };
 
-export default Main;
+export default Angebot;

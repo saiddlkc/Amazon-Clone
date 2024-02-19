@@ -1,9 +1,9 @@
 import React from "react";
-import { Link } from "react-router-dom"; // Link ekledik
+import { Link } from "react-router-dom";
 import json from "../../database/data.json";
 import "./ProductList.css";
 
-const Cameras = () => {
+const Category = () => {
   const renderRatingStars = (rating) => {
     const stars = [];
     for (let i = 0; i < rating; i++) {
@@ -12,14 +12,12 @@ const Cameras = () => {
     return stars;
   };
 
-  // Ürün detaylarını göstermek için ayrı bir bileşen
   const ProductDetails = ({ product }) => {
     return (
       <div>
         <h2>{product.title}</h2>
         <p>Price: {product.price.value} {product.price.currency}</p>
         <p>Rating: {renderRatingStars(product.rating.value)}</p>
-        {/* Diğer ürün detaylarını buraya ekleyebilirsiniz */}
       </div>
     );
   };
@@ -45,7 +43,6 @@ const Cameras = () => {
                 <p className="product-price">
                     {product.price.value} {product.price.currency}
                 </p>
-                {/* Ürün detaylarına Link ekledik */}
                 <Link to={`/products/${product.id}`} className="product__button">
                   View Details
                 </Link>
@@ -58,4 +55,4 @@ const Cameras = () => {
   );
 };
 
-export default Cameras;
+export default Category;

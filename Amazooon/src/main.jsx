@@ -1,9 +1,7 @@
-// index.js veya App.js gibi ana bileşen dosyanız
 import React from 'react';
 import ReactDOM from 'react-dom';
-import { BrowserRouter } from 'react-router-dom'; // BrowserRouter ekledik
-import App from './App'; // Ana bileşeninizi içe aktardık
-
+import { BrowserRouter } from 'react-router-dom'; 
+import App from './App'; 
 ReactDOM.render(
   <BrowserRouter>
     <App />

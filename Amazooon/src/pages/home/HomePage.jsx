@@ -1,25 +1,32 @@
 import React from "react";
+import Slider from "./Slider";
 import Banner from "./Banner";
-import Home from "./Home";
-import Main from "./Main";
-import Sidebar from "./Sidebar";
-import Cameras from "./Cameras";
+import Angebot from "./Angebot";
+import Category from "./Category";
+import Products from "./Products";
 
 
 const HomePage = () => {
   return (
     <div>
-      <Banner />
       <div>
-        <Home />
+      <Slider />
       </div>
-      <div>
-        <Sidebar />
-        <Main />
-      </div>
-      <div>
-        <Cameras />
-      </div>
+        <div
+        style={{
+          position: "absolute",
+          top: "0",
+          padding: "300px 0 0 0",
+          zIndex: "1",
+          margin: "30px",
+        
+        }}
+        >
+        <Products />
+        <Angebot />
+        <Banner />
+        <Category />
+     </div>
     </div>
   );
 };

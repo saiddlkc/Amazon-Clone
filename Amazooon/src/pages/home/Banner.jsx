@@ -1,46 +1,37 @@
-import React, { useRef, useState } from "react";
-import { Swiper, SwiperSlide } from "swiper/react";
-import "swiper/css";
-import "swiper/css/navigation";
+import React from "react";
 
-import "./Banner.css";
-import { Autoplay, Pagination, Navigation } from "swiper/modules";
 
-const banners = [
-  "https://m.media-amazon.com/images/I/7195oHPNnTL._SX3000_.jpg",
-  "https://m.media-amazon.com/images/I/61-t7nfD-rL._SX3000_.jpg",
-  "https://m.media-amazon.com/images/I/71erLF1rQsL._SX3000_.jpg",
-  "https://images-eu.ssl-images-amazon.com/images/G/31/prime/Gateway/2020/May/gaming_3000x1200._CB431281466_.jpg",
-  "https://images-eu.ssl-images-amazon.com/images/G/31/img21/Wireless/WLA/Feb/NC/D21052619_WLA_BAU_GW-heroes_Headsets_FPF_FEB_DesktopTallHero_3000x1200._CB660350658_.jpg",
-  "https://images-eu.ssl-images-amazon.com/images/G/31/img21/Audio/MI/Final/MI_Gw_3000x1200._CB659658858_.jpg",
-];
-
-function Banner() {
+const Banner = () => {
   return (
-    <div className="banner">
-      <Swiper
-        spaceBetween={30}
-        centeredSlides={true}
-        autoplay={{
-          delay: 5000,
-          disableOnInteraction: false,
+    <div
+      style={{
+        margin: "10px",
+        display: "flex",
+        gap: "20px",
+        justifyContent: "center",
+        alignItems: "center",
+        flexWrap: "wrap",
+      }}
+    >
+      <div>
+        <img
+          style={{ width: "100%", height: "200px", objectFit: "contain" }}
+          src="https://m.media-amazon.com/images/G/03/gc/2021/Desktop20_1940x500_1640089445.jpg"
+          alt="Geshenk"
+        />
+      </div>
+      {/* <div
+        style={{
+          backgroundColor: "#fff",
+          padding: "20px",
         }}
-        pagination={{
-          clickable: true,
-        }}
-        navigation={true}
-        modules={[Autoplay, Pagination, Navigation]}
-        className="mySwiper"
       >
-        {" "}
-        {banners.map((banner, index) => (
-          <SwiperSlide>
-            <img key={index} src={banner} alt="banner" />
-          </SwiperSlide>
-        ))}
-      </Swiper>
+        <h2>Zum Einkaufen bitte anmelden</h2>
+        <button className="product__button">Sichere Anmeldung</button>
+      </div> */}
+
     </div>
   );
-}
+};
 
 export default Banner;
