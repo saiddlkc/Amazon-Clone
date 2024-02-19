@@ -53,6 +53,12 @@
       "name": "hamdi",
       "email": "hamdi@gmail.com",
       "password": "111111"
+    },
+    {
+      "id": "9b80",
+      "name": "userneu3",
+      "email": "userneu3@gmail.com",
+      "password": "111111"
     }
   ],
   "orders": []
