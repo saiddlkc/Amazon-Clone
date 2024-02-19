@@ -1,4 +1,5 @@
 /** @type {import('tailwindcss').Config} */
+
 module.exports = {
   content: ["./src/**/*.{js,jsx,ts,tsx}"],
   theme: {
@@ -34,6 +35,7 @@ module.exports = {
         amazonInput: "0 0 3px 2px rgb(228 121 17 / 50%)",
       },
     },
+
   },
   plugins: [],
 };
