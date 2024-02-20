@@ -125,12 +125,6 @@ const Navbar = () => {
             </button>
           </div>
 
-          <div className="text-white text-center">
-            <span>Warenrücksendungen</span>
-            <p>
-              <b>und Bestellungen</b>
-            </p>
-          </div>
           {/* Warenkorb */}
           <div className="ml-4 text-white">
             <button
