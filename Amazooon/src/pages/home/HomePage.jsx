@@ -11,19 +11,11 @@ const HomePage = () => {
       <div>
         <Slider />
       </div>
-      <div
-        // style={{
-        //   position: "absolute",
-        //   top: "0",
-        //   padding: "250px 0 0 0",
-        //   zIndex: "1",
-        //   margin: "30px",
-        // }}
-      >
+      <div>
         <Products />
         <Angebot />
-        <Banner />
-        <Category />
+        {/* <Banner /> */}
+        {/* <Category /> */}
       </div>
     </div>
   );

@@ -7,13 +7,21 @@ import RegistrationPage from "./pages/RegistrationPage";
 import LoginPage from "./pages/LoginPage";
 import Layout from "./layout/Layout";
 import Ok from "./pages/Ok";
+import Header from "./layout/Header";
 
 function App() {
   return (
     <>
       <Routes>
-        <Route exact path="/" element={<HomePage />}></Route>
-        <Route path="/nav" element={<Layout />}></Route>
+        <Route
+          exact
+          path="/"
+          element={
+            <Layout>
+              <HomePage />
+            </Layout>
+          }
+        ></Route>
         <Route path="/Login" element={<LoginPage />}></Route>
         <Route path="/RegistrationPage" element={<RegistrationPage />}></Route>
       </Routes>

@@ -3,7 +3,7 @@ import Img from "../images/logo-transparent-png.png";
 
 const Footer = () => {
   return (
-    <footer className=" text-white   text-center  absolute bottom-0  w-full pt-4 px-0">
+    <footer className=" text-white text-center bottom-0  w-full pt-4 px-0 z-0">
       <div className="bg-gray-600">
         <button>Zurück zum Seitenanfang</button>
       </div>
