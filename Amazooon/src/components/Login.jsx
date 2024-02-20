@@ -54,18 +54,21 @@ const Login = () => {
 
       if (!data.length) {
         setErrPassword("Email or password is incorrect");
+        setLoading(false);
+        setLoginSuccess(false);
         return;
       }
 
-      console.log("Login erfolgreich:");
-    } catch (error) {
-      console.error("Error:", error);
-    } finally {
+      console.log("Login erfolgreich:", data[0].name);
+      // setclientName(data[0].clientName);
+      const clientName = data[0].name;
       setTimeout(() => {
         setLoading(false);
         setLoginSuccess(true);
-        navigate("/nav");
+        navigate("/nav?clientName=" + clientName);
       }, 2000);
+    } catch (error) {
+      console.error("Error:", error);
     }
   };
 
@@ -124,11 +127,11 @@ const Login = () => {
                   "Continue"
                 )}
               </button>
-              {loginSuccess && (
+              {/* {loginSuccess && (
                 <p className="text-green-600 text-xs font-semibold mt-2">
                   Successful. Redirecting to Dashboard...
                 </p>
-              )}
+              )} */}
             </div>
             <p className="text-xs text-black leading-4 mt-4">
               By Continuing, you agree to Amazon

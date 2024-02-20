@@ -4,11 +4,25 @@ import { FiShoppingCart } from "react-icons/fi";
 import Img from "../images/logo-transparent-png.png";
 import { FiNavigation } from "react-icons/fi";
 import { FiChevronDown } from "react-icons/fi";
+import { useLocation } from "react-router-dom";
 
 const Navbar = () => {
   const [isDropdownOpen, setIsDropdownOpen] = useState(false);
   const [cartItems, setCartItems] = useState([]);
   const [windowWidth, setWindowWidth] = useState(window.innerWidth);
+
+  const [name, setName] = useState("");
+  const location = useLocation();
+  useEffect(() => {
+    const getClientNameFromURL = () => {
+      const searchParams = new URLSearchParams(location.search);
+      const clientName = searchParams.get("clientName");
+      return clientName;
+    };
+
+    const clientName = getClientNameFromURL();
+    setName(clientName);
+  }, [location.search]);
 
   const dropdownItems = [
     { name: "Elektronik", url: "/" },
@@ -52,7 +66,7 @@ const Navbar = () => {
         </div>
 
         <div className=" text-white">
-          <p>Lieferung an Mustermann</p>
+          <p>Lieferung an {name}</p>
           <p className="flex justify-center items-center text-white">
             <FiNavigation /> 12163 Berlin
           </p>
@@ -109,7 +123,7 @@ const Navbar = () => {
           {/* Dropdown */}
           <div className="relative mt-4 mx-2 md:mt-0 flex">
             <button className="text-white  items-center">
-              <p>Hallo, CLientName</p>
+              <p>Hallo, {name}</p>
               <p>Konto und Liste</p>
 
               {/* <svg

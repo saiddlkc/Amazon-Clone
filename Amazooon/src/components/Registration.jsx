@@ -78,6 +78,7 @@ const Registration = () => {
       cPassword === password
     ) {
       console.log(clientName, email, password);
+
       setLoading(true);
       setClientName("");
       setEmail("");
