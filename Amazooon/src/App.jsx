@@ -1,12 +1,16 @@
-import { Route, Routes, BrowserRouter } from "react-router-dom";
+import { Route, Routes } from "react-router-dom";
 import "./App.css";
-import Layout from "./layout/Layout";
+
 import Ok from "./pages/Ok";
+import Header from "./layout/Header";
+import Footer from "./layout/Footer";
 
 function App() {
   return (
     <>
-      <Layout />
+      <Header />
+      <Ok />
+      <Footer />
     </>
   );
 }

@@ -1,15 +1,16 @@
 import React from "react";
 import Img from "../images/logo-transparent-png.png";
+// import Footersprache from "./Footersprache";
 
 const Footer = () => {
   return (
-    <footer className=" text-white   text-center  absolute bottom-0  w-full pt-4 px-0">
+    <footer className=" text-white   text-center     w-full pt-4 px-0">
       <div className="bg-gray-600">
-        <button>Zurück zum Seitenanfang</button>
+        <button className="p-4">Zurück zum Seitenanfang</button>
       </div>
-      <div className="bg-gray-800 flex text-left  justify-center">
-        <ul>
-          <h4>Über Amazooon</h4>
+      <div className="bg-gray-800 flex text-left  justify-center   ">
+        <ul className="py-5 px-5">
+          <h4 className="font-bold">Über Amazooon</h4>
           <li>
             <a href="">karriere bei Amazooon</a>
           </li>
@@ -26,8 +27,8 @@ const Footer = () => {
             <a href="">Amazooon Science</a>
           </li>
         </ul>
-        <ul>
-          <h4>Geld verdienen mit Amazooon</h4>
+        <ul className="py-5 px-5">
+          <h4 className="font-bold">Geld verdienen mit Amazooon</h4>
           <li>
             <a href="">Verkaufen bei Amazooon</a>
           </li>
@@ -45,8 +46,8 @@ const Footer = () => {
           </li>
         </ul>
 
-        <ul>
-          <h4>Amazooon Zahlungsarten</h4>
+        <ul className="py-5 px-5">
+          <h4 className="font-bold">Amazooon Zahlungsarten</h4>
           <li>
             <a href="">Amazooon.de VISA Karte</a>
           </li>
@@ -63,8 +64,8 @@ const Footer = () => {
             <a href="">Ratenzahlung</a>
           </li>
         </ul>
-        <ul>
-          <h4>Wir helfen Ihnen</h4>
+        <ul className="py-5 px-5">
+          <h4 className="font-bold">Wir helfen Ihnen</h4>
           <li>
             <a href="">Amazon und COVID-19</a>
           </li>
@@ -83,19 +84,23 @@ const Footer = () => {
         </ul>
       </div>
       <div
-        className="bg-gray-800  shadow-sm shadow-gray-100 
+        className="bg-gray-800  shadow-lg shadow-gray-100 
         py-4 px-0  w-full  flex  items-center justify-center"
       >
-        <div> Deutschland &copy; {new Date().getFullYear()}</div>
         <div className="mx-5 ">
-          <img className="w-10" src={Img} alt="" />
+          <img className="w-12" src={Img} alt="" />
         </div>
-      </div>
-      <div className="bg-gray-900">
-        <div className="flex">
-          <ul>
+
+        <div> Deutschland &copy; {new Date().getFullYear()}</div>
+        {/* <Footersprache /> */}
+      </div>{" "}
+      <div className="bg-gray-900  ">
+        <div className="flex text-left  justify-center ">
+          <ul className="py-5 px-5">
             <li>
-              <a href="">Amazooon Advertising</a>
+              <a href="" className="font-bold">
+                Amazooon Advertising
+              </a>
             </li>
             <li>
               <a href="">Kunden finden,</a>
@@ -104,9 +109,11 @@ const Footer = () => {
               <a href="">und binden</a>
             </li>
           </ul>
-          <ul>
+          <ul className="py-5 px-5">
             <li>
-              <a href="">Amazon Web Services</a>
+              <a href="" className="font-bold">
+                Amazon Web Services
+              </a>
             </li>
             <li>
               <a href="">Cloud Computing Dienste</a>
@@ -121,9 +128,11 @@ const Footer = () => {
               <a href="">Shopbop</a>
             </li>
           </ul>
-          <ul>
+          <ul className="py-5 px-5">
             <li>
-              <a href="">Neueröffnungen</a>
+              <a href="" className="font-bold">
+                Neueröffnungen
+              </a>
             </li>
             <li>
               <a href="">und finden</a>
@@ -138,9 +147,11 @@ const Footer = () => {
               <a href="">Kunden finden</a>
             </li>
           </ul>
-          <ul>
+          <ul className="py-5 px-5">
             <li>
-              <a href="">Amazon Second Chance</a>
+              <a href="" className="font-bold">
+                Amazon Second Chance
+              </a>
             </li>
             <li>
               <a href="">Geben Sie es weiter,</a>
@@ -153,20 +164,45 @@ const Footer = () => {
             </li>
           </ul>
 
-          <ul>
+          <ul className="py-5 px-5">
             <li>
-              <a href="">Amazon Business Kauf auf Rechnung. PO-Nummern.</a>
+              <a href="" className="font-bold">
+                Amazon Business Kauf auf Rechnung. PO-Nummern.
+              </a>
             </li>
             <li>
               <a href="">Für Unternehmen.</a>
             </li>
           </ul>
         </div>
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
+        <div>
+          <ul className="flex pt-9 pb-2 gap-6 justify-center   font-bold">
+            <li>
+              <a href="">Unsere AGB</a>
+            </li>
+            <li>
+              <a href="">Datenschutzerklärung</a>
+            </li>
+            <li>
+              <a href="">Hinweise zu Cookies</a>
+            </li>
+            <li>
+              <a href="">ZVAB</a>
+            </li>
+            <li>
+              <a href="">Impressum</a>
+
+              <a href="">Amazooon Business</a>
+            </li>
+          </ul>
+          <ul className=" font-bold">
+            <li>
+              {" "}
+              &copy; {new Date().getFullYear()} 2019-2024 Amazooon.com, Inc oder
+              Partner-Unternehmen
+            </li>
+          </ul>
+        </div>
       </div>
     </footer>
   );

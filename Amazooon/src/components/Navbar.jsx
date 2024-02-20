@@ -108,21 +108,20 @@ const Navbar = () => {
           </button>
           {/* Dropdown */}
           <div className="relative mt-4 mx-2 md:mt-0 flex">
-            <button className="text-white  items-center">
+            <button className="text-white  items-center ">
               <p>Hallo, ...</p>
-              <p>Konto und Liste</p>
 
-              {/* <svg
-                xmlns="http://www.w3.org/2000/svg"
-                viewBox="0 0 20 20"
-                fill="currentColor"
-              >
-                <path
-                  fillRule="evenodd"
-                  d="M3.293 7.293a1 1 0 011.414 0L10 12.586l5.293-5.293a1 1 0 111.414 1.414l-6 6a1 1 0 01-1.414 0l-6-6a1 1 0 010-1.414z"
-                  clipRule="evenodd"
-                />
-              </svg> */}
+              <label for="cars"> Konto und Liste </label>
+              <select name="cars" id="cars">
+                <optgroup label="Swedish Cars">
+                  <option value="volvo"></option>
+                  <option value="saab">Saab</option>
+                </optgroup>
+                <optgroup label="German Cars">
+                  <option value="mercedes">Mercedes</option>
+                  <option value="audi">Audi</option>
+                </optgroup>
+              </select>
             </button>
           </div>
 
@@ -133,7 +132,7 @@ const Navbar = () => {
             </p>
           </div>
           {/* Warenkorb */}
-          <div className="ml-4 text-white mr-4">
+          <div className="ml-4 text-white">
             <button
               className="flex items-center bg-slate-600  p-2 rounded-md hover:bg-slate-500"
               onClick={() => addToCart({ label: "Artikel 1", price: 10 })}
