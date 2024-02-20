@@ -1,8 +1,6 @@
 import { Route, Routes } from "react-router-dom";
 import "./App.css";
-
 import Ok from "./pages/Ok";
-
 import Layout from "./layout/Layout";
 
 function App() {
