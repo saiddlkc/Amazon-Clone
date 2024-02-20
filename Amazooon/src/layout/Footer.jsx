@@ -4,7 +4,7 @@ import Img from "../images/logo-transparent-png.png";
 
 const Footer = () => {
   return (
-    <footer className=" text-white   text-center     w-full pt-4 px-0">
+    <footer className=" text-white   text-center  z-0   w-full pt-4 px-0">
       <div className="bg-gray-600">
         <button className="p-4">Zurück zum Seitenanfang</button>
       </div>
