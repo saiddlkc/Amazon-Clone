@@ -1,11 +1,9 @@
-
 #root {
-    /* max-width: 1280px; */
-    margin: 0 auto;
-    padding: 0;
-    text-align: center;
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 0;
+  text-align: center;
 }
-
 
 * {
   text-decoration: none;
@@ -14,4 +12,3 @@
   padding: 0;
   list-style: none;
 }
-
