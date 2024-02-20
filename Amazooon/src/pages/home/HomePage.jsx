@@ -12,13 +12,13 @@ const HomePage = () => {
         <Slider />
       </div>
       <div
-        style={{
-          position: "absolute",
-          top: "0",
-          padding: "250px 0 0 0",
-          zIndex: "1",
-          margin: "30px",
-        }}
+        // style={{
+        //   position: "absolute",
+        //   top: "0",
+        //   padding: "250px 0 0 0",
+        //   zIndex: "1",
+        //   margin: "30px",
+        // }}
       >
         <Products />
         <Angebot />

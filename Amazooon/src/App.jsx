@@ -17,7 +17,6 @@ function App() {
         <HomePage />
       </div>
 
-      <BrowserRouter>
         <Routes>
           <Route path="/nav" element={<Layout />}></Route>
           <Route path="/" element={<LoginPage />}></Route>
@@ -26,7 +25,6 @@ function App() {
             element={<RegistrationPage />}
           ></Route>
         </Routes>
-      </BrowserRouter>
 
     </>
   );
