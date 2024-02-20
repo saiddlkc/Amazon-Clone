@@ -14,8 +14,8 @@ const HomePage = () => {
       <div>
         <Products />
         <Angebot />
-        {/* <Banner /> */}
-        {/* <Category /> */}
+        {/* <Banner />
+        <Category /> */}
       </div>
     </div>
   );
