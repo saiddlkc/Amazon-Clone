@@ -5,7 +5,7 @@ function ProductDetails() {
   const { selectedProduct } = useProductContext();
 
   return (
-    <div className="product-details">
+    <div className="bg-slate-600">
       {selectedProduct && (
         <div className="product-details-container">
           <div className="product-image">

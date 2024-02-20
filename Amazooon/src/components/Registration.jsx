@@ -178,7 +178,7 @@ const Registration = () => {
             <div>
               <p className="text-xs text-black mt-2">
                 Already have an account?{" "}
-                <Link to="/">
+                <Link to="/Login">
                   <span className="text-xs text-blue-600 hover:text-orange-600 hover:underline underline-offset-1 cursor-pointer duration-100 ">
                     Sign in <span></span>
                   </span>
