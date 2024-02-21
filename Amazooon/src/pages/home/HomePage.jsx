@@ -1,9 +1,6 @@
 import React from "react";
 import Slider from "./Slider";
-import Banner from "./Banner";
-import Angebot from "./Angebot";
-import Category from "./Category";
-import Products from "./Products";
+import Pro from "./context/Productss";
 
 const HomePage = () => {
   return (
@@ -12,10 +9,7 @@ const HomePage = () => {
         <Slider />
       </div>
       <div>
-        <Products />
-        <Angebot />
-        {/* <Banner />
-        <Category /> */}
+        <Pro />
       </div>
     </div>
   );

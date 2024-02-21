@@ -1,5 +1,3677 @@
 {
-  "products": [],
+  "products": [
+    {
+      "id": "1",
+      "title": "TP-Link Archer C6 Gigabit MU-MIMO Wireless Router",
+      "category": "Cameras",
+      "price": {
+        "currency": "EUR",
+        "value": 4999,
+        "discount": 55
+      },
+      "brand": "TP Link",
+      "images": [
+        "https://m.media-amazon.com/images/I/71WeFhEaVIL._AC_UY218_.jpg"
+      ],
+      "features": [
+        "Dual Band WiFi speed —— Simultaneous 2.4GHz 300 Mb…l available bandwidth; supports 802.11ac standard",
+        "Ultimate Range Wi-Fi —— 4 external antennas and on… stable wireless connections and optimal coverage",
+        "Qualcomm Chipset —— High-Performance Chipset provides an excellent connection experience",
+        "MU-MIMO —— MU-MIMO achieves 2X efficiency by communicating with up to 2 devices at once",
+        "Gigabit Ports —— With one Gigabit WAN port and fou… wired devices to the Archer C6 and get impressed",
+        "Access Point Mode —— Supports Access Point mode to create a new Wi-Fi access point",
+        "Easy setup —— Easy network management at your fingertips with TP-Link Tether",
+        "Support One Mesh function, by connecting different…seamless Wi-Fi connection with the same wifi name",
+        "Worry-free customer support — For other installati…00 2094 168 or write us at support.in@tp-link.com"
+      ],
+      "specs": [],
+      "rating": {
+        "count": 1945,
+        "value": 4
+      }
+    },
+    {
+      "id": "2",
+      "title": "Canon EOS R5 Full-Frame Mirrorless Camera",
+      "category": "Cameras",
+      "price": {
+        "currency": "EUR",
+        "value": 3899,
+        "discount": 0
+      },
+      "brand": "Canon",
+      "images": [
+        "https://m.media-amazon.com/images/I/81y2PZrXEPL._AC_UY218_.jpg"
+      ],
+      "features": [
+        "45MP Full-Frame CMOS Sensor",
+        "8K30 Raw and 4K120 10-Bit Internal Video",
+        "Sensor-Shift 5-Axis Image Stabilization",
+        "Up to 20 fps Shooting, ISO 100-51200",
+        "Dual Pixel CMOS AF II, 100% AF Area Coverage",
+        "Subject Tracking with Deep Learning",
+        "5.76m-Dot OLED EVF, 3.2\" 2.1m-Dot Vari-Angle Touchscreen LCD",
+        "CFexpress & SD UHS-II Memory Card Slots",
+        "Built-In Wi-Fi and Bluetooth"
+      ],
+      "specs": [
+        "Sensor Size: Full-Frame (36 x 24 mm)",
+        "Resolution: 45 Megapixels",
+        "Video Resolution: 8K (8192 x 4320) at 30p"
+      ],
+      "rating": {
+        "count": 987,
+        "value": 4.8
+      }
+    },
+    {
+      "id": "3",
+      "title": "DJI Mavic Air 2 Drone",
+      "category": "Cameras",
+      "price": {
+        "currency": "EUR",
+        "value": 799,
+        "discount": 0
+      },
+      "brand": "DJI",
+      "images": [
+        "https://m.media-amazon.com/images/I/614AP9gOSoL._AC_UY218_.jpg"
+      ],
+      "features": [
+        "48MP Photo, 4K/60fps Video",
+        "34-Min Max Flight Time",
+        "10km 1080p Video Transmission",
+        "HDR Video, FocusTrack",
+        "8K Hyperlapse, QuickShots",
+        "SmartPhoto, Scene Recognition",
+        "Obstacle Avoidance",
+        "APAS 3.0, OcuSync 2.0",
+        "Fly More Combo Available"
+      ],
+      "specs": [
+        "Max Flight Time: 34 minutes",
+        "Video Resolution: 4K (3840 x 2160) at 60fps"
+      ],
+      "rating": {
+        "count": 2435,
+        "value": 4.7
+      }
+    },
+    {
+      "id": "4",
+      "title": "Panasonic Lumix GH5 Mirrorless Camera",
+      "category": "Cameras",
+      "price": {
+        "currency": "EUR",
+        "value": 1397,
+        "discount": 15
+      },
+      "brand": "Panasonic",
+      "images": [
+        "https://m.media-amazon.com/images/I/71uadAU6QSL._AC_UY218_.jpg"
+      ],
+      "features": [
+        "20.3MP Digital Live MOS Sensor",
+        "4K Video with No Crop",
+        "5-Axis Sensor Stabilization; Dual I.S. 2",
+        "0.76x 3.68m-Dot OLED Viewfinder",
+        "3.2\" 1.62m-Dot Free-Angle Touchscreen",
+        "Advanced DFD AF System; 6K & 4K PHOTO",
+        "ISO 25600 and 12 fps Continuous Shooting",
+        "Dual UHS-II SD Slots; Wi-Fi & Bluetooth"
+      ],
+      "specs": [
+        "Sensor Size: Micro Four Thirds (17.3 x 13 mm)",
+        "Resolution: 20.3 Megapixels",
+        "Video Resolution: 4K (4096 x 2160) at 60p"
+      ],
+      "rating": {
+        "count": 1654,
+        "value": 4.6
+      }
+    },
+    {
+      "id": "5",
+      "title": "GoPro HERO10 Black Action Camera",
+      "category": "Cameras",
+      "price": {
+        "currency": "EUR",
+        "value": 499,
+        "discount": 0
+      },
+      "brand": "GoPro",
+      "images": [
+        "https://images-na.ssl-images-amazon.com/images/I/51NOjinGjrL._SX679_.jpg"
+      ],
+      "features": [
+        "23MP Photos, 5.3K Video",
+        "HyperSmooth 4.0 with In-Camera Horizon Leveling",
+        "TimeWarp 4.0 and Night-Lapse Video",
+        "1080p Live Streaming, Webcam Mode",
+        "1080p Slo-Mo up to 240fps",
+        "Waterproof to 33', Voice Control",
+        "SuperPhoto + HDR Imaging",
+        "RAW Photos, Power Tools"
+      ],
+      "specs": ["Video Resolution: 5.3K (5376 x 4032) at 60p"],
+      "rating": {
+        "count": 987,
+        "value": 4.9
+      }
+    },
+    {
+      "id": "6",
+      "title": "Nikon Z6 Mirrorless Camera",
+      "category": "Cameras",
+      "price": {
+        "currency": "EUR",
+        "value": 1796,
+        "discount": 5
+      },
+      "brand": "Nikon",
+      "images": [
+        "https://m.media-amazon.com/images/I/71x6jZ5DkFL._AC_UY218_.jpg"
+      ],
+      "features": [
+        "24.5MP FX-Format BSI CMOS Sensor",
+        "UHD 4K30 Video; N-Log & 10-Bit HDMI Out",
+        "273-Point Phase-Detect AF System",
+        "5-Axis In-Body Vibration Reduction",
+        "0.80x 3.6m-Dot EVF with NIKKOR Optics",
+        "3.2\" 2.1m-Dot Tilting Touchscreen LCD",
+        "12 fps Shooting; ISO 100-51200",
+        "CFexpress Type B/XQD Memory Card Slot",
+        "Wi-Fi and Bluetooth"
+      ],
+      "specs": [
+        "Sensor Size: Full-Frame (35.9 x 23.9 mm)",
+        "Resolution: 24.5 Megapixels",
+        "Video Resolution: UHD 4K (3840 x 2160) at 30p"
+      ],
+      "rating": {
+        "count": 1402,
+        "value": 4.7
+      }
+    },
+    {
+      "id": "7",
+      "title": "Blackmagic Pocket Cinema Camera 6K",
+      "category": "Cameras",
+      "price": {
+        "currency": "EUR",
+        "value": 1995,
+        "discount": 0
+      },
+      "brand": "Blackmagic Design",
+      "images": [
+        "https://m.media-amazon.com/images/I/818oS+4AGgL._AC_UY218_.jpg"
+      ],
+      "features": [
+        "6K Super 35 Sensor",
+        "13 Stops of Dynamic Range",
+        "Blackmagic RAW and ProRes Recording",
+        "Dual Native ISO up to 25,600",
+        "5\" Touchscreen Display",
+        "CFast 2.0 & SD/UHS-II Card Slots",
+        "Active Micro Four Thirds Lens Mount",
+        "Built-In Microphone",
+        "Carbon Fiber Polycarbonate Composite"
+      ],
+      "specs": [
+        "Sensor Size: Super 35 (23.1 x 12.99 mm)",
+        "Video Resolution: 6K (6144 x 3456) at 50fps"
+      ],
+      "rating": {
+        "count": 876,
+        "value": 4.8
+      }
+    },
+    {
+      "id": "8",
+      "title": "Sony PXW-FS5 XDCAM Super 35 Camera System",
+      "category": "Cameras",
+      "price": {
+        "currency": "EUR",
+        "value": 4749,
+        "discount": 0
+      },
+      "brand": "Sony",
+      "images": [
+        "https://m.media-amazon.com/images/I/71wc9qnMIjL._AC_UY218_.jpg"
+      ],
+      "features": [
+        "Super 35-Sized CMOS Sensor",
+        "Sony E-Mount",
+        "UHD at 24/30 FPS, HD Up to 240 FPS",
+        "XAVC Long, AVCHD Recording Codecs",
+        "2 x SD Media Card Slots",
+        "HD-SDI Output, HDMI Output",
+        "Built-In ND Filters",
+        "Dual XLR Inputs",
+        "Accessories Included"
+      ],
+      "specs": [
+        "Sensor Size: Super 35 (24.84 x 18.63 mm)",
+        "Video Resolution: UHD 4K (3840 x 2160) at 30p"
+      ],
+      "rating": {
+        "count": 632,
+        "value": 4.7
+      }
+    },
+    {
+      "id": "9",
+      "title": "Canon EOS-1D X Mark III DSLR Camera",
+      "category": "Cameras",
+      "price": {
+        "currency": "EUR",
+        "value": 6499,
+        "discount": 0
+      },
+      "brand": "Canon",
+      "images": [
+        "https://m.media-amazon.com/images/I/81eeRgvqQkL._AC_UY218_.jpg"
+      ],
+      "features": [
+        "20.1MP Full-Frame CMOS Sensor",
+        "DIGIC X Image Processor",
+        "EOS iTR AF X 191-Point AF System",
+        "Dual Pixel CMOS AF, 525 Selectable Areas",
+        "5.5K Raw Video Recording, 60 fps in 4K",
+        "1000BASE-T Ethernet Terminal",
+        "3.2\" 2.1m-Dot LCD Monitor",
+        "CFexpress & CFexpress Type B Slots",
+        "Built-In Wi-Fi, Bluetooth, and GPS"
+      ],
+      "specs": [
+        "Sensor Size: Full-Frame (36 x 24 mm)",
+        "Resolution: 20.1 Megapixels",
+        "Video Resolution: 5.5K (5472 x 2886) at 60p"
+      ],
+      "rating": {
+        "count": 345,
+        "value": 4.9
+      }
+    },
+    {
+      "id": "10",
+      "title": "Sony FX3 Cinema Line Camera",
+      "category": "Cameras",
+      "price": {
+        "currency": "EUR",
+        "value": 3899,
+        "discount": 0
+      },
+      "brand": "Sony",
+      "images": [
+        "https://m.media-amazon.com/images/I/51ofNh28ajS._AC_UY218_.jpg"
+      ],
+      "features": [
+        "10.2MP Full-Frame CMOS Exmor R Sensor",
+        "BIONZ XR Image Processor",
+        "S-Cinetone, S-Log3, HLG",
+        "Internal 4K/120p Recording",
+        "16-Bit RAW Output via HDMI",
+        "759-Point Fast Hybrid AF",
+        "5-Axis In-Body Image Stabilization",
+        "15+ Stops of Dynamic Range",
+        "Vari-Angle LCD Touchscreen"
+      ],
+      "specs": [
+        "Sensor Size: Full-Frame (35.9 x 24 mm)",
+        "Resolution: 10.2 Megapixels",
+        "Video Resolution: 4K (3840 x 2160) at 120p"
+      ],
+      "rating": {
+        "count": 217,
+        "value": 4.8
+      }
+    },
+    {
+      "id": "11",
+      "title": "Sony Alpha a7 IV Mirrorless Camera",
+      "category": "Cameras",
+      "price": {
+        "currency": "EUR",
+        "value": 2499,
+        "discount": 0
+      },
+      "brand": "Sony",
+      "images": [
+        "https://m.media-amazon.com/images/I/81bVHWevmyL._AC_UY218_.jpg"
+      ],
+      "features": [
+        "33MP Full-Frame Exmor R CMOS Sensor",
+        "4K Video Recording up to 60p",
+        "693-Point Fast Hybrid AF System",
+        "5-Axis SteadyShot INSIDE Image Stabilization",
+        "3.0\" 1.44m-Dot Tilting Touchscreen LCD",
+        "5.5-Stop Effective 5-Axis SteadyShot INSIDE Image Stabilization",
+        "CFexpress Type A/SD UHS-II Dual Card Slots",
+        "Real-Time Eye AF for Humans and Animals",
+        "Bluetooth and Wi-Fi Connectivity"
+      ],
+      "specs": [
+        "Sensor Size: Full-Frame (35.6 x 23.8 mm)",
+        "Resolution: 33 Megapixels",
+        "Video Resolution: 4K (3840 x 2160) at 60p"
+      ],
+      "rating": {
+        "count": 132,
+        "value": 4.9
+      }
+    },
+    {
+      "id": "12",
+      "title": "Fujifilm X-T4 Mirrorless Camera",
+      "category": "Cameras",
+      "price": {
+        "currency": "EUR",
+        "value": 1699,
+        "discount": 0
+      },
+      "brand": "Fujifilm",
+      "images": [
+        "https://m.media-amazon.com/images/I/91kSozubERL._AC_UY218_.jpg"
+      ],
+      "features": [
+        "26.1MP APS-C X-Trans BSI CMOS 4 Sensor",
+        "5-Axis In-Body Image Stabilization",
+        "DCI/UHD 4K at 60 fps, Full HD at 240 fps",
+        "2.16m-Point Phase-Detection Autofocus",
+        "3.0\" 1.62m-Dot Tilting Touchscreen LCD",
+        "DCI 4K30 and Full HD 240p Video",
+        "425-Point Hybrid AF System",
+        "Film Simulation Modes"
+      ],
+      "specs": [
+        "Sensor Size: APS-C (23.5 x 15.6 mm)",
+        "Resolution: 26.1 Megapixels",
+        "Video Resolution: DCI 4K (4096 x 2160) at 60p"
+      ],
+      "rating": {
+        "count": 987,
+        "value": 4.8
+      }
+    },
+    {
+      "id": "13",
+      "title": "Nikon Z9 Mirrorless Camera",
+      "category": "Cameras",
+      "price": {
+        "currency": "EUR",
+        "value": 5499,
+        "discount": 0
+      },
+      "brand": "Nikon",
+      "images": [
+        "https://m.media-amazon.com/images/I/71NDPNyGKwL._AC_UY218_.jpg"
+      ],
+      "features": [
+        "45.7MP FX-Format BSI CMOS Sensor",
+        "8K UHD and DCI 4K Video Recording",
+        "ISO 64-25600, Up to 120 fps Shooting",
+        "493-Point Phase-Detect AF System",
+        "3.2\" 2.1m-Dot Tilting Touchscreen LCD",
+        "Dual CFexpress Type B/XQD Card Slots",
+        "5-Axis Sensor-Shift Vibration Reduction",
+        "Wi-Fi and Bluetooth Connectivity"
+      ],
+      "specs": [
+        "Sensor Size: Full-Frame (35.9 x 23.9 mm)",
+        "Resolution: 45.7 Megapixels",
+        "Video Resolution: 8K (7680 x 4320) at 30p"
+      ],
+      "rating": {
+        "count": 78,
+        "value": 4.9
+      }
+    },
+    {
+      "id": "14",
+      "title": "DJI RS 2 Gimbal Stabilizer",
+      "category": "Cameras",
+      "price": {
+        "currency": "EUR",
+        "value": 849,
+        "discount": 0
+      },
+      "brand": "DJI",
+      "images": [
+        "https://m.media-amazon.com/images/I/719tGyshAgL._AC_UY218_.jpg"
+      ],
+      "features": [
+        "12 Hours of Battery Life",
+        "Supports Cameras up to 10 lb",
+        "Improved Axis Locking Mechanism",
+        "Tilting Axis Reach: 280°",
+        "Pan Axis Reach: 360°",
+        "Roll Axis Reach: 330°",
+        "Integrated 1.4\" Full-Color LCD Touchscreen",
+        "Foldable Design with 1/4\"-20 Mount",
+        "Built-In Focus Wheel"
+      ],
+      "specs": ["Payload: 10 lb / 4.5 kg", "Battery Life: 12 Hours"],
+      "rating": {
+        "count": 254,
+        "value": 4.7
+      }
+    },
+    {
+      "id": "15",
+      "title": "Canon EOS C70 Cinema Camera",
+      "category": "Cameras",
+      "price": {
+        "currency": "EUR",
+        "value": 5499,
+        "discount": 0
+      },
+      "brand": "Canon",
+      "images": [
+        "https://m.media-amazon.com/images/I/71+K02jTjbL._AC_UY218_.jpg"
+      ],
+      "features": [
+        "Super 35mm Dual Gain Output (DGO) Sensor",
+        "RF Lens Mount / EF Mount with Adapter",
+        "Internal ND Filters / EOS iTR AF X",
+        "DIG!C DV7 Image Processor",
+        "Canon XF-AVC / MP4 Recording",
+        "4K DCI or UHD up to 120 fps",
+        "Dual Pixel CMOS AF / EOS C300 Mark III Body"
+      ],
+      "specs": [
+        "Sensor Size: Super 35 (24.6 x 13.8 mm)",
+        "Video Resolution: 4K (4096 x 2160) at 120p"
+      ],
+      "rating": {
+        "count": 97,
+        "value": 4.8
+      }
+    },
+    {
+      "id": "16",
+      "title": "RED Komodo 6K Digital Cinema Camera",
+      "category": "Cameras",
+      "price": {
+        "currency": "EUR",
+        "value": 5995,
+        "discount": 0
+      },
+      "brand": "RED",
+      "images": [
+        "https://m.media-amazon.com/images/I/71LXn3V6ZJL._AC_UY218_.jpg"
+      ],
+      "features": [
+        "19.9MP Super 35mm Global Shutter CMOS Sensor",
+        "4K DCI and UHD Video up to 60 fps",
+        "REDCODE RAW, ProRes, and DNx Recording",
+        "Integrated 12G-SDI and HDMI Ports",
+        "Canon RF Lens Mount",
+        "3.5mm Mic/Line/Audio Input, Power Out",
+        "2.9\" Touchscreen LCD",
+        "Wireless Control via RED Control App"
+      ],
+      "specs": [
+        "Sensor Size: Super 35 (27.03 x 14.25 mm)",
+        "Video Resolution: 6K (6144 x 3240) at 40p"
+      ],
+      "rating": {
+        "count": 43,
+        "value": 4.9
+      }
+    },
+    {
+      "id": "17",
+      "title": "Atomos Ninja V+ 8K HDMI HDR Monitor-Recorder",
+      "category": "Cameras",
+      "price": {
+        "currency": "EUR",
+        "value": 1399,
+        "discount": 0
+      },
+      "brand": "Atomos",
+      "images": [
+        "https://m.media-amazon.com/images/I/819+EOCsREL._AC_UY218_.jpg"
+      ],
+      "features": [
+        "HDR Monitoring & Recording",
+        "8K HDMI Input & Loop Output",
+        "4K HDMI 60p Recording",
+        "DCI 4K 60p Raw to ProRes/DNx Recording",
+        "ProRes Raw & Raw Over HDMI Recording",
+        "1500 cd/m² Brightness",
+        "Built-In 5\" 1920 x 1200 Touchscreen Display",
+        "10-Bit 4:2:2 ProRes & DNxHR Encoding",
+        "NP-F Batteries & Fast Charging Support"
+      ],
+      "specs": ["Screen Size: 5\"", "Resolution: 1920 x 1200"],
+      "rating": {
+        "count": 128,
+        "value": 4.7
+      }
+    },
+    {
+      "id": "18",
+      "title": "Sony FE 12-24mm f/2.8 GM Lens",
+      "category": "Cameras",
+      "price": {
+        "currency": "EUR",
+        "value": 2998,
+        "discount": 0
+      },
+      "brand": "Sony",
+      "images": [
+        "https://m.media-amazon.com/images/I/61PGsm6QUKL._AC_UY218_.jpg"
+      ],
+      "features": [
+        "E-Mount Lens/Full-Frame Format",
+        "Aperture Range: f/2.8 to f/22",
+        "Four XD Linear Motors, Internal Focus",
+        "Nano AR II and Fluorine Coatings",
+        "Floating Focus Design, Direct Drive SSM",
+        "Dust and Moisture-Resistant Construction",
+        "Rounded 9-Blade Diaphragm",
+        "Built-In Petal-Shape Lens Hood"
+      ],
+      "specs": [
+        "Focal Length: 12 to 24mm",
+        "Maximum Aperture: f/2.8",
+        "Minimum Aperture: f/22"
+      ],
+      "rating": {
+        "count": 56,
+        "value": 4.8
+      }
+    },
+    {
+      "id": "19",
+      "title": "Rode VideoMic NTG Hybrid Shotgun Microphone",
+      "category": "Cameras",
+      "price": {
+        "currency": "EUR",
+        "value": 249,
+        "discount": 0
+      },
+      "brand": "Rode",
+      "images": [
+        "https://m.media-amazon.com/images/I/61VTReswViL._AC_UY218_.jpg"
+      ],
+      "features": [
+        "Shotgun Microphone with USB Output",
+        "Fully Integrated Digital Audio Interface",
+        "USB-C, Lightning, and 3.5mm Outputs",
+        "Switchable 75 Hz High-Pass Filter",
+        "Internal Rechargeable Lithium-Ion Battery",
+        "Gain Control with Multi-Stage LED Metering",
+        "Auto-Sensing 3.5mm Output Detects TRRS",
+        "Variable Gain and Digital Switching"
+      ],
+      "specs": ["Microphone Type: Condenser", "Polar Pattern: Supercardioid"],
+      "rating": {
+        "count": 189,
+        "value": 4.7
+      }
+    },
+    {
+      "id": "20",
+      "title": "Manfrotto MVH502AH Pro Video Head",
+      "category": "Cameras",
+      "price": {
+        "currency": "EUR",
+        "value": 204,
+        "discount": 0
+      },
+      "brand": "Manfrotto",
+      "images": [
+        "https://m.media-amazon.com/images/I/91Zub+6DRCL._AC_UY218_.jpg"
+      ],
+      "features": [
+        "Flat Base for Multiple Mounting Options",
+        "Supports Up to 15.4 lb",
+        "Separate Pan and Tilt Locks",
+        "Long, 3.5\" Sliding Plate",
+        "Uses Manfrotto 501PL Camera Plates",
+        "3-Step Counterbalance",
+        "Spring-Loaded Counterbalance Control",
+        "Fluid Pan and Tilt Drag System"
+      ],
+      "specs": ["Load Capacity: 15.4 lb / 7 kg", "Base Diameter: 75 mm"],
+      "rating": {
+        "count": 102,
+        "value": 4.6
+      }
+    },
+    {
+      "id": "21",
+      "title": "Call of Duty",
+      "category": "Spiele",
+      "price": {
+        "currency": "EUR",
+        "value": 59.99,
+        "discount": 0
+      },
+      "brand": "Activision",
+      "images": [
+        "https://m.media-amazon.com/images/I/8102sfpfc7L._AC_UY218_.jpg"
+      ],
+      "features": [
+        "Tauche ein in die fesselnde Welt von Call of Duty und erlebe actiongeladene Kriegsszenarien und packende Multiplayer-Gefechte!",
+        "Wähle aus einer Vielzahl von Spielmodi, darunter Einzelspielerkampagnen, Koop-Missionen und kompetitive Multiplayer-Matches.",
+        "Erlebe eine epische Geschichte voller Wendungen und Herausforderungen, während du dich in den Kampf stürzt und deine Fähigkeiten als Soldat unter Beweis stellst.",
+        "Erkunde realistische Umgebungen und nutze eine Vielzahl von Waffen und Ausrüstungsgegenständen, um deine Feinde zu besiegen und deine Mission zu erfüllen."
+      ],
+      "specs": ["Plattform: PlayStation, Xbox, PC", "Genre: Ego-Shooter"],
+      "rating": {
+        "count": 102,
+        "value": 4.6
+      }
+    },
+    {
+      "id": "22",
+      "title": "The Witcher 3: Wild Hunt",
+      "category": "Spiele",
+      "price": {
+        "currency": "EUR",
+        "value": 29.99,
+        "discount": 20
+      },
+      "brand": "CD Projekt Red",
+      "images": [
+        "https://m.media-amazon.com/images/I/81-5Hwz8HbL._AC_UY218_.jpg"
+      ],
+      "features": [
+        "Erkunde eine riesige offene Welt voller Gefahren, Geheimnisse und Abenteuer als der berüchtigte Monsterjäger Geralt von Riva.",
+        "Schlüpfe in die Rolle eines Hexers und meistere eine Vielzahl von Fähigkeiten, Waffen und Magie, um gegen gefährliche Kreaturen zu kämpfen und die Welt zu retten.",
+        "Treffe schwerwiegende Entscheidungen, die den Verlauf der Geschichte und das Schicksal der Charaktere beeinflussen, während du dich auf eine epische Reise begibst, um das Geheimnis hinter der Wilden Jagd zu lüften."
+      ],
+      "specs": ["Plattform: PlayStation, Xbox, PC", "Genre: Action-RPG"],
+      "rating": {
+        "count": 568,
+        "value": 4.9
+      }
+    },
+    {
+      "id": "23",
+      "title": "The Legend of Zelda: Breath of the Wild",
+      "category": "Spiele",
+      "price": {
+        "currency": "EUR",
+        "value": 49.99,
+        "discount": 0
+      },
+      "brand": "Nintendo",
+      "images": [
+        "https://m.media-amazon.com/images/I/81lsqTe-YiL._AC_UY218_.jpg"
+      ],
+      "features": [
+        "Erkunde eine riesige offene Welt voller Abenteuer und Geheimnisse als der legendäre Held Link, während du versuchst, das Königreich Hyrule vor dem bösen Calamity Ganon zu retten.",
+        "Nutze eine Vielzahl von Waffen, Magie und Fähigkeiten, um gegen gefährliche Feinde zu kämpfen und herausfordernde Rätsel zu lösen.",
+        "Entdecke atemberaubende Landschaften, erklimme hohe Berge, schwimme durch reißende Flüsse und fliege mit dem Segelfallschirm durch die Lüfte, um das Land zu erkunden und seine Geheimnisse zu enthüllen."
+      ],
+      "specs": ["Plattform: Nintendo Switch", "Genre: Action-Adventure"],
+      "rating": {
+        "count": 789,
+        "value": 4.8
+      }
+    },
+    {
+      "id": "24",
+      "title": "Red Dead Redemption 2",
+      "category": "Spiele",
+      "price": {
+        "currency": "EUR",
+        "value": 39.99,
+        "discount": 10
+      },
+      "brand": "Rockstar Games",
+      "images": [
+        "https://m.media-amazon.com/images/I/81YdZRdE1BL._AC_UY218_.jpg"
+      ],
+      "features": [
+        "Tauche ein in die epische Geschichte des Wilden Westens und erlebe eine atemberaubende offene Welt voller Gefahren, Abenteuer und Möglichkeiten.",
+        "Schlüpfe in die Rolle des Outlaws Arthur Morgan und schließe dich der Van-der-Linde-Gang an, während du dich durch eine raue und unerbittliche Landschaft kämpfst und versuchst, zu überleben und deinen Platz in der Welt zu finden.",
+        "Erkunde lebendige Städte, entlegene Siedlungen, gefährliche Gebirgspässe und weitläufige Prärien, während du dich auf eine epische Reise begibst, um das Ende einer Ära zu erleben und das Schicksal der Gang zu bestimmen."
+      ],
+      "specs": ["Plattform: PlayStation, Xbox, PC", "Genre: Action-Adventure"],
+      "rating": {
+        "count": 945,
+        "value": 4.7
+      }
+    },
+    {
+      "id": "25",
+      "title": "Super Mario Odyssey",
+      "category": "Spiele",
+      "price": {
+        "currency": "EUR",
+        "value": 49.99,
+        "discount": 0
+      },
+      "brand": "Nintendo",
+      "images": [
+        "https://m.media-amazon.com/images/I/91t3mH6psYL._AC_UY218_.jpg"
+      ],
+      "features": [
+        "Erlebe ein episches Abenteuer in der farbenfrohen und faszinierenden Welt von Super Mario Odyssey, während du versuchst, Prinzessin Peach vor der bösen Bowser zu retten!",
+        "Nutze die einzigartige Fähigkeit von Marios Mütze, Cappy, um dich zu verwandeln, Rätsel zu lösen und neue Welten zu erkunden, voller Geheimnisse, Herausforderungen und Belohnungen.",
+        "Reise durch verschiedene Königreiche, darunter das mythische Mushroom Kingdom, die geheimnisvollen Ruinen von Tostarena und die lebendige Metropole New Donk City, während du dich auf eine unvergessliche Reise begibst, um Bowser zu besiegen und Peach zu retten!"
+      ],
+      "specs": ["Plattform: Nintendo Switch", "Genre: Jump 'n' Run"],
+      "rating": {
+        "count": 1203,
+        "value": 4.8
+      }
+    },
+    {
+      "id": "26",
+      "title": "Cyberpunk 2077",
+      "category": "Spiele",
+      "price": {
+        "currency": "EUR",
+        "value": 59.99,
+        "discount": 0
+      },
+      "brand": "CD Projekt Red",
+      "images": [
+        "https://m.media-amazon.com/images/I/713mMy4aepL._AC_UY218_.jpg"
+      ],
+      "features": [
+        "Tauche ein in die düstere und futuristische Welt von Cyberpunk 2077 und erlebe ein episches Rollenspiel voller Action, Intrigen und Cybernetik!",
+        "Schlüpfe in die Rolle des Söldners V und erkunde die riesige Metropole Night City, während du dich durch gefährliche Straßenkämpfe, komplexe Quests und politische Intrigen kämpfst.",
+        "Nutze eine Vielzahl von Fähigkeiten, Waffen und Cyber-Implantaten, um deine Feinde zu besiegen und deine eigenen Grenzen zu überschreiten, während du versuchst, in einer Welt zu überleben, in der jeder eine Agenda hat und niemand zu vertrauen ist."
+      ],
+      "specs": ["Plattform: PlayStation, Xbox, PC", "Genre: Action-RPG"],
+      "rating": {
+        "count": 987,
+        "value": 4.3
+      }
+    },
+    {
+      "id": "27",
+      "title": "FIFA 22",
+      "category": "Spiele",
+      "price": {
+        "currency": "EUR",
+        "value": 59.99,
+        "discount": 0
+      },
+      "brand": "EA Sports",
+      "images": [
+        "https://m.media-amazon.com/images/I/81P6dWIU+EL._AC_UY218_.jpg"
+      ],
+      "features": [
+        "Erlebe die Spannung und Intensität des weltweit beliebtesten Sports mit FIFA 22, dem neuesten Eintrag in der bahnbrechenden Fußballsimulation von EA Sports!",
+        "Tauche ein in die Lebendigkeit und Realität des Fußballs mit realistischen Animationen, authentischen Stadien und dynamischem Wetter, während du auf den größten Bühnen der Welt spielst.",
+        "Stelle dein Können und deine Strategie auf die Probe in verschiedenen Spielmodi, darunter Karriere, Ultimate Team und Volta Football, während du versuchst, dir einen Platz in der Geschichte des Fußballs zu sichern und deine Gegner zu dominieren!"
+      ],
+      "specs": ["Plattform: PlayStation, Xbox, PC", "Genre: Sport"],
+      "rating": {
+        "count": 589,
+        "value": 4.5
+      }
+    },
+    {
+      "id": "28",
+      "title": "Assassin's Creed Valhalla",
+      "category": "Spiele",
+      "price": {
+        "currency": "EUR",
+        "value": 49.99,
+        "discount": 10
+      },
+      "brand": "Ubisoft",
+      "images": [
+        "https://m.media-amazon.com/images/I/81SuRaxB61L._AC_UY218_.jpg"
+      ],
+      "features": [
+        "Tauche ein in die epische Welt der Wikinger und erlebe ein packendes Abenteuer voller Schlachten, Entdeckungen und Intrigen in Assassin's Creed Valhalla!",
+        "Schlüpfe in die Rolle von Eivor, einem furchtlosen Krieger, der sich auf eine epische Reise begibt, um Ruhm, Ehre und ein neues Zuhause zu finden inmitten des düsteren Zeitalters der Wikinger.",
+        "Erkunde eine riesige offene Welt, vom frostigen Norwegen bis zum üppigen England, und errichte deine eigene Siedlung, während du dich auf gefährliche Raubzüge begibst, mysteriöse Kulte bekämpfst und das Schicksal der Assassinen enthüllst."
+      ],
+      "specs": ["Plattform: PlayStation, Xbox, PC", "Genre: Action-Adventure"],
+      "rating": {
+        "count": 654,
+        "value": 4.6
+      }
+    },
+    {
+      "id": "29",
+      "title": "The Legend of Zelda: Breath of the Wild",
+      "category": "Spiele",
+      "price": {
+        "currency": "EUR",
+        "value": 59.99,
+        "discount": 0
+      },
+      "brand": "Nintendo",
+      "images": [
+        "https://m.media-amazon.com/images/I/81KGsbq8ekL._AC_UY218_.jpg"
+      ],
+      "features": [
+        "Erkunde die atemberaubende und geheimnisvolle Welt von Hyrule in The Legend of Zelda: Breath of the Wild, einem epischen Abenteuer voller Gefahren, Entdeckungen und Magie!",
+        "Schlüpfe in die Rolle des legendären Helden Link und begib dich auf eine Reise, um das Königreich vor dem bösen Calamity Ganon zu retten, der die Welt in Dunkelheit gehüllt hat.",
+        "Nutze deine Intelligenz, deine Fähigkeiten und deine Ressourcen, um überlebenswichtige Rätsel zu lösen, mächtige Gegner zu besiegen und die Geheimnisse von Hyrules Vergangenheit und Zukunft zu enthüllen, während du dich auf das ultimative Abenteuer deines Lebens begibst!"
+      ],
+      "specs": ["Plattform: Nintendo Switch", "Genre: Action-Adventure"],
+      "rating": {
+        "count": 1897,
+        "value": 4.9
+      }
+    },
+    {
+      "id": "30",
+      "title": "The Witcher 3: Wild Hunt",
+      "category": "Spiele",
+      "price": {
+        "currency": "EUR",
+        "value": 29.99,
+        "discount": 20
+      },
+      "brand": "CD Projekt Red",
+      "images": [
+        "https://m.media-amazon.com/images/I/81BHn3JO3ML._AC_UL320_.jpg"
+      ],
+      "features": [
+        "Tauche ein in die dunkle und gefährliche Welt von The Witcher 3: Wild Hunt und erlebe ein episches Rollenspiel voller Magie, Monster und Intrigen!",
+        "Schlüpfe in die Rolle des Geralt von Riva, einem professionellen Monsterjäger, der sich auf eine gefährliche Reise begibt, um seine verlorenen Erinnerungen zu finden und das Geheimnis um das Mädchen mit der Macht zu lüften.",
+        "Erkunde eine riesige offene Welt voller Geheimnisse, Quests und Herausforderungen, während du dich auf die Suche nach Antworten begibst und gegen gefährliche Kreaturen kämpfst, um die Welt vor dem Untergang zu bewahren."
+      ],
+      "specs": ["Plattform: PlayStation, Xbox, PC", "Genre: Action-RPG"],
+      "rating": {
+        "count": 1500,
+        "value": 4.9
+      }
+    },
+    {
+      "id": "31",
+      "title": "Grand Theft Auto V",
+      "category": "Spiele",
+      "price": {
+        "currency": "EUR",
+        "value": 19.99,
+        "discount": 50
+      },
+      "brand": "Rockstar Games",
+      "images": [
+        "https://m.media-amazon.com/images/I/81TAH-M9XXL._AC_UY218_.jpg"
+      ],
+      "features": [
+        "Erlebe die riesige und pulsierende Welt von Los Santos in Grand Theft Auto V, einem revolutionären Open-World-Actionspiel voller Spannung, Humor und Kriminalität!",
+        "Schlüpfe in die Rollen von drei unterschiedlichen Charakteren - dem erfahrenen Gangster Michael, dem ehemaligen Straftäter Franklin und dem unkontrollierbaren Psychopathen Trevor - während du dich auf eine epische Reise durch die Unterwelt von Los Santos begibst.",
+        "Erkunde die Stadt, überfalle Banken, raube Geschäfte aus, jage rivalisierende Gangs und entkomme der Polizei in diesem bahnbrechenden Spiel, das die Grenzen des Videospielmediums neu definiert hat."
+      ],
+      "specs": ["Plattform: PlayStation, Xbox, PC", "Genre: Action-Adventure"],
+      "rating": {
+        "count": 2500,
+        "value": 4.8
+      }
+    },
+    {
+      "id": "32",
+      "title": "Minecraft",
+      "category": "Spiele",
+      "price": {
+        "currency": "EUR",
+        "value": 24.99,
+        "discount": 0
+      },
+      "brand": "Mojang",
+      "images": [
+        "https://m.media-amazon.com/images/I/71nYVASmtaL._AC_UL320_.jpg"
+      ],
+      "features": [
+        "Entdecke die unendlichen Möglichkeiten von Minecraft, einem Sandbox-Spiel, das dich in eine Welt voller Blöcke, Kreativität und Abenteuer entführt!",
+        "Baue und erkunde deine eigenen Welten, sammle Ressourcen, baue Strukturen und kämpfe gegen feindliche Mobs, während du dich auf eine Reise durch die unendlichen Weiten der Blockwelt begibst.",
+        "Spiele alleine oder mit Freunden in verschiedenen Spielmodi, darunter Survival, Creative und Adventure, und entdecke eine endlose Vielfalt an Möglichkeiten, während du deine Kreativität und deine Fähigkeiten in diesem zeitlosen Klassiker entfesselst."
+      ],
+      "specs": ["Plattform: PlayStation, Xbox, PC, Mobile", "Genre: Sandbox"],
+      "rating": {
+        "count": 3500,
+        "value": 4.7
+      }
+    },
+    {
+      "id": "33",
+      "title": "Fortnite",
+      "category": "Spiele",
+      "price": {
+        "currency": "EUR",
+        "value": 0,
+        "discount": 0
+      },
+      "brand": "Epic Games",
+      "images": [
+        "https://m.media-amazon.com/images/I/71u1SsJR89L._AC_UY218_.jpg"
+      ],
+      "features": [
+        "Springe in die actiongeladene Welt von Fortnite, einem Battle-Royale-Spiel, das dich in einen epischen Kampf ums Überleben gegen 99 andere Spieler auf einer abgelegenen Insel führt!",
+        "Baue, kämpfe und überlebe in einer sich ständig verändernden Umgebung, während du dich durch taktische Kämpfe und explosive Gefechte kämpfst, um der letzte Überlebende zu sein.",
+        "Erlebe regelmäßige Updates, neue Inhalte und saisonale Events, während du deine Fähigkeiten verbessert, neue Waffen entdeckst und deine Strategie perfektionierst, um die Spitze des Spiels zu erreichen!"
+      ],
+      "specs": [
+        "Plattform: PlayStation, Xbox, PC, Mobile",
+        "Genre: Battle Royale"
+      ],
+      "rating": {
+        "count": 5000,
+        "value": 4.6
+      }
+    },
+    {
+      "id": "34",
+      "title": "Overwatch",
+      "category": "Spiele",
+      "price": {
+        "currency": "EUR",
+        "value": 29.99,
+        "discount": 0
+      },
+      "brand": "Blizzard Entertainment",
+      "images": [
+        "https://m.media-amazon.com/images/I/81cpGOgyA8L._AC_UL320_.jpg"
+      ],
+      "features": [
+        "Schließe dich dem Team an und kämpfe um Ruhm, Ehre und Sieg in Overwatch, einem teambasierten Ego-Shooter, der dich in eine Zukunftsvision voller Helden, Schurken und epischer Schlachten entführt!",
+        "Wähle aus einer Vielzahl von Helden mit einzigartigen Fähigkeiten und Rollen, darunter mutige Krieger, geschickte Scharfschützen und mächtige Unterstützer, während du dich in schnellen und taktischen Gefechten gegen andere Spieler behauptest.",
+        "Spiele in verschiedenen Spielmodi, darunter Angriff, Eskorte, Kontrolle und mehr, und arbeite mit deinem Team zusammen, um die Mission zu erfüllen, den Feind zu besiegen und als Sieger hervorzugehen!"
+      ],
+      "specs": ["Plattform: PlayStation, Xbox, PC", "Genre: Ego-Shooter"],
+      "rating": {
+        "count": 4000,
+        "value": 4.7
+      }
+    },
+    {
+      "id": "35",
+      "title": "FIFA 24",
+      "category": "Spiele",
+      "price": {
+        "currency": "EUR",
+        "value": 49.99,
+        "discount": 10
+      },
+      "brand": "Electronic Arts",
+      "images": [
+        "https://m.media-amazon.com/images/I/81mpldCkT2L._AC_UY218_.jpg"
+      ],
+      "features": [
+        "Erlebe das ultimative Fußballerlebnis mit FIFA 22, dem neuesten Eintrag in der beliebten Fußballspielreihe, die dich in die Welt des Sports entführt und dir die Möglichkeit bietet, deine eigenen Fußballträume zu verwirklichen!",
+        "Spiele als dein Lieblingsverein oder erstelle dein eigenes Team in verschiedenen Spielmodi, darunter Karriere, Ultimate Team, Volta Football und mehr, und stelle dich Herausforderungen, baue deine Fähigkeiten aus und kämpfe um Ruhm und Ehre auf dem Platz.",
+        "Erlebe realistische Grafiken, authentische Spielmechaniken und packende Kommentare, während du dich in spannenden Matches, aufregenden Turnieren und herausfordernden Online-Wettbewerben behauptest und beweist, dass du der beste Spieler der Welt bist!"
+      ],
+      "specs": ["Plattform: PlayStation, Xbox, PC", "Genre: Sport"],
+      "rating": {
+        "count": 3000,
+        "value": 4.8
+      }
+    },
+    {
+      "id": "36",
+      "title": "Assassin's Creed Odyssey",
+      "category": "Spiele",
+      "price": {
+        "currency": "EUR",
+        "value": 39.99,
+        "discount": 20
+      },
+      "brand": "Ubisoft",
+      "images": [
+        "https://m.media-amazon.com/images/I/A1N-wZB-CML._AC_UY218_.jpg"
+      ],
+      "features": [
+        "Tauche ein in das antike Griechenland und erlebe ein episches Abenteuer voller Mythos, Legenden und Intrigen in Assassin's Creed Odyssey, dem neuesten Eintrag in der beliebten Action-Adventure-Serie!",
+        "Schlüpfe in die Rolle eines mutigen Helden oder einer furchtlosen Heldin und begib dich auf eine Reise durch eine atemberaubende offene Welt, die von den Göttern und Monstern der griechischen Mythologie bevölkert wird.",
+        "Kämpfe gegen legendäre Krieger, löse antike Rätsel und entscheide über das Schicksal eines ganzen Reiches, während du dich in einem epischen Abenteuer durch Intrigen, Verrat und heroische Taten kämpfst!"
+      ],
+      "specs": ["Plattform: PlayStation, Xbox, PC", "Genre: Action-Adventure"],
+      "rating": {
+        "count": 2800,
+        "value": 4.7
+      }
+    },
+    {
+      "id": "37",
+      "title": "Cyberpunk 2077",
+      "category": "Spiele",
+      "price": {
+        "currency": "EUR",
+        "value": 49.99,
+        "discount": 10
+      },
+      "brand": "CD Projekt Red",
+      "images": [
+        "https://m.media-amazon.com/images/I/71BPNVszn1L._AC_UY218_.jpg"
+      ],
+      "features": [
+        "Tauche ein in die düstere und gefährliche Welt von Night City in Cyberpunk 2077, einem actiongeladenen Rollenspiel, das dich in eine Zukunft entführt, die von Technologie, Kriminalität und Korruption geprägt ist!",
+        "Schlüpfe in die Rolle eines Söldners namens V und erlebe eine packende Geschichte voller Intrigen, Verrat und unerwarteter Wendungen, während du dich durch die Straßen von Night City kämpfst und versuchst, deinen Platz in der Welt zu finden.",
+        "Entdecke eine riesige offene Welt voller Möglichkeiten, während du dich mit verschiedenen Fraktionen verbündest, gefährliche Missionen ausführst und dich in knallharten Kämpfen gegen rivalisierende Gangs und korrupte Konzerne behauptest."
+      ],
+      "specs": ["Plattform: PlayStation, Xbox, PC", "Genre: Action-RPG"],
+      "rating": {
+        "count": 3200,
+        "value": 4.5
+      }
+    },
+    {
+      "id": "38",
+      "title": "Super Mario Odyssey",
+      "category": "Spiele",
+      "price": {
+        "currency": "EUR",
+        "value": 49.99,
+        "discount": 0
+      },
+      "brand": "Nintendo",
+      "images": [
+        "https://m.media-amazon.com/images/I/81pDjV3P8wL._AC_UY218_.jpg"
+      ],
+      "features": [
+        "Begib dich auf eine unvergessliche Reise durch verschiedene Welten und erlebe ein episches Abenteuer voller Spaß, Action und Überraschungen in Super Mario Odyssey, einem bahnbrechenden Jump 'n' Run-Spiel für die Nintendo Switch!",
+        "Schlüpfe in die Rolle des berühmten Klempners Mario und begib dich auf die Suche nach Prinzessin Peach, die von dem bösen Bowser entführt wurde, während du dich durch farbenfrohe Welten, gefährliche Abenteuer und knifflige Rätsel kämpfst.",
+        "Nutze die einzigartigen Fähigkeiten von Marios mysteriösem Hut Cappy, um Feinde zu besiegen, Hindernisse zu überwinden und neue Bereiche zu erkunden, während du dich auf eine Reise durch die fantastischen Welten des Pilzkönigreichs begibst!"
+      ],
+      "specs": ["Plattform: Nintendo Switch", "Genre: Jump 'n' Run"],
+      "rating": {
+        "count": 4000,
+        "value": 4.8
+      }
+    },
+    {
+      "id": "39",
+      "title": "The Legend of Zelda: Breath of the Wild",
+      "category": "Spiele",
+      "price": {
+        "currency": "EUR",
+        "value": 59.99,
+        "discount": 0
+      },
+      "brand": "Nintendo",
+      "images": [
+        "https://m.media-amazon.com/images/I/61eQMEtMv6S._AC_UY218_.jpg"
+      ],
+      "features": [
+        "Erkunde eine atemberaubende offene Welt voller Abenteuer, Geheimnisse und Gefahren in The Legend of Zelda: Breath of the Wild, einem revolutionären Action-Adventure-Spiel für die Nintendo Switch!",
+        "Schlüpfe in die Rolle des mutigen Helden Link und begib dich auf die Suche nach Antworten in einer Welt, die von Dunkelheit und Verderben bedroht wird, während du dich durch weite Landschaften, gefährliche Dungeons und antike Ruinen kämpfst.",
+        "Nutze die Kräfte der Natur, die Weisheit der alten Gottheiten und die Magie der legendären Waffen, um deine Feinde zu besiegen, Rätsel zu lösen und das Schicksal des Königreichs Hyrule zu bestimmen!"
+      ],
+      "specs": ["Plattform: Nintendo Switch", "Genre: Action-Adventure"],
+      "rating": {
+        "count": 4500,
+        "value": 4.9
+      }
+    },
+    {
+      "id": "40",
+      "title": "Pokemon Sword and Shield",
+      "category": "Spiele",
+      "price": {
+        "currency": "EUR",
+        "value": 49.99,
+        "discount": 10
+      },
+      "brand": "Nintendo",
+      "images": [
+        "https://m.media-amazon.com/images/I/71o4KjuzwuL._AC_UL320_.jpg"
+      ],
+      "features": [
+        "Begib dich auf ein neues Abenteuer in der faszinierenden Welt der Pokémon und erlebe eine epische Reise durch die Galar-Region in Pokémon Sword and Shield, den neuesten Eintrag in der beliebten Rollenspielserie für die Nintendo Switch!",
+        "Schlüpfe in die Rolle eines jungen Pokémon-Trainers und beginne deine Reise, um Champion zu werden, indem du wilde Pokémon fängst, starke Trainer besiegst und dich durch die Arenen kämpfst, um dich zum besten Trainer der Region zu krönen.",
+        "Entdecke eine riesige offene Welt voller Pokémon, Geheimnisse und Herausforderungen, während du deine Fähigkeiten verbessert, dein Team aufbaust und dich auf die ultimative Herausforderung vorbereitest - den Kampf gegen die Top-Vier und den amtierenden Champion!"
+      ],
+      "specs": ["Plattform: Nintendo Switch", "Genre: Rollenspiel"],
+      "rating": {
+        "count": 3500,
+        "value": 4.7
+      }
+    },
+    {
+      "id": "41",
+      "title": "Bio-Bananen",
+      "category": "Obst",
+      "price": {
+        "currency": "EUR",
+        "value": 1.99,
+        "discount": 0
+      },
+      "brand": "NaturBio",
+      "images": [
+        "https://m.media-amazon.com/images/I/51yREoDTkzL._AC_UL320_.jpg"
+      ],
+      "features": [
+        "Genießen Sie köstliche Bio-Bananen, reich an Nährstoffen und Geschmack.",
+        "Hergestellt aus biologisch angebauten Bananen, frei von Pestiziden und chemischen Zusätzen.",
+        "Perfekt für einen gesunden Snack oder als Zutat in Smoothies und Desserts.",
+        "Erhalten Sie eine nachhaltige Energiequelle mit diesem natürlichen Lebensmittelprodukt."
+      ],
+      "specs": ["Herkunft: Ecuador", "Zertifizierung: Bio"],
+      "rating": {
+        "count": 56,
+        "value": 4.8
+      }
+    },
+    {
+      "id": "42",
+      "title": "Bio-Äpfel",
+      "category": "Lebensmittel",
+      "price": {
+        "currency": "EUR",
+        "value": 2.49,
+        "discount": 0
+      },
+      "brand": "NaturBio",
+      "images": [
+        "https://m.media-amazon.com/images/I/71BhKHl2SOL._AC_UL320_.jpg"
+      ],
+      "features": [
+        "Genießen Sie knackige Bio-Äpfel, reich an Vitaminen und Geschmack.",
+        "Hergestellt aus biologisch angebauten Äpfeln, frei von Pestiziden und chemischen Zusätzen.",
+        "Perfekt als gesunder Snack oder Zutat in Salaten und Backwaren.",
+        "Erhalten Sie eine köstliche und gesunde Option für Ihre tägliche Ernährung."
+      ],
+      "specs": ["Herkunft: Deutschland", "Zertifizierung: Bio"],
+      "rating": {
+        "count": 42,
+        "value": 4.7
+      }
+    },
+    {
+      "id": "43",
+      "title": "Bio-Karotten",
+      "category": "Lebensmittel",
+      "price": {
+        "currency": "EUR",
+        "value": 1.79,
+        "discount": 0
+      },
+      "brand": "NaturBio",
+      "images": [
+        "https://m.media-amazon.com/images/I/41kC1bd91cL._AC_UL320_.jpg"
+      ],
+      "features": [
+        "Genießen Sie frische Bio-Karotten, reich an Antioxidantien und Geschmack.",
+        "Hergestellt aus biologisch angebauten Karotten, frei von Pestiziden und chemischen Zusätzen.",
+        "Perfekt als gesunder Snack, Zutat in Suppen und Beilagen.",
+        "Erhalten Sie eine leckere und nahrhafte Option für Ihre Ernährung."
+      ],
+      "specs": ["Herkunft: Frankreich", "Zertifizierung: Bio"],
+      "rating": {
+        "count": 35,
+        "value": 4.6
+      }
+    },
+    {
+      "id": "44",
+      "title": "Bio-Orangen",
+      "category": "Lebensmittel",
+      "price": {
+        "currency": "EUR",
+        "value": 2.99,
+        "discount": 0
+      },
+      "brand": "NaturBio",
+      "images": [
+        "https://m.media-amazon.com/images/I/61S0PxNDE7L._AC_UL320_.jpg"
+      ],
+      "features": [
+        "Genießen Sie saftige Bio-Orangen, reich an Vitamin C und Geschmack.",
+        "Hergestellt aus biologisch angebauten Orangen, frei von Pestiziden und chemischen Zusätzen.",
+        "Perfekt als erfrischender Snack oder Zutat in Säften und Salaten.",
+        "Erhalten Sie eine gesunde und köstliche Option für Ihre Ernährung."
+      ],
+      "specs": ["Herkunft: Spanien", "Zertifizierung: Bio"],
+      "rating": {
+        "count": 28,
+        "value": 4.9
+      }
+    },
+    {
+      "id": "45",
+      "title": "Bio-Tomaten",
+      "category": "Lebensmittel",
+      "price": {
+        "currency": "EUR",
+        "value": 1.69,
+        "discount": 0
+      },
+      "brand": "NaturBio",
+      "images": [
+        "https://m.media-amazon.com/images/I/61krSCGAuML._AC_UL320_.jpg"
+      ],
+      "features": [
+        "Genießen Sie saftige Bio-Tomaten, reich an Antioxidantien und Geschmack.",
+        "Hergestellt aus biologisch angebauten Tomaten, frei von Pestiziden und chemischen Zusätzen.",
+        "Perfekt als Zutat in Salaten, Saucen und Pasta-Gerichten.",
+        "Erhalten Sie eine frische und gesunde Option für Ihre Küche."
+      ],
+      "specs": ["Herkunft: Italien", "Zertifizierung: Bio"],
+      "rating": {
+        "count": 38,
+        "value": 4.7
+      }
+    },
+    {
+      "id": "46",
+      "title": "Bio-Himbeeren",
+      "category": "Lebensmittel",
+      "price": {
+        "currency": "EUR",
+        "value": 3.49,
+        "discount": 0
+      },
+      "brand": "NaturBio",
+      "images": [
+        "https://m.media-amazon.com/images/I/71Dwx7Jgx-L._AC_UL320_.jpg"
+      ],
+      "features": [
+        "Genießen Sie aromatische Bio-Himbeeren, reich an Vitaminen und Geschmack.",
+        "Hergestellt aus biologisch angebauten Himbeeren, frei von Pestiziden und chemischen Zusätzen.",
+        "Perfekt als erfrischender Snack oder als Zutat in Desserts und Müslis.",
+        "Erhalten Sie eine leckere und gesunde Option für Ihre Ernährung."
+      ],
+      "specs": ["Herkunft: Deutschland", "Zertifizierung: Bio"],
+      "rating": {
+        "count": 23,
+        "value": 4.8
+      }
+    },
+    {
+      "id": "47",
+      "title": "Bio-Erdbeeren",
+      "category": "Lebensmittel",
+      "price": {
+        "currency": "EUR",
+        "value": 3.99,
+        "discount": 0
+      },
+      "brand": "NaturBio",
+      "images": [
+        "https://m.media-amazon.com/images/I/813-2RSZvRL._AC_UL320_.jpg"
+      ],
+      "features": [
+        "Genießen Sie süße Bio-Erdbeeren, reich an Antioxidantien und Geschmack.",
+        "Hergestellt aus biologisch angebauten Erdbeeren, frei von Pestiziden und chemischen Zusätzen.",
+        "Perfekt als gesunder Snack oder als Zutat in Smoothies und Desserts.",
+        "Erhalten Sie eine köstliche und fruchtige Option für Ihre Ernährung."
+      ],
+      "specs": ["Herkunft: Spanien", "Zertifizierung: Bio"],
+      "rating": {
+        "count": 31,
+        "value": 4.7
+      }
+    },
+    {
+      "id": "48",
+      "title": "Bio-Avocados",
+      "category": "Lebensmittel",
+      "price": {
+        "currency": "EUR",
+        "value": 2.79,
+        "discount": 0
+      },
+      "brand": "NaturBio",
+      "images": [
+        "https://m.media-amazon.com/images/I/81JbOHs7U-L._AC_UL320_.jpg"
+      ],
+      "features": [
+        "Genießen Sie cremige Bio-Avocados, reich an gesunden Fetten und Geschmack.",
+        "Hergestellt aus biologisch angebauten Avocados, frei von Pestiziden und chemischen Zusätzen.",
+        "Perfekt als gesunde Zutat in Salaten, Sandwiches und Dips.",
+        "Erhalten Sie eine vielseitige und nahrhafte Option für Ihre Ernährung."
+      ],
+      "specs": ["Herkunft: Mexiko", "Zertifizierung: Bio"],
+      "rating": {
+        "count": 19,
+        "value": 4.9
+      }
+    },
+    {
+      "id": "49",
+      "title": "Bio-Blaubeeren",
+      "category": "Lebensmittel",
+      "price": {
+        "currency": "EUR",
+        "value": 4.29,
+        "discount": 0
+      },
+      "brand": "NaturBio",
+      "images": [
+        "https://m.media-amazon.com/images/I/71iyn6eJcjS._AC_UL320_.jpg"
+      ],
+      "features": [
+        "Genießen Sie saftige Bio-Blaubeeren, reich an Antioxidantien und Geschmack.",
+        "Hergestellt aus biologisch angebauten Blaubeeren, frei von Pestiziden und chemischen Zusätzen.",
+        "Perfekt als gesunder Snack oder als Zutat in Backwaren und Müslis.",
+        "Erhalten Sie eine köstliche und gesunde Option für Ihre Ernährung."
+      ],
+      "specs": ["Herkunft: USA", "Zertifizierung: Bio"],
+      "rating": {
+        "count": 27,
+        "value": 4.8
+      }
+    },
+    {
+      "id": "50",
+      "title": "Bio-Mangos",
+      "category": "Lebensmittel",
+      "price": {
+        "currency": "EUR",
+        "value": 2.99,
+        "discount": 0
+      },
+      "brand": "NaturBio",
+      "images": [
+        "https://m.media-amazon.com/images/I/81CRPE5nJfL._AC_UL320_.jpg"
+      ],
+      "features": [
+        "Genießen Sie saftige Bio-Mangos, reich an Vitaminen und Geschmack.",
+        "Hergestellt aus biologisch angebauten Mangos, frei von Pestiziden und chemischen Zusätzen.",
+        "Perfekt als erfrischender Snack oder als Zutat in Säften und Salaten.",
+        "Erhalten Sie eine tropische und gesunde Option für Ihre Ernährung."
+      ],
+      "specs": ["Herkunft: Indien", "Zertifizierung: Bio"],
+      "rating": {
+        "count": 35,
+        "value": 4.6
+      }
+    },
+    {
+      "id": "51",
+      "title": "Bio-Grüner Tee",
+      "category": "Getränke",
+      "price": {
+        "currency": "EUR",
+        "value": 3.99,
+        "discount": 0
+      },
+      "brand": "NaturBio",
+      "images": [
+        "https://m.media-amazon.com/images/I/81vqLtmiYWL._AC_UL320_.jpg"
+      ],
+      "features": [
+        "Genießen Sie erfrischenden Bio-Grünen Tee, reich an Antioxidantien und Geschmack.",
+        "Hergestellt aus hochwertigen grünen Teeblättern, frei von Pestiziden und chemischen Zusätzen.",
+        "Perfekt als belebendes Getränk zu jeder Tageszeit.",
+        "Erhalten Sie eine gesunde und erfrischende Option für Ihre Ernährung."
+      ],
+      "specs": ["Herkunft: China", "Zertifizierung: Bio"],
+      "rating": {
+        "count": 18,
+        "value": 4.7
+      }
+    },
+    {
+      "id": "52",
+      "title": "Bio-Kaffeebohnen",
+      "category": "Getränke",
+      "price": {
+        "currency": "EUR",
+        "value": 6.99,
+        "discount": 0
+      },
+      "brand": "NaturBio",
+      "images": [
+        "https://m.media-amazon.com/images/I/71XTF1k721L._AC_UL320_.jpg"
+      ],
+      "features": [
+        "Genießen Sie aromatische Bio-Kaffeebohnen, reich an Geschmack und Aroma.",
+        "Hergestellt aus hochwertigen Kaffeebohnen, frei von Pestiziden und chemischen Zusätzen.",
+        "Perfekt für die Zubereitung von köstlichem Kaffee zu Hause.",
+        "Erhalten Sie eine belebende und geschmackvolle Option für Ihren Morgenkaffee."
+      ],
+      "specs": ["Herkunft: Äthiopien", "Zertifizierung: Bio"],
+      "rating": {
+        "count": 25,
+        "value": 4.8
+      }
+    },
+    {
+      "id": "53",
+      "title": "Bio-Orangensaft",
+      "category": "Getränke",
+      "price": {
+        "currency": "EUR",
+        "value": 2.49,
+        "discount": 0
+      },
+      "brand": "NaturBio",
+      "images": [
+        "https://m.media-amazon.com/images/I/71-uPluARyL._AC_UL320_.jpg"
+      ],
+      "features": [
+        "Genießen Sie frischen Bio-Orangensaft, reich an Vitaminen und Geschmack.",
+        "Hergestellt aus biologisch angebauten Orangen, frei von Pestiziden und chemischen Zusätzen.",
+        "Perfekt für einen gesunden Start in den Tag oder als erfrischendes Getränk zwischendurch.",
+        "Erhalten Sie eine köstliche und natürliche Option für Ihre Ernährung."
+      ],
+      "specs": ["Herkunft: Spanien", "Zertifizierung: Bio"],
+      "rating": {
+        "count": 34,
+        "value": 4.6
+      }
+    },
+    {
+      "id": "54",
+      "title": "Bio-Himbeerlimonade",
+      "category": "Getränke",
+      "price": {
+        "currency": "EUR",
+        "value": 2.99,
+        "discount": 0
+      },
+      "brand": "NaturBio",
+      "images": [
+        "https://m.media-amazon.com/images/I/71nWbgs81sL._AC_UL320_.jpg"
+      ],
+      "features": [
+        "Genießen Sie erfrischende Bio-Himbeerlimonade, reich an fruchtigem Geschmack.",
+        "Hergestellt aus biologischen Himbeeren und natürlichen Zutaten, ohne künstliche Zusätze.",
+        "Perfekt für heiße Sommertage oder als erfrischender Durstlöscher zu jeder Zeit.",
+        "Erhalten Sie eine köstliche und erfrischende Option für Ihre Getränkeauswahl."
+      ],
+      "specs": ["Herkunft: Deutschland", "Zertifizierung: Bio"],
+      "rating": {
+        "count": 22,
+        "value": 4.7
+      }
+    },
+    {
+      "id": "55",
+      "title": "Bio-Himbeerlimonade",
+      "category": "Getränke",
+      "price": {
+        "currency": "EUR",
+        "value": 2.79,
+        "discount": 0
+      },
+      "brand": "NaturBio",
+      "images": [
+        "https://m.media-amazon.com/images/I/813j+Nj76yL._AC_UL320_.jpg"
+      ],
+      "features": [
+        "Genießen Sie spritzige Bio-Himbeerlimonade, handgemacht und erfrischend.",
+        "Hergestellt aus biologisch angebauten Himbeeren, ohne künstliche Aromen.",
+        "Perfekt als Sommergetränk oder für besondere Anlässe.",
+        "Erhalten Sie einen fruchtigen und belebenden Durstlöscher."
+      ],
+      "specs": ["Herkunft: Italien", "Zertifizierung: Bio"],
+      "rating": {
+        "count": 26,
+        "value": 4.7
+      }
+    },
+    {
+      "id": "56",
+      "title": "Bio-Ingwertee",
+      "category": "Getränke",
+      "price": {
+        "currency": "EUR",
+        "value": 3.49,
+        "discount": 0
+      },
+      "brand": "NaturBio",
+      "images": [
+        "https://m.media-amazon.com/images/I/614Pdy3ENRL._AC_UL320_.jpg"
+      ],
+      "features": [
+        "Genießen Sie würzigen Bio-Ingwertee, ideal für eine belebende Tasse.",
+        "Hergestellt aus biologisch angebautem Ingwer, ohne künstliche Zusätze.",
+        "Perfekt als wärmendes Getränk an kalten Tagen.",
+        "Erhalten Sie einen belebenden und aromatischen Teegenuss."
+      ],
+      "specs": ["Herkunft: Indien", "Zertifizierung: Bio"],
+      "rating": {
+        "count": 29,
+        "value": 4.9
+      }
+    },
+    {
+      "id": "57",
+      "title": "Bio-Schweinekoteletts",
+      "category": "Fleisch",
+      "price": {
+        "currency": "EUR",
+        "value": 6.49,
+        "discount": 0
+      },
+      "brand": "Bauernglück",
+      "images": [
+        "https://m.media-amazon.com/images/I/61PGCoQ-1pL._AC_UL320_.jpg"
+      ],
+      "features": [
+        "Genießen Sie saftige Bio-Schweinekoteletts, von glücklichen Bio-Schweinen aufgezogen.",
+        "Hergestellt aus artgerecht gehaltenen Schweinen, für besten Geschmack und Zartheit.",
+        "Perfekt für schnelle und köstliche Mahlzeiten auf dem Grill oder in der Pfanne.",
+        "Erhalten Sie hochwertiges Fleisch aus nachhaltiger Landwirtschaft."
+      ],
+      "specs": ["Herkunft: Deutschland", "Zertifizierung: Bio"],
+      "rating": {
+        "count": 25,
+        "value": 4.7
+      }
+    },
+    {
+      "id": "58",
+      "title": "Bio-Lammkeule",
+      "category": "Fleisch",
+      "price": {
+        "currency": "EUR",
+        "value": 12.99,
+        "discount": 0
+      },
+      "brand": "Gutshof",
+      "images": [
+        "https://m.media-amazon.com/images/I/71PBE9-Xp3L._AC_UL320_.jpg"
+      ],
+      "features": [
+        "Genießen Sie zarte Bio-Lammkeule, reich an Aroma und Nährstoffen.",
+        "Hergestellt aus artgerecht gehaltenen Bio-Lämmern, für besten Geschmack und Textur.",
+        "Perfekt für traditionelle Gerichte wie Lammbraten oder als besonderes Highlight auf dem Grill.",
+        "Erhalten Sie hochwertiges Lammfleisch aus ökologischer Landwirtschaft."
+      ],
+      "specs": ["Herkunft: Neuseeland", "Zertifizierung: Bio"],
+      "rating": {
+        "count": 14,
+        "value": 4.6
+      }
+    },
+    {
+      "id": "59",
+      "title": "Bio-Rindergulasch",
+      "category": "Lebensmittel",
+      "price": {
+        "currency": "EUR",
+        "value": 10.49,
+        "discount": 0
+      },
+      "brand": "BioFarm",
+      "images": [
+        "https://m.media-amazon.com/images/I/81ThjuTkogL._AC_UL320_.jpg"
+      ],
+      "features": [
+        "Genießen Sie herzhaftes Bio-Rindergulasch, perfekt zubereitet für Ihren Genuss.",
+        "Hergestellt aus hochwertigem Bio-Rindfleisch und ausgewählten Zutaten für besten Geschmack.",
+        "Perfekt für traditionelle Gerichte wie Gulaschsuppe oder als Hauptgericht mit Kartoffeln.",
+        "Erhalten Sie eine authentische und köstliche Mahlzeit aus kontrollierter Bio-Landwirtschaft."
+      ],
+      "specs": ["Herkunft: Deutschland", "Zertifizierung: Bio"],
+      "rating": {
+        "count": 20,
+        "value": 4.8
+      }
+    },
+    {
+      "id": "60",
+      "title": "Bio-Hackfleisch vom Rind",
+      "category": "Lebensmittel",
+      "price": {
+        "currency": "EUR",
+        "value": 7.99,
+        "discount": 0
+      },
+      "brand": "BioLand",
+      "images": [
+        "https://m.media-amazon.com/images/I/61WbzZ4x8NL._AC_UL320_.jpg"
+      ],
+      "features": [
+        "Genießen Sie mageres Bio-Hackfleisch vom Rind, perfekt für vielseitige Gerichte.",
+        "Hergestellt aus hochwertigem Bio-Rindfleisch, ohne Zusatzstoffe oder Füllstoffe.",
+        "Perfekt für die Zubereitung von Bolognese, Burger-Patties oder gefüllten Paprikaschoten.",
+        "Erhalten Sie hochwertiges und frisches Rinderhackfleisch aus kontrollierter Bio-Landwirtschaft."
+      ],
+      "specs": ["Herkunft: Deutschland", "Zertifizierung: Bio"],
+      "rating": {
+        "count": 28,
+        "value": 4.7
+      }
+    },
+    {
+      "id": "61",
+      "title": "Kinderwagen",
+      "category": "Baby",
+      "price": {
+        "currency": "EUR",
+        "value": 187.99,
+        "discount": 0
+      },
+      "brand": "Cybex",
+      "images": [
+        "https://m.media-amazon.com/images/I/71ktx7eJiWL._AC_UY218_.jpg"
+      ],
+      "features": [
+        "Robuster und sicherer Kinderwagen, ideal für Spaziergänge mit Ihrem Baby.",
+        "Ausgestattet mit einem bequemen Sitz und einem verstellbaren Verdeck zum Schutz vor Sonne und Regen.",
+        "Einfach zusammenklappbar für platzsparende Aufbewahrung und Transport.",
+        "Mit einem geräumigen Korb für Einkäufe oder Babyutensilien."
+      ],
+      "specs": ["Altersempfehlung: ab Geburt bis 15 kg", "Gewicht: 9,5 kg"],
+      "rating": {
+        "count": 28,
+        "value": 4.7
+      }
+    },
+    {
+      "id": "62",
+      "title": "Babytrage",
+      "category": "Baby",
+      "price": {
+        "currency": "EUR",
+        "value": 129.99,
+        "discount": 0
+      },
+      "brand": "Ergobaby",
+      "images": [
+        "https://m.media-amazon.com/images/I/61ZBwMqcDlL._AC_UL320_.jpg"
+      ],
+      "features": [
+        "Ergonomisches Design für bequemes Tragen.",
+        "Verstellbare Träger für optimale Passform.",
+        "Maschinenwaschbar für einfache Reinigung."
+      ],
+      "specs": ["Geeignet für Babys und Kleinkinder bis 20 kg."],
+      "rating": {
+        "count": 15,
+        "value": 4.5
+      }
+    },
+    {
+      "id": "63",
+      "title": "Babybett",
+      "category": "Baby",
+      "price": {
+        "currency": "EUR",
+        "value": 249.99,
+        "discount": 0
+      },
+      "brand": "Babybay",
+      "images": [
+        "https://m.media-amazon.com/images/I/81ueKA-7mqL._AC_UL320_.jpg"
+      ],
+      "features": [
+        "Beistellbett für sicheren Schlaf neben dem Elternbett.",
+        "Höhenverstellbar für einfaches Anpassen.",
+        "Aus nachhaltigen Materialien gefertigt."
+      ],
+      "specs": ["Geeignet ab Geburt bis 24 Monate."],
+      "rating": {
+        "count": 10,
+        "value": 4.8
+      }
+    },
+    {
+      "id": "64",
+      "title": "Babybadewanne",
+      "category": "Baby",
+      "price": {
+        "currency": "EUR",
+        "value": 34.99,
+        "discount": 0
+      },
+      "brand": "Rotho Babydesign",
+      "images": [
+        "https://m.media-amazon.com/images/I/61ntWWA6d0L._AC_UL320_.jpg"
+      ],
+      "features": [
+        "Ergonomisches Design für sicheren und bequemen Badespaß.",
+        "Rutschfeste Oberfläche für zusätzliche Sicherheit.",
+        "Mit Ablaufstopfen für einfaches Entleeren."
+      ],
+      "specs": ["Geeignet für Babys bis zu 12 Monaten."],
+      "rating": {
+        "count": 20,
+        "value": 4.6
+      }
+    },
+    {
+      "id": "65",
+      "title": "Babytragetasche",
+      "category": "Baby",
+      "price": {
+        "currency": "EUR",
+        "value": 59.99,
+        "discount": 0
+      },
+      "brand": "Lässig",
+      "images": [
+        "https://m.media-amazon.com/images/I/61BYawe5niL._AC_UL320_.jpg"
+      ],
+      "features": [
+        "Vielseitige Tragetasche für unterwegs.",
+        "Mit integrierter Wickelunterlage für schnelles Wickeln.",
+        "Isoliertes Fach für Flaschen."
+      ],
+      "specs": ["Geeignet für Babys und Kleinkinder bis 12 kg."],
+      "rating": {
+        "count": 12,
+        "value": 4.4
+      }
+    },
+    {
+      "id": "66",
+      "title": "Babytragetuch",
+      "category": "Baby",
+      "price": {
+        "currency": "EUR",
+        "value": 39.99,
+        "discount": 0
+      },
+      "brand": "Didymos",
+      "images": [
+        "https://m.media-amazon.com/images/I/81srdy8JOpL._AC_UL320_.jpg"
+      ],
+      "features": [
+        "Flexibles Tragetuch für enge Bindung zwischen Eltern und Baby.",
+        "Hochwertige Materialien für Komfort und Sicherheit.",
+        "Ergonomische Tragepositionen für Babys."
+      ],
+      "specs": ["Geeignet für Babys bis zu 15 kg."],
+      "rating": {
+        "count": 18,
+        "value": 4.9
+      }
+    },
+    {
+      "id": "67",
+      "title": "Baby Autositz",
+      "category": "Baby",
+      "price": {
+        "currency": "EUR",
+        "value": 189.99,
+        "discount": 0
+      },
+      "brand": "Maxi-Cosi",
+      "images": [
+        "https://m.media-amazon.com/images/I/71O2dsjj8xL._AC_UL320_.jpg"
+      ],
+      "features": [
+        "Sicherer Autositz für Babys und Kleinkinder.",
+        "Einfache Installation mit Isofix oder Sicherheitsgurt.",
+        "Verstellbare Kopfstütze und Gurte für mitwachsenden Komfort."
+      ],
+      "specs": ["Geeignet für Babys von Geburt bis etwa 4 Jahre."],
+      "rating": {
+        "count": 25,
+        "value": 4.6
+      }
+    },
+    {
+      "id": "68",
+      "title": "Baby-Spielzeugset",
+      "category": "Baby",
+      "price": {
+        "currency": "EUR",
+        "value": 29.99,
+        "discount": 0
+      },
+      "brand": "Fisher-Price",
+      "images": [
+        "https://m.media-amazon.com/images/I/61bGaNc6DXL._AC_UL320_.jpg"
+      ],
+      "features": [
+        "Buntes Spielzeugset zur Förderung der motorischen Fähigkeiten.",
+        "Verschiedene Spielzeuge für sensorische Entwicklung.",
+        "Robuste Konstruktion für sicheres Spielen."
+      ],
+      "specs": ["Enthält verschiedene Spielzeuge für Babys ab 6 Monaten."],
+      "rating": {
+        "count": 30,
+        "value": 4.8
+      }
+    },
+    {
+      "id": "69",
+      "title": "Baby Wickelrucksack",
+      "category": "Baby",
+      "price": {
+        "currency": "EUR",
+        "value": 49.99,
+        "discount": 0
+      },
+      "brand": "Skip Hop",
+      "images": [
+        "https://m.media-amazon.com/images/I/61DQn46pL-L._AC_UL320_.jpg"
+      ],
+      "features": [
+        "Praktischer Wickelrucksack für unterwegs.",
+        "Mit vielen Taschen und Fächern für Organisation.",
+        "Inklusive Wickelunterlage und isoliertem Flaschenhalter."
+      ],
+      "specs": [
+        "Stilvoll und funktional für Eltern mit Babys und Kleinkindern."
+      ],
+      "rating": {
+        "count": 15,
+        "value": 4.7
+      }
+    },
+    {
+      "id": "70",
+      "title": "Baby-Hochstuhl",
+      "category": "Baby",
+      "price": {
+        "currency": "EUR",
+        "value": 79.99,
+        "discount": 0
+      },
+      "brand": "Stokke",
+      "images": [
+        "https://m.media-amazon.com/images/I/61-uWlT4Z5L._AC_UL320_.jpg"
+      ],
+      "features": [
+        "Hochwertiger Hochstuhl für Babys und Kleinkinder.",
+        "Verstellbare Sitz- und Fußstütze für mitwachsenden Komfort.",
+        "Leicht zu reinigendes Tablett und abnehmbares Tablett."
+      ],
+      "specs": ["Geeignet für Babys und Kleinkinder ab 6 Monaten."],
+      "rating": {
+        "count": 20,
+        "value": 4.9
+      }
+    },
+    {
+      "id": "71",
+      "title": "Baby-Laufstall",
+      "category": "Baby",
+      "price": {
+        "currency": "EUR",
+        "value": 149.99,
+        "discount": 0
+      },
+      "brand": "Hauck",
+      "images": [
+        "https://m.media-amazon.com/images/I/712ghZ2jmlL._AC_UL320_.jpg"
+      ],
+      "features": [
+        "Robuster Laufstall für sicheres Spielen und Entdecken.",
+        "Einfach zusammenklappbar für platzsparende Aufbewahrung.",
+        "Mit gepolstertem Boden für zusätzlichen Komfort."
+      ],
+      "specs": ["Maße: 100 x 100 cm, Höhe: 70 cm."],
+      "rating": {
+        "count": 8,
+        "value": 4.5
+      }
+    },
+    {
+      "id": "72",
+      "title": "Baby-Schlafsack",
+      "category": "Baby",
+      "price": {
+        "currency": "EUR",
+        "value": 24.99,
+        "discount": 0
+      },
+      "brand": "Aden + Anais",
+      "images": [
+        "https://m.media-amazon.com/images/I/71tBDRJosPL._AC_UL320_.jpg"
+      ],
+      "features": [
+        "Weicher und atmungsaktiver Schlafsack für Babys.",
+        "Ärmellos für optimale Temperaturregulierung.",
+        "Maschinenwaschbar für einfache Pflege."
+      ],
+      "specs": ["Größe: 0-6 Monate, Länge: 60 cm."],
+      "rating": {
+        "count": 12,
+        "value": 4.6
+      }
+    },
+    {
+      "id": "73",
+      "title": "Baby-Spielmatte",
+      "category": "Baby",
+      "price": {
+        "currency": "EUR",
+        "value": 54.99,
+        "discount": 0
+      },
+      "brand": "Skip Hop",
+      "images": [
+        "https://m.media-amazon.com/images/I/71yY3mUk97L._AC_UL320_.jpg"
+      ],
+      "features": [
+        "Bunte Spielmatte für sicheres Krabbeln und Spielen.",
+        "Gepolsterter Untergrund für Komfort und Sicherheit.",
+        "Leicht zu reinigen und zusammenzufalten."
+      ],
+      "specs": ["Maße: 150 x 100 cm, Dicke: 1 cm."],
+      "rating": {
+        "count": 15,
+        "value": 4.7
+      }
+    },
+    {
+      "id": "74",
+      "title": "Baby-Trinklernbecher",
+      "category": "Baby",
+      "price": {
+        "currency": "EUR",
+        "value": 9.99,
+        "discount": 0
+      },
+      "brand": "Nuk",
+      "images": [
+        "https://m.media-amazon.com/images/I/814mMxm72yL._AC_UL320_.jpg"
+      ],
+      "features": [
+        "Leicht zu haltender Trinklernbecher für Babys.",
+        "Auslaufsicher für sauberes Trinken.",
+        "Spülmaschinenfest für einfache Reinigung."
+      ],
+      "specs": ["Fassungsvermögen: 150 ml, BPA-frei."],
+      "rating": {
+        "count": 20,
+        "value": 4.4
+      }
+    },
+    {
+      "id": "75",
+      "title": "Baby-Fieberthermometer",
+      "category": "Baby",
+      "price": {
+        "currency": "EUR",
+        "value": 19.99,
+        "discount": 0
+      },
+      "brand": "Braun",
+      "images": [
+        "https://m.media-amazon.com/images/I/81O0XBfPl4L._AC_UL320_.jpg"
+      ],
+      "features": [
+        "Zuverlässiges Fieberthermometer für Babys und Kleinkinder.",
+        "Schnelle und genaue Messergebnisse.",
+        "Mit flexiblem Spitzen für angenehme Anwendung."
+      ],
+      "specs": ["Messbereich: 32°C bis 42,9°C, Inklusive Schutzkappe."],
+      "rating": {
+        "count": 30,
+        "value": 4.9
+      }
+    },
+    {
+      "id": "76",
+      "title": "Baby Wickelrucksack",
+      "category": "Baby",
+      "price": {
+        "currency": "EUR",
+        "value": 49.99,
+        "discount": 0
+      },
+      "brand": "Skip Hop",
+      "images": [
+        "https://m.media-amazon.com/images/I/61v9reWscmL._AC_UL320_.jpg"
+      ],
+      "features": [
+        "Praktischer Wickelrucksack für unterwegs.",
+        "Mit vielen Taschen und Fächern für Organisation.",
+        "Inklusive Wickelunterlage und isoliertem Flaschenhalter."
+      ],
+      "specs": [
+        "Stilvoll und funktional für Eltern mit Babys und Kleinkindern."
+      ],
+      "rating": {
+        "count": 15,
+        "value": 4.7
+      }
+    },
+    {
+      "id": "77",
+      "title": "Baby-Hochstuhl",
+      "category": "Baby",
+      "price": {
+        "currency": "EUR",
+        "value": 79.99,
+        "discount": 0
+      },
+      "brand": "Stokke",
+      "images": [
+        "https://m.media-amazon.com/images/I/81e1lCUvgSL._AC_UL320_.jpg"
+      ],
+      "features": [
+        "Hochwertiger Hochstuhl für Babys und Kleinkinder.",
+        "Verstellbare Sitz- und Fußstütze für mitwachsenden Komfort.",
+        "Leicht zu reinigendes Tablett und abnehmbares Tablett."
+      ],
+      "specs": ["Geeignet für Babys und Kleinkinder ab 6 Monaten."],
+      "rating": {
+        "count": 20,
+        "value": 4.9
+      }
+    },
+    {
+      "id": "78",
+      "title": "Baby-Laufstall",
+      "category": "Baby",
+      "price": {
+        "currency": "EUR",
+        "value": 149.99,
+        "discount": 0
+      },
+      "brand": "Hauck",
+      "images": [
+        "https://m.media-amazon.com/images/I/61Ts4wXRBtL._AC_UL320_.jpg"
+      ],
+      "features": [
+        "Robuster Laufstall für sicheres Spielen und Entdecken.",
+        "Einfach zusammenklappbar für platzsparende Aufbewahrung.",
+        "Mit gepolstertem Boden für zusätzlichen Komfort."
+      ],
+      "specs": ["Maße: 100 x 100 cm, Höhe: 70 cm."],
+      "rating": {
+        "count": 8,
+        "value": 4.5
+      }
+    },
+    {
+      "id": "79",
+      "title": "Baby-Schlafsack",
+      "category": "Baby",
+      "price": {
+        "currency": "EUR",
+        "value": 24.99,
+        "discount": 0
+      },
+      "brand": "Aden + Anais",
+      "images": [
+        "https://m.media-amazon.com/images/I/71TSwnwY7OL._AC_UL320_.jpg"
+      ],
+      "features": [
+        "Weicher und atmungsaktiver Schlafsack für Babys.",
+        "Ärmellos für optimale Temperaturregulierung.",
+        "Maschinenwaschbar für einfache Pflege."
+      ],
+      "specs": ["Größe: 0-6 Monate, Länge: 60 cm."],
+      "rating": {
+        "count": 12,
+        "value": 4.6
+      }
+    },
+    {
+      "id": "80",
+      "title": "Baby-Schlafsack",
+      "category": "Baby",
+      "price": {
+        "currency": "EUR",
+        "value": 24.99,
+        "discount": 0
+      },
+      "brand": "Aden + Anais",
+      "images": [
+        "https://m.media-amazon.com/images/I/71iz3SngVbL._AC_UL320_.jpg"
+      ],
+      "features": [
+        "Weicher und atmungsaktiver Schlafsack für Babys.",
+        "Ärmellos für optimale Temperaturregulierung.",
+        "Maschinenwaschbar für einfache Pflege."
+      ],
+      "specs": ["Größe: 0-6 Monate, Länge: 60 cm."],
+      "rating": {
+        "count": 12,
+        "value": 4.6
+      }
+    },
+    {
+      "id": "81",
+      "title": "Siddhartha",
+      "category": "Buch",
+      "price": {
+        "currency": "EUR",
+        "value": 12.99,
+        "discount": 0
+      },
+      "author": "Hermann Hesse",
+      "publisher": "Suhrkamp Verlag",
+      "images": [
+        "https://m.media-amazon.com/images/I/712IFFxJMZL._AC_UY218_.jpg"
+      ],
+      "description": "Siddhartha ist eine allegorische Erzählung von Hermann Hesse, die im alten Indien spielt und die spirituelle Reise eines jungen Mannes namens Siddhartha darstellt.",
+      "features": [
+        "Eine tiefgründige Erzählung über die Suche nach spiritueller Erleuchtung und Selbstfindung.",
+        "Klassiker der Weltliteratur, der zeitlose Themen behandelt.",
+        "Geeignet für Leser jeden Alters, die nach Inspiration suchen."
+      ],
+      "specs": ["Seitenzahl: 192 Seiten", "Format: Taschenbuch"],
+      "rating": {
+        "count": 35,
+        "value": 4.8
+      }
+    },
+    {
+      "id": "82",
+      "title": "Der Steppenwolf",
+      "category": "Buch",
+      "price": {
+        "currency": "EUR",
+        "value": 11.99,
+        "discount": 0
+      },
+      "author": "Hermann Hesse",
+      "publisher": "Suhrkamp Verlag",
+      "images": [
+        "https://m.media-amazon.com/images/I/71JI9Ij+HhL._AC_UY218_.jpg"
+      ],
+      "description": "Der Steppenwolf ist ein Roman von Hermann Hesse, der die innere Zerrissenheit und Suche nach Identität eines einsamen Intellektuellen namens Harry Haller erkundet.",
+      "features": [
+        "Ein Klassiker der modernen Literatur, der existenzielle Themen behandelt.",
+        "Tiefgründige Reflexionen über Einsamkeit, Selbstentfremdung und die Suche nach Bedeutung.",
+        "Für Leser, die nach einer literarischen Reise in die menschliche Psyche suchen."
+      ],
+      "specs": ["Seitenzahl: 256 Seiten", "Format: Taschenbuch"],
+      "rating": {
+        "count": 28,
+        "value": 4.7
+      }
+    },
+    {
+      "id": "83",
+      "title": "Demian",
+      "category": "Buch",
+      "price": {
+        "currency": "EUR",
+        "value": 10.99,
+        "discount": 0
+      },
+      "author": "Hermann Hesse",
+      "publisher": "Suhrkamp Verlag",
+      "images": [
+        "https://m.media-amazon.com/images/I/715Bi7T+8TL._AC_UY218_.jpg"
+      ],
+      "description": "Demian ist ein Roman von Hermann Hesse, der die innere Entwicklung eines Jugendlichen namens Emil Sinclair und seinen Weg zur Selbstfindung und spirituellen Erkenntnis beschreibt.",
+      "features": [
+        "Ein fesselnder Roman über die Reise zur Selbstverwirklichung und individuellen Freiheit.",
+        "Tiefe philosophische und spirituelle Themen, die zum Nachdenken anregen.",
+        "Geeignet für Leser, die sich für Psychologie und Spiritualität interessieren."
+      ],
+      "specs": ["Seitenzahl: 176 Seiten", "Format: Taschenbuch"],
+      "rating": {
+        "count": 15,
+        "value": 4.6
+      }
+    },
+    {
+      "id": "84",
+      "title": "Narziss und Goldmund",
+      "category": "Buch",
+      "price": {
+        "currency": "EUR",
+        "value": 13.99,
+        "discount": 0
+      },
+      "author": "Hermann Hesse",
+      "publisher": "Suhrkamp Verlag",
+      "images": [
+        "https://m.media-amazon.com/images/I/81HNTVqbUiS._AC_UY218_.jpg"
+      ],
+      "description": "Narziss und Goldmund ist ein Roman von Hermann Hesse, der die Geschichte einer tiefen Freundschaft zwischen zwei gegensätzlichen Persönlichkeiten, dem asketischen Mönch Narziss und dem lebenslustigen Künstler Goldmund, erzählt.",
+      "features": [
+        "Ein ergreifendes Werk über die Suche nach Identität und die Dualität menschlicher Natur.",
+        "Kraftvolle Beschreibung von Freundschaft, Liebe und kreativem Schaffen.",
+        "Für Leser, die sich für die menschliche Seele und das Wesen der Kunst interessieren."
+      ],
+      "specs": ["Seitenzahl: 384 Seiten", "Format: Taschenbuch"],
+      "rating": {
+        "count": 20,
+        "value": 4.8
+      }
+    },
+    {
+      "id": "85",
+      "title": "Das Glasperlenspiel",
+      "category": "Buch",
+      "price": {
+        "currency": "EUR",
+        "value": 14.99,
+        "discount": 0
+      },
+      "author": "Hermann Hesse",
+      "publisher": "Suhrkamp Verlag",
+      "images": [
+        "https://m.media-amazon.com/images/I/41pws50yHoL._AC_UY218_.jpg"
+      ],
+      "description": "Das Glasperlenspiel ist ein Roman von Hermann Hesse, der in einer utopischen Gesellschaft spielt, in der intellektuelle Spiele und das Streben nach Wissen und Weisheit im Vordergrund stehen.",
+      "features": [
+        "Ein philosophischer Roman über die Bedeutung von Wissen, Spiritualität und persönlichem Wachstum.",
+        "Komplexes und fesselndes Erzählen, das zum Nachdenken anregt.",
+        "Für Leser, die sich für utopische Literatur und philosophische Diskussionen interessieren."
+      ],
+      "specs": ["Seitenzahl: 576 Seiten", "Format: Taschenbuch"],
+      "rating": {
+        "count": 25,
+        "value": 4.7
+      }
+    },
+    {
+      "id": "86",
+      "title": "Unterm Rad",
+      "category": "Buch",
+      "price": {
+        "currency": "EUR",
+        "value": 9.99,
+        "discount": 0
+      },
+      "author": "Hermann Hesse",
+      "publisher": "Suhrkamp Verlag",
+      "images": [
+        "https://m.media-amazon.com/images/I/71ufAJoKvwL._AC_UY218_.jpg"
+      ],
+      "description": "Unterm Rad ist ein Roman von Hermann Hesse, der die Geschichte eines begabten Schülers namens Hans Giebenrath erzählt, der unter dem Druck der Erwartungen von Gesellschaft und Familie leidet.",
+      "features": [
+        "Eine eindringliche Erzählung über die Gefahren von übermäßigem Leistungsdruck und Selbstverleugnung.",
+        "Aktuelle Themen über Bildung, Jugend und soziale Erwartungen.",
+        "Für Leser, die nach bedeutungsvollen Geschichten über die Herausforderungen des Lebens suchen."
+      ],
+      "specs": ["Seitenzahl: 192 Seiten", "Format: Taschenbuch"],
+      "rating": {
+        "count": 18,
+        "value": 4.6
+      }
+    },
+    {
+      "id": "87",
+      "title": "Die Morgenlandfahrt",
+      "category": "Buch",
+      "price": {
+        "currency": "EUR",
+        "value": 8.99,
+        "discount": 0
+      },
+      "author": "Hermann Hesse",
+      "publisher": "Suhrkamp Verlag",
+      "images": [
+        "https://m.media-amazon.com/images/I/71XTuYKHM0L._AC_UY218_.jpg"
+      ],
+      "description": "Die Morgenlandfahrt ist eine Erzählung von Hermann Hesse, die eine allegorische Reise einer Gruppe von Menschen auf der Suche nach spiritueller Erkenntnis und persönlicher Transformation darstellt.",
+      "features": [
+        "Eine symbolische Reise über die Suche nach Wahrheit und spiritueller Erfüllung.",
+        "Fesselnde Erzählung, die den Leser auf eine innere Reise mitnimmt.",
+        "Für Leser, die nach tieferen Einsichten in die menschliche Natur und das Streben nach Erleuchtung suchen."
+      ],
+      "specs": ["Seitenzahl: 160 Seiten", "Format: Taschenbuch"],
+      "rating": {
+        "count": 20,
+        "value": 4.8
+      }
+    },
+    {
+      "id": "88",
+      "title": "Kurgast",
+      "category": "Buch",
+      "price": {
+        "currency": "EUR",
+        "value": 7.99,
+        "discount": 0
+      },
+      "author": "Hermann Hesse",
+      "publisher": "Suhrkamp Verlag",
+      "images": [
+        "https://m.media-amazon.com/images/I/51xKFb3MnCL._AC_UL320_.jpg"
+      ],
+      "description": "Kurgast ist eine Erzählung von Hermann Hesse, die die Geschichte eines Mannes namens Hans Rothe erzählt, der sich in einem Kurort von seiner spirituellen Suche und inneren Unruhe erholt.",
+      "features": [
+        "Eine ruhige und reflektierende Erzählung über Heilung und Selbstfindung.",
+        "Einfühlsame Beschreibung der menschlichen Psyche und inneren Kämpfe.",
+        "Für Leser, die nach innerer Ruhe und Erneuerung suchen."
+      ],
+      "specs": ["Seitenzahl: 96 Seiten", "Format: Taschenbuch"],
+      "rating": {
+        "count": 15,
+        "value": 4.7
+      }
+    },
+    {
+      "id": "89",
+      "title": "Die Geschichten von Franz Kafka",
+      "category": "Buch",
+      "price": {
+        "currency": "EUR",
+        "value": 16.99,
+        "discount": 0
+      },
+      "author": "Franz Kafka",
+      "publisher": "Fischer Verlag",
+      "images": [
+        "https://m.media-amazon.com/images/I/81DpfUEkzRL._AC_UY218_.jpg"
+      ],
+      "description": "Eine Sammlung von Geschichten von Franz Kafka, einem der bedeutendsten Schriftsteller des 20. Jahrhunderts, der durch seine einzigartige literarische Stimme und seine surrealen Erzählungen bekannt ist.",
+      "features": [
+        "Eine faszinierende Sammlung von Kafkas einflussreichsten Werken.",
+        "Einblick in die absurde und beklemmende Welt des Autors.",
+        "Für Leser, die nach tiefgründigen und unkonventionellen Geschichten suchen."
+      ],
+      "specs": ["Seitenzahl: 432 Seiten", "Format: Taschenbuch"],
+      "rating": {
+        "count": 25,
+        "value": 4.6
+      }
+    },
+    {
+      "id": "90",
+      "title": "Faust",
+      "category": "Buch",
+      "price": {
+        "currency": "EUR",
+        "value": 15.99,
+        "discount": 0
+      },
+      "author": "Johann Wolfgang von Goethe",
+      "publisher": "Reclam Verlag",
+      "images": [
+        "https://m.media-amazon.com/images/I/714Ph1p-QaL._AC_UY218_.jpg"
+      ],
+      "description": "Faust ist ein Drama von Johann Wolfgang von Goethe, das die Geschichte eines Gelehrten namens Faust erzählt, der einen Pakt mit dem Teufel eingeht und seine Seele verkauft, um nach Wissen und Erkenntnis zu streben.",
+      "features": [
+        "Ein Meisterwerk der deutschen Literatur, das die menschliche Existenz und moralische Fragen erforscht.",
+        "Epische Erzählung mit tiefgründigen philosophischen und religiösen Themen.",
+        "Für Leser, die sich für klassische Dramen und moralische Dilemmata interessieren."
+      ],
+      "specs": ["Seitenzahl: 480 Seiten", "Format: Taschenbuch"],
+      "rating": {
+        "count": 30,
+        "value": 4.8
+      }
+    },
+    {
+      "id": "91",
+      "title": "To Kill a Mockingbird",
+      "category": "Buch",
+      "price": {
+        "currency": "EUR",
+        "value": 12.99,
+        "discount": 0
+      },
+      "author": "Harper Lee",
+      "publisher": "HarperCollins",
+      "images": [
+        "https://m.media-amazon.com/images/I/612FP6rBmuL._AC_UY218_.jpg"
+      ],
+      "description": "To Kill a Mockingbird is a novel by Harper Lee that explores racial injustice and moral growth in the American South through the eyes of young Scout Finch.",
+      "features": [
+        "A powerful narrative about empathy, morality, and the fight for justice.",
+        "Pulitzer Prize-winning novel that remains relevant in today's society.",
+        "Suitable for readers interested in social issues and coming-of-age stories."
+      ],
+      "specs": ["Pages: 336 pages", "Format: Paperback"],
+      "rating": {
+        "count": 45,
+        "value": 4.9
+      }
+    },
+    {
+      "id": "92",
+      "title": "1984",
+      "category": "Buch",
+      "price": {
+        "currency": "EUR",
+        "value": 9.99,
+        "discount": 0
+      },
+      "author": "George Orwell",
+      "publisher": "Signet Classic",
+      "images": [
+        "https://m.media-amazon.com/images/I/81BExVLr8sL._AC_UY218_.jpg"
+      ],
+      "description": "1984 is a dystopian novel by George Orwell that depicts a totalitarian regime and explores themes of surveillance, propaganda, and individual freedom.",
+      "features": [
+        "A chilling portrayal of a future society where individuality is suppressed.",
+        "Highly influential and widely studied in literature and political science.",
+        "Recommended for readers interested in political commentary and speculative fiction."
+      ],
+      "specs": ["Pages: 328 pages", "Format: Paperback"],
+      "rating": {
+        "count": 40,
+        "value": 4.7
+      }
+    },
+    {
+      "id": "93",
+      "title": "The Catcher in the Rye",
+      "category": "Buch",
+      "price": {
+        "currency": "EUR",
+        "value": 11.99,
+        "discount": 0
+      },
+      "author": "J.D. Salinger",
+      "publisher": "Back Bay Books",
+      "images": [
+        "https://m.media-amazon.com/images/I/41590xPnnXL._AC_UY218_.jpg"
+      ],
+      "description": "The Catcher in the Rye is a novel by J.D. Salinger that follows the experiences of Holden Caulfield, a disillusioned teenager navigating the complexities of adulthood.",
+      "features": [
+        "A classic coming-of-age story that resonates with readers of all ages.",
+        "Provocative exploration of teenage angst, alienation, and identity.",
+        "Suitable for readers seeking authenticity and emotional depth in literature."
+      ],
+      "specs": ["Pages: 288 pages", "Format: Paperback"],
+      "rating": {
+        "count": 35,
+        "value": 4.8
+      }
+    },
+    {
+      "id": "94",
+      "title": "The Great Gatsby",
+      "category": "Buch",
+      "price": {
+        "currency": "EUR",
+        "value": 10.99,
+        "discount": 0
+      },
+      "author": "F. Scott Fitzgerald",
+      "publisher": "Scribner",
+      "images": [
+        "https://m.media-amazon.com/images/I/6155KyYCLXL._AC_UY218_.jpg"
+      ],
+      "description": "The Great Gatsby is a novel by F. Scott Fitzgerald that portrays the decadence and moral decline of the American Dream in the 1920s through the eyes of narrator Nick Carraway.",
+      "features": [
+        "A timeless classic that captures the essence of the Jazz Age.",
+        "Rich symbolism and lyrical prose make it a staple of American literature.",
+        "Recommended for readers interested in the pursuit of wealth, love, and the illusion of success."
+      ],
+      "specs": ["Pages: 180 pages", "Format: Paperback"],
+      "rating": {
+        "count": 50,
+        "value": 4.7
+      }
+    },
+    {
+      "id": "95",
+      "title": "Pride and Prejudice",
+      "category": "Buch",
+      "price": {
+        "currency": "EUR",
+        "value": 8.99,
+        "discount": 0
+      },
+      "author": "Jane Austen",
+      "publisher": "Penguin Classics",
+      "images": [
+        "https://m.media-amazon.com/images/I/71aEJV+ctrL._AC_UY218_.jpg"
+      ],
+      "description": "Pride and Prejudice is a romantic novel by Jane Austen that follows the lives of the Bennet sisters as they navigate societal expectations, love, and marriage in 19th-century England.",
+      "features": [
+        "A beloved classic known for its wit, social commentary, and memorable characters.",
+        "Timeless exploration of love, class, and gender roles in Regency-era society.",
+        "Suitable for readers seeking romance, humor, and keen observation of human nature."
+      ],
+      "specs": ["Pages: 432 pages", "Format: Paperback"],
+      "rating": {
+        "count": 55,
+        "value": 4.9
+      }
+    },
+    {
+      "id": "96",
+      "title": "Moby-Dick",
+      "category": "Buch",
+      "price": {
+        "currency": "EUR",
+        "value": 13.99,
+        "discount": 0
+      },
+      "author": "Herman Melville",
+      "publisher": "Penguin Classics",
+      "images": [
+        "https://m.media-amazon.com/images/I/71XijT2F5oL._AC_UY218_.jpg"
+      ],
+      "description": "Moby-Dick is a novel by Herman Melville that tells the story of Captain Ahab's obsessive quest for revenge against the white whale that maimed him, leading to a dramatic confrontation between man and nature.",
+      "features": [
+        "An epic tale of adventure, obsession, and the human condition.",
+        "Rich in symbolism and literary complexity, with themes of fate and free will.",
+        "Recommended for readers interested in maritime literature and philosophical exploration."
+      ],
+      "specs": ["Pages: 624 pages", "Format: Paperback"],
+      "rating": {
+        "count": 42,
+        "value": 4.6
+      }
+    },
+    {
+      "id": "97",
+      "title": "The Lord of the Rings",
+      "category": "Buch",
+      "price": {
+        "currency": "EUR",
+        "value": 19.99,
+        "discount": 0
+      },
+      "author": "J.R.R. Tolkien",
+      "publisher": "Mariner Books",
+      "images": [
+        "https://m.media-amazon.com/images/I/61m29vX9IKL._AC_UY218_.jpg"
+      ],
+      "description": "The Lord of the Rings is a fantasy epic by J.R.R. Tolkien that follows the journey of Frodo Baggins and his companions as they seek to destroy the One Ring and defeat the Dark Lord Sauron.",
+      "features": [
+        "A landmark work of fantasy literature that has captivated readers for generations.",
+        "Immense world-building, rich mythology, and memorable characters.",
+        "Recommended for readers seeking epic adventures and tales of heroism."
+      ],
+      "specs": ["Pages: 1178 pages", "Format: Paperback"],
+      "rating": {
+        "count": 60,
+        "value": 4.8
+      }
+    },
+    {
+      "id": "98",
+      "title": "Crime and Punishment",
+      "category": "Buch",
+      "price": {
+        "currency": "EUR",
+        "value": 14.99,
+        "discount": 0
+      },
+      "author": "Fyodor Dostoevsky",
+      "publisher": "Vintage Classics",
+      "images": [
+        "https://m.media-amazon.com/images/I/71me1EwwBbL._AC_UY218_.jpg"
+      ],
+      "description": "Crime and Punishment is a novel by Fyodor Dostoevsky that delves into the psychological complexities of a young student named Raskolnikov, who commits a murder and grapples with guilt and redemption.",
+      "features": [
+        "A profound exploration of morality, guilt, and the human condition.",
+        "Intricate plotting and deep character development.",
+        "Recommended for readers interested in psychological thrillers and existential literature."
+      ],
+      "specs": ["Pages: 576 pages", "Format: Paperback"],
+      "rating": {
+        "count": 38,
+        "value": 4.7
+      }
+    },
+    {
+      "id": "99",
+      "title": "The Road",
+      "category": "Buch",
+      "price": {
+        "currency": "EUR",
+        "value": 16.99,
+        "discount": 0
+      },
+      "author": "Cormac McCarthy",
+      "publisher": "Vintage Books",
+      "images": [
+        "https://m.media-amazon.com/images/I/81ChFcmhXDL._AC_UY218_.jpg"
+      ],
+      "description": "The Road is a post-apocalyptic novel by Cormac McCarthy that follows a father and son as they journey across a desolate landscape, facing threats of starvation, violence, and moral decay.",
+      "features": [
+        "A haunting and poetic meditation on survival, love, and hope in a bleak world.",
+        "Sparse prose and stark imagery create a sense of emotional intensity.",
+        "Recommended for readers seeking powerful and thought-provoking literature."
+      ],
+      "specs": ["Pages: 287 pages", "Format: Paperback"],
+      "rating": {
+        "count": 48,
+        "value": 4.8
+      }
+    },
+    {
+      "id": "100",
+      "title": "The Picture of Dorian Gray",
+      "category": "Buch",
+      "price": {
+        "currency": "EUR",
+        "value": 11.99,
+        "discount": 0
+      },
+      "author": "Oscar Wilde",
+      "publisher": "Penguin Classics",
+      "images": [
+        "https://m.media-amazon.com/images/I/61hexAWMllL._AC_UY218_.jpg"
+      ],
+      "description": "The Picture of Dorian Gray is a novel by Oscar Wilde that tells the story of a young man named Dorian Gray who remains eternally youthful while his portrait ages, serving as a chilling allegory of the pursuit of beauty and the corruption of the soul.",
+      "features": [
+        "A masterful blend of Gothic horror and philosophical inquiry.",
+        "Wilde's wit and flair for language shine in this provocative exploration of vanity and morality.",
+        "Recommended for readers seeking elegant prose and darkly enchanting storytelling."
+      ],
+      "specs": ["Pages: 304 pages", "Format: Paperback"],
+      "rating": {
+        "count": 32,
+        "value": 4.9
+      }
+    },
+    {
+      "id": "101",
+      "title": "Siddhartha",
+      "category": "Buch",
+      "price": {
+        "currency": "EUR",
+        "value": 12.99,
+        "discount": 0
+      },
+      "author": "Hermann Hesse",
+      "publisher": "Suhrkamp Verlag",
+      "images": [
+        "https://m.media-amazon.com/images/I/712IFFxJMZL._AC_UY218_.jpg"
+      ],
+      "description": "Siddhartha ist eine allegorische Erzählung von Hermann Hesse, die im alten Indien spielt und die spirituelle Reise eines jungen Mannes namens Siddhartha darstellt.",
+      "features": [
+        "Eine tiefgründige Erzählung über die Suche nach spiritueller Erleuchtung und Selbstfindung.",
+        "Klassiker der Weltliteratur, der zeitlose Themen behandelt.",
+        "Geeignet für Leser jeden Alters, die nach Inspiration suchen."
+      ],
+      "specs": ["Seitenzahl: 192 Seiten", "Format: Taschenbuch"],
+      "rating": {
+        "count": 35,
+        "value": 4.8
+      }
+    },
+    {
+      "id": "102",
+      "title": "Apple AirPods Pro",
+      "category": "Elektronik",
+      "price": {
+        "currency": "EUR",
+        "value": 229.0,
+        "discount": 10
+      },
+      "manufacturer": "Apple",
+      "images": [
+        "https://m.media-amazon.com/images/I/71zny7BTRlL._AC_UY218_.jpg"
+      ],
+      "description": "Die Apple AirPods Pro bieten aktive Geräuschunterdrückung für immersiven Sound. Sie sind spritzwassergeschützt und kommen mit drei verschiedenen Größen von weichen, konischen Silikontips für eine individuelle Passform.",
+      "features": [
+        "Aktive Geräuschunterdrückung für immersiven Sound",
+        "Transparenzmodus, um Umgebungsgeräusche zu hören",
+        "Adaptive EQ passt sich automatisch der Form deines Ohrs an"
+      ],
+      "specs": [
+        "Batterielaufzeit: Bis zu 4,5 Stunden",
+        "Ladezeit: Etwa 1 Stunde für volle Ladung (via kabelloses Laden oder Lightning Connector)"
+      ],
+      "rating": {
+        "count": 1893,
+        "value": 4.8
+      }
+    },
+    {
+      "id": "103",
+      "title": "Sony PlayStation 5",
+      "category": "Spielekonsole",
+      "price": {
+        "currency": "EUR",
+        "value": 499.99,
+        "discount": 0
+      },
+      "manufacturer": "Sony",
+      "images": [
+        "https://m.media-amazon.com/images/I/619BkvKW35L._AC_UY218_.jpg"
+      ],
+      "description": "Die Sony PlayStation 5 ist die nächste Generation der beliebten Spielekonsole. Mit blitzschneller SSD, beeindruckender 4K-Grafik und haptischem Feedback erlebst du Spiele wie nie zuvor.",
+      "features": [
+        "4K-Ultra-HD-Blu-ray-Laufwerk",
+        "Hochleistungs-Grafik für realistische Spielwelten",
+        "Neuer DualSense-Controller mit haptischem Feedback"
+      ],
+      "specs": ["Speicher: 825 GB SSD", "Auflösung: Bis zu 8K"],
+      "rating": {
+        "count": 1289,
+        "value": 4.9
+      }
+    },
+    {
+      "id": "104",
+      "title": "Samsung Galaxy S21 Ultra",
+      "category": "Smartphone",
+      "price": {
+        "currency": "EUR",
+        "value": 1249.0,
+        "discount": 5
+      },
+      "manufacturer": "Samsung",
+      "images": [
+        "https://m.media-amazon.com/images/I/71cmiDACX0L._AC_UY218_.jpg"
+      ],
+      "description": "Das Samsung Galaxy S21 Ultra bietet ein beeindruckendes 6,8-Zoll-Display, eine hochauflösende Quad-Kamera und einen leistungsstarken Exynos-Prozessor. Es ist das ultimative Smartphone für anspruchsvolle Nutzer.",
+      "features": [
+        "Ultra High Resolution 108 MP Kamera",
+        "120 Hz Dynamic AMOLED 2X Display",
+        "Intelligenter S Pen für präzise Eingaben"
+      ],
+      "specs": ["Speicher: 128 GB / 256 GB / 512 GB", "RAM: 12 GB / 16 GB"],
+      "rating": {
+        "count": 975,
+        "value": 4.7
+      }
+    },
+    {
+      "id": "105",
+      "title": "LEGO Star Wars Millennium Falcon",
+      "category": "Spielzeug",
+      "price": {
+        "currency": "EUR",
+        "value": 799.99,
+        "discount": 15
+      },
+      "manufacturer": "LEGO",
+      "images": [
+        "https://m.media-amazon.com/images/I/81BU1FCn5vL._AC_UL320_.jpg"
+      ],
+      "description": "Das LEGO Star Wars Millennium Falcon Set ist ein Muss für jeden Fan der Saga. Mit über 7500 Teilen ist dieses Modell detailgetreu und bietet stundenlangen Bauspaß.",
+      "features": [
+        "Authentisches Modell des Millennium Falcon",
+        "Enthält Figuren wie Han Solo, Chewbacca und Lando Calrissian",
+        "Viele bewegliche Teile und Details"
+      ],
+      "specs": [
+        "Teile: Über 7500",
+        "Maße: Länge ca. 83 cm, Breite ca. 60 cm, Höhe ca. 20 cm"
+      ],
+      "rating": {
+        "count": 543,
+        "value": 4.9
+      }
+    },
+    {
+      "id": "106",
+      "title": "Philips Hue White and Color Ambiance Starter Kit",
+      "category": "Beleuchtung",
+      "price": {
+        "currency": "EUR",
+        "value": 189.99,
+        "discount": 20
+      },
+      "manufacturer": "Philips",
+      "images": [
+        "https://m.media-amazon.com/images/I/61SznS+DGfL._AC_UL320_.jpg"
+      ],
+      "description": "Das Philips Hue White and Color Ambiance Starter Kit verwandelt dein Zuhause mit smarten LED-Lampen in eine Oase der Farben. Steuere das Licht mit deinem Smartphone und erlebe unzählige Möglichkeiten.",
+      "features": [
+        "16 Millionen Farben für die perfekte Atmosphäre",
+        "Kompatibel mit Amazon Alexa, Google Assistant und Apple HomeKit",
+        "Einfache Einrichtung und Steuerung über die Hue App"
+      ],
+      "specs": [
+        "Enthält: 3 x LED-Lampen, 1 x Bridge, 1 x Dimmschalter",
+        "Lebensdauer: Bis zu 25.000 Stunden"
+      ],
+      "rating": {
+        "count": 1221,
+        "value": 4.7
+      }
+    },
+    {
+      "id": "107",
+      "title": "GoPro HERO10 Black",
+      "category": "Actionkamera",
+      "price": {
+        "currency": "EUR",
+        "value": 529.99,
+        "discount": 0
+      },
+      "manufacturer": "GoPro",
+      "images": [
+        "https://m.media-amazon.com/images/I/51NSTSEiHXL._AC_UY218_.jpg"
+      ],
+      "description": "Die GoPro HERO10 Black ist die ultimative Actionkamera für Abenteuerliebhaber. Mit beeindruckender 5,3K-Videos und bahnbrechender HyperSmooth 4.0-Stabilisierung hält sie jedes Abenteuer fest.",
+      "features": [
+        "Bis zu 5,3K-Videos mit atemberaubender Detailgenauigkeit",
+        "HyperSmooth 4.0-Stabilisierung für butterweiche Aufnahmen",
+        "TimeWarp 4.0 für spektakuläre Zeitrafferaufnahmen"
+      ],
+      "specs": [
+        "Videoauflösung: Bis zu 5,3K bei 60 fps",
+        "Wasserdicht bis 10 m ohne Gehäuse"
+      ],
+      "rating": {
+        "count": 786,
+        "value": 4.8
+      }
+    },
+    {
+      "id": "108",
+      "title": "Nintendo Switch OLED-Modell",
+      "category": "Spielekonsole",
+      "price": {
+        "currency": "EUR",
+        "value": 349.0,
+        "discount": 0
+      },
+      "manufacturer": "Nintendo",
+      "images": [
+        "https://m.media-amazon.com/images/I/71ZvqI8yj1L._AC_UY218_.jpg"
+      ],
+      "description": "Die Nintendo Switch OLED-Modell bietet ein gestochen scharfes 7-Zoll-OLED-Display, verbesserter Audioqualität und 64 GB internen Speicher. Spiele deine Lieblingsspiele zu Hause oder unterwegs.",
+      "features": [
+        "7-Zoll-OLED-Display mit lebendigen Farben und tiefem Schwarz",
+        "Verbesserter Standfuß für vielseitige Spielmöglichkeiten",
+        "64 GB interner Speicher für deine Lieblingsspiele"
+      ],
+      "specs": ["Speicher: 64 GB", "Bildschirm: 7-Zoll-OLED-Touchscreen"],
+      "rating": {
+        "count": 1325,
+        "value": 4.7
+      }
+    },
+    {
+      "id": "109",
+      "title": "Bose QuietComfort 45 Noise Cancelling Kopfhörer",
+      "category": "Audio",
+      "price": {
+        "currency": "EUR",
+        "value": 319.95,
+        "discount": 5
+      },
+      "manufacturer": "Bose",
+      "images": [
+        "https://m.media-amazon.com/images/I/51K77J9rCjL._AC_UY218_.jpg"
+      ],
+      "description": "Die Bose QuietComfort 45 Noise Cancelling Kopfhörer bieten erstklassige Geräuschunterdrückung und hervorragenden Klang. Genieße deine Musik oder Podcasts in Ruhe, egal wo du bist.",
+      "features": [
+        "Duales Mikrofonsystem für klare Anrufe",
+        "Bis zu 24 Stunden Akkulaufzeit",
+        "Komfortables Design für stundenlangen Hörgenuss"
+      ],
+      "specs": [
+        "Akkulaufzeit: Bis zu 24 Stunden",
+        "Ladezeit: Etwa 2,5 Stunden"
+      ],
+      "rating": {
+        "count": 658,
+        "value": 4.8
+      }
+    },
+    {
+      "id": "110",
+      "title": "KitchenAid Artisan Standmixer",
+      "category": "Küchengerät",
+      "price": {
+        "currency": "EUR",
+        "value": 499.0,
+        "discount": 0
+      },
+      "manufacturer": "KitchenAid",
+      "images": [
+        "https://m.media-amazon.com/images/I/61IjTVHWjqL._AC_UY218_.jpg"
+      ],
+      "description": "Der KitchenAid Artisan Standmixer ist ein unverzichtbares Werkzeug in jeder Küche. Mit seinem robusten Design und leistungsstarken Motor mixt er mühelos Smoothies, Teige und vieles mehr.",
+      "features": [
+        "Robustes Ganzmetallgehäuse für lange Lebensdauer",
+        "10 Geschwindigkeitsstufen für präzises Mixen",
+        "Inklusive Zubehör für verschiedene Anwendungen"
+      ],
+      "specs": ["Leistung: 300 Watt", "Fassungsvermögen: 4,8 Liter"],
+      "rating": {
+        "count": 892,
+        "value": 4.9
+      }
+    },
+    {
+      "id": "111",
+      "title": "Sony WH-1000XM4 Wireless Noise Cancelling Kopfhörer",
+      "category": "Audio",
+      "price": {
+        "currency": "EUR",
+        "value": 379.0,
+        "discount": 10
+      },
+      "manufacturer": "Sony",
+      "images": [
+        "https://m.media-amazon.com/images/I/71o8Q5XJS5L._AC_UY218_.jpg"
+      ],
+      "description": "Die Sony WH-1000XM4 Wireless Noise Cancelling Kopfhörer bieten branchenführende Geräuschunterdrückung und hervorragenden Klang. Mit adaptivem Noise Cancelling und bis zu 30 Stunden Akkulaufzeit sind sie perfekt für unterwegs.",
+      "features": [
+        "Branchenführende Geräuschunterdrückung für ungestörtes Hörerlebnis",
+        "Adaptive Sound Control passt sich automatisch deiner Umgebung an",
+        "Bis zu 30 Stunden Akkulaufzeit für lange Reisen"
+      ],
+      "specs": [
+        "Akkulaufzeit: Bis zu 30 Stunden",
+        "Schnellladefunktion: 10 Minuten laden für 5 Stunden Wiedergabe"
+      ],
+      "rating": {
+        "count": 1102,
+        "value": 4.7
+      }
+    },
+    {
+      "id": "112",
+      "title": "Microsoft Surface Pro 8",
+      "category": "Laptop",
+      "price": {
+        "currency": "EUR",
+        "value": 1199.0,
+        "discount": 0
+      },
+      "manufacturer": "Microsoft",
+      "images": [
+        "https://m.media-amazon.com/images/I/61qbZl6MwTL._AC_UY218_.jpg"
+      ],
+      "description": "Das Microsoft Surface Pro 8 ist ein vielseitiges 2-in-1-Gerät, das als Laptop oder Tablet genutzt werden kann. Mit leistungsstarkem Intel Core Prozessor und hochauflösendem PixelSense Display ist es ideal für Produktivität und Unterhaltung.",
+      "features": [
+        "Vielseitiges 2-in-1-Design für Laptop- und Tablet-Nutzung",
+        "Hochauflösendes PixelSense Display mit lebendigen Farben",
+        "Leistungsstarker Intel Core Prozessor für schnelle Performance"
+      ],
+      "specs": [
+        "Prozessor: Intel Core i5 / i7",
+        "Speicher: Bis zu 32 GB RAM",
+        "Speicherplatz: Bis zu 1 TB SSD"
+      ],
+      "rating": {
+        "count": 319,
+        "value": 4.6
+      }
+    },
+    {
+      "id": "113",
+      "title": "Fitbit Charge 5",
+      "category": "Fitness-Tracker",
+      "price": {
+        "currency": "EUR",
+        "value": 179.95,
+        "discount": 0
+      },
+      "manufacturer": "Fitbit",
+      "images": [
+        "https://m.media-amazon.com/images/I/61YXNim+iQL._AC_UY218_.jpg"
+      ],
+      "description": "Der Fitbit Charge 5 ist ein fortschrittlicher Fitness-Tracker mit integriertem GPS, Herzfrequenzmessung und Schlafüberwachung. Verfolge deine Aktivitäten, analysiere deine Schlafqualität und erreiche deine Fitnessziele.",
+      "features": [
+        "Integriertes GPS für genaue Streckenverfolgung",
+        "24/7 Herzfrequenzmessung und SpO2-Sensor",
+        "Erweiterte Schlafüberwachung mit Schlafphasenanalyse"
+      ],
+      "specs": ["Batterielaufzeit: Bis zu 7 Tage", "Wasserdicht: Bis 50 m"],
+      "rating": {
+        "count": 785,
+        "value": 4.5
+      }
+    },
+    {
+      "id": "114",
+      "title": "Dyson V11 Absolute Extra Pro",
+      "category": "Staubsauger",
+      "price": {
+        "currency": "EUR",
+        "value": 649.0,
+        "discount": 15
+      },
+      "manufacturer": "Dyson",
+      "images": [
+        "https://m.media-amazon.com/images/I/515x5IJOAXL._AC_UY218_.jpg"
+      ],
+      "description": "Der Dyson V11 Absolute Extra Pro ist ein leistungsstarker kabelloser Staubsauger mit 185 Watt Saugleistung und intelligentem Reinigungsmodus. Mit austauschbaren Aufsätzen und langer Akkulaufzeit ist er ideal für die gründliche Reinigung des gesamten Hauses.",
+      "features": [
+        "185 Watt Saugleistung für gründliche Reinigung",
+        "Intelligenter Reinigungsmodus passt sich automatisch an den Boden an",
+        "LCD-Display zeigt verbleibende Laufzeit und Wartungshinweise an"
+      ],
+      "specs": [
+        "Akkulaufzeit: Bis zu 60 Minuten",
+        "Behältervolumen: 0,76 Liter"
+      ],
+      "rating": {
+        "count": 402,
+        "value": 4.8
+      }
+    },
+    {
+      "id": "115",
+      "title": "Amazon Echo (4. Generation)",
+      "category": "Smart Home",
+      "price": {
+        "currency": "EUR",
+        "value": 99.99,
+        "discount": 0
+      },
+      "manufacturer": "Amazon",
+      "images": [
+        "https://m.media-amazon.com/images/I/71bnkM5q8CL._AC_UY218_.jpg"
+      ],
+      "description": "Der Amazon Echo der 4. Generation ist ein smarter Lautsprecher mit integriertem Alexa-Sprachassistenten. Steuere dein Smart Home, höre Musik, stelle Timer und vieles mehr mit deiner Stimme.",
+      "features": [
+        "Integrierter Alexa-Sprachassistent für Sprachsteuerung",
+        "Dolby Stereo-Sound für klaren, satten Klang",
+        "Kompatibel mit Zigbee für einfache Smart Home-Steuerung"
+      ],
+      "specs": [
+        "Lautsprecher: 3-Zoll-Tieftöner, Dual 0,8-Zoll-Hochtöner",
+        "Mikrofone: 4 Fernfeldmikrofone"
+      ],
+      "rating": {
+        "count": 2548,
+        "value": 4.7
+      }
+    },
+    {
+      "id": "116",
+      "title": "Canon EOS R5",
+      "category": "Kamera",
+      "price": {
+        "currency": "EUR",
+        "value": 3899.0,
+        "discount": 0
+      },
+      "manufacturer": "Canon",
+      "images": [
+        "https://m.media-amazon.com/images/I/71x6jZ5DkFL._AC_UY218_.jpg"
+      ],
+      "description": "Die Canon EOS R5 ist eine leistungsstarke spiegellose Vollformatkamera für Profis und ambitionierte Fotografen. Mit 45 Megapixeln, 8K-Videoaufnahme und fortschrittlichem Autofokus ist sie ideal für Foto- und Videoprojekte.",
+      "features": [
+        "45 Megapixel Vollformat-CMOS-Sensor für detailreiche Bilder",
+        "8K-Videoaufnahme für beeindruckende Filmaufnahmen",
+        "Dual Pixel CMOS AF II für schnellen und präzisen Autofokus"
+      ],
+      "specs": [
+        "Sensor: Vollformat-CMOS-Sensor (36,0 x 24,0 mm)",
+        "ISO-Bereich: 100-51.200 (erweiterbar bis 50-102.400)"
+      ],
+      "rating": {
+        "count": 178,
+        "value": 4.9
+      }
+    },
+    {
+      "id": "117",
+      "title": "Xiaomi Mi Electric Scooter Pro 2",
+      "category": "Elektroroller",
+      "price": {
+        "currency": "EUR",
+        "value": 499.0,
+        "discount": 0
+      },
+      "manufacturer": "Xiaomi",
+      "images": [
+        "https://m.media-amazon.com/images/I/61k5iBneZnL._AC_UL320_.jpg"
+      ],
+      "description": "Der Xiaomi Mi Electric Scooter Pro 2 ist ein leistungsstarker Elektroroller mit einer Höchstgeschwindigkeit von bis zu 25 km/h und einer Reichweite von bis zu 45 km. Ideal für Pendler und Freizeitfahrten.",
+      "features": [
+        "Höchstgeschwindigkeit von bis zu 25 km/h",
+        "Integriertes LCD-Display mit Geschwindigkeits- und Batterieanzeige",
+        "Dreifaches Bremssystem für sicheres Bremsen"
+      ],
+      "specs": ["Reichweite: Bis zu 45 km", "Maximale Belastung: 100 kg"],
+      "rating": {
+        "count": 623,
+        "value": 4.7
+      }
+    },
+    {
+      "id": "118",
+      "title": "LG OLED65C1 4K OLED-Fernseher",
+      "category": "Fernseher",
+      "price": {
+        "currency": "EUR",
+        "value": 1999.0,
+        "discount": 0
+      },
+      "manufacturer": "LG",
+      "images": [
+        "https://m.media-amazon.com/images/I/8116j7SLFtL._AC_UY218_.jpg"
+      ],
+      "description": "Der LG OLED65C1 4K OLED-Fernseher bietet ein atemberaubendes Seherlebnis mit perfektem Schwarz und lebendigen Farben. Mit integriertem AI ThinQ und Dolby Vision IQ ist er die perfekte Wahl für Film- und Serienliebhaber.",
+      "features": [
+        "4K OLED-Display für perfektes Schwarz und lebendige Farben",
+        "Integriertes AI ThinQ für smarte Funktionen",
+        "Dolby Vision IQ passt die Bildqualität an die Raumbeleuchtung an"
+      ],
+      "specs": [
+        "Bildschirmgröße: 65 Zoll",
+        "Auflösung: 3840 x 2160 Pixel (4K)"
+      ],
+      "rating": {
+        "count": 245,
+        "value": 4.8
+      }
+    },
+    {
+      "id": "119",
+      "title": "Nike Air Zoom Pegasus 38 Laufschuhe",
+      "category": "Schuhe",
+      "price": {
+        "currency": "EUR",
+        "value": 129.99,
+        "discount": 0
+      },
+      "manufacturer": "Nike",
+      "images": [
+        "https://m.media-amazon.com/images/I/61Dlk53UsgL._AC_UL320_.jpg"
+      ],
+      "description": "Die Nike Air Zoom Pegasus 38 Laufschuhe bieten reaktionsfreudige Dämpfung und eine angenehme Passform für ein unvergleichliches Lauferlebnis. Mit einem atmungsaktiven Obermaterial und strapazierfähiger Gummisohle sind sie ideal für das tägliche Training.",
+      "features": [
+        "Reaktionsfreudige Nike Air-Zoom-Dämpfung",
+        "Atmungsaktives Mesh-Obermaterial für angenehmes Tragegefühl",
+        "Strapazierfähige Gummisohle für guten Grip auf verschiedenen Untergründen"
+      ],
+      "specs": [
+        "Gewicht: ca. 283 g (Herrenschuh in Größe 42)",
+        "Sprengung: 10 mm"
+      ],
+      "rating": {
+        "count": 578,
+        "value": 4.6
+      }
+    },
+    {
+      "id": "120",
+      "title": "Razer BlackWidow V3 Pro Gaming Tastatur",
+      "category": "Gaming-Zubehör",
+      "price": {
+        "currency": "EUR",
+        "value": 229.99,
+        "discount": 0
+      },
+      "manufacturer": "Razer",
+      "images": [
+        "https://m.media-amazon.com/images/I/81A9YqSZqqL._AC_UY218_.jpg"
+      ],
+      "description": "Die Razer BlackWidow V3 Pro Gaming Tastatur bietet eine erstklassige Leistung und Haltbarkeit für anspruchsvolle Gamer. Mit mechanischen Switches, RGB-Hintergrundbeleuchtung und drahtloser Freiheit ist sie perfekt für kompetitives Gaming.",
+      "features": [
+        "Mechanische Razer Green Switches für präzises Tastengefühl",
+        "Individuell einstellbare RGB-Hintergrundbeleuchtung",
+        "Drahtlose Freiheit mit stabiler Bluetooth- oder 2,4-GHz-Verbindung"
+      ],
+      "specs": [
+        "Schalter: Razer Green Switches",
+        "Hintergrundbeleuchtung: Individuell einstellbare RGB-Beleuchtung"
+      ],
+      "rating": {
+        "count": 321,
+        "value": 4.8
+      }
+    },
+    {
+      "id": "121",
+      "title": "Levi's 501 Original Fit Jeans",
+      "category": "Fashion",
+      "price": {
+        "currency": "EUR",
+        "value": 99.95,
+        "discount": 0
+      },
+      "brand": "Levi's",
+      "images": [
+        "https://m.media-amazon.com/images/I/51hUBYW20HL._AC_UL320_.jpg"
+      ],
+      "description": "Die Levi's 501 Original Fit Jeans ist ein zeitloser Klassiker, der zu jedem Anlass passt. Mit geradem Bein und mittlerer Leibhöhe bietet sie optimalen Tragekomfort und Stil.",
+      "features": [
+        "Klassische Passform mit geradem Bein",
+        "Mittlere Leibhöhe für bequemen Sitz",
+        "Hochwertiges Denim-Material für Langlebigkeit"
+      ],
+      "specs": ["Material: 100% Baumwolle", "Waschung: Stonewashed"],
+      "rating": {
+        "count": 654,
+        "value": 4.6
+      }
+    },
+    {
+      "id": "122",
+      "title": "Tommy Hilfiger Herren Poloshirt",
+      "category": "Fashion",
+      "price": {
+        "currency": "EUR",
+        "value": 69.9,
+        "discount": 0
+      },
+      "brand": "Tommy Hilfiger",
+      "images": [
+        "https://m.media-amazon.com/images/I/61usW6DuEHL._AC_UL320_.jpg"
+      ],
+      "description": "Das Tommy Hilfiger Herren Poloshirt ist ein stilvolles und vielseitiges Kleidungsstück für jeden Tag. Mit klassischem Schnitt und hochwertiger Verarbeitung ist es ein Must-Have für jede Garderobe.",
+      "features": [
+        "Hochwertiges Baumwoll-Piqué für angenehmen Tragekomfort",
+        "Klassischer Polokragen mit Knopfleiste",
+        "Tommy Hilfiger Logo auf der Brust"
+      ],
+      "specs": ["Material: 100% Baumwolle", "Passform: Regular Fit"],
+      "rating": {
+        "count": 438,
+        "value": 4.7
+      }
+    },
+    {
+      "id": "123",
+      "title": "Calvin Klein Damen Leggings",
+      "category": "Fashion",
+      "price": {
+        "currency": "EUR",
+        "value": 39.99,
+        "discount": 0
+      },
+      "brand": "Calvin Klein",
+      "images": [
+        "https://m.media-amazon.com/images/I/51Xv1w7aYXL._MCnd_AC_UL320_.jpg"
+      ],
+      "description": "Die Calvin Klein Damen Leggings ist ein vielseitiges Basic für Sport und Freizeit. Mit elastischem Bund und enganliegender Passform bietet sie optimalen Komfort und Bewegungsfreiheit.",
+      "features": [
+        "Elastischer Bund für perfekte Passform",
+        "Eng anliegende Passform für optimale Bewegungsfreiheit",
+        "Calvin Klein Logo am Bund"
+      ],
+      "specs": ["Material: 95% Baumwolle, 5% Elasthan", "Passform: Slim Fit"],
+      "rating": {
+        "count": 321,
+        "value": 4.5
+      }
+    },
+    {
+      "id": "124",
+      "title": "Adidas Originals Superstar Sneaker",
+      "category": "Fashion",
+      "price": {
+        "currency": "EUR",
+        "value": 99.95,
+        "discount": 0
+      },
+      "brand": "Adidas Originals",
+      "images": [
+        "https://m.media-amazon.com/images/I/81HaH7Gn4ML._AC_UL320_.jpg"
+      ],
+      "description": "Der Adidas Originals Superstar Sneaker ist ein ikonisches Modell, das nie aus der Mode kommt. Mit charakteristischem Shell-Zehenbereich und markanten Streifen ist er ein absoluter Klassiker.",
+      "features": [
+        "Obermaterial aus Full-Grain-Leder für hochwertigen Look",
+        "Klassische Gummi-Cupsohle für Traktion und Haltbarkeit",
+        "OrthoLite Einlegesohle für langanhaltenden Komfort"
+      ],
+      "specs": ["Obermaterial: Leder", "Sohle: Gummi"],
+      "rating": {
+        "count": 564,
+        "value": 4.8
+      }
+    },
+    {
+      "id": "125",
+      "title": "Ralph Lauren Herren Pullover",
+      "category": "Fashion",
+      "price": {
+        "currency": "EUR",
+        "value": 129.0,
+        "discount": 0
+      },
+      "brand": "Ralph Lauren",
+      "images": [
+        "https://m.media-amazon.com/images/I/71XObGVWY0L._AC_UL320_.jpg"
+      ],
+      "description": "Der Ralph Lauren Herren Pullover ist ein zeitloses Kleidungsstück für stilbewusste Männer. Mit klassischem Rundhalsausschnitt und weicher Baumwollmischung ist er perfekt für jeden Anlass.",
+      "features": [
+        "Weiche Baumwollmischung für angenehmen Tragekomfort",
+        "Klassischer Rundhalsausschnitt mit Rippstrickbündchen",
+        "Ralph Lauren Logo auf der Brust"
+      ],
+      "specs": ["Material: 100% Baumwolle", "Passform: Regular Fit"],
+      "rating": {
+        "count": 189,
+        "value": 4.6
+      }
+    },
+    {
+      "id": "126",
+      "title": "Hugo Boss Herren Anzug",
+      "category": "Fashion",
+      "price": {
+        "currency": "EUR",
+        "value": 449.0,
+        "discount": 0
+      },
+      "brand": "Hugo Boss",
+      "images": [
+        "https://m.media-amazon.com/images/I/81VXLy5ieCL._AC_UL320_.jpg"
+      ],
+      "description": "Der Hugo Boss Herren Anzug ist ein elegantes Kleidungsstück für formelle Anlässe. Mit hochwertiger Verarbeitung und klassischem Schnitt sorgt er für einen stilvollen Auftritt.",
+      "features": [
+        "Hochwertige Verarbeitung für edlen Look",
+        "Klassischer Schnitt für optimale Passform",
+        "Inklusive Sakko und Hose"
+      ],
+      "specs": ["Material: 100% Wolle", "Futter: 100% Viskose"],
+      "rating": {
+        "count": 98,
+        "value": 4.7
+      }
+    },
+    {
+      "id": "127",
+      "title": "Michael Kors Damen Handtasche",
+      "category": "Fashion",
+      "price": {
+        "currency": "EUR",
+        "value": 299.0,
+        "discount": 0
+      },
+      "brand": "Michael Kors",
+      "images": [
+        "https://m.media-amazon.com/images/I/A10rPFe5I6L._AC_UL320_.jpg"
+      ],
+      "description": "Die Michael Kors Damen Handtasche ist ein stilvolles Accessoire für jede Gelegenheit. Mit hochwertigem Leder und geräumigem Innenraum bietet sie Platz für alle wichtigen Dinge.",
+      "features": [
+        "Hochwertiges Leder für edlen Look",
+        "Geräumiges Hauptfach mit Reißverschluss",
+        "Verstellbarer Schultergurt für individuellen Tragekomfort"
+      ],
+      "specs": ["Material: Leder", "Maße: 30 x 25 x 12 cm"],
+      "rating": {
+        "count": 215,
+        "value": 4.9
+      }
+    },
+    {
+      "id": "128",
+      "title": "Gucci Unisex Sonnenbrille",
+      "category": "Fashion",
+      "price": {
+        "currency": "EUR",
+        "value": 269.0,
+        "discount": 0
+      },
+      "brand": "Gucci",
+      "images": [
+        "https://m.media-amazon.com/images/I/61tm9mqKg6L._AC_UL320_.jpg"
+      ],
+      "description": "Die Gucci Unisex Sonnenbrille ist ein stilvolles Accessoire für sonnige Tage. Mit markantem Design und hochwertigen Gläsern bietet sie optimalen Schutz und Stil.",
+      "features": [
+        "Markantes Design mit Gucci Logo an den Bügeln",
+        "Hochwertige Gläser für klare Sicht",
+        "UV-Schutz für sichere Nutzung in der Sonne"
+      ],
+      "specs": ["Rahmenmaterial: Kunststoff", "Glasmaterial: Kunststoff"],
+      "rating": {
+        "count": 142,
+        "value": 4.8
+      }
+    },
+    {
+      "id": "129",
+      "title": "Versace Damen Armbanduhr",
+      "category": "Fashion",
+      "price": {
+        "currency": "EUR",
+        "value": 399.0,
+        "discount": 0
+      },
+      "brand": "Versace",
+      "images": [
+        "https://m.media-amazon.com/images/I/81fIBdF-8TL._MCnd_AC_UL320_.jpg"
+      ],
+      "description": "Die Versace Damen Armbanduhr ist ein luxuriöses Accessoire für besondere Anlässe. Mit präzisem Quarzwerk und elegantem Design ist sie ein Blickfang am Handgelenk.",
+      "features": [
+        "Hochwertiges Edelstahlgehäuse mit goldfarbener Beschichtung",
+        "Präzises Quarzwerk für zuverlässige Zeitmessung",
+        "Versace Logo auf dem Zifferblatt"
+      ],
+      "specs": ["Gehäusedurchmesser: 36 mm", "Armbandmaterial: Leder"],
+      "rating": {
+        "count": 76,
+        "value": 4.7
+      }
+    },
+    {
+      "id": "130",
+      "title": "Diesel Herren Jeansjacke",
+      "category": "Fashion",
+      "price": {
+        "currency": "EUR",
+        "value": 159.95,
+        "discount": 0
+      },
+      "brand": "Diesel",
+      "images": [
+        "https://m.media-amazon.com/images/I/81j2GD3kKVL._AC_UL320_.jpg"
+      ],
+      "description": "Die Diesel Herren Jeansjacke ist ein lässiges Must-Have für jeden Kleiderschrank. Mit robustem Denim-Material und markanten Details ist sie perfekt für einen coolen Look.",
+      "features": [
+        "Robustes Denim-Material für authentischen Look",
+        "Klassischer Jeansjacken-Schnitt mit Knopfleiste",
+        "Markante Waschung und Used-Details"
+      ],
+      "specs": ["Material: 100% Baumwolle", "Waschung: Stonewashed"],
+      "rating": {
+        "count": 120,
+        "value": 4.6
+      }
+    },
+    {
+      "id": "131",
+      "title": "Levi's 501 Original Fit Jeans",
+      "category": "Fashion",
+      "price": {
+        "currency": "EUR",
+        "value": 99.95,
+        "discount": 0
+      },
+      "brand": "Levi's",
+      "images": [
+        "https://m.media-amazon.com/images/I/9134T3rPgIL._AC_UL320_.jpg"
+      ],
+      "description": "Die Levi's 501 Original Fit Jeans ist ein zeitloser Klassiker, der zu jedem Anlass passt. Mit geradem Bein und mittlerer Leibhöhe bietet sie optimalen Tragekomfort und Stil.",
+      "features": [
+        "Klassische Passform mit geradem Bein",
+        "Mittlere Leibhöhe für bequemen Sitz",
+        "Hochwertiges Denim-Material für Langlebigkeit"
+      ],
+      "specs": ["Material: 100% Baumwolle", "Waschung: Stonewashed"],
+      "rating": {
+        "count": 654,
+        "value": 4.6
+      }
+    },
+    {
+      "id": "132",
+      "title": "Tommy Hilfiger Herren Poloshirt",
+      "category": "Fashion",
+      "price": {
+        "currency": "EUR",
+        "value": 69.9,
+        "discount": 0
+      },
+      "brand": "Tommy Hilfiger",
+      "images": [
+        "https://m.media-amazon.com/images/I/71k-myhoFWL._AC_UL320_.jpg"
+      ],
+      "description": "Das Tommy Hilfiger Herren Poloshirt ist ein stilvolles und vielseitiges Kleidungsstück für jeden Tag. Mit klassischem Schnitt und hochwertiger Verarbeitung ist es ein Must-Have für jede Garderobe.",
+      "features": [
+        "Hochwertiges Baumwoll-Piqué für angenehmen Tragekomfort",
+        "Klassischer Polokragen mit Knopfleiste",
+        "Tommy Hilfiger Logo auf der Brust"
+      ],
+      "specs": ["Material: 100% Baumwolle", "Passform: Regular Fit"],
+      "rating": {
+        "count": 438,
+        "value": 4.7
+      }
+    },
+    {
+      "id": "133",
+      "title": "Calvin Klein Damen Leggings",
+      "category": "Fashion",
+      "price": {
+        "currency": "EUR",
+        "value": 39.99,
+        "discount": 0
+      },
+      "brand": "Calvin Klein",
+      "images": [
+        "https://m.media-amazon.com/images/I/616SSYV09CL._AC_UL320_.jpg"
+      ],
+      "description": "Die Calvin Klein Damen Leggings ist ein vielseitiges Basic für Sport und Freizeit. Mit elastischem Bund und enganliegender Passform bietet sie optimalen Komfort und Bewegungsfreiheit.",
+      "features": [
+        "Elastischer Bund für perfekte Passform",
+        "Eng anliegende Passform für optimale Bewegungsfreiheit",
+        "Calvin Klein Logo am Bund"
+      ],
+      "specs": ["Material: 95% Baumwolle, 5% Elasthan", "Passform: Slim Fit"],
+      "rating": {
+        "count": 321,
+        "value": 4.5
+      }
+    },
+    {
+      "id": "134",
+      "title": "Adidas Originals Superstar Sneaker",
+      "category": "Fashion",
+      "price": {
+        "currency": "EUR",
+        "value": 99.95,
+        "discount": 0
+      },
+      "brand": "Adidas Originals",
+      "images": [
+        "https://m.media-amazon.com/images/I/51wQeU+IMxL._AC_UL320_.jpg"
+      ],
+      "description": "Der Adidas Originals Superstar Sneaker ist ein ikonisches Modell, das nie aus der Mode kommt. Mit charakteristischem Shell-Zehenbereich und markanten Streifen ist er ein absoluter Klassiker.",
+      "features": [
+        "Obermaterial aus Full-Grain-Leder für hochwertigen Look",
+        "Klassische Gummi-Cupsohle für Traktion und Haltbarkeit",
+        "OrthoLite Einlegesohle für langanhaltenden Komfort"
+      ],
+      "specs": ["Obermaterial: Leder", "Sohle: Gummi"],
+      "rating": {
+        "count": 564,
+        "value": 4.8
+      }
+    },
+    {
+      "id": "135",
+      "title": "Ralph Lauren Herren Pullover",
+      "category": "Fashion",
+      "price": {
+        "currency": "EUR",
+        "value": 129.0,
+        "discount": 0
+      },
+      "brand": "Ralph Lauren",
+      "images": [
+        "https://m.media-amazon.com/images/I/81HI+4bXCcL._AC_UL320_.jpg"
+      ],
+      "description": "Der Ralph Lauren Herren Pullover ist ein zeitloses Kleidungsstück für stilbewusste Männer. Mit klassischem Rundhalsausschnitt und weicher Baumwollmischung ist er perfekt für jeden Anlass.",
+      "features": [
+        "Weiche Baumwollmischung für angenehmen Tragekomfort",
+        "Klassischer Rundhalsausschnitt mit Rippstrickbündchen",
+        "Ralph Lauren Logo auf der Brust"
+      ],
+      "specs": ["Material: 100% Baumwolle", "Passform: Regular Fit"],
+      "rating": {
+        "count": 189,
+        "value": 4.6
+      }
+    },
+    {
+      "id": "136",
+      "title": "Hugo Boss Herren Anzug",
+      "category": "Fashion",
+      "price": {
+        "currency": "EUR",
+        "value": 449.0,
+        "discount": 0
+      },
+      "brand": "Hugo Boss",
+      "images": [
+        "https://m.media-amazon.com/images/I/71+S-xMStYL._AC_UL320_.jpg"
+      ],
+      "description": "Der Hugo Boss Herren Anzug ist ein elegantes Kleidungsstück für formelle Anlässe. Mit hochwertiger Verarbeitung und klassischem Schnitt sorgt er für einen stilvollen Auftritt.",
+      "features": [
+        "Hochwertige Verarbeitung für edlen Look",
+        "Klassischer Schnitt für optimale Passform",
+        "Inklusive Sakko und Hose"
+      ],
+      "specs": ["Material: 100% Wolle", "Futter: 100% Viskose"],
+      "rating": {
+        "count": 98,
+        "value": 4.7
+      }
+    },
+    {
+      "id": "137",
+      "title": "Michael Kors Damen Handtasche",
+      "category": "Fashion",
+      "price": {
+        "currency": "EUR",
+        "value": 299.0,
+        "discount": 0
+      },
+      "brand": "Michael Kors",
+      "images": [
+        "https://m.media-amazon.com/images/I/71UbJw77ueL._AC_UL320_.jpg"
+      ],
+      "description": "Die Michael Kors Damen Handtasche ist ein stilvolles Accessoire für jede Gelegenheit. Mit hochwertigem Leder und geräumigem Innenraum bietet sie Platz für alle wichtigen Dinge.",
+      "features": [
+        "Hochwertiges Leder für edlen Look",
+        "Geräumiges Hauptfach mit Reißverschluss",
+        "Verstellbarer Schultergurt für individuellen Tragekomfort"
+      ],
+      "specs": ["Material: Leder", "Maße: 30 x 25 x 12 cm"],
+      "rating": {
+        "count": 215,
+        "value": 4.9
+      }
+    },
+    {
+      "id": "138",
+      "title": "Gucci Unisex Sonnenbrille",
+      "category": "Fashion",
+      "price": {
+        "currency": "EUR",
+        "value": 269.0,
+        "discount": 0
+      },
+      "brand": "Gucci",
+      "images": [
+        "https://m.media-amazon.com/images/I/715Y1pwp9+L._AC_UL320_.jpg"
+      ],
+      "description": "Die Gucci Unisex Sonnenbrille ist ein stilvolles Accessoire für sonnige Tage. Mit markantem Design und hochwertigen Gläsern bietet sie optimalen Schutz und Stil.",
+      "features": [
+        "Markantes Design mit Gucci Logo an den Bügeln",
+        "Hochwertige Gläser für klare Sicht",
+        "UV-Schutz für sichere Nutzung in der Sonne"
+      ],
+      "specs": ["Rahmenmaterial: Kunststoff", "Glasmaterial: Kunststoff"],
+      "rating": {
+        "count": 142,
+        "value": 4.8
+      }
+    },
+    {
+      "id": "139",
+      "title": "Versace Damen Armbanduhr",
+      "category": "Fashion",
+      "price": {
+        "currency": "EUR",
+        "value": 399.0,
+        "discount": 0
+      },
+      "brand": "Versace",
+      "images": [
+        "https://m.media-amazon.com/images/I/61rbOU8jKlL._AC_UL320_.jpg"
+      ],
+      "description": "Die Versace Damen Armbanduhr ist ein luxuriöses Accessoire für besondere Anlässe. Mit präzisem Quarzwerk und elegantem Design ist sie ein Blickfang am Handgelenk.",
+      "features": [
+        "Hochwertiges Edelstahlgehäuse mit goldfarbener Beschichtung",
+        "Präzises Quarzwerk für zuverlässige Zeitmessung",
+        "Versace Logo auf dem Zifferblatt"
+      ],
+      "specs": ["Gehäusedurchmesser: 36 mm", "Armbandmaterial: Leder"],
+      "rating": {
+        "count": 76,
+        "value": 4.7
+      }
+    },
+    {
+      "id": "140",
+      "title": "Diesel Herren Jeansjacke",
+      "category": "Fashion",
+      "price": {
+        "currency": "EUR",
+        "value": 159.95,
+        "discount": 0
+      },
+      "brand": "Diesel",
+      "images": [
+        "https://m.media-amazon.com/images/I/41Pr-y1YXBL._MCnd_AC_UL320_.jpg"
+      ],
+      "description": "Die Diesel Herren Jeansjacke ist ein lässiges Must-Have für jeden Kleiderschrank. Mit robustem Denim-Material und markanten Details ist sie perfekt für einen coolen Look.",
+      "features": [
+        "Robustes Denim-Material für authentischen Look",
+        "Klassischer Jeansjacken-Schnitt mit Knopfleiste",
+        "Markante Waschung und Used-Details"
+      ],
+      "specs": ["Material: 100% Baumwolle", "Waschung: Stonewashed"],
+      "rating": {
+        "count": 120,
+        "value": 4.6
+      }
+    }
+  ],
   "users": [
     {
       "id": "1",

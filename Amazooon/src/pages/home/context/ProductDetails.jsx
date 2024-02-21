@@ -1,6 +1,6 @@
 import React from "react";
 import { useProductContext } from "./ProductContext";
-import "./ProductDetails.css";
+import "../ProductDetails.css";
 function ProductDetails() {
   const { selectedProduct } = useProductContext();
 
