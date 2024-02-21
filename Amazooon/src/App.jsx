@@ -9,6 +9,7 @@ import Ok from "./pages/Ok";
 import Header from "./layout/Header";
 import { ProductProvider } from "./pages/home/context/ProductContext";
 import ProductList from "./pages/home/context/ProductList";
+import Elektronik from "./pages/categorys/Elektronik";
 
 function App() {
   return (
@@ -23,6 +24,7 @@ function App() {
             </Layout>
           }
         ></Route>
+        <Route path="/elektronik" element={<Elektronik />}></Route>
         <Route path="/Login" element={<LoginPage />}></Route>
         <Route path="/RegistrationPage" element={<RegistrationPage />}></Route>
       </Routes>

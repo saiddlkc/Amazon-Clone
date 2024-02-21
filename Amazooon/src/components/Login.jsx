@@ -65,7 +65,8 @@ const Login = () => {
       setTimeout(() => {
         setLoading(false);
         setLoginSuccess(true);
-        navigate("/nav?clientName=" + clientName);
+
+        navigate("/?clientName=" + clientName);
       }, 2000);
     } catch (error) {
       console.error("Error:", error);

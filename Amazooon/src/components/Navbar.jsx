@@ -25,9 +25,10 @@ const Navbar = () => {
   }, [location.search]);
 
   const dropdownItems = [
-    { name: "Elektronik", url: "/" },
-    { name: "Bekleidung", url: "/" },
-    { name: "Haushalt", url: "/" },
+    { name: "Elektronik", url: "/Elektronik" },
+    { name: "Bekleidung", url: "/Bekleidung" },
+    { name: "Haushalt", url: "/Haushalt" },
+    { name: "HAllo", url: "/Haushalt" },
     // Weitere Dropdown-Elemente können hier hinzugefügt werden
   ];
   const nav = [
@@ -100,13 +101,13 @@ const Navbar = () => {
               <div className="absolute z-10 bg-gray-800 mt-2 md:mt-0 w-full md:w-40 rounded-lg shadow-lg">
                 <div className="py-1">
                   {dropdownItems.map((item, index) => (
-                    <a
+                    <Link
                       key={index}
-                      href={item.to}
+                      to={item.url}
                       className="block px-4 py-2 text-gray-200 hover:bg-gray-700"
                     >
                       {item.name}
-                    </a>
+                    </Link>
                   ))}
                 </div>
               </div>

@@ -1,23 +1,40 @@
 import React, { useState } from "react";
+import { Link } from "react-router-dom";
 
 const NavigationBar = () => {
   const [isDropdownOpen, setIsDropdownOpen] = useState(false);
 
   // Dropdown-Elemente
   const dropdownItems = [
-    { label: "Elektronik", url: "/" },
-    { label: "Bekleidung", url: "/" },
-    { label: "Haushalt", url: "/" },
+    { label: "Todays Deals", url: "/deals" },
+    { label: "Elektronik", url: "/elektronik" },
+    { label: "Bücher", url: "/bücher" },
+    { label: "Spiele", url: "/spiele" },
+    { label: "Baby", url: "/baby" },
+    { label: "Lebensmittel", url: "/lebensmittel" },
+    { label: "Beauty", url: "/beauty" },
+    { label: "Kameras", url: "/kameras" },
+    { label: "Apotheke", url: "/apotheke" },
+    { label: "Musik", url: "/musik" },
+    { label: "Sport & Fitness", url: "/sport" },
+    { label: "Hygiene", url: "/hygiene" },
+
     // Weitere Dropdown-Elemente können hier hinzugefügt werden
   ];
 
   const nav = [
-    { name: "Prime", to: "/" },
-    { name: "Verkaufen", to: "/verkaufen" },
-    { name: "Kundenservice", to: "/kundenservice" },
-    { name: "Heute's Deals", to: "/heutes-deals" },
+    { name: "Todays Deals", to: "/deals" },
     { name: "Elektronik", to: "/elektronik" },
-    { name: "Kundenkonto", to: "/kundenkonto" },
+    { name: "Bücher", to: "/bücher" },
+    { name: "Spiele", to: "/spiele" },
+    { name: "Baby", to: "/baby" },
+    { name: "Lebensmittel", to: "/lebensmittel" },
+    { name: "Beauty", to: "/beauty" },
+    { name: "Kameras", to: "/kameras" },
+    { name: "Apotheke", to: "/apotheke" },
+    { name: "Musik", to: "/musik" },
+    { name: "Sport & Fitness", to: "/sport" },
+    { name: "Hygiene", to: "/hygiene" },
   ];
 
   const toggleDropdown = () => {
@@ -54,26 +71,26 @@ const NavigationBar = () => {
               <div className="absolute z-10 bg-gray-800 mt-2 md:mt-0 w-full md:w-40 rounded-lg shadow-lg">
                 <div className="py-1">
                   {dropdownItems.map((item, index) => (
-                    <a
+                    <Link
                       key={index}
-                      href={item.url}
+                      to={item.url}
                       className="block px-4 py-2 text-gray-300 hover:bg-gray-700"
                     >
                       {item.label}
-                    </a>
+                    </Link>
                   ))}
                 </div>
               </div>
             )}
           </div>
           {nav.map((navb) => (
-            <a
+            <Link
               key={navb.name}
               to={navb.to}
               className="text-gray-300 ml-4 hover:text-white hidden md:block cursor-pointer"
             >
               {navb.name}
-            </a>
+            </Link>
           ))}
         </div>
       </div>
