@@ -3182,5 +3182,504 @@
         "value": 4.8
       }
     }
+  ],
+  "Fashion": [
+    {
+      "id": "121",
+      "title": "Levi's 501 Original Fit Jeans",
+      "category": "Fashion",
+      "price": {
+        "currency": "EUR",
+        "value": 99.95,
+        "discount": 0
+      },
+      "brand": "Levi's",
+      "images": [
+        "https://m.media-amazon.com/images/I/51hUBYW20HL._AC_UL320_.jpg"
+      ],
+      "description": "Die Levi's 501 Original Fit Jeans ist ein zeitloser Klassiker, der zu jedem Anlass passt. Mit geradem Bein und mittlerer Leibhöhe bietet sie optimalen Tragekomfort und Stil.",
+      "features": [
+        "Klassische Passform mit geradem Bein",
+        "Mittlere Leibhöhe für bequemen Sitz",
+        "Hochwertiges Denim-Material für Langlebigkeit"
+      ],
+      "specs": ["Material: 100% Baumwolle", "Waschung: Stonewashed"],
+      "rating": {
+        "count": 654,
+        "value": 4.6
+      }
+    },
+    {
+      "id": "122",
+      "title": "Tommy Hilfiger Herren Poloshirt",
+      "category": "Fashion",
+      "price": {
+        "currency": "EUR",
+        "value": 69.90,
+        "discount": 0
+      },
+      "brand": "Tommy Hilfiger",
+      "images": [
+        "https://m.media-amazon.com/images/I/61usW6DuEHL._AC_UL320_.jpg"
+      ],
+      "description": "Das Tommy Hilfiger Herren Poloshirt ist ein stilvolles und vielseitiges Kleidungsstück für jeden Tag. Mit klassischem Schnitt und hochwertiger Verarbeitung ist es ein Must-Have für jede Garderobe.",
+      "features": [
+        "Hochwertiges Baumwoll-Piqué für angenehmen Tragekomfort",
+        "Klassischer Polokragen mit Knopfleiste",
+        "Tommy Hilfiger Logo auf der Brust"
+      ],
+      "specs": ["Material: 100% Baumwolle", "Passform: Regular Fit"],
+      "rating": {
+        "count": 438,
+        "value": 4.7
+      }
+    },
+    {
+      "id": "123",
+      "title": "Calvin Klein Damen Leggings",
+      "category": "Fashion",
+      "price": {
+        "currency": "EUR",
+        "value": 39.99,
+        "discount": 0
+      },
+      "brand": "Calvin Klein",
+      "images": [
+        "https://m.media-amazon.com/images/I/51Xv1w7aYXL._MCnd_AC_UL320_.jpg"
+      ],
+      "description": "Die Calvin Klein Damen Leggings ist ein vielseitiges Basic für Sport und Freizeit. Mit elastischem Bund und enganliegender Passform bietet sie optimalen Komfort und Bewegungsfreiheit.",
+      "features": [
+        "Elastischer Bund für perfekte Passform",
+        "Eng anliegende Passform für optimale Bewegungsfreiheit",
+        "Calvin Klein Logo am Bund"
+      ],
+      "specs": ["Material: 95% Baumwolle, 5% Elasthan", "Passform: Slim Fit"],
+      "rating": {
+        "count": 321,
+        "value": 4.5
+      }
+    },
+    {
+      "id": "124",
+      "title": "Adidas Originals Superstar Sneaker",
+      "category": "Fashion",
+      "price": {
+        "currency": "EUR",
+        "value": 99.95,
+        "discount": 0
+      },
+      "brand": "Adidas Originals",
+      "images": [
+        "https://m.media-amazon.com/images/I/81HaH7Gn4ML._AC_UL320_.jpg"
+      ],
+      "description": "Der Adidas Originals Superstar Sneaker ist ein ikonisches Modell, das nie aus der Mode kommt. Mit charakteristischem Shell-Zehenbereich und markanten Streifen ist er ein absoluter Klassiker.",
+      "features": [
+        "Obermaterial aus Full-Grain-Leder für hochwertigen Look",
+        "Klassische Gummi-Cupsohle für Traktion und Haltbarkeit",
+        "OrthoLite Einlegesohle für langanhaltenden Komfort"
+      ],
+      "specs": ["Obermaterial: Leder", "Sohle: Gummi"],
+      "rating": {
+        "count": 564,
+        "value": 4.8
+      }
+    },
+    {
+      "id": "125",
+      "title": "Ralph Lauren Herren Pullover",
+      "category": "Fashion",
+      "price": {
+        "currency": "EUR",
+        "value": 129.00,
+        "discount": 0
+      },
+      "brand": "Ralph Lauren",
+      "images": [
+        "https://m.media-amazon.com/images/I/71XObGVWY0L._AC_UL320_.jpg"
+      ],
+      "description": "Der Ralph Lauren Herren Pullover ist ein zeitloses Kleidungsstück für stilbewusste Männer. Mit klassischem Rundhalsausschnitt und weicher Baumwollmischung ist er perfekt für jeden Anlass.",
+      "features": [
+        "Weiche Baumwollmischung für angenehmen Tragekomfort",
+        "Klassischer Rundhalsausschnitt mit Rippstrickbündchen",
+        "Ralph Lauren Logo auf der Brust"
+      ],
+      "specs": ["Material: 100% Baumwolle", "Passform: Regular Fit"],
+      "rating": {
+        "count": 189,
+        "value": 4.6
+      }
+    },
+    {
+      "id": "126",
+      "title": "Hugo Boss Herren Anzug",
+      "category": "Fashion",
+      "price": {
+        "currency": "EUR",
+        "value": 449.00,
+        "discount": 0
+      },
+      "brand": "Hugo Boss",
+      "images": [
+        "https://m.media-amazon.com/images/I/81VXLy5ieCL._AC_UL320_.jpg"
+      ],
+      "description": "Der Hugo Boss Herren Anzug ist ein elegantes Kleidungsstück für formelle Anlässe. Mit hochwertiger Verarbeitung und klassischem Schnitt sorgt er für einen stilvollen Auftritt.",
+      "features": [
+        "Hochwertige Verarbeitung für edlen Look",
+        "Klassischer Schnitt für optimale Passform",
+        "Inklusive Sakko und Hose"
+      ],
+      "specs": ["Material: 100% Wolle", "Futter: 100% Viskose"],
+      "rating": {
+        "count": 98,
+        "value": 4.7
+      }
+    },
+    {
+      "id": "127",
+      "title": "Michael Kors Damen Handtasche",
+      "category": "Fashion",
+      "price": {
+        "currency": "EUR",
+        "value": 299.00,
+        "discount": 0
+      },
+      "brand": "Michael Kors",
+      "images": [
+        "https://m.media-amazon.com/images/I/A10rPFe5I6L._AC_UL320_.jpg"
+      ],
+      "description": "Die Michael Kors Damen Handtasche ist ein stilvolles Accessoire für jede Gelegenheit. Mit hochwertigem Leder und geräumigem Innenraum bietet sie Platz für alle wichtigen Dinge.",
+      "features": [
+        "Hochwertiges Leder für edlen Look",
+        "Geräumiges Hauptfach mit Reißverschluss",
+        "Verstellbarer Schultergurt für individuellen Tragekomfort"
+      ],
+      "specs": ["Material: Leder", "Maße: 30 x 25 x 12 cm"],
+      "rating": {
+        "count": 215,
+        "value": 4.9
+      }
+    },
+    {
+      "id": "128",
+      "title": "Gucci Unisex Sonnenbrille",
+      "category": "Fashion",
+      "price": {
+        "currency": "EUR",
+        "value": 269.00,
+        "discount": 0
+      },
+      "brand": "Gucci",
+      "images": [
+        "https://m.media-amazon.com/images/I/61tm9mqKg6L._AC_UL320_.jpg"
+      ],
+      "description": "Die Gucci Unisex Sonnenbrille ist ein stilvolles Accessoire für sonnige Tage. Mit markantem Design und hochwertigen Gläsern bietet sie optimalen Schutz und Stil.",
+      "features": [
+        "Markantes Design mit Gucci Logo an den Bügeln",
+        "Hochwertige Gläser für klare Sicht",
+        "UV-Schutz für sichere Nutzung in der Sonne"
+      ],
+      "specs": ["Rahmenmaterial: Kunststoff", "Glasmaterial: Kunststoff"],
+      "rating": {
+        "count": 142,
+        "value": 4.8
+      }
+    },
+    {
+      "id": "129",
+      "title": "Versace Damen Armbanduhr",
+      "category": "Fashion",
+      "price": {
+        "currency": "EUR",
+        "value": 399.00,
+        "discount": 0
+      },
+      "brand": "Versace",
+      "images": [
+        "https://m.media-amazon.com/images/I/81fIBdF-8TL._MCnd_AC_UL320_.jpg"
+      ],
+      "description": "Die Versace Damen Armbanduhr ist ein luxuriöses Accessoire für besondere Anlässe. Mit präzisem Quarzwerk und elegantem Design ist sie ein Blickfang am Handgelenk.",
+      "features": [
+        "Hochwertiges Edelstahlgehäuse mit goldfarbener Beschichtung",
+        "Präzises Quarzwerk für zuverlässige Zeitmessung",
+        "Versace Logo auf dem Zifferblatt"
+      ],
+      "specs": ["Gehäusedurchmesser: 36 mm", "Armbandmaterial: Leder"],
+      "rating": {
+        "count": 76,
+        "value": 4.7
+      }
+    },
+    {
+      "id": "130",
+      "title": "Diesel Herren Jeansjacke",
+      "category": "Fashion",
+      "price": {
+        "currency": "EUR",
+        "value": 159.95,
+        "discount": 0
+      },
+      "brand": "Diesel",
+      "images": [
+        "https://m.media-amazon.com/images/I/81j2GD3kKVL._AC_UL320_.jpg"
+      ],
+      "description": "Die Diesel Herren Jeansjacke ist ein lässiges Must-Have für jeden Kleiderschrank. Mit robustem Denim-Material und markanten Details ist sie perfekt für einen coolen Look.",
+      "features": [
+        "Robustes Denim-Material für authentischen Look",
+        "Klassischer Jeansjacken-Schnitt mit Knopfleiste",
+        "Markante Waschung und Used-Details"
+      ],
+      "specs": ["Material: 100% Baumwolle", "Waschung: Stonewashed"],
+      "rating": {
+        "count": 120,
+        "value": 4.6}},
+        {
+          "id": "131",
+          "title": "Levi's 501 Original Fit Jeans",
+          "category": "Fashion",
+          "price": {
+            "currency": "EUR",
+            "value": 99.95,
+            "discount": 0
+          },
+          "brand": "Levi's",
+          "images": [
+            "https://m.media-amazon.com/images/I/9134T3rPgIL._AC_UL320_.jpg"
+          ],
+          "description": "Die Levi's 501 Original Fit Jeans ist ein zeitloser Klassiker, der zu jedem Anlass passt. Mit geradem Bein und mittlerer Leibhöhe bietet sie optimalen Tragekomfort und Stil.",
+          "features": [
+            "Klassische Passform mit geradem Bein",
+            "Mittlere Leibhöhe für bequemen Sitz",
+            "Hochwertiges Denim-Material für Langlebigkeit"
+          ],
+          "specs": ["Material: 100% Baumwolle", "Waschung: Stonewashed"],
+          "rating": {
+            "count": 654,
+            "value": 4.6
+          }
+        },
+        {
+          "id": "132",
+          "title": "Tommy Hilfiger Herren Poloshirt",
+          "category": "Fashion",
+          "price": {
+            "currency": "EUR",
+            "value": 69.90,
+            "discount": 0
+          },
+          "brand": "Tommy Hilfiger",
+          "images": [
+            "https://m.media-amazon.com/images/I/71k-myhoFWL._AC_UL320_.jpg"
+          ],
+          "description": "Das Tommy Hilfiger Herren Poloshirt ist ein stilvolles und vielseitiges Kleidungsstück für jeden Tag. Mit klassischem Schnitt und hochwertiger Verarbeitung ist es ein Must-Have für jede Garderobe.",
+          "features": [
+            "Hochwertiges Baumwoll-Piqué für angenehmen Tragekomfort",
+            "Klassischer Polokragen mit Knopfleiste",
+            "Tommy Hilfiger Logo auf der Brust"
+          ],
+          "specs": ["Material: 100% Baumwolle", "Passform: Regular Fit"],
+          "rating": {
+            "count": 438,
+            "value": 4.7
+          }
+        },
+        {
+          "id": "133",
+          "title": "Calvin Klein Damen Leggings",
+          "category": "Fashion",
+          "price": {
+            "currency": "EUR",
+            "value": 39.99,
+            "discount": 0
+          },
+          "brand": "Calvin Klein",
+          "images": [
+            "https://m.media-amazon.com/images/I/616SSYV09CL._AC_UL320_.jpg"
+          ],
+          "description": "Die Calvin Klein Damen Leggings ist ein vielseitiges Basic für Sport und Freizeit. Mit elastischem Bund und enganliegender Passform bietet sie optimalen Komfort und Bewegungsfreiheit.",
+          "features": [
+            "Elastischer Bund für perfekte Passform",
+            "Eng anliegende Passform für optimale Bewegungsfreiheit",
+            "Calvin Klein Logo am Bund"
+          ],
+          "specs": ["Material: 95% Baumwolle, 5% Elasthan", "Passform: Slim Fit"],
+          "rating": {
+            "count": 321,
+            "value": 4.5
+          }
+        },
+        {
+          "id": "134",
+          "title": "Adidas Originals Superstar Sneaker",
+          "category": "Fashion",
+          "price": {
+            "currency": "EUR",
+            "value": 99.95,
+            "discount": 0
+          },
+          "brand": "Adidas Originals",
+          "images": [
+            "https://m.media-amazon.com/images/I/51wQeU+IMxL._AC_UL320_.jpg"
+          ],
+          "description": "Der Adidas Originals Superstar Sneaker ist ein ikonisches Modell, das nie aus der Mode kommt. Mit charakteristischem Shell-Zehenbereich und markanten Streifen ist er ein absoluter Klassiker.",
+          "features": [
+            "Obermaterial aus Full-Grain-Leder für hochwertigen Look",
+            "Klassische Gummi-Cupsohle für Traktion und Haltbarkeit",
+            "OrthoLite Einlegesohle für langanhaltenden Komfort"
+          ],
+          "specs": ["Obermaterial: Leder", "Sohle: Gummi"],
+          "rating": {
+            "count": 564,
+            "value": 4.8
+          }
+        },
+        {
+          "id": "135",
+          "title": "Ralph Lauren Herren Pullover",
+          "category": "Fashion",
+          "price": {
+            "currency": "EUR",
+            "value": 129.00,
+            "discount": 0
+          },
+          "brand": "Ralph Lauren",
+          "images": [
+            "https://m.media-amazon.com/images/I/81HI+4bXCcL._AC_UL320_.jpg"
+          ],
+          "description": "Der Ralph Lauren Herren Pullover ist ein zeitloses Kleidungsstück für stilbewusste Männer. Mit klassischem Rundhalsausschnitt und weicher Baumwollmischung ist er perfekt für jeden Anlass.",
+          "features": [
+            "Weiche Baumwollmischung für angenehmen Tragekomfort",
+            "Klassischer Rundhalsausschnitt mit Rippstrickbündchen",
+            "Ralph Lauren Logo auf der Brust"
+          ],
+          "specs": ["Material: 100% Baumwolle", "Passform: Regular Fit"],
+          "rating": {
+            "count": 189,
+            "value": 4.6
+          }
+        },
+        {
+          "id": "136",
+          "title": "Hugo Boss Herren Anzug",
+          "category": "Fashion",
+          "price": {
+            "currency": "EUR",
+            "value": 449.00,
+            "discount": 0
+          },
+          "brand": "Hugo Boss",
+          "images": [
+            "https://m.media-amazon.com/images/I/71+S-xMStYL._AC_UL320_.jpg"
+          ],
+          "description": "Der Hugo Boss Herren Anzug ist ein elegantes Kleidungsstück für formelle Anlässe. Mit hochwertiger Verarbeitung und klassischem Schnitt sorgt er für einen stilvollen Auftritt.",
+          "features": [
+            "Hochwertige Verarbeitung für edlen Look",
+            "Klassischer Schnitt für optimale Passform",
+            "Inklusive Sakko und Hose"
+          ],
+          "specs": ["Material: 100% Wolle", "Futter: 100% Viskose"],
+          "rating": {
+            "count": 98,
+            "value": 4.7
+          }
+        },
+        {
+          "id": "137",
+          "title": "Michael Kors Damen Handtasche",
+          "category": "Fashion",
+          "price": {
+            "currency": "EUR",
+            "value": 299.00,
+            "discount": 0
+          },
+          "brand": "Michael Kors",
+          "images": [
+            "https://m.media-amazon.com/images/I/71UbJw77ueL._AC_UL320_.jpg"
+          ],
+          "description": "Die Michael Kors Damen Handtasche ist ein stilvolles Accessoire für jede Gelegenheit. Mit hochwertigem Leder und geräumigem Innenraum bietet sie Platz für alle wichtigen Dinge.",
+          "features": [
+            "Hochwertiges Leder für edlen Look",
+            "Geräumiges Hauptfach mit Reißverschluss",
+            "Verstellbarer Schultergurt für individuellen Tragekomfort"
+          ],
+          "specs": ["Material: Leder", "Maße: 30 x 25 x 12 cm"],
+          "rating": {
+            "count": 215,
+            "value": 4.9
+          }
+        },
+        {
+          "id": "138",
+          "title": "Gucci Unisex Sonnenbrille",
+          "category": "Fashion",
+          "price": {
+            "currency": "EUR",
+            "value": 269.00,
+            "discount": 0
+          },
+          "brand": "Gucci",
+          "images": [
+            "https://m.media-amazon.com/images/I/715Y1pwp9+L._AC_UL320_.jpg"
+          ],
+          "description": "Die Gucci Unisex Sonnenbrille ist ein stilvolles Accessoire für sonnige Tage. Mit markantem Design und hochwertigen Gläsern bietet sie optimalen Schutz und Stil.",
+          "features": [
+            "Markantes Design mit Gucci Logo an den Bügeln",
+            "Hochwertige Gläser für klare Sicht",
+            "UV-Schutz für sichere Nutzung in der Sonne"
+          ],
+          "specs": ["Rahmenmaterial: Kunststoff", "Glasmaterial: Kunststoff"],
+          "rating": {
+            "count": 142,
+            "value": 4.8
+          }
+        },
+        {
+          "id": "139",
+          "title": "Versace Damen Armbanduhr",
+          "category": "Fashion",
+          "price": {
+            "currency": "EUR",
+            "value": 399.00,
+            "discount": 0
+          },
+          "brand": "Versace",
+          "images": [
+            "https://m.media-amazon.com/images/I/61rbOU8jKlL._AC_UL320_.jpg"
+          ],
+          "description": "Die Versace Damen Armbanduhr ist ein luxuriöses Accessoire für besondere Anlässe. Mit präzisem Quarzwerk und elegantem Design ist sie ein Blickfang am Handgelenk.",
+          "features": [
+            "Hochwertiges Edelstahlgehäuse mit goldfarbener Beschichtung",
+            "Präzises Quarzwerk für zuverlässige Zeitmessung",
+            "Versace Logo auf dem Zifferblatt"
+          ],
+          "specs": ["Gehäusedurchmesser: 36 mm", "Armbandmaterial: Leder"],
+          "rating": {
+            "count": 76,
+            "value": 4.7
+          }
+        },
+        {
+          "id": "140",
+          "title": "Diesel Herren Jeansjacke",
+          "category": "Fashion",
+          "price": {
+            "currency": "EUR",
+            "value": 159.95,
+            "discount": 0
+          },
+          "brand": "Diesel",
+          "images": [
+            "https://m.media-amazon.com/images/I/41Pr-y1YXBL._MCnd_AC_UL320_.jpg"
+          ],
+          "description": "Die Diesel Herren Jeansjacke ist ein lässiges Must-Have für jeden Kleiderschrank. Mit robustem Denim-Material und markanten Details ist sie perfekt für einen coolen Look.",
+          "features": [
+            "Robustes Denim-Material für authentischen Look",
+            "Klassischer Jeansjacken-Schnitt mit Knopfleiste",
+            "Markante Waschung und Used-Details"
+          ],
+          "specs": ["Material: 100% Baumwolle", "Waschung: Stonewashed"],
+          "rating": {
+            "count": 120,
+            "value": 4.6}}
   ]
 }
+
