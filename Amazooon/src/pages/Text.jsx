@@ -1,6 +1,15 @@
 import React from "react";
+import { Link, Routes, Route } from "react-router-dom";
+import Ok from "./Ok";
 
 const Text = () => {
+  const Nav = [
+    {
+      id: 1,
+      name: "Ok",
+      to: "/",
+    },
+  ];
   return (
     <div>
       Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quasi
@@ -133,6 +142,16 @@ const Text = () => {
       tenetur esse reprehenderit aliquid culpa dolorem odit dolorum ratione
       labore iure delectus corporis quidem natus! Numquam accusantium labore
       molestias sunt repellat quae dolorem a.
+      <ul className="h-full flex flex-col justify-center items-center gap-y-8 text-primary font-primary font-bold text-3xl">
+        {Nav.map((nav) => (
+          <li key={nav.id}>
+            <Link to={nav.to}>{nav.name}</Link>
+          </li>
+        ))}
+      </ul>
+      <Routes>
+        <Route path="/ok" element={<Ok />} />
+      </Routes>
     </div>
   );
 };

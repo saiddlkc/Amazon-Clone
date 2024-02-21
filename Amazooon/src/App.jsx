@@ -1,5 +1,6 @@
 import "./App.css";
 import Ok from "./pages/Ok";
+import Text from "./pages/Text";
 
 import Login from "./components/Login";
 import { Route, BrowserRouter as Router, Routes } from "react-router-dom";
@@ -14,6 +15,7 @@ function App() {
       <Layout>
         <Routes>
           <Route path="/" element={<Ok />} />
+          <Route path="/text" element={<Text />} />
         </Routes>
       </Layout>
     </>
