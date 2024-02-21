@@ -1,4 +1,7 @@
 import React from "react";
+import { Link, Routes, Route } from "react-router-dom";
+
+import Text from "./Text";
 
 const Ok = () => {
   return (
@@ -298,6 +301,12 @@ const Ok = () => {
           doloremque asperiores a!
         </p>
       </div>
+      <Link name="Text" to="/text">
+        Text
+      </Link>
+      <Routes>
+        <Route path="/text" element={<Text />} />
+      </Routes>
     </div>
   );
 };

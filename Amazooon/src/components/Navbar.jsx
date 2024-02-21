@@ -48,7 +48,7 @@ const Navbar = () => {
         </div>
 
         {/* Hauptmenü für größere Bildschirme */}
-        <div className="hidden lg:flex items-center space-x-4">
+        <div className="hidden w-full lg:flex items-center px-0 justify-between">
           <div className="flex justify-center items-center">
             <LuMapPin />
             <div className="p-4">
@@ -57,15 +57,15 @@ const Navbar = () => {
             </div>
           </div>
           {/* Suchleiste */}
-          <div className="px-20 py-5  flex justify-stretch items-center">
+          <div className="px-20 py-5 w-full   flex justify-stretch items-center">
             <button className="px-4 py-2 rounded-l-md bg-gray-200 text-black flex justify-center items-center">
               <p className="mr-2"> All</p>
               <FiChevronDown />
             </button>
             <input
               type="text"
-              placeholder="Suche Amazon.de"
-              className="px-48 py-2  bg-white text-black focus:outline-none"
+              placeholder="Suche Amazooon.de"
+              className="px-2 py-2 w-full bg-white text-black focus:outline-none"
             />
             <button className="bg-orange-300 px-5 py-3  rounded-r-md hover:bg-orange-400">
               <FiSearch className="text-white" />
@@ -78,23 +78,18 @@ const Navbar = () => {
               <p>Hallo, ...</p>
               <span className="text-xs">Konto und Liste</span>
             </div>
-            <div>
-              <p>Hallo, ...</p>
-              <span className="text-xs">Konto und Liste</span>
+            {/* Warenkorb */}
+            <div className="relative">
+              <button
+                className="flex items-center bg-amazon-dark px-4 py-2 rounded-md hover:bg-amazon-orange"
+                onClick={() => addToCart({ label: "Artikel 1", price: 10 })}
+              >
+                <FiShoppingCart className="text-white" />
+                <span className="text-white ml-1">
+                  Warenkorb ({cartItems.length})
+                </span>
+              </button>
             </div>
-          </div>
-
-          {/* Warenkorb */}
-          <div className="relative">
-            <button
-              className="flex items-center bg-amazon-dark px-4 py-2 rounded-md hover:bg-amazon-orange"
-              onClick={() => addToCart({ label: "Artikel 1", price: 10 })}
-            >
-              <FiShoppingCart className="text-white" />
-              <span className="text-white ml-1">
-                Warenkorb ({cartItems.length})
-              </span>
-            </button>
           </div>
         </div>
 
