@@ -16,7 +16,7 @@
 
 .product-item {
   width: calc(23% - 20px);
-  height: 500px;
+  height: 450px;
   border: 1px solid rgba(0, 0, 0, 0.367);
   background-color: #ffffff;
   display: flex;
@@ -48,11 +48,11 @@
 } */
 
 .product-name {
-  font-size: 24px;
+  font-size: 30px;
   text-align: center;
   border-bottom: 1px solid #c7511f;
-  margin: 20px 0 100px;
-  padding-left: 100px;
+  margin: 20px 60px;
+  
 }
 
 .product-title {

@@ -28,7 +28,7 @@ const Angebot = () => {
       <div>
         <h2 className="product-name">Unsere Bestseller-Angebote für dich</h2>
         <div className="product-container rabatt">
-          {getRandomProducts(allProducts, 8).map((product) => (
+          {getRandomProducts(allProducts, 4).map((product) => (
             <div key={product.id} className="product-item">
               <img
                 className="product-image"
