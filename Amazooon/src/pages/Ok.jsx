@@ -4,6 +4,14 @@ import { Link, Routes, Route } from "react-router-dom";
 import Text from "./Text";
 
 const Ok = () => {
+  const Nav = [
+    {
+      id: 1,
+      name: "Text",
+      to: "/text",
+    },
+    { id: 2, name: "Ok", to: "/ok" },
+  ];
   return (
     <div>
       {" "}
@@ -186,8 +194,7 @@ const Ok = () => {
           dolore, doloremque autem modi,
         </p>
         <p>
-          {" "}
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellat
+          c Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellat
           molestias possimus fugit obcaecati quidem nostrum, laboriosam illo
           animi excepturi perspiciatis similique delectus? Provident natus unde
           in dolores cumque omnis accusantium. Ad, explicabo. Ratione
@@ -301,9 +308,13 @@ const Ok = () => {
           doloremque asperiores a!
         </p>
       </div>
-      <Link name="Text" to="/text">
-        Text
-      </Link>
+      <ul className="h-full flex    justify-center items-center gap-y-8 text-primary font-primary font-bold text-3xl">
+        {Nav.map((nav) => (
+          <li className="mx-5" key={nav.id}>
+            <Link to={nav.to}>{nav.name}</Link>
+          </li>
+        ))}
+      </ul>
       <Routes>
         <Route path="/text" element={<Text />} />
       </Routes>
