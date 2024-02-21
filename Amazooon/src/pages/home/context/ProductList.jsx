@@ -48,12 +48,16 @@ const ProductList = () => {
             <p className="product-price">
               {product.price.value} {product.price.currency}
             </p>
+            <p>
+              <Link to={`/${product.category}`}>View Category</Link>
+            </p>
           </div>
+
           <button
             className="product__button"
             onClick={() => showProductDetails(product)}
           >
-            View Details
+            <Link to={`/${product.category}/${product.id}`}>View Details</Link>
           </button>
         </div>
       ))}

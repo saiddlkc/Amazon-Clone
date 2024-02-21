@@ -11,79 +11,93 @@ import Deals from "./pages/categorys/Deals";
 import Fashion from "./pages/categorys/Fashion";
 import Lebensmittel from "./pages/categorys/Lebensmittel";
 import Spiele from "./pages/categorys/Spiele";
+import { ProductProvider } from "./pages/home/context/ProductContext";
+import ProductDetails from "./pages/home/context/ProductDetails";
 
 function App() {
   return (
     <>
-      <Routes>
-        <Route
-          exact
-          path="/"
-          element={
-            <Layout>
-              <HomePage />
-            </Layout>
-          }
-        ></Route>
-        <Route
-          path="/cameras"
-          element={
-            <Layout>
-              <Cameras />
-            </Layout>
-          }
-        />
-        <Route
-          path="/baby"
-          element={
-            <Layout>
-              <Baby />
-            </Layout>
-          }
-        />
-        <Route
-          path="/bücher"
-          element={
-            <Layout>
-              <Bücher />
-            </Layout>
-          }
-        />
-        <Route
-          path="/deals"
-          element={
-            <Layout>
-              <Deals />
-            </Layout>
-          }
-        />
-        <Route
-          path="/fashion"
-          element={
-            <Layout>
-              <Fashion />
-            </Layout>
-          }
-        />
-        <Route
-          path="/lebensmittel"
-          element={
-            <Layout>
-              <Lebensmittel />
-            </Layout>
-          }
-        />
-        <Route
-          path="/spiele"
-          element={
-            <Layout>
-              <Spiele />
-            </Layout>
-          }
-        />
-        <Route path="/Login" element={<LoginPage />} />
-        <Route path="/RegistrationPage" element={<RegistrationPage />} />
-      </Routes>
+      <ProductProvider>
+        <Routes>
+          <Route
+            exact
+            path="/"
+            element={
+              <Layout>
+                <HomePage />
+              </Layout>
+            }
+          ></Route>
+          <Route
+            path="/Cameras"
+            element={
+              <Layout>
+                <Cameras />
+              </Layout>
+            }
+          />
+          <Route
+            path="/Baby"
+            element={
+              <Layout>
+                <Baby />
+              </Layout>
+            }
+          />
+          <Route
+            path="/Bücher"
+            element={
+              <Layout>
+                <Bücher />
+              </Layout>
+            }
+          />
+          <Route
+            path="/Deals"
+            element={
+              <Layout>
+                <Deals />
+              </Layout>
+            }
+          />
+          <Route
+            path="/Fashion"
+            element={
+              <Layout>
+                <Fashion />
+              </Layout>
+            }
+          />
+          <Route
+            path="/Lebensmittel"
+            element={
+              <Layout>
+                <Lebensmittel />
+              </Layout>
+            }
+          />
+          <Route
+            path="/Spiele"
+            element={
+              <Layout>
+                <Spiele />
+              </Layout>
+            }
+          />
+
+          <Route
+            path="/:category/:id"
+            element={
+              <Layout>
+                <ProductDetails />
+              </Layout>
+            }
+          />
+
+          <Route path="/Login" element={<LoginPage />} />
+          <Route path="/RegistrationPage" element={<RegistrationPage />} />
+        </Routes>
+      </ProductProvider>
     </>
   );
 }

@@ -15,9 +15,7 @@ function Pro() {
       >
         <ProductList />
       </div>
-      <div>
-        <ProductDetails />
-      </div>
+      <div>{/* <ProductDetails /> */}</div>
     </ProductProvider>
   );
 }
