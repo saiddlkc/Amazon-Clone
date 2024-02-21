@@ -59,9 +59,9 @@ const Login = () => {
         return;
       }
 
-      console.log("Login erfolgreich:", data[0].name);
+      console.log("Login erfolgreich:", data[0].clientName);
       // setclientName(data[0].clientName);
-      const clientName = data[0].name;
+      const clientName = data[0].clientName;
       setTimeout(() => {
         setLoading(false);
         setLoginSuccess(true);

@@ -6,7 +6,6 @@ import HomePage from "./pages/home/HomePage";
 import RegistrationPage from "./pages/RegistrationPage";
 import LoginPage from "./pages/LoginPage";
 import Layout from "./layout/Layout";
-import Ok from "./pages/Ok";
 
 function App() {
   return (
