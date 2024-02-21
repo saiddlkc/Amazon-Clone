@@ -78,18 +78,18 @@ const Navbar = () => {
               <p>Hallo, ...</p>
               <span className="text-xs">Konto und Liste</span>
             </div>
-            {/* Warenkorb */}
-            <div className="relative">
-              <button
-                className="flex items-center bg-amazon-dark px-4 py-2 rounded-md hover:bg-amazon-orange"
-                onClick={() => addToCart({ label: "Artikel 1", price: 10 })}
-              >
-                <FiShoppingCart className="text-white" />
-                <span className="text-white ml-1">
-                  Warenkorb ({cartItems.length})
-                </span>
-              </button>
-            </div>
+          </div>
+          {/* Warenkorb */}
+          <div className="relative">
+            <button
+              className="flex items-center bg-amazon-dark px-4 py-2 rounded-md hover:bg-amazon-orange"
+              onClick={() => addToCart({ label: "Artikel 1", price: 10 })}
+            >
+              <FiShoppingCart className="text-white" />
+              <span className="text-white ml-1">
+                Warenkorb ({cartItems.length})
+              </span>
+            </button>
           </div>
         </div>
 
