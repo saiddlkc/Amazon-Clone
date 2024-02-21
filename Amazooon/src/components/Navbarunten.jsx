@@ -7,34 +7,24 @@ const NavigationBar = () => {
   // Dropdown-Elemente
   const dropdownItems = [
     { label: "Todays Deals", url: "/deals" },
-    { label: "Elektronik", url: "/elektronik" },
     { label: "Bücher", url: "/bücher" },
     { label: "Spiele", url: "/spiele" },
     { label: "Baby", url: "/baby" },
     { label: "Lebensmittel", url: "/lebensmittel" },
-    { label: "Beauty", url: "/beauty" },
     { label: "Kameras", url: "/kameras" },
-    { label: "Apotheke", url: "/apotheke" },
-    { label: "Musik", url: "/musik" },
-    { label: "Sport & Fitness", url: "/sport" },
-    { label: "Hygiene", url: "/hygiene" },
+    { label: "Fashion", url: "/fashion" },
 
     // Weitere Dropdown-Elemente können hier hinzugefügt werden
   ];
 
   const nav = [
     { name: "Todays Deals", to: "/deals" },
-    { name: "Elektronik", to: "/elektronik" },
     { name: "Bücher", to: "/bücher" },
     { name: "Spiele", to: "/spiele" },
     { name: "Baby", to: "/baby" },
     { name: "Lebensmittel", to: "/lebensmittel" },
-    { name: "Beauty", to: "/beauty" },
-    { name: "Kameras", to: "/kameras" },
-    { name: "Apotheke", to: "/apotheke" },
-    { name: "Musik", to: "/musik" },
-    { name: "Sport & Fitness", to: "/sport" },
-    { name: "Hygiene", to: "/hygiene" },
+    { name: "Kameras", to: "/cameras" },
+    { name: "Fashion", to: "/fashion" },
   ];
 
   const toggleDropdown = () => {

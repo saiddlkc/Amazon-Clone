@@ -1,9 +1,8 @@
 import React from "react";
-import { Link } from "react-router-dom";
-import json from "../../database/data.json";
+import json from "../../database/db.json";
 import "./ProductList.css";
 
-const Category = () => {
+const ProductList = () => {
   const renderRatingStars = (rating) => {
     const stars = [];
     for (let i = 0; i < rating; i++) {
@@ -12,30 +11,21 @@ const Category = () => {
     return stars;
   };
 
-  const ProductDetails = ({ product }) => {
-    return (
-      <div>
-        <h2>{product.title}</h2>
-        <p>
-          Price: {product.price.value} {product.price.currency}
-        </p>
-        <p>Rating: {renderRatingStars(product.rating.value)}</p>
-      </div>
-    );
-  };
+  const productsByCategory = {};
+  json.products.forEach((product) => {
+    if (!productsByCategory[product.category]) {
+      productsByCategory[product.category] = [];
+    }
+    productsByCategory[product.category].push(product);
+  });
 
   return (
     <div>
-      {Object.keys(json).map((category, index) => (
-        <div key={index} className="category-container">
-          <h2 className="category-title">
-            <span>{category} </span>
-            <span>
-              <Link to={"/"}>Alle Produkte</Link>
-            </span>
-          </h2>
+      {Object.keys(productsByCategory).map((category) => (
+        <div key={category}>
+          <h2 className="product-name">{category}</h2>
           <div className="product-container">
-            {json[category].map((product) => (
+            {productsByCategory[category].map((product) => (
               <div key={product.id} className="product-item">
                 <img
                   className="product-image"
@@ -50,12 +40,12 @@ const Category = () => {
                 <p className="product-price">
                   {product.price.value} {product.price.currency}
                 </p>
-                <Link
-                  to={`/products/${product.id}`}
+                <button
                   className="product__button"
+                  onClick={() => showProductDetails(product)}
                 >
                   View Details
-                </Link>
+                </button>
               </div>
             ))}
           </div>
@@ -65,4 +55,4 @@ const Category = () => {
   );
 };
 
-export default Category;
+export default ProductList;
