@@ -16,10 +16,11 @@ const Navbar = () => {
   const navigate = useNavigate();
   const [username, setUsername] = useState("");
   const [loading, setLoading] = useState(false)
+  
 
   useEffect(() => {
-    const usernameFromSessionStorage = sessionStorage.getItem("username");
-    setUsername(usernameFromSessionStorage);
+    const usernameFromlocalStorage = localStorage.getItem("username");
+    setUsername(usernameFromlocalStorage);
     
   }, []);
   const handleSignInClick = () => {
@@ -27,9 +28,10 @@ const Navbar = () => {
   };
   const logoutClick = () => {
     setLoading(true)
-    sessionStorage.clear();
+    localStorage.clear();
     setTimeout(() => {
       window.location.reload();
+      navigate("/");
     }, 3000); 
   };
 
@@ -160,7 +162,7 @@ const Navbar = () => {
             {username ? (
               <button
                 className="flex items-center bg-slate-600 p-2 rounded-md hover:bg-slate-500"
-                onClick={() => setCartItems([...cartItems, { label: "Artikel 1", price: 10 }])}
+                onClick={()=>navigate("/wk")}
               >
                 <FiShoppingCart className="m-1" /> Warenkorb ({cartItems.length})
               </button>

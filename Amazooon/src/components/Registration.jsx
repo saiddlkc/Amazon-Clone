@@ -91,6 +91,7 @@ const Registration = () => {
           name: clientName,
           email: email,
           password: password,
+          cart:[],
         }),
         headers: {
           "Content-Type": "application/json",

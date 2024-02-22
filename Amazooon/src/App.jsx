@@ -11,6 +11,8 @@ import Deals from "./pages/categorys/Deals";
 import Fashion from "./pages/categorys/Fashion";
 import Lebensmittel from "./pages/categorys/Lebensmittel";
 import Spiele from "./pages/categorys/Spiele";
+import KorbPage from "./pages/KorbPage";
+import WkTest from "./components/wktest";
 
 function App() {
   return (
@@ -81,6 +83,8 @@ function App() {
             </Layout>
           }
         />
+        <Route path="wkt" element={<WkTest/>}/>
+        <Route path="wk" element={<KorbPage/>}/>
         <Route path="/Login" element={<LoginPage />} />
         <Route path="/RegistrationPage" element={<RegistrationPage />} />
       </Routes>
