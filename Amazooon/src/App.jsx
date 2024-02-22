@@ -16,6 +16,7 @@ function App() {
         <Route path="/nav" element={<Layout />}></Route>
         <Route path="/Login" element={<LoginPage />}></Route>
         <Route path="/RegistrationPage" element={<RegistrationPage />}></Route>
+        <Route path="/Game" element={<GamePage />}></Route>
       </Routes>
     </>
   );
