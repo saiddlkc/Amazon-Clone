@@ -3,6 +3,7 @@ import "./Login.css";
 import { Link } from "react-router-dom";
 import amzn from "../images/darkLogo.png";
 import ClipLoader from "react-spinners/ClipLoader";
+import { useNavigate } from "react-router-dom";
 
 const Login = () => {
   const [email, setEmail] = useState("");
@@ -10,6 +11,8 @@ const Login = () => {
   const [errEmail, setErrEmail] = useState("");
   const [errPassword, setErrPassword] = useState("");
   const [loading, setLoading] = useState(false);
+  const [loginSuccess, setLoginSuccess] = useState(false);
+  const navigate = useNavigate();
 
   const handleEmail = (e) => {
     setEmail(e.target.value);
@@ -54,12 +57,14 @@ const Login = () => {
         return;
       }
 
-      console.log("Login erfolgreich:", data);
+      console.log("Login erfolgreich:");
     } catch (error) {
       console.error("Error:", error);
     } finally {
       setTimeout(() => {
         setLoading(false);
+        setLoginSuccess(true);
+        navigate("/nav");
       }, 2000);
     }
   };
@@ -119,6 +124,11 @@ const Login = () => {
                   "Continue"
                 )}
               </button>
+              {loginSuccess && (
+                <p className="text-green-600 text-xs font-semibold mt-2">
+                  Successful. Redirecting to Dashboard...
+                </p>
+              )}
             </div>
             <p className="text-xs text-black leading-4 mt-4">
               By Continuing, you agree to Amazon

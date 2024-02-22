@@ -1,12 +1,17 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import amzn from "../images/darkLogo.png";
+import ClipLoader from "react-spinners/ClipLoader";
+import { useNavigate } from "react-router-dom";
 
 const Registration = () => {
   const [clientName, setClientName] = useState("");
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const [cPassword, setCPassword] = useState("");
+  const [loading, setLoading] = useState(false);
+  const [registrationSuccess, setRegistrationSuccess] = useState(false);
+  const navigate = useNavigate();
 
   const [errClientName, setErrClientName] = useState("");
   const [errEmail, setErrEmail] = useState("");
@@ -63,7 +68,6 @@ const Registration = () => {
         setErrCPassword("Password not matched");
       }
     }
-
     if (
       clientName &&
       email &&
@@ -74,6 +78,7 @@ const Registration = () => {
       cPassword === password
     ) {
       console.log(clientName, email, password);
+      setLoading(true);
       setClientName("");
       setEmail("");
       setPassword("");
@@ -93,9 +98,16 @@ const Registration = () => {
         .then((response) => response.json())
         .then((user) => {
           console.log("registered", user);
+          setRegistrationSuccess(true);
         });
+      setTimeout(() => {
+        setLoading(false);
+        setRegistrationSuccess(false);
+        navigate("/Login");
+      }, 3000);
     }
   };
+
   return (
     <div className="w-full">
       <div className="w-full bg-gray-100 pb-10">
@@ -171,8 +183,17 @@ const Registration = () => {
                 onClick={handleRegistration}
                 className="w-full py-1.5 text-sm font-normal rounded-sm bg-gradient-to-t from-[#f7dfa5] to-[#f0c14b] hover:bg-gradient-to-b border border-zinc-400 active:border-yellow-800 active:shadow-amazonInput"
               >
-                Continue
+                {loading ? (
+                  <ClipLoader size={20} color={"black"} loading={loading} />
+                ) : (
+                  "Continue"
+                )}
               </button>
+              {registrationSuccess && (
+                <p className="text-green-600 text-xs font-semibold mt-2">
+                  Registration Successful. Redirecting to Login...
+                </p>
+              )}
             </div>
 
             <div>

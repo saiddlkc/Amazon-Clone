@@ -109,7 +109,7 @@ const Navbar = () => {
           {/* Dropdown */}
           <div className="relative mt-4 mx-2 md:mt-0 flex">
             <button className="text-white  items-center">
-              <p>Hallo, ...</p>
+              <p>Hallo, CLientName</p>
               <p>Konto und Liste</p>
 
               {/* <svg
