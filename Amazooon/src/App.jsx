@@ -96,6 +96,7 @@ function App() {
 
           <Route path="/Login" element={<LoginPage />} />
           <Route path="/RegistrationPage" element={<RegistrationPage />} />
+          <Route path="*" element={<h1>Not Found</h1>} />
         </Routes>
       </ProductProvider>
     </>
