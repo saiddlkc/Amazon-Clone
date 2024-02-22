@@ -4,25 +4,34 @@ import { FiShoppingCart } from "react-icons/fi";
 import Img from "../images/logo-transparent-png.png";
 import { FiNavigation } from "react-icons/fi";
 import { FiChevronDown } from "react-icons/fi";
-import { useLocation } from "react-router-dom";
+import { Navigate, useLocation, useNavigate,  } from "react-router-dom";
+import { RingLoader } from "react-spinners";
+import "./logout.css"
 
 const Navbar = () => {
   const [isDropdownOpen, setIsDropdownOpen] = useState(false);
   const [cartItems, setCartItems] = useState([]);
   const [windowWidth, setWindowWidth] = useState(window.innerWidth);
-
-  const [name, setName] = useState("");
   const location = useLocation();
-  useEffect(() => {
-    const getClientNameFromURL = () => {
-      const searchParams = new URLSearchParams(location.search);
-      const clientName = searchParams.get("clientName");
-      return clientName;
-    };
+  const navigate = useNavigate();
+  const [username, setUsername] = useState("");
+  const [loading, setLoading] = useState(false)
 
-    const clientName = getClientNameFromURL();
-    setName(clientName);
-  }, [location.search]);
+  useEffect(() => {
+    const usernameFromSessionStorage = sessionStorage.getItem("username");
+    setUsername(usernameFromSessionStorage);
+    
+  }, []);
+  const handleSignInClick = () => {
+    navigate("/login");
+  };
+  const logoutClick = () => {
+    setLoading(true)
+    sessionStorage.clear();
+    setTimeout(() => {
+      window.location.reload();
+    }, 3000); 
+  };
 
   const dropdownItems = [
     { name: "Elektronik", url: "/Elektronik" },
@@ -67,7 +76,7 @@ const Navbar = () => {
         </div>
 
         <div className=" text-white">
-          <p>Lieferung an {name}</p>
+          <p>Lieferung an {username}</p>
           <p className="flex justify-center items-center text-white">
             <FiNavigation /> 12163 Berlin
           </p>
@@ -122,10 +131,10 @@ const Navbar = () => {
             <FiSearch />
           </button>
           {/* Dropdown */}
-          <div className="relative mt-4 mx-2 md:mt-0 flex">
+          {/* <div className="relative mt-4 mx-2 md:mt-0 flex">
             <button className="text-white  items-center">
-              <p>Hallo, {name}</p>
-              <p>Konto und Liste</p>
+              <p>Hallo, {username}</p>
+              <p>Konto und Liste</p> */}
 
               {/* <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -138,26 +147,45 @@ const Navbar = () => {
                   clipRule="evenodd"
                 />
               </svg> */}
-            </button>
-          </div>
+            {/* </button>
+          </div> */}
 
           <div className="text-white text-center">
-            <span>Warenrücksendungen</span>
             <p>
-              <b>und Bestellungen</b>
+              <b>Bestellungen</b>
             </p>
           </div>
           {/* Warenkorb */}
           <div className="ml-4 text-white mr-4">
-            <button
-              className="flex items-center bg-slate-600  p-2 rounded-md hover:bg-slate-500"
-              onClick={() => addToCart({ label: "Artikel 1", price: 10 })}
-            >
-              <FiShoppingCart className="m-1" /> Warenkorb ({cartItems.length})
-            </button>
+            {username ? (
+              <button
+                className="flex items-center bg-slate-600 p-2 rounded-md hover:bg-slate-500"
+                onClick={() => setCartItems([...cartItems, { label: "Artikel 1", price: 10 }])}
+              >
+                <FiShoppingCart className="m-1" /> Warenkorb ({cartItems.length})
+              </button>
+            ) : (
+              <button className="flex items-center text-black p-2 rounded-md bg-gradient-to-t from-[#f7dfa5] to-[#f0c14b] hover:bg-gradient-to-b border border-zinc-400 active:border-yellow-800 active:shadow-amazonInput" onClick={handleSignInClick}>
+                Sign In
+              </button>
+            )}
+          </div>
+          {username && (
+            <div>
+              <button className="bg-red-600 rounded-md text-white pt-3 p-2 m-5" onClick={logoutClick}>
+                {loading ? (
+                  <div className="overlay ">
+                    <RingLoader size={100} color={"white"} loading={loading} />
+                  </div>
+                ) : (
+                  "Logout"
+                )}
+              </button>
+            </div>
+              )}
           </div>
         </div>
-      </div>
+      
     </nav>
   );
 };

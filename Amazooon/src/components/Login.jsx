@@ -59,14 +59,12 @@ const Login = () => {
         return;
       }
 
-      console.log("Login erfolgreich:", data[0].clientName);
-      // setclientName(data[0].clientName);
-      const clientName = data[0].clientName;
+      console.log("Login erfolgreich:", data);
       setTimeout(() => {
         setLoading(false);
         setLoginSuccess(true);
-
-        navigate("/?clientName=" + clientName);
+        sessionStorage.setItem("username",data[0].clientName)
+        navigate("/")
       }, 2000);
     } catch (error) {
       console.error("Error:", error);
