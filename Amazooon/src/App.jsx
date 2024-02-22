@@ -8,6 +8,7 @@ import { Route, BrowserRouter as Router, Routes } from "react-router-dom";
 import RegistrationPage from "./pages/RegistrationPage";
 import LoginPage from "./pages/LoginPage";
 import Layout from "./layout/Layout";
+import PageNotFound from "./pages/PageNotFound";
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
         <Routes>
           <Route path="/" element={<Ok />} />
           <Route path="/text" element={<Text />} />
+          <Route path="*" element={<PageNotFound />} />
         </Routes>
       </Layout>
     </>

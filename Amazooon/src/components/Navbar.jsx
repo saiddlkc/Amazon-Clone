@@ -82,7 +82,7 @@ const Navbar = () => {
           {/* Warenkorb */}
           <div className="relative">
             <button
-              className="flex items-center bg-amazon-dark px-4 py-2 rounded-md hover:bg-amazon-orange"
+              className="flex items-center bg-amazon-dark px-2 py-2 rounded-md hover:bg-orange-400"
               onClick={() => addToCart({ label: "Artikel 1", price: 10 })}
             >
               <FiShoppingCart className="text-white" />
@@ -142,7 +142,7 @@ const Navbar = () => {
                 <input
                   type="text"
                   placeholder="Suche Amazon.de"
-                  className="px-10 py-2 bg-white text-black rounded-l-md focus:outline-none"
+                  className="px-5 py-2 bg-white text-black rounded-l-md focus:outline-none"
                 />
                 <button className="bg-gray-500 px-5 py-3  rounded-r-md hover:bg-orange-400">
                   <FiSearch className="text-white" />
