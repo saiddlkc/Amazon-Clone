@@ -19,6 +19,7 @@ function ProductDetails() {
       setCartItems(parsedCartItems);
     }
   }, []); 
+ 
   const addtoStorage = () => {
     const cartItem = {
       id: selectedProduct.id,
@@ -36,6 +37,9 @@ function ProductDetails() {
     increaseCartCount();
     updatedCartItems.push(cartItem); 
     localStorage.setItem('cartItems', JSON.stringify(updatedCartItems)); 
+
+    // Hier wird die Anzahl der Artikel im Warenkorb aktualisiert
+    localStorage.setItem('cartN', updatedCartItems.length.toString());
   };
 
   const selectedProduct = json.products.find(

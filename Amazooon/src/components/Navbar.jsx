@@ -165,6 +165,7 @@ const Navbar = () => {
               <button
                 className="flex items-center bg-slate-600 p-2 rounded-md hover:bg-slate-500"
                 onClick={()=>navigate("/wk")}
+                target="_blank" 
               >
                 <FiShoppingCart className="m-1" /> Warenkorb ({cartLength})
               </button>

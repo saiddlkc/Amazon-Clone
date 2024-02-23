@@ -89,7 +89,7 @@ function App() {
             }
           />
         
-        <Route path="wk" element={<KorbPage/>}/>
+        <Route path="wk" element={<Layout><KorbPage/></Layout>}/>
 
           <Route
             path="/:category/:id"
