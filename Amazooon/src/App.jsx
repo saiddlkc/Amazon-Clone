@@ -15,10 +15,12 @@ import { ProductProvider } from "./pages/home/context/ProductContext";
 import ProductDetails from "./pages/home/context/ProductDetails";
 import KorbPage from "./pages/KorbPage";
 import WkTest from "./components/wktest";
+import { CartProvider } from "./pages/home/context/CartContext";
 
 function App() {
   return (
     <>
+      <CartProvider>
       <ProductProvider>
         <Routes>
           <Route
@@ -86,7 +88,7 @@ function App() {
               </Layout>
             }
           />
-        <Route path="wkt" element={<WkTest/>}/>
+        
         <Route path="wk" element={<KorbPage/>}/>
 
           <Route
@@ -103,6 +105,7 @@ function App() {
           <Route path="*" element={<h1>Not Found</h1>} />
         </Routes>
       </ProductProvider>
+        </CartProvider>
     </>
   );
 }
