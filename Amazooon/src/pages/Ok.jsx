@@ -308,16 +308,18 @@ const Ok = () => {
           doloremque asperiores a!
         </p>
       </div>
-      <ul className="h-full flex    justify-center items-center gap-y-8 text-primary font-primary font-bold text-3xl">
-        {Nav.map((nav) => (
-          <li className="mx-5" key={nav.id}>
-            <Link to={nav.to}>{nav.name}</Link>
-          </li>
-        ))}
-      </ul>
-      <Routes>
-        <Route path="/text" element={<Text />} />
-      </Routes>
+      <div>
+        <ul className="h-full flex justify-center items-center gap-y-8 text-primary font-primary font-bold text-3xl">
+          {Nav.map((nav) => (
+            <li className="mx-5" key={nav.id}>
+              <Link to={nav.to}>{nav.name}</Link>
+            </li>
+          ))}
+        </ul>
+        <Routes>
+          <Route path="/text" element={<Text />} />
+        </Routes>
+      </div>
     </div>
   );
 };

@@ -29,15 +29,6 @@ const Navbar = () => {
     { label: "Gutscheine", url: "/" },
   ];
 
-  const menu = [
-    { name: "Top Angebot", to: "/" },
-    { name: "  Angebot der Woche", to: "/" },
-    { name: "   Besteller in Bücher", to: "/" },
-    { name: "Heute's Deals", to: "/" },
-    { name: "   Bestseller in Elektronik", to: "/" },
-    { name: "  Unsere Besteller-Angebote für dich", to: "/" },
-  ];
-
   return (
     <nav className="bg-amazon-yellow">
       <div className="mx-auto flex items-center justify-between py-3 px-4">
@@ -49,16 +40,18 @@ const Navbar = () => {
 
         {/* Hauptmenü für größere Bildschirme */}
         <div className="hidden w-full lg:flex items-center px-0 justify-between">
-          <div className="flex justify-center items-center">
-            <LuMapPin />
-            <div className="p-4">
-              <p>Lieferung an Mustermann</p>
-              <h3>12463 Berlin</h3>
+          <div className=" ">
+            <div className=" flex justify-center items-center flex-col w-48 ">
+              <p>Lieferung an Berlin 12159</p>
+              <p className="flex justify-center items-center font-bold">
+                <LuMapPin />
+                Standort Aktualisieren
+              </p>
             </div>
           </div>
           {/* Suchleiste */}
-          <div className="px-20 py-5 w-full   flex justify-stretch items-center">
-            <button className="px-4 py-2 rounded-l-md bg-gray-200 text-black flex justify-center items-center">
+          <div className="px-10 py-5 w-full  flex justify-stretch items-center">
+            <button className="px-2 py-2 rounded-l-md bg-gray-200 text-black flex justify-center items-center">
               <p className="mr-2"> All</p>
               <FiChevronDown />
             </button>
@@ -67,16 +60,22 @@ const Navbar = () => {
               placeholder="Suche Amazooon.de"
               className="px-2 py-2 w-full bg-white text-black focus:outline-none"
             />
-            <button className="bg-orange-300 px-5 py-3  rounded-r-md hover:bg-orange-400">
+            <button className="bg-orange-300 px-4 py-3  rounded-r-md hover:bg-orange-400">
               <FiSearch className="text-white" />
             </button>
           </div>
 
           {/* Konto und Liste */}
           <div className=" flex">
-            <div>
+            <div className="flex flex-col justify-center  w-28">
               <p>Hallo, ...</p>
               <span className="text-xs">Konto und Liste</span>
+            </div>
+          </div>
+          <div className=" flex">
+            <div className="flex flex-col justify-center w-36">
+              <p>Warenrücksendung</p>
+              <span className="font-bold">und Bestellungen</span>
             </div>
           </div>
           {/* Warenkorb */}
@@ -85,10 +84,13 @@ const Navbar = () => {
               className="flex items-center bg-amazon-dark px-2 py-2 rounded-md hover:bg-orange-400"
               onClick={() => addToCart({ label: "Artikel 1", price: 10 })}
             >
-              <FiShoppingCart className="text-white" />
-              <span className="text-white ml-1">
-                Warenkorb ({cartItems.length})
-              </span>
+              <div>
+                <span className="absolute bottom-15 ">{cartItems.length}</span>
+
+                <FiShoppingCart className="text-white m-4 font-bold text-4xl" />
+              </div>
+
+              <span className="text-white ml-1">Warenkorb</span>
             </button>
           </div>
         </div>
@@ -135,7 +137,7 @@ const Navbar = () => {
               >
                 <FiShoppingCart className="text-white" />
                 <span className="text-white ml-1">
-                  Warenkorb ({cartItems.length})
+                  Warenkorb {cartItems.length}
                 </span>
               </button>
               <div className="px-5 py-5 flex justify-center items-center">
@@ -158,22 +160,6 @@ const Navbar = () => {
                   {item.label}
                 </a>
               ))}
-              {/* <div className="flex justify-center items-center flex-col">
-                {menu.map((navb) => (
-                  <div>
-                    <button className="bg-red-400 rounded-sm px-5 py-2 m-3">
-                      <a
-                        href="http://"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="   hover:text-white"
-                      >
-                        {navb.name}
-                      </a>
-                    </button>
-                  </div>
-                ))}
-              </div> */}
 
               <div className="flex justify-center items-center flex-col">
                 <div>
