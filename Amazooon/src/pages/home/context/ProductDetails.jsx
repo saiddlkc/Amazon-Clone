@@ -8,7 +8,6 @@ function ProductDetails() {
   const { id } = useParams();
   const navigate = useNavigate();
   const [selectedQuantity, setSelectedQuantity] = useState(1);
-
   const selectedProduct = json.products.find(
     (product) => product.id.toString() === id
   );
@@ -56,16 +55,18 @@ function ProductDetails() {
       </div>
     );
   }
-
   return (
     <div className="h-full mt-12">
       <div className="flex flex-wrap justify-center items-start gap-5">
-        <div className="max-w-sm">
+        <div className="max-w-sm ">
           <ReactImageZoom
-            width={200}
-            height={200}
+            width={150}
             zoomWidth={500}
-            zoomHeight={500}
+            imgWidth={400}
+            imgHeight={400}
+            scale={1}
+            zoomStyle={"background-color: rgba(0,0,0,0.5)"}
+            zoomLensStyle={"background-color: rgba(0,0,0,0.1)"}
             img={selectedProduct.images[0]}
             alt={selectedProduct.title}
           />
@@ -85,16 +86,16 @@ function ProductDetails() {
             <span className="font-bold">Marke:</span> {selectedProduct.brand}
           </p>
           <p>
-            <span className="font-bold">Preis:</span>{" "}
-            {selectedProduct.price.value} {selectedProduct.price.currency}
-          </p>
-          <p>
             <span className="font-bold">Bewertung:</span>{" "}
             {renderRatingStars(selectedProduct.rating.value)}
             {selectedProduct.rating.value} ({selectedProduct.rating.count})
           </p>
           <hr className="mt-5" />
-          <p className="font-bold mt-10">About this item</p>
+          <p className="text-xl text-amber-600">
+            {selectedProduct.price.value} {selectedProduct.price.currency}
+          </p>
+
+          <p className="font-bold mt-5">About this item</p>
           <ul className="mt-4">
             {selectedProduct.features.map((feature, index) => (
               <li key={index}>{feature}</li>
@@ -102,9 +103,31 @@ function ProductDetails() {
           </ul>
         </div>
         <div className="max-w-sm border border-gray-800 rounded p-5">
-          <p className="text-xl">
-            {selectedProduct.price.value} {selectedProduct.price.currency}
+          <p className="font-bold">Buy new:</p>
+          <p className="text-xl text-amber-600">
+            <span style={{ textDecoration: "line-through" }}>
+              {selectedProduct.price.value} {selectedProduct.price.currency}
+            </span>
+            {" / "}
+            <span>
+              {(selectedProduct.price.value * 0.5).toFixed(2)}{" "}
+              {selectedProduct.price.currency}
+            </span>
           </p>
+          <p
+            style={{
+              backgroundColor: "#CC0C39",
+              color: "#fff",
+              display: "inline-block",
+              padding: "5px",
+              textAlign: "left",
+              margin: "0",
+            }}
+          >
+            Bis zu 50% Rabatt
+          </p>
+          <p></p>
+          <hr />
           <p className="text-lg mt-2">{selectedProduct.title}</p>
           <p className="text-sm mt-2">
             {renderRatingStars(selectedProduct.rating.value)}
@@ -127,14 +150,16 @@ function ProductDetails() {
               ))}
             </select>
           </p>
-
-          <button className="bg-amber-600 mt-5 py-2 px-4 text-white rounded hover:bg-blue-700 transition duration-300">
+          <button className="block bg-[#FFA41B] mt-5 py-2 px-4 text-black rounded-full hover:bg-[#f0c14b] transition duration-300">
+            Buy Now
+          </button>
+          <button className="bg-[#f0c14b] mt-5 py-2 px-4 text-black rounded-full hover:bg-[#ff9900] transition duration-300">
             In den Einkaufswagen
           </button>
         </div>
       </div>
       ;
-      <div>
+      <div className="mx-3">
         <h2 className="text-2xl mt-10 mb-5 ml-3">Ähnliche Produkte</h2>
         <div className="flex flex-wrap justify-evenly gap-5">
           {getRandomProducts().map((product) => (
@@ -162,17 +187,52 @@ function ProductDetails() {
           ))}
         </div>
       </div>
-      <div className="bg-slate-500 mx-5 my-5 p-5 rounded-lg">
+      <div className="mx-3">
+        <h2 className="text-2xl mt-10 mb-5 ml-3">Bewertungen und Kommentare</h2>
         <div className="flex flex-col m-2 ">
+          <input
+            type="text"
+            className="bg-slate-200 p-2 rounded mb-2"
+            placeholder="Name eingeben..."
+          />
           <textarea
             placeholder="kommentar schreiben..."
             className="bg-slate-200 p-2 rounded"
             rows="5"
             cols="50"
           />
-          <button className="mt-5 py-2 px-4 text-white rounded bg-amber-600 hover:bg-blue-700 transition duration-300">
+          <button className="mt-5 py-2 px-4 text-black rounded-full bg-amber-600 hover:bg-[#f0c14b] transition duration-300">
             Senden
           </button>
+        </div>
+      </div>
+      <div>
+        <h2 className="text-2xl mt-10 mb-5 ml-3">Kommentare</h2>
+        <div className="flex flex-col m-2">
+          <div className="flex flex-col m-2">
+            <p className="text-lg">Max Mustermann</p>
+            <p className="text-sm">vor 3 Tagen</p>
+            <p className="text-sm">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla
+              convallis, justo auctor ultricies.
+            </p>
+          </div>
+          <div className="flex flex-col m-2">
+            <p className="text-lg">Max Mustermann</p>
+            <p className="text-sm">vor 3 Tagen</p>
+            <p className="text-sm">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla
+              convallis, justo auctor ultricies.
+            </p>
+          </div>
+          <div className="flex flex-col m-2">
+            <p className="text-lg">Max Mustermann</p>
+            <p className="text-sm">vor 3 Tagen</p>
+            <p className="text-sm">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla
+              convallis, justo auctor ultricies.
+            </p>
+          </div>
         </div>
       </div>
     </div>
