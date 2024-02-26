@@ -3,6 +3,7 @@ import { useParams, useNavigate, Link } from "react-router-dom";
 import { useProductContext } from "./ProductContext";
 import ReactImageZoom from "react-image-zoom";
 import { useCart } from "./CartContext";
+import { FaCircleUser } from "react-icons/fa6";
 
 function ProductDetails() {
   const [cartItems, setCartItems] = useState([]);
@@ -11,22 +12,72 @@ function ProductDetails() {
   const navigate = useNavigate();
   const [selectedQuantity, setSelectedQuantity] = useState(1);
   const { increaseCartCount } = useCart();
+  const [name, setName] = useState('');
+  const [comment, setComment] = useState('');
+  const [comments, setComments] = useState([]);
+
+  const handleNameChange = (e) => {
+    setName(e.target.value);
+  };
+  
+  const handleCommentChange = (e) => {
+    setComment(e.target.value);
+  };
+
+  const addComment = async (e) => {
+    e.preventDefault()
+    const newComment = { name, comment,productId: id };
+    try {
+      const response = await fetch(`http://localhost:3004/comments/`, {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(newComment),
+      });
+      
+      if (response.ok) {
+        console.log("ok")
+      } else {
+        console.error('Fehler beim Hinzufügen des Kommentars');
+      }
+    } catch (error) {
+      console.error('Fehler beim Hinzufügen des Kommentars', error);
+      if (!name.trim() || !comment.trim()) {
+        console.error('Bitte füllen Sie alle Felder aus.');
+        return;}
+    }
+  };
+  const fetchComments = async () => {
+    try {
+      const response = await fetch(`http://localhost:3004/comments/?productId=${id}`);
+      if (response.ok) {
+        const data = await response.json();
+        setComments(data);
+      } else {
+        console.error('Fehler beim Laden der Kommentare');
+      }
+    } catch (error) {
+      console.error('Fehler beim Laden der Kommentare', error);
+    }
+  };
 
   useEffect(() => {
+    fetchComments()
     const storedCartItems = localStorage.getItem('cartItems');
     if (storedCartItems) {
       const parsedCartItems = JSON.parse(storedCartItems);
       setCartItems(parsedCartItems);
     }
   }, []); 
- 
+
   const addtoStorage = () => {
     const cartItem = {
       id: selectedProduct.id,
       title: selectedProduct.title,
       price: selectedProduct.price,
       images: selectedProduct.images,
-      quantity: selectedQuantity // Hier wird die ausgewählte Menge hinzugefügt
+      quantity: selectedQuantity 
     };
   
     const storedCartItems = localStorage.getItem('cartItems');
@@ -38,10 +89,9 @@ function ProductDetails() {
     updatedCartItems.push(cartItem); 
     localStorage.setItem('cartItems', JSON.stringify(updatedCartItems)); 
 
-    // Hier wird die Anzahl der Artikel im Warenkorb aktualisiert
+   
     localStorage.setItem('cartN', updatedCartItems.length.toString());
   };
-
   const selectedProduct = json.products.find(
     (product) => product.id.toString() === id
   );
@@ -71,6 +121,7 @@ function ProductDetails() {
   };
 
   React.useEffect(() => {
+    fetchComments();
     if (!selectedProduct) {
       navigate("/");
     }
@@ -89,16 +140,18 @@ function ProductDetails() {
       </div>
     );
   }
-
   return (
     <div className="h-full mt-12">
       <div className="flex flex-wrap justify-center items-start gap-5">
-        <div className="max-w-sm">
+        <div className="max-w-sm ">
           <ReactImageZoom
-            width={200}
-            height={200}
+            width={150}
             zoomWidth={500}
-            zoomHeight={500}
+            imgWidth={400}
+            imgHeight={400}
+            scale={1}
+            zoomStyle={"background-color: rgba(0,0,0,0.5)"}
+            zoomLensStyle={"background-color: rgba(0,0,0,0.1)"}
             img={selectedProduct.images[0]}
             alt={selectedProduct.title}
           />
@@ -118,16 +171,16 @@ function ProductDetails() {
             <span className="font-bold">Marke:</span> {selectedProduct.brand}
           </p>
           <p>
-            <span className="font-bold">Preis:</span>{" "}
-            {selectedProduct.price.value} {selectedProduct.price.currency}
-          </p>
-          <p>
             <span className="font-bold">Bewertung:</span>{" "}
             {renderRatingStars(selectedProduct.rating.value)}
             {selectedProduct.rating.value} ({selectedProduct.rating.count})
           </p>
           <hr className="mt-5" />
-          <p className="font-bold mt-10">About this item</p>
+          <p className="text-xl text-amber-600">
+            {selectedProduct.price.value} {selectedProduct.price.currency}
+          </p>
+
+          <p className="font-bold mt-5">About this item</p>
           <ul className="mt-4">
             {selectedProduct.features.map((feature, index) => (
               <li key={index}>{feature}</li>
@@ -135,9 +188,31 @@ function ProductDetails() {
           </ul>
         </div>
         <div className="max-w-sm border border-gray-800 rounded p-5">
-          <p className="text-xl">
-            {selectedProduct.price.value} {selectedProduct.price.currency}
+          <p className="font-bold">Buy new:</p>
+          <p className="text-xl text-amber-600">
+            <span style={{ textDecoration: "line-through" }}>
+              {selectedProduct.price.value} {selectedProduct.price.currency}
+            </span>
+            {" / "}
+            <span>
+              {(selectedProduct.price.value * 0.5).toFixed(2)}{" "}
+              {selectedProduct.price.currency}
+            </span>
           </p>
+          <p
+            style={{
+              backgroundColor: "#CC0C39",
+              color: "#fff",
+              display: "inline-block",
+              padding: "5px",
+              textAlign: "left",
+              margin: "0",
+            }}
+          >
+            Bis zu 50% Rabatt
+          </p>
+          <p></p>
+          <hr />
           <p className="text-lg mt-2">{selectedProduct.title}</p>
           <p className="text-sm mt-2">
             {renderRatingStars(selectedProduct.rating.value)}
@@ -160,14 +235,16 @@ function ProductDetails() {
               ))}
             </select>
           </p>
-
-          <button onClick={addtoStorage} className="bg-amber-600 mt-5 py-2 px-4 text-white rounded hover:bg-blue-700 transition duration-300">
+          <button className="block bg-[#FFA41B] mt-5 py-2 px-4 text-black rounded-full hover:bg-[#f0c14b] transition duration-300">
+            Buy Now
+          </button>
+          <button onClick={addtoStorage} className="bg-[#f0c14b] mt-5 py-2 px-4 text-black rounded-full hover:bg-[#ff9900] transition duration-300">
             In den Einkaufswagen
           </button>
         </div>
       </div>
       ;
-      <div>
+      <div className="mx-3">
         <h2 className="text-2xl mt-10 mb-5 ml-3">Ähnliche Produkte</h2>
         <div className="flex flex-wrap justify-evenly gap-5">
           {getRandomProducts().map((product) => (
@@ -187,7 +264,9 @@ function ProductDetails() {
               </p>
               <button
                 className="product__button"
-                onClick={() => navigate(`/${product.category}/${product.id}`)}
+                onClick={() => { navigate(`/${product.category}/${product.id}`); }}
+
+
               >
                 View Details
               </button>
@@ -195,17 +274,38 @@ function ProductDetails() {
           ))}
         </div>
       </div>
-      <div className="bg-slate-500 mx-5 my-5 p-5 rounded-lg">
+      <div className="mx-3">
+        <h2 className="text-2xl mt-10 mb-5 ml-3">Bewertungen und Kommentare</h2>
         <div className="flex flex-col m-2 ">
+          <input
+            type="text"
+            className="bg-slate-200 p-2 rounded mb-2"
+            placeholder="Name eingeben..."
+            value={name}
+            onChange={handleNameChange}
+          />
           <textarea
             placeholder="kommentar schreiben..."
             className="bg-slate-200 p-2 rounded"
             rows="5"
             cols="50"
+            value={comment}
+            onChange={handleCommentChange}
           />
-          <button className="mt-5 py-2 px-4 text-white rounded bg-amber-600 hover:bg-blue-700 transition duration-300">
+          <button onClick={addComment} className="mt-5 py-2 px-4 text-black rounded-full bg-amber-600 hover:bg-[#f0c14b] transition duration-300">
             Senden
           </button>
+        </div>
+      </div>
+      <div>
+      <h2 className="text-2xl mt-10 mb-5 ml-3">Kommentare</h2>
+        <div className="flex flex-col m-2  border-4">
+          {comments.map((comment, index) => (
+            <div key={index} className="flex flex-col m-2">
+              <p className="text-lg opacity-70"> <FaCircleUser  /> {comment.name}</p>
+              <p className="text-sm ">{comment.comment}</p>
+            </div>
+          ))}
         </div>
       </div>
     </div>
