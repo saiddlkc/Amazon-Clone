@@ -1,10 +1,11 @@
 import React from 'react'
-import Warenkorbhinzu from '../components/Warenkorbhinzu'
+
+import Warenkorb from '../components/Warenkorb'
 
 const KorbPage = () => {
   return (
     <>
-    <Warenkorbhinzu/>
+    <Warenkorb/>
     </>
   )
 }

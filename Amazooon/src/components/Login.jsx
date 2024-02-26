@@ -78,6 +78,7 @@ const Login = () => {
         setLoginSuccess(true);
         localStorage.setItem("username",data[0].clientName)
         localStorage.setItem("token",generateRandomToken())
+        localStorage.setItem("cartN",0)
         navigate("/")
       }, 2000);
     } catch (error) {

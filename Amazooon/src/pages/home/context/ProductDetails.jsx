@@ -1,13 +1,46 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import { useParams, useNavigate, Link } from "react-router-dom";
 import { useProductContext } from "./ProductContext";
 import ReactImageZoom from "react-image-zoom";
+import { useCart } from "./CartContext";
 
 function ProductDetails() {
+  const [cartItems, setCartItems] = useState([]);
   const { json } = useProductContext();
   const { id } = useParams();
   const navigate = useNavigate();
   const [selectedQuantity, setSelectedQuantity] = useState(1);
+  const { increaseCartCount } = useCart();
+
+  useEffect(() => {
+    const storedCartItems = localStorage.getItem('cartItems');
+    if (storedCartItems) {
+      const parsedCartItems = JSON.parse(storedCartItems);
+      setCartItems(parsedCartItems);
+    }
+  }, []); 
+ 
+  const addtoStorage = () => {
+    const cartItem = {
+      id: selectedProduct.id,
+      title: selectedProduct.title,
+      price: selectedProduct.price,
+      images: selectedProduct.images,
+      quantity: selectedQuantity // Hier wird die ausgewählte Menge hinzugefügt
+    };
+  
+    const storedCartItems = localStorage.getItem('cartItems');
+    let updatedCartItems = [];
+    if (storedCartItems) {
+      updatedCartItems = JSON.parse(storedCartItems);
+    }
+    increaseCartCount();
+    updatedCartItems.push(cartItem); 
+    localStorage.setItem('cartItems', JSON.stringify(updatedCartItems)); 
+
+    // Hier wird die Anzahl der Artikel im Warenkorb aktualisiert
+    localStorage.setItem('cartN', updatedCartItems.length.toString());
+  };
 
   const selectedProduct = json.products.find(
     (product) => product.id.toString() === id
@@ -128,7 +161,7 @@ function ProductDetails() {
             </select>
           </p>
 
-          <button className="bg-amber-600 mt-5 py-2 px-4 text-white rounded hover:bg-blue-700 transition duration-300">
+          <button onClick={addtoStorage} className="bg-amber-600 mt-5 py-2 px-4 text-white rounded hover:bg-blue-700 transition duration-300">
             In den Einkaufswagen
           </button>
         </div>

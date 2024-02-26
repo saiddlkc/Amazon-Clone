@@ -7,8 +7,10 @@ import { FiChevronDown } from "react-icons/fi";
 import { Navigate, useLocation, useNavigate,  } from "react-router-dom";
 import { RingLoader } from "react-spinners";
 import "./logout.css"
+import { useCart } from "../pages/home/context/CartContext";
 
 const Navbar = () => {
+  const cartLength = localStorage.getItem('cartN');
   const [isDropdownOpen, setIsDropdownOpen] = useState(false);
   const [cartItems, setCartItems] = useState([]);
   const [windowWidth, setWindowWidth] = useState(window.innerWidth);
@@ -17,7 +19,7 @@ const Navbar = () => {
   const [username, setUsername] = useState("");
   const [loading, setLoading] = useState(false)
   
-
+  const { cartCount } = useCart();
   useEffect(() => {
     const usernameFromlocalStorage = localStorage.getItem("username");
     setUsername(usernameFromlocalStorage);
@@ -163,8 +165,9 @@ const Navbar = () => {
               <button
                 className="flex items-center bg-slate-600 p-2 rounded-md hover:bg-slate-500"
                 onClick={()=>navigate("/wk")}
+                target="_blank" 
               >
-                <FiShoppingCart className="m-1" /> Warenkorb ({cartItems.length})
+                <FiShoppingCart className="m-1" /> Warenkorb ({cartLength})
               </button>
             ) : (
               <button className="flex items-center text-black p-2 rounded-md bg-gradient-to-t from-[#f7dfa5] to-[#f0c14b] hover:bg-gradient-to-b border border-zinc-400 active:border-yellow-800 active:shadow-amazonInput" onClick={handleSignInClick}>
