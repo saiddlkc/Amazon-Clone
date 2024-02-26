@@ -153,7 +153,9 @@
         "SuperPhoto + HDR Imaging",
         "RAW Photos, Power Tools"
       ],
-      "specs": ["Video Resolution: 5.3K (5376 x 4032) at 60p"],
+      "specs": [
+        "Video Resolution: 5.3K (5376 x 4032) at 60p"
+      ],
       "rating": {
         "count": 987,
         "value": 4.9
@@ -451,7 +453,10 @@
         "Foldable Design with 1/4\"-20 Mount",
         "Built-In Focus Wheel"
       ],
-      "specs": ["Payload: 10 lb / 4.5 kg", "Battery Life: 12 Hours"],
+      "specs": [
+        "Payload: 10 lb / 4.5 kg",
+        "Battery Life: 12 Hours"
+      ],
       "rating": {
         "count": 254,
         "value": 4.7
@@ -544,7 +549,10 @@
         "10-Bit 4:2:2 ProRes & DNxHR Encoding",
         "NP-F Batteries & Fast Charging Support"
       ],
-      "specs": ["Screen Size: 5\"", "Resolution: 1920 x 1200"],
+      "specs": [
+        "Screen Size: 5\"",
+        "Resolution: 1920 x 1200"
+      ],
       "rating": {
         "count": 128,
         "value": 4.7
@@ -606,7 +614,10 @@
         "Auto-Sensing 3.5mm Output Detects TRRS",
         "Variable Gain and Digital Switching"
       ],
-      "specs": ["Microphone Type: Condenser", "Polar Pattern: Supercardioid"],
+      "specs": [
+        "Microphone Type: Condenser",
+        "Polar Pattern: Supercardioid"
+      ],
       "rating": {
         "count": 189,
         "value": 4.7
@@ -635,7 +646,10 @@
         "Spring-Loaded Counterbalance Control",
         "Fluid Pan and Tilt Drag System"
       ],
-      "specs": ["Load Capacity: 15.4 lb / 7 kg", "Base Diameter: 75 mm"],
+      "specs": [
+        "Load Capacity: 15.4 lb / 7 kg",
+        "Base Diameter: 75 mm"
+      ],
       "rating": {
         "count": 102,
         "value": 4.6
@@ -660,7 +674,10 @@
         "Erlebe eine epische Geschichte voller Wendungen und Herausforderungen, während du dich in den Kampf stürzt und deine Fähigkeiten als Soldat unter Beweis stellst.",
         "Erkunde realistische Umgebungen und nutze eine Vielzahl von Waffen und Ausrüstungsgegenständen, um deine Feinde zu besiegen und deine Mission zu erfüllen."
       ],
-      "specs": ["Plattform: PlayStation, Xbox, PC", "Genre: Ego-Shooter"],
+      "specs": [
+        "Plattform: PlayStation, Xbox, PC",
+        "Genre: Ego-Shooter"
+      ],
       "rating": {
         "count": 102,
         "value": 4.6
@@ -684,7 +701,10 @@
         "Schlüpfe in die Rolle eines Hexers und meistere eine Vielzahl von Fähigkeiten, Waffen und Magie, um gegen gefährliche Kreaturen zu kämpfen und die Welt zu retten.",
         "Treffe schwerwiegende Entscheidungen, die den Verlauf der Geschichte und das Schicksal der Charaktere beeinflussen, während du dich auf eine epische Reise begibst, um das Geheimnis hinter der Wilden Jagd zu lüften."
       ],
-      "specs": ["Plattform: PlayStation, Xbox, PC", "Genre: Action-RPG"],
+      "specs": [
+        "Plattform: PlayStation, Xbox, PC",
+        "Genre: Action-RPG"
+      ],
       "rating": {
         "count": 568,
         "value": 4.9
@@ -708,7 +728,10 @@
         "Nutze eine Vielzahl von Waffen, Magie und Fähigkeiten, um gegen gefährliche Feinde zu kämpfen und herausfordernde Rätsel zu lösen.",
         "Entdecke atemberaubende Landschaften, erklimme hohe Berge, schwimme durch reißende Flüsse und fliege mit dem Segelfallschirm durch die Lüfte, um das Land zu erkunden und seine Geheimnisse zu enthüllen."
       ],
-      "specs": ["Plattform: Nintendo Switch", "Genre: Action-Adventure"],
+      "specs": [
+        "Plattform: Nintendo Switch",
+        "Genre: Action-Adventure"
+      ],
       "rating": {
         "count": 789,
         "value": 4.8
@@ -732,7 +755,10 @@
         "Schlüpfe in die Rolle des Outlaws Arthur Morgan und schließe dich der Van-der-Linde-Gang an, während du dich durch eine raue und unerbittliche Landschaft kämpfst und versuchst, zu überleben und deinen Platz in der Welt zu finden.",
         "Erkunde lebendige Städte, entlegene Siedlungen, gefährliche Gebirgspässe und weitläufige Prärien, während du dich auf eine epische Reise begibst, um das Ende einer Ära zu erleben und das Schicksal der Gang zu bestimmen."
       ],
-      "specs": ["Plattform: PlayStation, Xbox, PC", "Genre: Action-Adventure"],
+      "specs": [
+        "Plattform: PlayStation, Xbox, PC",
+        "Genre: Action-Adventure"
+      ],
       "rating": {
         "count": 945,
         "value": 4.7
@@ -756,7 +782,10 @@
         "Nutze die einzigartige Fähigkeit von Marios Mütze, Cappy, um dich zu verwandeln, Rätsel zu lösen und neue Welten zu erkunden, voller Geheimnisse, Herausforderungen und Belohnungen.",
         "Reise durch verschiedene Königreiche, darunter das mythische Mushroom Kingdom, die geheimnisvollen Ruinen von Tostarena und die lebendige Metropole New Donk City, während du dich auf eine unvergessliche Reise begibst, um Bowser zu besiegen und Peach zu retten!"
       ],
-      "specs": ["Plattform: Nintendo Switch", "Genre: Jump 'n' Run"],
+      "specs": [
+        "Plattform: Nintendo Switch",
+        "Genre: Jump 'n' Run"
+      ],
       "rating": {
         "count": 1203,
         "value": 4.8
@@ -780,7 +809,10 @@
         "Schlüpfe in die Rolle des Söldners V und erkunde die riesige Metropole Night City, während du dich durch gefährliche Straßenkämpfe, komplexe Quests und politische Intrigen kämpfst.",
         "Nutze eine Vielzahl von Fähigkeiten, Waffen und Cyber-Implantaten, um deine Feinde zu besiegen und deine eigenen Grenzen zu überschreiten, während du versuchst, in einer Welt zu überleben, in der jeder eine Agenda hat und niemand zu vertrauen ist."
       ],
-      "specs": ["Plattform: PlayStation, Xbox, PC", "Genre: Action-RPG"],
+      "specs": [
+        "Plattform: PlayStation, Xbox, PC",
+        "Genre: Action-RPG"
+      ],
       "rating": {
         "count": 987,
         "value": 4.3
@@ -804,7 +836,10 @@
         "Tauche ein in die Lebendigkeit und Realität des Fußballs mit realistischen Animationen, authentischen Stadien und dynamischem Wetter, während du auf den größten Bühnen der Welt spielst.",
         "Stelle dein Können und deine Strategie auf die Probe in verschiedenen Spielmodi, darunter Karriere, Ultimate Team und Volta Football, während du versuchst, dir einen Platz in der Geschichte des Fußballs zu sichern und deine Gegner zu dominieren!"
       ],
-      "specs": ["Plattform: PlayStation, Xbox, PC", "Genre: Sport"],
+      "specs": [
+        "Plattform: PlayStation, Xbox, PC",
+        "Genre: Sport"
+      ],
       "rating": {
         "count": 589,
         "value": 4.5
@@ -828,7 +863,10 @@
         "Schlüpfe in die Rolle von Eivor, einem furchtlosen Krieger, der sich auf eine epische Reise begibt, um Ruhm, Ehre und ein neues Zuhause zu finden inmitten des düsteren Zeitalters der Wikinger.",
         "Erkunde eine riesige offene Welt, vom frostigen Norwegen bis zum üppigen England, und errichte deine eigene Siedlung, während du dich auf gefährliche Raubzüge begibst, mysteriöse Kulte bekämpfst und das Schicksal der Assassinen enthüllst."
       ],
-      "specs": ["Plattform: PlayStation, Xbox, PC", "Genre: Action-Adventure"],
+      "specs": [
+        "Plattform: PlayStation, Xbox, PC",
+        "Genre: Action-Adventure"
+      ],
       "rating": {
         "count": 654,
         "value": 4.6
@@ -852,7 +890,10 @@
         "Schlüpfe in die Rolle des legendären Helden Link und begib dich auf eine Reise, um das Königreich vor dem bösen Calamity Ganon zu retten, der die Welt in Dunkelheit gehüllt hat.",
         "Nutze deine Intelligenz, deine Fähigkeiten und deine Ressourcen, um überlebenswichtige Rätsel zu lösen, mächtige Gegner zu besiegen und die Geheimnisse von Hyrules Vergangenheit und Zukunft zu enthüllen, während du dich auf das ultimative Abenteuer deines Lebens begibst!"
       ],
-      "specs": ["Plattform: Nintendo Switch", "Genre: Action-Adventure"],
+      "specs": [
+        "Plattform: Nintendo Switch",
+        "Genre: Action-Adventure"
+      ],
       "rating": {
         "count": 1897,
         "value": 4.9
@@ -876,7 +917,10 @@
         "Schlüpfe in die Rolle des Geralt von Riva, einem professionellen Monsterjäger, der sich auf eine gefährliche Reise begibt, um seine verlorenen Erinnerungen zu finden und das Geheimnis um das Mädchen mit der Macht zu lüften.",
         "Erkunde eine riesige offene Welt voller Geheimnisse, Quests und Herausforderungen, während du dich auf die Suche nach Antworten begibst und gegen gefährliche Kreaturen kämpfst, um die Welt vor dem Untergang zu bewahren."
       ],
-      "specs": ["Plattform: PlayStation, Xbox, PC", "Genre: Action-RPG"],
+      "specs": [
+        "Plattform: PlayStation, Xbox, PC",
+        "Genre: Action-RPG"
+      ],
       "rating": {
         "count": 1500,
         "value": 4.9
@@ -900,7 +944,10 @@
         "Schlüpfe in die Rollen von drei unterschiedlichen Charakteren - dem erfahrenen Gangster Michael, dem ehemaligen Straftäter Franklin und dem unkontrollierbaren Psychopathen Trevor - während du dich auf eine epische Reise durch die Unterwelt von Los Santos begibst.",
         "Erkunde die Stadt, überfalle Banken, raube Geschäfte aus, jage rivalisierende Gangs und entkomme der Polizei in diesem bahnbrechenden Spiel, das die Grenzen des Videospielmediums neu definiert hat."
       ],
-      "specs": ["Plattform: PlayStation, Xbox, PC", "Genre: Action-Adventure"],
+      "specs": [
+        "Plattform: PlayStation, Xbox, PC",
+        "Genre: Action-Adventure"
+      ],
       "rating": {
         "count": 2500,
         "value": 4.8
@@ -924,7 +971,10 @@
         "Baue und erkunde deine eigenen Welten, sammle Ressourcen, baue Strukturen und kämpfe gegen feindliche Mobs, während du dich auf eine Reise durch die unendlichen Weiten der Blockwelt begibst.",
         "Spiele alleine oder mit Freunden in verschiedenen Spielmodi, darunter Survival, Creative und Adventure, und entdecke eine endlose Vielfalt an Möglichkeiten, während du deine Kreativität und deine Fähigkeiten in diesem zeitlosen Klassiker entfesselst."
       ],
-      "specs": ["Plattform: PlayStation, Xbox, PC, Mobile", "Genre: Sandbox"],
+      "specs": [
+        "Plattform: PlayStation, Xbox, PC, Mobile",
+        "Genre: Sandbox"
+      ],
       "rating": {
         "count": 3500,
         "value": 4.7
@@ -975,7 +1025,10 @@
         "Wähle aus einer Vielzahl von Helden mit einzigartigen Fähigkeiten und Rollen, darunter mutige Krieger, geschickte Scharfschützen und mächtige Unterstützer, während du dich in schnellen und taktischen Gefechten gegen andere Spieler behauptest.",
         "Spiele in verschiedenen Spielmodi, darunter Angriff, Eskorte, Kontrolle und mehr, und arbeite mit deinem Team zusammen, um die Mission zu erfüllen, den Feind zu besiegen und als Sieger hervorzugehen!"
       ],
-      "specs": ["Plattform: PlayStation, Xbox, PC", "Genre: Ego-Shooter"],
+      "specs": [
+        "Plattform: PlayStation, Xbox, PC",
+        "Genre: Ego-Shooter"
+      ],
       "rating": {
         "count": 4000,
         "value": 4.7
@@ -999,7 +1052,10 @@
         "Spiele als dein Lieblingsverein oder erstelle dein eigenes Team in verschiedenen Spielmodi, darunter Karriere, Ultimate Team, Volta Football und mehr, und stelle dich Herausforderungen, baue deine Fähigkeiten aus und kämpfe um Ruhm und Ehre auf dem Platz.",
         "Erlebe realistische Grafiken, authentische Spielmechaniken und packende Kommentare, während du dich in spannenden Matches, aufregenden Turnieren und herausfordernden Online-Wettbewerben behauptest und beweist, dass du der beste Spieler der Welt bist!"
       ],
-      "specs": ["Plattform: PlayStation, Xbox, PC", "Genre: Sport"],
+      "specs": [
+        "Plattform: PlayStation, Xbox, PC",
+        "Genre: Sport"
+      ],
       "rating": {
         "count": 3000,
         "value": 4.8
@@ -1023,7 +1079,10 @@
         "Schlüpfe in die Rolle eines mutigen Helden oder einer furchtlosen Heldin und begib dich auf eine Reise durch eine atemberaubende offene Welt, die von den Göttern und Monstern der griechischen Mythologie bevölkert wird.",
         "Kämpfe gegen legendäre Krieger, löse antike Rätsel und entscheide über das Schicksal eines ganzen Reiches, während du dich in einem epischen Abenteuer durch Intrigen, Verrat und heroische Taten kämpfst!"
       ],
-      "specs": ["Plattform: PlayStation, Xbox, PC", "Genre: Action-Adventure"],
+      "specs": [
+        "Plattform: PlayStation, Xbox, PC",
+        "Genre: Action-Adventure"
+      ],
       "rating": {
         "count": 2800,
         "value": 4.7
@@ -1047,7 +1106,10 @@
         "Schlüpfe in die Rolle eines Söldners namens V und erlebe eine packende Geschichte voller Intrigen, Verrat und unerwarteter Wendungen, während du dich durch die Straßen von Night City kämpfst und versuchst, deinen Platz in der Welt zu finden.",
         "Entdecke eine riesige offene Welt voller Möglichkeiten, während du dich mit verschiedenen Fraktionen verbündest, gefährliche Missionen ausführst und dich in knallharten Kämpfen gegen rivalisierende Gangs und korrupte Konzerne behauptest."
       ],
-      "specs": ["Plattform: PlayStation, Xbox, PC", "Genre: Action-RPG"],
+      "specs": [
+        "Plattform: PlayStation, Xbox, PC",
+        "Genre: Action-RPG"
+      ],
       "rating": {
         "count": 3200,
         "value": 4.5
@@ -1071,7 +1133,10 @@
         "Schlüpfe in die Rolle des berühmten Klempners Mario und begib dich auf die Suche nach Prinzessin Peach, die von dem bösen Bowser entführt wurde, während du dich durch farbenfrohe Welten, gefährliche Abenteuer und knifflige Rätsel kämpfst.",
         "Nutze die einzigartigen Fähigkeiten von Marios mysteriösem Hut Cappy, um Feinde zu besiegen, Hindernisse zu überwinden und neue Bereiche zu erkunden, während du dich auf eine Reise durch die fantastischen Welten des Pilzkönigreichs begibst!"
       ],
-      "specs": ["Plattform: Nintendo Switch", "Genre: Jump 'n' Run"],
+      "specs": [
+        "Plattform: Nintendo Switch",
+        "Genre: Jump 'n' Run"
+      ],
       "rating": {
         "count": 4000,
         "value": 4.8
@@ -1095,7 +1160,10 @@
         "Schlüpfe in die Rolle des mutigen Helden Link und begib dich auf die Suche nach Antworten in einer Welt, die von Dunkelheit und Verderben bedroht wird, während du dich durch weite Landschaften, gefährliche Dungeons und antike Ruinen kämpfst.",
         "Nutze die Kräfte der Natur, die Weisheit der alten Gottheiten und die Magie der legendären Waffen, um deine Feinde zu besiegen, Rätsel zu lösen und das Schicksal des Königreichs Hyrule zu bestimmen!"
       ],
-      "specs": ["Plattform: Nintendo Switch", "Genre: Action-Adventure"],
+      "specs": [
+        "Plattform: Nintendo Switch",
+        "Genre: Action-Adventure"
+      ],
       "rating": {
         "count": 4500,
         "value": 4.9
@@ -1119,7 +1187,10 @@
         "Schlüpfe in die Rolle eines jungen Pokémon-Trainers und beginne deine Reise, um Champion zu werden, indem du wilde Pokémon fängst, starke Trainer besiegst und dich durch die Arenen kämpfst, um dich zum besten Trainer der Region zu krönen.",
         "Entdecke eine riesige offene Welt voller Pokémon, Geheimnisse und Herausforderungen, während du deine Fähigkeiten verbessert, dein Team aufbaust und dich auf die ultimative Herausforderung vorbereitest - den Kampf gegen die Top-Vier und den amtierenden Champion!"
       ],
-      "specs": ["Plattform: Nintendo Switch", "Genre: Rollenspiel"],
+      "specs": [
+        "Plattform: Nintendo Switch",
+        "Genre: Rollenspiel"
+      ],
       "rating": {
         "count": 3500,
         "value": 4.7
@@ -1144,7 +1215,10 @@
         "Perfekt für einen gesunden Snack oder als Zutat in Smoothies und Desserts.",
         "Erhalten Sie eine nachhaltige Energiequelle mit diesem natürlichen Lebensmittelprodukt."
       ],
-      "specs": ["Herkunft: Ecuador", "Zertifizierung: Bio"],
+      "specs": [
+        "Herkunft: Ecuador",
+        "Zertifizierung: Bio"
+      ],
       "rating": {
         "count": 56,
         "value": 4.8
@@ -1169,7 +1243,10 @@
         "Perfekt als gesunder Snack oder Zutat in Salaten und Backwaren.",
         "Erhalten Sie eine köstliche und gesunde Option für Ihre tägliche Ernährung."
       ],
-      "specs": ["Herkunft: Deutschland", "Zertifizierung: Bio"],
+      "specs": [
+        "Herkunft: Deutschland",
+        "Zertifizierung: Bio"
+      ],
       "rating": {
         "count": 42,
         "value": 4.7
@@ -1194,7 +1271,10 @@
         "Perfekt als gesunder Snack, Zutat in Suppen und Beilagen.",
         "Erhalten Sie eine leckere und nahrhafte Option für Ihre Ernährung."
       ],
-      "specs": ["Herkunft: Frankreich", "Zertifizierung: Bio"],
+      "specs": [
+        "Herkunft: Frankreich",
+        "Zertifizierung: Bio"
+      ],
       "rating": {
         "count": 35,
         "value": 4.6
@@ -1219,7 +1299,10 @@
         "Perfekt als erfrischender Snack oder Zutat in Säften und Salaten.",
         "Erhalten Sie eine gesunde und köstliche Option für Ihre Ernährung."
       ],
-      "specs": ["Herkunft: Spanien", "Zertifizierung: Bio"],
+      "specs": [
+        "Herkunft: Spanien",
+        "Zertifizierung: Bio"
+      ],
       "rating": {
         "count": 28,
         "value": 4.9
@@ -1244,7 +1327,10 @@
         "Perfekt als Zutat in Salaten, Saucen und Pasta-Gerichten.",
         "Erhalten Sie eine frische und gesunde Option für Ihre Küche."
       ],
-      "specs": ["Herkunft: Italien", "Zertifizierung: Bio"],
+      "specs": [
+        "Herkunft: Italien",
+        "Zertifizierung: Bio"
+      ],
       "rating": {
         "count": 38,
         "value": 4.7
@@ -1269,7 +1355,10 @@
         "Perfekt als erfrischender Snack oder als Zutat in Desserts und Müslis.",
         "Erhalten Sie eine leckere und gesunde Option für Ihre Ernährung."
       ],
-      "specs": ["Herkunft: Deutschland", "Zertifizierung: Bio"],
+      "specs": [
+        "Herkunft: Deutschland",
+        "Zertifizierung: Bio"
+      ],
       "rating": {
         "count": 23,
         "value": 4.8
@@ -1294,7 +1383,10 @@
         "Perfekt als gesunder Snack oder als Zutat in Smoothies und Desserts.",
         "Erhalten Sie eine köstliche und fruchtige Option für Ihre Ernährung."
       ],
-      "specs": ["Herkunft: Spanien", "Zertifizierung: Bio"],
+      "specs": [
+        "Herkunft: Spanien",
+        "Zertifizierung: Bio"
+      ],
       "rating": {
         "count": 31,
         "value": 4.7
@@ -1319,7 +1411,10 @@
         "Perfekt als gesunde Zutat in Salaten, Sandwiches und Dips.",
         "Erhalten Sie eine vielseitige und nahrhafte Option für Ihre Ernährung."
       ],
-      "specs": ["Herkunft: Mexiko", "Zertifizierung: Bio"],
+      "specs": [
+        "Herkunft: Mexiko",
+        "Zertifizierung: Bio"
+      ],
       "rating": {
         "count": 19,
         "value": 4.9
@@ -1344,7 +1439,10 @@
         "Perfekt als gesunder Snack oder als Zutat in Backwaren und Müslis.",
         "Erhalten Sie eine köstliche und gesunde Option für Ihre Ernährung."
       ],
-      "specs": ["Herkunft: USA", "Zertifizierung: Bio"],
+      "specs": [
+        "Herkunft: USA",
+        "Zertifizierung: Bio"
+      ],
       "rating": {
         "count": 27,
         "value": 4.8
@@ -1369,7 +1467,10 @@
         "Perfekt als erfrischender Snack oder als Zutat in Säften und Salaten.",
         "Erhalten Sie eine tropische und gesunde Option für Ihre Ernährung."
       ],
-      "specs": ["Herkunft: Indien", "Zertifizierung: Bio"],
+      "specs": [
+        "Herkunft: Indien",
+        "Zertifizierung: Bio"
+      ],
       "rating": {
         "count": 35,
         "value": 4.6
@@ -1394,7 +1495,10 @@
         "Perfekt als belebendes Getränk zu jeder Tageszeit.",
         "Erhalten Sie eine gesunde und erfrischende Option für Ihre Ernährung."
       ],
-      "specs": ["Herkunft: China", "Zertifizierung: Bio"],
+      "specs": [
+        "Herkunft: China",
+        "Zertifizierung: Bio"
+      ],
       "rating": {
         "count": 18,
         "value": 4.7
@@ -1419,7 +1523,10 @@
         "Perfekt für die Zubereitung von köstlichem Kaffee zu Hause.",
         "Erhalten Sie eine belebende und geschmackvolle Option für Ihren Morgenkaffee."
       ],
-      "specs": ["Herkunft: Äthiopien", "Zertifizierung: Bio"],
+      "specs": [
+        "Herkunft: Äthiopien",
+        "Zertifizierung: Bio"
+      ],
       "rating": {
         "count": 25,
         "value": 4.8
@@ -1444,7 +1551,10 @@
         "Perfekt für einen gesunden Start in den Tag oder als erfrischendes Getränk zwischendurch.",
         "Erhalten Sie eine köstliche und natürliche Option für Ihre Ernährung."
       ],
-      "specs": ["Herkunft: Spanien", "Zertifizierung: Bio"],
+      "specs": [
+        "Herkunft: Spanien",
+        "Zertifizierung: Bio"
+      ],
       "rating": {
         "count": 34,
         "value": 4.6
@@ -1469,7 +1579,10 @@
         "Perfekt für heiße Sommertage oder als erfrischender Durstlöscher zu jeder Zeit.",
         "Erhalten Sie eine köstliche und erfrischende Option für Ihre Getränkeauswahl."
       ],
-      "specs": ["Herkunft: Deutschland", "Zertifizierung: Bio"],
+      "specs": [
+        "Herkunft: Deutschland",
+        "Zertifizierung: Bio"
+      ],
       "rating": {
         "count": 22,
         "value": 4.7
@@ -1494,7 +1607,10 @@
         "Perfekt als Sommergetränk oder für besondere Anlässe.",
         "Erhalten Sie einen fruchtigen und belebenden Durstlöscher."
       ],
-      "specs": ["Herkunft: Italien", "Zertifizierung: Bio"],
+      "specs": [
+        "Herkunft: Italien",
+        "Zertifizierung: Bio"
+      ],
       "rating": {
         "count": 26,
         "value": 4.7
@@ -1519,7 +1635,10 @@
         "Perfekt als wärmendes Getränk an kalten Tagen.",
         "Erhalten Sie einen belebenden und aromatischen Teegenuss."
       ],
-      "specs": ["Herkunft: Indien", "Zertifizierung: Bio"],
+      "specs": [
+        "Herkunft: Indien",
+        "Zertifizierung: Bio"
+      ],
       "rating": {
         "count": 29,
         "value": 4.9
@@ -1544,7 +1663,10 @@
         "Perfekt für schnelle und köstliche Mahlzeiten auf dem Grill oder in der Pfanne.",
         "Erhalten Sie hochwertiges Fleisch aus nachhaltiger Landwirtschaft."
       ],
-      "specs": ["Herkunft: Deutschland", "Zertifizierung: Bio"],
+      "specs": [
+        "Herkunft: Deutschland",
+        "Zertifizierung: Bio"
+      ],
       "rating": {
         "count": 25,
         "value": 4.7
@@ -1569,7 +1691,10 @@
         "Perfekt für traditionelle Gerichte wie Lammbraten oder als besonderes Highlight auf dem Grill.",
         "Erhalten Sie hochwertiges Lammfleisch aus ökologischer Landwirtschaft."
       ],
-      "specs": ["Herkunft: Neuseeland", "Zertifizierung: Bio"],
+      "specs": [
+        "Herkunft: Neuseeland",
+        "Zertifizierung: Bio"
+      ],
       "rating": {
         "count": 14,
         "value": 4.6
@@ -1594,7 +1719,10 @@
         "Perfekt für traditionelle Gerichte wie Gulaschsuppe oder als Hauptgericht mit Kartoffeln.",
         "Erhalten Sie eine authentische und köstliche Mahlzeit aus kontrollierter Bio-Landwirtschaft."
       ],
-      "specs": ["Herkunft: Deutschland", "Zertifizierung: Bio"],
+      "specs": [
+        "Herkunft: Deutschland",
+        "Zertifizierung: Bio"
+      ],
       "rating": {
         "count": 20,
         "value": 4.8
@@ -1619,7 +1747,10 @@
         "Perfekt für die Zubereitung von Bolognese, Burger-Patties oder gefüllten Paprikaschoten.",
         "Erhalten Sie hochwertiges und frisches Rinderhackfleisch aus kontrollierter Bio-Landwirtschaft."
       ],
-      "specs": ["Herkunft: Deutschland", "Zertifizierung: Bio"],
+      "specs": [
+        "Herkunft: Deutschland",
+        "Zertifizierung: Bio"
+      ],
       "rating": {
         "count": 28,
         "value": 4.7
@@ -1644,7 +1775,10 @@
         "Einfach zusammenklappbar für platzsparende Aufbewahrung und Transport.",
         "Mit einem geräumigen Korb für Einkäufe oder Babyutensilien."
       ],
-      "specs": ["Altersempfehlung: ab Geburt bis 15 kg", "Gewicht: 9,5 kg"],
+      "specs": [
+        "Altersempfehlung: ab Geburt bis 15 kg",
+        "Gewicht: 9,5 kg"
+      ],
       "rating": {
         "count": 28,
         "value": 4.7
@@ -1668,7 +1802,9 @@
         "Verstellbare Träger für optimale Passform.",
         "Maschinenwaschbar für einfache Reinigung."
       ],
-      "specs": ["Geeignet für Babys und Kleinkinder bis 20 kg."],
+      "specs": [
+        "Geeignet für Babys und Kleinkinder bis 20 kg."
+      ],
       "rating": {
         "count": 15,
         "value": 4.5
@@ -1692,7 +1828,9 @@
         "Höhenverstellbar für einfaches Anpassen.",
         "Aus nachhaltigen Materialien gefertigt."
       ],
-      "specs": ["Geeignet ab Geburt bis 24 Monate."],
+      "specs": [
+        "Geeignet ab Geburt bis 24 Monate."
+      ],
       "rating": {
         "count": 10,
         "value": 4.8
@@ -1716,7 +1854,9 @@
         "Rutschfeste Oberfläche für zusätzliche Sicherheit.",
         "Mit Ablaufstopfen für einfaches Entleeren."
       ],
-      "specs": ["Geeignet für Babys bis zu 12 Monaten."],
+      "specs": [
+        "Geeignet für Babys bis zu 12 Monaten."
+      ],
       "rating": {
         "count": 20,
         "value": 4.6
@@ -1740,7 +1880,9 @@
         "Mit integrierter Wickelunterlage für schnelles Wickeln.",
         "Isoliertes Fach für Flaschen."
       ],
-      "specs": ["Geeignet für Babys und Kleinkinder bis 12 kg."],
+      "specs": [
+        "Geeignet für Babys und Kleinkinder bis 12 kg."
+      ],
       "rating": {
         "count": 12,
         "value": 4.4
@@ -1764,7 +1906,9 @@
         "Hochwertige Materialien für Komfort und Sicherheit.",
         "Ergonomische Tragepositionen für Babys."
       ],
-      "specs": ["Geeignet für Babys bis zu 15 kg."],
+      "specs": [
+        "Geeignet für Babys bis zu 15 kg."
+      ],
       "rating": {
         "count": 18,
         "value": 4.9
@@ -1788,7 +1932,9 @@
         "Einfache Installation mit Isofix oder Sicherheitsgurt.",
         "Verstellbare Kopfstütze und Gurte für mitwachsenden Komfort."
       ],
-      "specs": ["Geeignet für Babys von Geburt bis etwa 4 Jahre."],
+      "specs": [
+        "Geeignet für Babys von Geburt bis etwa 4 Jahre."
+      ],
       "rating": {
         "count": 25,
         "value": 4.6
@@ -1812,7 +1958,9 @@
         "Verschiedene Spielzeuge für sensorische Entwicklung.",
         "Robuste Konstruktion für sicheres Spielen."
       ],
-      "specs": ["Enthält verschiedene Spielzeuge für Babys ab 6 Monaten."],
+      "specs": [
+        "Enthält verschiedene Spielzeuge für Babys ab 6 Monaten."
+      ],
       "rating": {
         "count": 30,
         "value": 4.8
@@ -1862,7 +2010,9 @@
         "Verstellbare Sitz- und Fußstütze für mitwachsenden Komfort.",
         "Leicht zu reinigendes Tablett und abnehmbares Tablett."
       ],
-      "specs": ["Geeignet für Babys und Kleinkinder ab 6 Monaten."],
+      "specs": [
+        "Geeignet für Babys und Kleinkinder ab 6 Monaten."
+      ],
       "rating": {
         "count": 20,
         "value": 4.9
@@ -1886,7 +2036,9 @@
         "Einfach zusammenklappbar für platzsparende Aufbewahrung.",
         "Mit gepolstertem Boden für zusätzlichen Komfort."
       ],
-      "specs": ["Maße: 100 x 100 cm, Höhe: 70 cm."],
+      "specs": [
+        "Maße: 100 x 100 cm, Höhe: 70 cm."
+      ],
       "rating": {
         "count": 8,
         "value": 4.5
@@ -1910,7 +2062,9 @@
         "Ärmellos für optimale Temperaturregulierung.",
         "Maschinenwaschbar für einfache Pflege."
       ],
-      "specs": ["Größe: 0-6 Monate, Länge: 60 cm."],
+      "specs": [
+        "Größe: 0-6 Monate, Länge: 60 cm."
+      ],
       "rating": {
         "count": 12,
         "value": 4.6
@@ -1934,7 +2088,9 @@
         "Gepolsterter Untergrund für Komfort und Sicherheit.",
         "Leicht zu reinigen und zusammenzufalten."
       ],
-      "specs": ["Maße: 150 x 100 cm, Dicke: 1 cm."],
+      "specs": [
+        "Maße: 150 x 100 cm, Dicke: 1 cm."
+      ],
       "rating": {
         "count": 15,
         "value": 4.7
@@ -1958,7 +2114,9 @@
         "Auslaufsicher für sauberes Trinken.",
         "Spülmaschinenfest für einfache Reinigung."
       ],
-      "specs": ["Fassungsvermögen: 150 ml, BPA-frei."],
+      "specs": [
+        "Fassungsvermögen: 150 ml, BPA-frei."
+      ],
       "rating": {
         "count": 20,
         "value": 4.4
@@ -1982,7 +2140,9 @@
         "Schnelle und genaue Messergebnisse.",
         "Mit flexiblem Spitzen für angenehme Anwendung."
       ],
-      "specs": ["Messbereich: 32°C bis 42,9°C, Inklusive Schutzkappe."],
+      "specs": [
+        "Messbereich: 32°C bis 42,9°C, Inklusive Schutzkappe."
+      ],
       "rating": {
         "count": 30,
         "value": 4.9
@@ -2032,7 +2192,9 @@
         "Verstellbare Sitz- und Fußstütze für mitwachsenden Komfort.",
         "Leicht zu reinigendes Tablett und abnehmbares Tablett."
       ],
-      "specs": ["Geeignet für Babys und Kleinkinder ab 6 Monaten."],
+      "specs": [
+        "Geeignet für Babys und Kleinkinder ab 6 Monaten."
+      ],
       "rating": {
         "count": 20,
         "value": 4.9
@@ -2056,7 +2218,9 @@
         "Einfach zusammenklappbar für platzsparende Aufbewahrung.",
         "Mit gepolstertem Boden für zusätzlichen Komfort."
       ],
-      "specs": ["Maße: 100 x 100 cm, Höhe: 70 cm."],
+      "specs": [
+        "Maße: 100 x 100 cm, Höhe: 70 cm."
+      ],
       "rating": {
         "count": 8,
         "value": 4.5
@@ -2080,7 +2244,9 @@
         "Ärmellos für optimale Temperaturregulierung.",
         "Maschinenwaschbar für einfache Pflege."
       ],
-      "specs": ["Größe: 0-6 Monate, Länge: 60 cm."],
+      "specs": [
+        "Größe: 0-6 Monate, Länge: 60 cm."
+      ],
       "rating": {
         "count": 12,
         "value": 4.6
@@ -2104,7 +2270,9 @@
         "Ärmellos für optimale Temperaturregulierung.",
         "Maschinenwaschbar für einfache Pflege."
       ],
-      "specs": ["Größe: 0-6 Monate, Länge: 60 cm."],
+      "specs": [
+        "Größe: 0-6 Monate, Länge: 60 cm."
+      ],
       "rating": {
         "count": 12,
         "value": 4.6
@@ -2130,7 +2298,10 @@
         "Klassiker der Weltliteratur, der zeitlose Themen behandelt.",
         "Geeignet für Leser jeden Alters, die nach Inspiration suchen."
       ],
-      "specs": ["Seitenzahl: 192 Seiten", "Format: Taschenbuch"],
+      "specs": [
+        "Seitenzahl: 192 Seiten",
+        "Format: Taschenbuch"
+      ],
       "rating": {
         "count": 35,
         "value": 4.8
@@ -2156,7 +2327,10 @@
         "Tiefgründige Reflexionen über Einsamkeit, Selbstentfremdung und die Suche nach Bedeutung.",
         "Für Leser, die nach einer literarischen Reise in die menschliche Psyche suchen."
       ],
-      "specs": ["Seitenzahl: 256 Seiten", "Format: Taschenbuch"],
+      "specs": [
+        "Seitenzahl: 256 Seiten",
+        "Format: Taschenbuch"
+      ],
       "rating": {
         "count": 28,
         "value": 4.7
@@ -2182,7 +2356,10 @@
         "Tiefe philosophische und spirituelle Themen, die zum Nachdenken anregen.",
         "Geeignet für Leser, die sich für Psychologie und Spiritualität interessieren."
       ],
-      "specs": ["Seitenzahl: 176 Seiten", "Format: Taschenbuch"],
+      "specs": [
+        "Seitenzahl: 176 Seiten",
+        "Format: Taschenbuch"
+      ],
       "rating": {
         "count": 15,
         "value": 4.6
@@ -2208,7 +2385,10 @@
         "Kraftvolle Beschreibung von Freundschaft, Liebe und kreativem Schaffen.",
         "Für Leser, die sich für die menschliche Seele und das Wesen der Kunst interessieren."
       ],
-      "specs": ["Seitenzahl: 384 Seiten", "Format: Taschenbuch"],
+      "specs": [
+        "Seitenzahl: 384 Seiten",
+        "Format: Taschenbuch"
+      ],
       "rating": {
         "count": 20,
         "value": 4.8
@@ -2234,7 +2414,10 @@
         "Komplexes und fesselndes Erzählen, das zum Nachdenken anregt.",
         "Für Leser, die sich für utopische Literatur und philosophische Diskussionen interessieren."
       ],
-      "specs": ["Seitenzahl: 576 Seiten", "Format: Taschenbuch"],
+      "specs": [
+        "Seitenzahl: 576 Seiten",
+        "Format: Taschenbuch"
+      ],
       "rating": {
         "count": 25,
         "value": 4.7
@@ -2260,7 +2443,10 @@
         "Aktuelle Themen über Bildung, Jugend und soziale Erwartungen.",
         "Für Leser, die nach bedeutungsvollen Geschichten über die Herausforderungen des Lebens suchen."
       ],
-      "specs": ["Seitenzahl: 192 Seiten", "Format: Taschenbuch"],
+      "specs": [
+        "Seitenzahl: 192 Seiten",
+        "Format: Taschenbuch"
+      ],
       "rating": {
         "count": 18,
         "value": 4.6
@@ -2286,7 +2472,10 @@
         "Fesselnde Erzählung, die den Leser auf eine innere Reise mitnimmt.",
         "Für Leser, die nach tieferen Einsichten in die menschliche Natur und das Streben nach Erleuchtung suchen."
       ],
-      "specs": ["Seitenzahl: 160 Seiten", "Format: Taschenbuch"],
+      "specs": [
+        "Seitenzahl: 160 Seiten",
+        "Format: Taschenbuch"
+      ],
       "rating": {
         "count": 20,
         "value": 4.8
@@ -2312,7 +2501,10 @@
         "Einfühlsame Beschreibung der menschlichen Psyche und inneren Kämpfe.",
         "Für Leser, die nach innerer Ruhe und Erneuerung suchen."
       ],
-      "specs": ["Seitenzahl: 96 Seiten", "Format: Taschenbuch"],
+      "specs": [
+        "Seitenzahl: 96 Seiten",
+        "Format: Taschenbuch"
+      ],
       "rating": {
         "count": 15,
         "value": 4.7
@@ -2338,7 +2530,10 @@
         "Einblick in die absurde und beklemmende Welt des Autors.",
         "Für Leser, die nach tiefgründigen und unkonventionellen Geschichten suchen."
       ],
-      "specs": ["Seitenzahl: 432 Seiten", "Format: Taschenbuch"],
+      "specs": [
+        "Seitenzahl: 432 Seiten",
+        "Format: Taschenbuch"
+      ],
       "rating": {
         "count": 25,
         "value": 4.6
@@ -2364,7 +2559,10 @@
         "Epische Erzählung mit tiefgründigen philosophischen und religiösen Themen.",
         "Für Leser, die sich für klassische Dramen und moralische Dilemmata interessieren."
       ],
-      "specs": ["Seitenzahl: 480 Seiten", "Format: Taschenbuch"],
+      "specs": [
+        "Seitenzahl: 480 Seiten",
+        "Format: Taschenbuch"
+      ],
       "rating": {
         "count": 30,
         "value": 4.8
@@ -2390,7 +2588,10 @@
         "Pulitzer Prize-winning novel that remains relevant in today's society.",
         "Suitable for readers interested in social issues and coming-of-age stories."
       ],
-      "specs": ["Pages: 336 pages", "Format: Paperback"],
+      "specs": [
+        "Pages: 336 pages",
+        "Format: Paperback"
+      ],
       "rating": {
         "count": 45,
         "value": 4.9
@@ -2416,7 +2617,10 @@
         "Highly influential and widely studied in literature and political science.",
         "Recommended for readers interested in political commentary and speculative fiction."
       ],
-      "specs": ["Pages: 328 pages", "Format: Paperback"],
+      "specs": [
+        "Pages: 328 pages",
+        "Format: Paperback"
+      ],
       "rating": {
         "count": 40,
         "value": 4.7
@@ -2442,7 +2646,10 @@
         "Provocative exploration of teenage angst, alienation, and identity.",
         "Suitable for readers seeking authenticity and emotional depth in literature."
       ],
-      "specs": ["Pages: 288 pages", "Format: Paperback"],
+      "specs": [
+        "Pages: 288 pages",
+        "Format: Paperback"
+      ],
       "rating": {
         "count": 35,
         "value": 4.8
@@ -2468,7 +2675,10 @@
         "Rich symbolism and lyrical prose make it a staple of American literature.",
         "Recommended for readers interested in the pursuit of wealth, love, and the illusion of success."
       ],
-      "specs": ["Pages: 180 pages", "Format: Paperback"],
+      "specs": [
+        "Pages: 180 pages",
+        "Format: Paperback"
+      ],
       "rating": {
         "count": 50,
         "value": 4.7
@@ -2494,7 +2704,10 @@
         "Timeless exploration of love, class, and gender roles in Regency-era society.",
         "Suitable for readers seeking romance, humor, and keen observation of human nature."
       ],
-      "specs": ["Pages: 432 pages", "Format: Paperback"],
+      "specs": [
+        "Pages: 432 pages",
+        "Format: Paperback"
+      ],
       "rating": {
         "count": 55,
         "value": 4.9
@@ -2520,7 +2733,10 @@
         "Rich in symbolism and literary complexity, with themes of fate and free will.",
         "Recommended for readers interested in maritime literature and philosophical exploration."
       ],
-      "specs": ["Pages: 624 pages", "Format: Paperback"],
+      "specs": [
+        "Pages: 624 pages",
+        "Format: Paperback"
+      ],
       "rating": {
         "count": 42,
         "value": 4.6
@@ -2546,7 +2762,10 @@
         "Immense world-building, rich mythology, and memorable characters.",
         "Recommended for readers seeking epic adventures and tales of heroism."
       ],
-      "specs": ["Pages: 1178 pages", "Format: Paperback"],
+      "specs": [
+        "Pages: 1178 pages",
+        "Format: Paperback"
+      ],
       "rating": {
         "count": 60,
         "value": 4.8
@@ -2572,7 +2791,10 @@
         "Intricate plotting and deep character development.",
         "Recommended for readers interested in psychological thrillers and existential literature."
       ],
-      "specs": ["Pages: 576 pages", "Format: Paperback"],
+      "specs": [
+        "Pages: 576 pages",
+        "Format: Paperback"
+      ],
       "rating": {
         "count": 38,
         "value": 4.7
@@ -2598,7 +2820,10 @@
         "Sparse prose and stark imagery create a sense of emotional intensity.",
         "Recommended for readers seeking powerful and thought-provoking literature."
       ],
-      "specs": ["Pages: 287 pages", "Format: Paperback"],
+      "specs": [
+        "Pages: 287 pages",
+        "Format: Paperback"
+      ],
       "rating": {
         "count": 48,
         "value": 4.8
@@ -2624,7 +2849,10 @@
         "Wilde's wit and flair for language shine in this provocative exploration of vanity and morality.",
         "Recommended for readers seeking elegant prose and darkly enchanting storytelling."
       ],
-      "specs": ["Pages: 304 pages", "Format: Paperback"],
+      "specs": [
+        "Pages: 304 pages",
+        "Format: Paperback"
+      ],
       "rating": {
         "count": 32,
         "value": 4.9
@@ -2650,7 +2878,10 @@
         "Klassiker der Weltliteratur, der zeitlose Themen behandelt.",
         "Geeignet für Leser jeden Alters, die nach Inspiration suchen."
       ],
-      "specs": ["Seitenzahl: 192 Seiten", "Format: Taschenbuch"],
+      "specs": [
+        "Seitenzahl: 192 Seiten",
+        "Format: Taschenbuch"
+      ],
       "rating": {
         "count": 35,
         "value": 4.8
@@ -2662,7 +2893,7 @@
       "category": "Elektronik",
       "price": {
         "currency": "EUR",
-        "value": 229.0,
+        "value": 229,
         "discount": 10
       },
       "manufacturer": "Apple",
@@ -2703,7 +2934,10 @@
         "Hochleistungs-Grafik für realistische Spielwelten",
         "Neuer DualSense-Controller mit haptischem Feedback"
       ],
-      "specs": ["Speicher: 825 GB SSD", "Auflösung: Bis zu 8K"],
+      "specs": [
+        "Speicher: 825 GB SSD",
+        "Auflösung: Bis zu 8K"
+      ],
       "rating": {
         "count": 1289,
         "value": 4.9
@@ -2715,7 +2949,7 @@
       "category": "Elektronik",
       "price": {
         "currency": "EUR",
-        "value": 1249.0,
+        "value": 1249,
         "discount": 5
       },
       "manufacturer": "Samsung",
@@ -2728,7 +2962,10 @@
         "120 Hz Dynamic AMOLED 2X Display",
         "Intelligenter S Pen für präzise Eingaben"
       ],
-      "specs": ["Speicher: 128 GB / 256 GB / 512 GB", "RAM: 12 GB / 16 GB"],
+      "specs": [
+        "Speicher: 128 GB / 256 GB / 512 GB",
+        "RAM: 12 GB / 16 GB"
+      ],
       "rating": {
         "count": 975,
         "value": 4.7
@@ -2824,7 +3061,7 @@
       "category": "Elektronik",
       "price": {
         "currency": "EUR",
-        "value": 349.0,
+        "value": 349,
         "discount": 0
       },
       "manufacturer": "Nintendo",
@@ -2837,7 +3074,10 @@
         "Verbesserter Standfuß für vielseitige Spielmöglichkeiten",
         "64 GB interner Speicher für deine Lieblingsspiele"
       ],
-      "specs": ["Speicher: 64 GB", "Bildschirm: 7-Zoll-OLED-Touchscreen"],
+      "specs": [
+        "Speicher: 64 GB",
+        "Bildschirm: 7-Zoll-OLED-Touchscreen"
+      ],
       "rating": {
         "count": 1325,
         "value": 4.7
@@ -2877,7 +3117,7 @@
       "category": "Elektronik",
       "price": {
         "currency": "EUR",
-        "value": 499.0,
+        "value": 499,
         "discount": 0
       },
       "manufacturer": "KitchenAid",
@@ -2890,7 +3130,10 @@
         "10 Geschwindigkeitsstufen für präzises Mixen",
         "Inklusive Zubehör für verschiedene Anwendungen"
       ],
-      "specs": ["Leistung: 300 Watt", "Fassungsvermögen: 4,8 Liter"],
+      "specs": [
+        "Leistung: 300 Watt",
+        "Fassungsvermögen: 4,8 Liter"
+      ],
       "rating": {
         "count": 892,
         "value": 4.9
@@ -2902,7 +3145,7 @@
       "category": "Elektronik",
       "price": {
         "currency": "EUR",
-        "value": 379.0,
+        "value": 379,
         "discount": 10
       },
       "manufacturer": "Sony",
@@ -2930,7 +3173,7 @@
       "category": "Elektronik",
       "price": {
         "currency": "EUR",
-        "value": 1199.0,
+        "value": 1199,
         "discount": 0
       },
       "manufacturer": "Microsoft",
@@ -2972,7 +3215,10 @@
         "24/7 Herzfrequenzmessung und SpO2-Sensor",
         "Erweiterte Schlafüberwachung mit Schlafphasenanalyse"
       ],
-      "specs": ["Batterielaufzeit: Bis zu 7 Tage", "Wasserdicht: Bis 50 m"],
+      "specs": [
+        "Batterielaufzeit: Bis zu 7 Tage",
+        "Wasserdicht: Bis 50 m"
+      ],
       "rating": {
         "count": 785,
         "value": 4.5
@@ -2984,7 +3230,7 @@
       "category": "Elektronik",
       "price": {
         "currency": "EUR",
-        "value": 649.0,
+        "value": 649,
         "discount": 15
       },
       "manufacturer": "Dyson",
@@ -3040,7 +3286,7 @@
       "category": "Elektronik",
       "price": {
         "currency": "EUR",
-        "value": 3899.0,
+        "value": 3899,
         "discount": 0
       },
       "manufacturer": "Canon",
@@ -3068,7 +3314,7 @@
       "category": "Elektronik",
       "price": {
         "currency": "EUR",
-        "value": 499.0,
+        "value": 499,
         "discount": 0
       },
       "manufacturer": "Xiaomi",
@@ -3081,7 +3327,10 @@
         "Integriertes LCD-Display mit Geschwindigkeits- und Batterieanzeige",
         "Dreifaches Bremssystem für sicheres Bremsen"
       ],
-      "specs": ["Reichweite: Bis zu 45 km", "Maximale Belastung: 100 kg"],
+      "specs": [
+        "Reichweite: Bis zu 45 km",
+        "Maximale Belastung: 100 kg"
+      ],
       "rating": {
         "count": 623,
         "value": 4.7
@@ -3093,7 +3342,7 @@
       "category": "Elektronik",
       "price": {
         "currency": "EUR",
-        "value": 1999.0,
+        "value": 1999,
         "discount": 0
       },
       "manufacturer": "LG",
@@ -3190,7 +3439,10 @@
         "Mittlere Leibhöhe für bequemen Sitz",
         "Hochwertiges Denim-Material für Langlebigkeit"
       ],
-      "specs": ["Material: 100% Baumwolle", "Waschung: Stonewashed"],
+      "specs": [
+        "Material: 100% Baumwolle",
+        "Waschung: Stonewashed"
+      ],
       "rating": {
         "count": 654,
         "value": 4.6
@@ -3215,7 +3467,10 @@
         "Klassischer Polokragen mit Knopfleiste",
         "Tommy Hilfiger Logo auf der Brust"
       ],
-      "specs": ["Material: 100% Baumwolle", "Passform: Regular Fit"],
+      "specs": [
+        "Material: 100% Baumwolle",
+        "Passform: Regular Fit"
+      ],
       "rating": {
         "count": 438,
         "value": 4.7
@@ -3240,7 +3495,10 @@
         "Eng anliegende Passform für optimale Bewegungsfreiheit",
         "Calvin Klein Logo am Bund"
       ],
-      "specs": ["Material: 95% Baumwolle, 5% Elasthan", "Passform: Slim Fit"],
+      "specs": [
+        "Material: 95% Baumwolle, 5% Elasthan",
+        "Passform: Slim Fit"
+      ],
       "rating": {
         "count": 321,
         "value": 4.5
@@ -3265,7 +3523,10 @@
         "Klassische Gummi-Cupsohle für Traktion und Haltbarkeit",
         "OrthoLite Einlegesohle für langanhaltenden Komfort"
       ],
-      "specs": ["Obermaterial: Leder", "Sohle: Gummi"],
+      "specs": [
+        "Obermaterial: Leder",
+        "Sohle: Gummi"
+      ],
       "rating": {
         "count": 564,
         "value": 4.8
@@ -3277,7 +3538,7 @@
       "category": "Fashion",
       "price": {
         "currency": "EUR",
-        "value": 129.0,
+        "value": 129,
         "discount": 0
       },
       "brand": "Ralph Lauren",
@@ -3290,7 +3551,10 @@
         "Klassischer Rundhalsausschnitt mit Rippstrickbündchen",
         "Ralph Lauren Logo auf der Brust"
       ],
-      "specs": ["Material: 100% Baumwolle", "Passform: Regular Fit"],
+      "specs": [
+        "Material: 100% Baumwolle",
+        "Passform: Regular Fit"
+      ],
       "rating": {
         "count": 189,
         "value": 4.6
@@ -3302,7 +3566,7 @@
       "category": "Fashion",
       "price": {
         "currency": "EUR",
-        "value": 449.0,
+        "value": 449,
         "discount": 0
       },
       "brand": "Hugo Boss",
@@ -3315,7 +3579,10 @@
         "Klassischer Schnitt für optimale Passform",
         "Inklusive Sakko und Hose"
       ],
-      "specs": ["Material: 100% Wolle", "Futter: 100% Viskose"],
+      "specs": [
+        "Material: 100% Wolle",
+        "Futter: 100% Viskose"
+      ],
       "rating": {
         "count": 98,
         "value": 4.7
@@ -3327,7 +3594,7 @@
       "category": "Fashion",
       "price": {
         "currency": "EUR",
-        "value": 299.0,
+        "value": 299,
         "discount": 0
       },
       "brand": "Michael Kors",
@@ -3340,7 +3607,10 @@
         "Geräumiges Hauptfach mit Reißverschluss",
         "Verstellbarer Schultergurt für individuellen Tragekomfort"
       ],
-      "specs": ["Material: Leder", "Maße: 30 x 25 x 12 cm"],
+      "specs": [
+        "Material: Leder",
+        "Maße: 30 x 25 x 12 cm"
+      ],
       "rating": {
         "count": 215,
         "value": 4.9
@@ -3352,7 +3622,7 @@
       "category": "Fashion",
       "price": {
         "currency": "EUR",
-        "value": 269.0,
+        "value": 269,
         "discount": 0
       },
       "brand": "Gucci",
@@ -3365,7 +3635,10 @@
         "Hochwertige Gläser für klare Sicht",
         "UV-Schutz für sichere Nutzung in der Sonne"
       ],
-      "specs": ["Rahmenmaterial: Kunststoff", "Glasmaterial: Kunststoff"],
+      "specs": [
+        "Rahmenmaterial: Kunststoff",
+        "Glasmaterial: Kunststoff"
+      ],
       "rating": {
         "count": 142,
         "value": 4.8
@@ -3377,7 +3650,7 @@
       "category": "Fashion",
       "price": {
         "currency": "EUR",
-        "value": 399.0,
+        "value": 399,
         "discount": 0
       },
       "brand": "Versace",
@@ -3390,7 +3663,10 @@
         "Präzises Quarzwerk für zuverlässige Zeitmessung",
         "Versace Logo auf dem Zifferblatt"
       ],
-      "specs": ["Gehäusedurchmesser: 36 mm", "Armbandmaterial: Leder"],
+      "specs": [
+        "Gehäusedurchmesser: 36 mm",
+        "Armbandmaterial: Leder"
+      ],
       "rating": {
         "count": 76,
         "value": 4.7
@@ -3415,7 +3691,10 @@
         "Klassischer Jeansjacken-Schnitt mit Knopfleiste",
         "Markante Waschung und Used-Details"
       ],
-      "specs": ["Material: 100% Baumwolle", "Waschung: Stonewashed"],
+      "specs": [
+        "Material: 100% Baumwolle",
+        "Waschung: Stonewashed"
+      ],
       "rating": {
         "count": 120,
         "value": 4.6
@@ -3440,7 +3719,10 @@
         "Mittlere Leibhöhe für bequemen Sitz",
         "Hochwertiges Denim-Material für Langlebigkeit"
       ],
-      "specs": ["Material: 100% Baumwolle", "Waschung: Stonewashed"],
+      "specs": [
+        "Material: 100% Baumwolle",
+        "Waschung: Stonewashed"
+      ],
       "rating": {
         "count": 654,
         "value": 4.6
@@ -3465,7 +3747,10 @@
         "Klassischer Polokragen mit Knopfleiste",
         "Tommy Hilfiger Logo auf der Brust"
       ],
-      "specs": ["Material: 100% Baumwolle", "Passform: Regular Fit"],
+      "specs": [
+        "Material: 100% Baumwolle",
+        "Passform: Regular Fit"
+      ],
       "rating": {
         "count": 438,
         "value": 4.7
@@ -3490,7 +3775,10 @@
         "Eng anliegende Passform für optimale Bewegungsfreiheit",
         "Calvin Klein Logo am Bund"
       ],
-      "specs": ["Material: 95% Baumwolle, 5% Elasthan", "Passform: Slim Fit"],
+      "specs": [
+        "Material: 95% Baumwolle, 5% Elasthan",
+        "Passform: Slim Fit"
+      ],
       "rating": {
         "count": 321,
         "value": 4.5
@@ -3515,7 +3803,10 @@
         "Klassische Gummi-Cupsohle für Traktion und Haltbarkeit",
         "OrthoLite Einlegesohle für langanhaltenden Komfort"
       ],
-      "specs": ["Obermaterial: Leder", "Sohle: Gummi"],
+      "specs": [
+        "Obermaterial: Leder",
+        "Sohle: Gummi"
+      ],
       "rating": {
         "count": 564,
         "value": 4.8
@@ -3527,7 +3818,7 @@
       "category": "Fashion",
       "price": {
         "currency": "EUR",
-        "value": 129.0,
+        "value": 129,
         "discount": 0
       },
       "brand": "Ralph Lauren",
@@ -3540,7 +3831,10 @@
         "Klassischer Rundhalsausschnitt mit Rippstrickbündchen",
         "Ralph Lauren Logo auf der Brust"
       ],
-      "specs": ["Material: 100% Baumwolle", "Passform: Regular Fit"],
+      "specs": [
+        "Material: 100% Baumwolle",
+        "Passform: Regular Fit"
+      ],
       "rating": {
         "count": 189,
         "value": 4.6
@@ -3552,7 +3846,7 @@
       "category": "Fashion",
       "price": {
         "currency": "EUR",
-        "value": 449.0,
+        "value": 449,
         "discount": 0
       },
       "brand": "Hugo Boss",
@@ -3565,7 +3859,10 @@
         "Klassischer Schnitt für optimale Passform",
         "Inklusive Sakko und Hose"
       ],
-      "specs": ["Material: 100% Wolle", "Futter: 100% Viskose"],
+      "specs": [
+        "Material: 100% Wolle",
+        "Futter: 100% Viskose"
+      ],
       "rating": {
         "count": 98,
         "value": 4.7
@@ -3577,7 +3874,7 @@
       "category": "Fashion",
       "price": {
         "currency": "EUR",
-        "value": 299.0,
+        "value": 299,
         "discount": 0
       },
       "brand": "Michael Kors",
@@ -3590,7 +3887,10 @@
         "Geräumiges Hauptfach mit Reißverschluss",
         "Verstellbarer Schultergurt für individuellen Tragekomfort"
       ],
-      "specs": ["Material: Leder", "Maße: 30 x 25 x 12 cm"],
+      "specs": [
+        "Material: Leder",
+        "Maße: 30 x 25 x 12 cm"
+      ],
       "rating": {
         "count": 215,
         "value": 4.9
@@ -3602,7 +3902,7 @@
       "category": "Fashion",
       "price": {
         "currency": "EUR",
-        "value": 269.0,
+        "value": 269,
         "discount": 0
       },
       "brand": "Gucci",
@@ -3615,7 +3915,10 @@
         "Hochwertige Gläser für klare Sicht",
         "UV-Schutz für sichere Nutzung in der Sonne"
       ],
-      "specs": ["Rahmenmaterial: Kunststoff", "Glasmaterial: Kunststoff"],
+      "specs": [
+        "Rahmenmaterial: Kunststoff",
+        "Glasmaterial: Kunststoff"
+      ],
       "rating": {
         "count": 142,
         "value": 4.8
@@ -3627,7 +3930,7 @@
       "category": "Fashion",
       "price": {
         "currency": "EUR",
-        "value": 399.0,
+        "value": 399,
         "discount": 0
       },
       "brand": "Versace",
@@ -3640,7 +3943,10 @@
         "Präzises Quarzwerk für zuverlässige Zeitmessung",
         "Versace Logo auf dem Zifferblatt"
       ],
-      "specs": ["Gehäusedurchmesser: 36 mm", "Armbandmaterial: Leder"],
+      "specs": [
+        "Gehäusedurchmesser: 36 mm",
+        "Armbandmaterial: Leder"
+      ],
       "rating": {
         "count": 76,
         "value": 4.7
@@ -3665,7 +3971,10 @@
         "Klassischer Jeansjacken-Schnitt mit Knopfleiste",
         "Markante Waschung und Used-Details"
       ],
-      "specs": ["Material: 100% Baumwolle", "Waschung: Stonewashed"],
+      "specs": [
+        "Material: 100% Baumwolle",
+        "Waschung: Stonewashed"
+      ],
       "rating": {
         "count": 120,
         "value": 4.6
@@ -3677,60 +3986,77 @@
       "id": "1",
       "clientName": "said",
       "email": "said1",
-      "password": "11111111"
+      "password": "111",
+      "cart": []
     },
     {
       "id": "2",
       "clientName": "durmus",
       "email": "durmus.mann@example.com",
-      "password": "12345678"
+      "password": "12345678",
+      "cart": []
     },
     {
       "id": "3",
       "clientName": "tairou",
       "email": "tairou.mann@example.com",
-      "password": "12345678"
+      "password": "12345678",
+      "cart": []
     },
     {
       "id": "4",
       "clientName": "daniel",
       "email": "daniel.mann@example.com",
-      "password": "12345678"
+      "password": "12345678",
+      "cart": []
     },
     {
       "id": "7c2f",
       "name": "awdasdawdwa",
       "email": "saidalfawfagqa@gmail.com",
-      "password": "12345678"
+      "password": "12345678",
+      "cart": []
     },
     {
       "id": "5b5c",
       "email": "tairou.mann@example.com",
-      "password": "12345678"
+      "password": "12345678",
+      "cart": []
     },
     {
       "id": "6d44",
       "name": "TEST",
       "email": "test@test.de",
-      "password": "11111111"
+      "password": "11111111",
+      "cart": []
     },
     {
       "id": "d96b",
       "name": "selim",
       "email": "selim@gmail.com",
-      "password": "111111"
+      "password": "111111",
+      "cart": []
     },
     {
       "id": "3387",
       "name": "hamdi",
       "email": "hamdi@gmail.com",
-      "password": "111111"
+      "password": "111111",
+      "cart": []
     },
     {
       "id": "9b80",
       "name": "userneu3",
       "email": "userneu3@gmail.com",
-      "password": "111111"
+      "password": "111111",
+      "cart": []
+    },
+    {
+      "id": "fb19",
+      "name": "cartmaker",
+      "email": "carttest@test.de",
+      "password": "111111",
+      "cart": []
     }
   ],
   "orders": []

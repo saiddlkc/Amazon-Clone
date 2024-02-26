@@ -14,6 +14,19 @@ const Login = () => {
   const [loginSuccess, setLoginSuccess] = useState(false);
   const navigate = useNavigate();
 
+  const generateRandomToken = () => {
+   
+    const length = 64;
+   
+    const characters = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789';
+    let token = '';
+   
+    for (let i = 0; i < length; i++) {
+      token += characters.charAt(Math.floor(Math.random() * characters.length));
+    }
+    return token;
+  };
+
   const handleEmail = (e) => {
     setEmail(e.target.value);
     setErrEmail("");
@@ -24,7 +37,7 @@ const Login = () => {
   };
   const handleLogin = async (e) => {
     e.preventDefault();
-
+    localStorage.clear();
     if (!email) {
       setErrEmail("Enter your email");
       return;
@@ -59,14 +72,14 @@ const Login = () => {
         return;
       }
 
-      console.log("Login erfolgreich:", data[0].clientName);
-      // setclientName(data[0].clientName);
-      const clientName = data[0].clientName;
+      console.log("Login erfolgreich:", data);
       setTimeout(() => {
         setLoading(false);
         setLoginSuccess(true);
-
-        navigate("/?clientName=" + clientName);
+        localStorage.setItem("username",data[0].clientName)
+        localStorage.setItem("token",generateRandomToken())
+        localStorage.setItem("cartN",0)
+        navigate("/")
       }, 2000);
     } catch (error) {
       console.error("Error:", error);

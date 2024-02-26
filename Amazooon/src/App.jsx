@@ -1,4 +1,4 @@
-import { Route, Routes, BrowserRouter } from "react-router-dom";
+import { Route, Routes, } from "react-router-dom";
 import "./index.css";
 import HomePage from "./pages/home/HomePage";
 import RegistrationPage from "./pages/RegistrationPage";
@@ -13,10 +13,14 @@ import Lebensmittel from "./pages/categorys/Lebensmittel";
 import Spiele from "./pages/categorys/Spiele";
 import { ProductProvider } from "./pages/home/context/ProductContext";
 import ProductDetails from "./pages/home/context/ProductDetails";
+import KorbPage from "./pages/KorbPage";
+import WkTest from "./components/wktest";
+import { CartProvider } from "./pages/home/context/CartContext";
 
 function App() {
   return (
     <>
+      <CartProvider>
       <ProductProvider>
         <Routes>
           <Route
@@ -84,6 +88,8 @@ function App() {
               </Layout>
             }
           />
+        
+        <Route path="wk" element={<Layout><KorbPage/></Layout>}/>
 
           <Route
             path="/:category/:id"
@@ -99,6 +105,7 @@ function App() {
           <Route path="*" element={<h1>Not Found</h1>} />
         </Routes>
       </ProductProvider>
+        </CartProvider>
     </>
   );
 }

@@ -1,13 +1,47 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import { useParams, useNavigate, Link } from "react-router-dom";
 import { useProductContext } from "./ProductContext";
 import ReactImageZoom from "react-image-zoom";
+import { useCart } from "./CartContext";
 
 function ProductDetails() {
+  const [cartItems, setCartItems] = useState([]);
   const { json } = useProductContext();
   const { id } = useParams();
   const navigate = useNavigate();
   const [selectedQuantity, setSelectedQuantity] = useState(1);
+  const { increaseCartCount } = useCart();
+
+  useEffect(() => {
+    const storedCartItems = localStorage.getItem("cartItems");
+    if (storedCartItems) {
+      const parsedCartItems = JSON.parse(storedCartItems);
+      setCartItems(parsedCartItems);
+    }
+  }, []);
+
+  const addtoStorage = () => {
+    const cartItem = {
+      id: selectedProduct.id,
+      title: selectedProduct.title,
+      price: selectedProduct.price,
+      images: selectedProduct.images,
+      quantity: selectedQuantity, // Hier wird die ausgewählte Menge hinzugefügt
+    };
+
+    const storedCartItems = localStorage.getItem("cartItems");
+    let updatedCartItems = [];
+    if (storedCartItems) {
+      updatedCartItems = JSON.parse(storedCartItems);
+    }
+    increaseCartCount();
+    updatedCartItems.push(cartItem);
+    localStorage.setItem("cartItems", JSON.stringify(updatedCartItems));
+
+    // Hier wird die Anzahl der Artikel im Warenkorb aktualisiert
+    localStorage.setItem("cartN", updatedCartItems.length.toString());
+  };
+
   const selectedProduct = json.products.find(
     (product) => product.id.toString() === id
   );
@@ -105,28 +139,10 @@ function ProductDetails() {
         <div className="max-w-sm border border-gray-800 rounded p-5">
           <p className="font-bold">Buy new:</p>
           <p className="text-xl text-amber-600">
-            <span style={{ textDecoration: "line-through" }}>
+            <span>
               {selectedProduct.price.value} {selectedProduct.price.currency}
             </span>
-            {" / "}
-            <span>
-              {(selectedProduct.price.value * 0.5).toFixed(2)}{" "}
-              {selectedProduct.price.currency}
-            </span>
           </p>
-          <p
-            style={{
-              backgroundColor: "#CC0C39",
-              color: "#fff",
-              display: "inline-block",
-              padding: "5px",
-              textAlign: "left",
-              margin: "0",
-            }}
-          >
-            Bis zu 50% Rabatt
-          </p>
-          <p></p>
           <hr />
           <p className="text-lg mt-2">{selectedProduct.title}</p>
           <p className="text-sm mt-2">
@@ -150,10 +166,16 @@ function ProductDetails() {
               ))}
             </select>
           </p>
-          <button className="block bg-[#FFA41B] mt-5 py-2 px-4 text-black rounded-full hover:bg-[#f0c14b] transition duration-300">
-            Buy Now
+          <button
+            onClick={addtoStorage}
+            className="block bg-[#FFA41B] mt-5 py-2 px-4 text-white rounded-full hover:bg-[#FFD815] transition duration-300"
+          >
+            <Link to={`/wk`}>Buy Now</Link>
           </button>
-          <button className="bg-[#f0c14b] mt-5 py-2 px-4 text-black rounded-full hover:bg-[#ff9900] transition duration-300">
+          <button
+            onClick={addtoStorage}
+            className="bg-[#FFD815] mt-5 py-2 px-4 text-black rounded-full hover:bg-[#FFA41B] transition duration-300"
+          >
             In den Einkaufswagen
           </button>
         </div>
