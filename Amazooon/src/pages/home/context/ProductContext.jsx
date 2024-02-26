@@ -1,6 +1,5 @@
 import React, { createContext, useContext, useState } from "react";
-import json from "../../database/data.json";
-
+import jsonData from "../../../database/db.json";
 
 const ProductContext = createContext();
 
@@ -17,7 +16,7 @@ export const ProductProvider = ({ children }) => {
 
   return (
     <ProductContext.Provider
-      value={{ json, selectedProduct, showProductDetails }}
+      value={{ json: jsonData, selectedProduct, showProductDetails }}
     >
       {children}
     </ProductContext.Provider>

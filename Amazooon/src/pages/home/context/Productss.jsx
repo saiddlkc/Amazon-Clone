@@ -3,7 +3,7 @@ import ProductList from "./ProductList";
 import { ProductProvider } from "./ProductContext";
 import ProductDetails from "./ProductDetails";
 
-function Products() {
+function Pro() {
   return (
     <ProductProvider>
       <div
@@ -15,11 +15,9 @@ function Products() {
       >
         <ProductList />
       </div>
-      <div>
-        <ProductDetails />
-      </div>
+      <div>{/* <ProductDetails /> */}</div>
     </ProductProvider>
   );
 }
 
-export default Products;
+export default Pro;

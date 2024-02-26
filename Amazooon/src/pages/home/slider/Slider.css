@@ -1,16 +1,9 @@
-body {
-    background: #eee;
-    font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
-    font-size: 14px;
-    color: #000;
-    margin: 0;
-    padding: 0;
-}
+
 .banner {
     width: 100%;
-    height: 550px;
+    height: 350px;
     position: relative;
-    z-index: -1;
+    /* z-index: -1; */
 }
 .swiper {
     width: 100%;

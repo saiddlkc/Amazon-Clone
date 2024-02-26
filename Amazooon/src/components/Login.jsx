@@ -14,6 +14,19 @@ const Login = () => {
   const [loginSuccess, setLoginSuccess] = useState(false);
   const navigate = useNavigate();
 
+  const generateRandomToken = () => {
+   
+    const length = 64;
+   
+    const characters = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789';
+    let token = '';
+   
+    for (let i = 0; i < length; i++) {
+      token += characters.charAt(Math.floor(Math.random() * characters.length));
+    }
+    return token;
+  };
+
   const handleEmail = (e) => {
     setEmail(e.target.value);
     setErrEmail("");
@@ -24,7 +37,7 @@ const Login = () => {
   };
   const handleLogin = async (e) => {
     e.preventDefault();
-
+    localStorage.clear();
     if (!email) {
       setErrEmail("Enter your email");
       return;
@@ -54,18 +67,21 @@ const Login = () => {
 
       if (!data.length) {
         setErrPassword("Email or password is incorrect");
+        setLoading(false);
+        setLoginSuccess(false);
         return;
       }
 
-      console.log("Login erfolgreich:");
-    } catch (error) {
-      console.error("Error:", error);
-    } finally {
+      console.log("Login erfolgreich:", data);
       setTimeout(() => {
         setLoading(false);
         setLoginSuccess(true);
-        navigate("/nav");
+        localStorage.setItem("username",data[0].clientName)
+        localStorage.setItem("token",generateRandomToken())
+        navigate("/")
       }, 2000);
+    } catch (error) {
+      console.error("Error:", error);
     }
   };
 
@@ -124,11 +140,11 @@ const Login = () => {
                   "Continue"
                 )}
               </button>
-              {loginSuccess && (
+              {/* {loginSuccess && (
                 <p className="text-green-600 text-xs font-semibold mt-2">
                   Successful. Redirecting to Dashboard...
                 </p>
-              )}
+              )} */}
             </div>
             <p className="text-xs text-black leading-4 mt-4">
               By Continuing, you agree to Amazon

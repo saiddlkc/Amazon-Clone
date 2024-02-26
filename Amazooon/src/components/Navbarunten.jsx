@@ -1,23 +1,30 @@
 import React, { useState } from "react";
+import { Link } from "react-router-dom";
 
 const NavigationBar = () => {
   const [isDropdownOpen, setIsDropdownOpen] = useState(false);
 
   // Dropdown-Elemente
   const dropdownItems = [
-    { label: "Elektronik", url: "/" },
-    { label: "Bekleidung", url: "/" },
-    { label: "Haushalt", url: "/" },
+    { label: "Todays Deals", url: "/deals" },
+    { label: "Bücher", url: "/bücher" },
+    { label: "Spiele", url: "/spiele" },
+    { label: "Baby", url: "/baby" },
+    { label: "Lebensmittel", url: "/lebensmittel" },
+    { label: "Kameras", url: "/kameras" },
+    { label: "Fashion", url: "/fashion" },
+
     // Weitere Dropdown-Elemente können hier hinzugefügt werden
   ];
 
   const nav = [
-    { name: "Prime", to: "/" },
-    { name: "Verkaufen", to: "/verkaufen" },
-    { name: "Kundenservice", to: "/kundenservice" },
-    { name: "Heute's Deals", to: "/heutes-deals" },
-    { name: "Elektronik", to: "/elektronik" },
-    { name: "Kundenkonto", to: "/kundenkonto" },
+    { name: "Todays Deals", to: "/deals" },
+    { name: "Bücher", to: "/bücher" },
+    { name: "Spiele", to: "/spiele" },
+    { name: "Baby", to: "/baby" },
+    { name: "Lebensmittel", to: "/lebensmittel" },
+    { name: "Kameras", to: "/cameras" },
+    { name: "Fashion", to: "/fashion" },
   ];
 
   const toggleDropdown = () => {
@@ -54,26 +61,26 @@ const NavigationBar = () => {
               <div className="absolute z-10 bg-gray-800 mt-2 md:mt-0 w-full md:w-40 rounded-lg shadow-lg">
                 <div className="py-1">
                   {dropdownItems.map((item, index) => (
-                    <a
+                    <Link
                       key={index}
-                      href={item.url}
+                      to={item.url}
                       className="block px-4 py-2 text-gray-300 hover:bg-gray-700"
                     >
                       {item.label}
-                    </a>
+                    </Link>
                   ))}
                 </div>
               </div>
             )}
           </div>
           {nav.map((navb) => (
-            <a
+            <Link
               key={navb.name}
               to={navb.to}
               className="text-gray-300 ml-4 hover:text-white hidden md:block cursor-pointer"
             >
               {navb.name}
-            </a>
+            </Link>
           ))}
         </div>
       </div>

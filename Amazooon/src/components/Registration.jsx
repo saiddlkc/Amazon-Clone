@@ -78,6 +78,7 @@ const Registration = () => {
       cPassword === password
     ) {
       console.log(clientName, email, password);
+
       setLoading(true);
       setClientName("");
       setEmail("");
@@ -90,6 +91,7 @@ const Registration = () => {
           name: clientName,
           email: email,
           password: password,
+          cart:[],
         }),
         headers: {
           "Content-Type": "application/json",

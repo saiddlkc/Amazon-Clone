@@ -1,19 +1,45 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect,Link } from "react";
 import { FiSearch } from "react-icons/fi";
 import { FiShoppingCart } from "react-icons/fi";
 import Img from "../images/logo-transparent-png.png";
 import { FiNavigation } from "react-icons/fi";
 import { FiChevronDown } from "react-icons/fi";
+import { Navigate, useLocation, useNavigate,  } from "react-router-dom";
+import { RingLoader } from "react-spinners";
+import "./logout.css"
 
 const Navbar = () => {
   const [isDropdownOpen, setIsDropdownOpen] = useState(false);
   const [cartItems, setCartItems] = useState([]);
   const [windowWidth, setWindowWidth] = useState(window.innerWidth);
+  const location = useLocation();
+  const navigate = useNavigate();
+  const [username, setUsername] = useState("");
+  const [loading, setLoading] = useState(false)
+  
+
+  useEffect(() => {
+    const usernameFromlocalStorage = localStorage.getItem("username");
+    setUsername(usernameFromlocalStorage);
+    
+  }, []);
+  const handleSignInClick = () => {
+    navigate("/login");
+  };
+  const logoutClick = () => {
+    setLoading(true)
+    localStorage.clear();
+    setTimeout(() => {
+      window.location.reload();
+      navigate("/");
+    }, 3000); 
+  };
 
   const dropdownItems = [
-    { name: "Elektronik", url: "/" },
-    { name: "Bekleidung", url: "/" },
-    { name: "Haushalt", url: "/" },
+    { name: "Elektronik", url: "/Elektronik" },
+    { name: "Bekleidung", url: "/Bekleidung" },
+    { name: "Haushalt", url: "/Haushalt" },
+    { name: "HAllo", url: "/Haushalt" },
     // Weitere Dropdown-Elemente können hier hinzugefügt werden
   ];
   const nav = [
@@ -52,7 +78,7 @@ const Navbar = () => {
         </div>
 
         <div className=" text-white">
-          <p>Lieferung an Mustermann</p>
+          <p>Lieferung an {username}</p>
           <p className="flex justify-center items-center text-white">
             <FiNavigation /> 12163 Berlin
           </p>
@@ -86,13 +112,13 @@ const Navbar = () => {
               <div className="absolute z-10 bg-gray-800 mt-2 md:mt-0 w-full md:w-40 rounded-lg shadow-lg">
                 <div className="py-1">
                   {dropdownItems.map((item, index) => (
-                    <a
+                    <Link
                       key={index}
-                      href={item.to}
+                      to={item.url}
                       className="block px-4 py-2 text-gray-200 hover:bg-gray-700"
                     >
                       {item.name}
-                    </a>
+                    </Link>
                   ))}
                 </div>
               </div>
@@ -107,10 +133,10 @@ const Navbar = () => {
             <FiSearch />
           </button>
           {/* Dropdown */}
-          <div className="relative mt-4 mx-2 md:mt-0 flex">
+          {/* <div className="relative mt-4 mx-2 md:mt-0 flex">
             <button className="text-white  items-center">
-              <p>Hallo, CLientName</p>
-              <p>Konto und Liste</p>
+              <p>Hallo, {username}</p>
+              <p>Konto und Liste</p> */}
 
               {/* <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -123,26 +149,45 @@ const Navbar = () => {
                   clipRule="evenodd"
                 />
               </svg> */}
-            </button>
-          </div>
+            {/* </button>
+          </div> */}
 
           <div className="text-white text-center">
-            <span>Warenrücksendungen</span>
             <p>
-              <b>und Bestellungen</b>
+              <b>Bestellungen</b>
             </p>
           </div>
           {/* Warenkorb */}
           <div className="ml-4 text-white mr-4">
-            <button
-              className="flex items-center bg-slate-600  p-2 rounded-md hover:bg-slate-500"
-              onClick={() => addToCart({ label: "Artikel 1", price: 10 })}
-            >
-              <FiShoppingCart className="m-1" /> Warenkorb ({cartItems.length})
-            </button>
+            {username ? (
+              <button
+                className="flex items-center bg-slate-600 p-2 rounded-md hover:bg-slate-500"
+                onClick={()=>navigate("/wk")}
+              >
+                <FiShoppingCart className="m-1" /> Warenkorb ({cartItems.length})
+              </button>
+            ) : (
+              <button className="flex items-center text-black p-2 rounded-md bg-gradient-to-t from-[#f7dfa5] to-[#f0c14b] hover:bg-gradient-to-b border border-zinc-400 active:border-yellow-800 active:shadow-amazonInput" onClick={handleSignInClick}>
+                Sign In
+              </button>
+            )}
+          </div>
+          {username && (
+            <div>
+              <button className="bg-red-600 rounded-md text-white pt-3 p-2 m-5" onClick={logoutClick}>
+                {loading ? (
+                  <div className="overlay ">
+                    <RingLoader size={100} color={"white"} loading={loading} />
+                  </div>
+                ) : (
+                  "Logout"
+                )}
+              </button>
+            </div>
+              )}
           </div>
         </div>
-      </div>
+      
     </nav>
   );
 };

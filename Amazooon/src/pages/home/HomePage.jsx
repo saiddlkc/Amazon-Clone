@@ -1,9 +1,10 @@
 import React from "react";
-import Slider from "./Slider";
-import Banner from "./Banner";
+import Slider from "../home/slider/Slider";
+import Pro from "./context/Productss";
 import Angebot from "./Angebot";
+import Banner from "./Banner";
 import Category from "./Category";
-import Products from "./Products";
+import Cameras from "../categorys/Cameras";
 
 const HomePage = () => {
   return (
@@ -11,18 +12,12 @@ const HomePage = () => {
       <div>
         <Slider />
       </div>
-      <div
-        style={{
-          position: "absolute",
-          top: "0",
-          padding: "250px 0 0 0",
-          zIndex: "1",
-          margin: "30px",
-        }}
-      >
-        <Products />
+      <div>
+        <Pro />
         <Angebot />
         <Banner />
+      </div>
+      <div>
         <Category />
       </div>
     </div>
