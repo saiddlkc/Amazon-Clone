@@ -1,6 +1,7 @@
 import React from "react";
 import json from "../../database/db.json";
 import "./ProductList.css";
+import { Link } from "react-router-dom";
 
 const Angebot = () => {
   const allProducts = json.products;
@@ -61,7 +62,9 @@ const Angebot = () => {
                 className="product__button"
                 onClick={() => showProductDetails(product)}
               >
-                View Details
+                <Link to={`/${product.category}/${product.id}`}>
+                  View Details
+                </Link>
               </button>
             </div>
           ))}
