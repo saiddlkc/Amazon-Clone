@@ -61,7 +61,7 @@ const Navbar = () => {
     setCartItems([...cartItems, item]);
   };
   return (
-    <nav className="bg-gray-800">
+    <nav className="bg-gray-900 text-white">
       <div className="mx-auto flex items-center justify-between py-3 px-4">
         <div className="flex items-center">
           <a href="/" className="text-white text-xl font-bold">
@@ -137,22 +137,9 @@ const Navbar = () => {
               <span className="text-xs">Konto und Liste</span>
             </div>
           </div>
-          <div className=" flex">
-            <div className="flex flex-col justify-center w-36">
-              <p>Warenrücksendung</p>
-              <span className="font-bold">und Bestellungen</span>
-            </div>
-          </div>
+
           {/* Warenkorb */}
           <div className="relative flex   justify-center  ">
-            <button
-              className="flex items-center justify-center px-5  ml-5   bg-slate-600  rounded-md hover:bg-slate-500"
-              onClick={() => navigate("/wk")}
-              target="_blank"
-            >
-              <FiShoppingCart className="text-white mr-4 font-bold text-4xl" />{" "}
-              Warenkorb ({cartLength})
-            </button>
             {username ? (
               <button
                 className="flex items-center bg-slate-600 p-2  rounded-md hover:bg-slate-500"
@@ -164,10 +151,10 @@ const Navbar = () => {
               </button>
             ) : (
               <button
-                className="flex items-center text-black   px-10 ml-5 rounded-md bg-gradient-to-t from-[#f7dfa5] to-[#f0c14b] hover:bg-gradient-to-b border border-zinc-400 active:border-yellow-800 active:shadow-amazonInput"
+                className="flex items-center text-black  px-10 text-center  rounded-md bg-gradient-to-t from-[#f7dfa5] to-[#f0c14b] hover:bg-gradient-to-b border border-zinc-400 active:border-yellow-800 active:shadow-amazonInput"
                 onClick={handleSignInClick}
               >
-                <p className="w-20 text-white">Sign In</p>
+                <p className=" text-white w-20 py-2">Sign In</p>
               </button>
             )}
           </div>
