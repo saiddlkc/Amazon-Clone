@@ -87,6 +87,7 @@
 
 .product__button {
   background: #f0c14b;
+  font-size: 16px;
   border: 1px solid;
   margin-top: 5px;
   padding: 0.5rem 3rem;
@@ -99,6 +100,23 @@
   background-color: #ff9900;
   cursor: pointer;
 }
+
+.product__button-korb{
+  background: #FFA41B;
+  font-size: 20px;
+  border: 1px solid;
+  margin-top: 5px;
+  margin-left: 2px;
+  padding: 0.6rem 1rem;
+  border-radius: 5rem;
+  border-color: #ff9900;
+  color: #111;
+}
+.product__button-korb:hover {
+  background-color: #FFD815;
+  cursor: pointer;
+}
+
 h2 {
   text-align: left;
   padding: 15px;

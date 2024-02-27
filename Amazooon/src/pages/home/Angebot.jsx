@@ -59,7 +59,7 @@ const Angebot = () => {
                   {product.price.currency}
                 </span>
               </p>
-              <div>
+              <div className="flex">
                 <button
                   className="product__button"
                   onClick={() => showProductDetails(product)}
@@ -68,7 +68,7 @@ const Angebot = () => {
                     View Details
                   </Link>
                 </button>
-                <button className="bg-[#FFA41B] ml-1 py-3 px-3 text-white rounded-full hover:bg-[#FFD815] transition duration-300">
+                <button className="product__button-korb">
                   <FiShoppingCart className="cart-icon" />
                 </button>
               </div>

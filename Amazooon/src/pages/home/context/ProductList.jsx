@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import { useProductContext } from "./ProductContext";
 import { FiShoppingCart } from "react-icons/fi";
@@ -6,6 +6,37 @@ import "../ProductList.css";
 
 const ProductList = () => {
   const { json, showProductDetails } = useProductContext();
+  const [cartItems, setCartItems] = useState([]);
+
+  useEffect(() => {
+    const storedCartItems = localStorage.getItem("cartItems");
+    if (storedCartItems) {
+      const parsedCartItems = JSON.parse(storedCartItems);
+      setCartItems(parsedCartItems);
+    }
+  }, []);
+
+  const addtoStorage = () => {
+    const cartItem = {
+      id: selectedProduct.id,
+      title: selectedProduct.title,
+      price: selectedProduct.price,
+      images: selectedProduct.images,
+      quantity: selectedQuantity, // Hier wird die ausgewählte Menge hinzugefügt
+    };
+
+    const storedCartItems = localStorage.getItem("cartItems");
+    let updatedCartItems = [];
+    if (storedCartItems) {
+      updatedCartItems = JSON.parse(storedCartItems);
+    }
+    increaseCartCount();
+    updatedCartItems.push(cartItem);
+    localStorage.setItem("cartItems", JSON.stringify(updatedCartItems));
+
+    // Hier wird die Anzahl der Artikel im Warenkorb aktualisiert
+    localStorage.setItem("cartN", updatedCartItems.length.toString());
+  };
 
   const renderRatingStars = (rating) => {
     const stars = [];
@@ -53,7 +84,7 @@ const ProductList = () => {
               <Link to={`/${product.category}`}>View Category</Link>
             </p>
           </div>
-          <div className="">
+          <div className="flex">
             <button
               className="product__button"
               onClick={() => showProductDetails(product)}
@@ -62,7 +93,7 @@ const ProductList = () => {
                 View Details
               </Link>
             </button>
-            <button className="bg-[#FFA41B] ml-1 py-3 px-3 text-white rounded-full hover:bg-[#FFD815] transition duration-300">
+            <button onClick={addtoStorage} className=" product__button-korb">
               <FiShoppingCart className="cart-icon" />
             </button>
           </div>

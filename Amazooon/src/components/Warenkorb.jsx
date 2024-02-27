@@ -61,7 +61,7 @@ const Warenkorb = () => {
                   <img className="w-20" src={item.images} alt="" />
                 </div>
                 <div className="ml-9 border-l-2 border-amber-700 pl-5">
-                  <p className=" w-32 text-2xl mb-2">{item.title}</p>
+                  <p className=" w-30 text-2xl mb-2">{item.title}</p>
                 </div>
                 <div className="pl-8 pt-6">
                   <p className="text-2xl text-amber-600">
@@ -84,7 +84,7 @@ const Warenkorb = () => {
         {cartItems.length > 0 && (
           <div className="w-72 border p-4 bg-amber-100 ">
             <h2 className="mb-4 border-b-4 p-2">Ihre Bestellung aufgeben</h2>
-            <p className="m-1">Der Empfänger:</p>
+            {/* <p className="m-1">Der Empfänger:</p> */}
             <div className="border rounded-xl p-3 bg-amber-300 my-5">
               <p>RabattCode:</p>
               <input
@@ -124,13 +124,13 @@ const Warenkorb = () => {
             <hr />
             <p className="mt-3">Lieferdatum: 3-5 Tage</p>
             <hr />
-            <p className="mt-7">Die Zahlungsmethode:</p>
+            {/* <p className="mt-7">Die Zahlungsmethode:</p>
             <select className="w-full border border-2">
               <option value="paypal">Paypal</option>
               <option value="creditcard">Kreditkarte</option>
               <option value="banktransfer">Überweisung</option>
             </select>
-            <hr />
+            <hr /> */}
 
             <p className="px-2 mt-5 font-bold">Gesamtsumme:</p>
             <p className="px-5 mt-2 font-bold">
