@@ -8,9 +8,12 @@ export const CartProvider = ({ children }) => {
   const increaseCartCount = () => {
     setCartCount((prevCount) => prevCount + 1);
   };
+  const decreaseCartCount = () => {
+    setCartCount((prevCount) => prevCount - 1);
+  };
 
   return (
-    <CartContext.Provider value={{ cartCount, increaseCartCount }}>
+    <CartContext.Provider value={{ cartCount, increaseCartCount,decreaseCartCount }}>
       {children}
     </CartContext.Provider>
   );

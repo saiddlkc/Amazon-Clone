@@ -1,9 +1,9 @@
-import React, { useState, useEffect, Link } from "react";
+import React, { useState, useEffect,  } from "react";
 import { FiSearch, FiShoppingCart } from "react-icons/fi";
 import Img from "../images/logo-transparent-png.png";
 import { FiChevronDown } from "react-icons/fi";
 import { LuMapPin } from "react-icons/lu";
-import { Navigate, useLocation, useNavigate } from "react-router-dom";
+import {Link, useLocation, useNavigate } from "react-router-dom";
 import { RingLoader } from "react-spinners";
 import { FiNavigation } from "react-icons/fi";
 import "./logout.css";
@@ -18,12 +18,18 @@ const Navbar = () => {
   const navigate = useNavigate();
   const [username, setUsername] = useState("");
   const [loading, setLoading] = useState(false);
-  const cartLength = localStorage.getItem("cartN");
+ const cartLength = localStorage.getItem('cartN');
+  const { increaseCartCount } = useCart();  
+  const { cartCount } = useCart();  
+
   useEffect(() => {
     const usernameFromlocalStorage = localStorage.getItem("username");
     setUsername(usernameFromlocalStorage);
-    const cartLength = localStorage.getItem("cartN");
+    
   }, []);
+  
+  
+
   const handleSignInClick = () => {
     navigate("/login");
   };
@@ -63,9 +69,9 @@ const Navbar = () => {
     <nav className="bg-gray-900 text-white">
       <div className="mx-auto flex items-center justify-between py-3 px-4">
         <div className="flex items-center">
-          <a href="/" className="text-white text-xl font-bold">
+        <Link to="/" className="text-white text-xl font-bold">
             <img className="w-24" src={Img} alt="Amazon Logo" />
-          </a>
+          </Link>
         </div>
 
         {/* Hauptmenü für größere Bildschirme */}
@@ -141,11 +147,11 @@ const Navbar = () => {
           <div className="relative flex   justify-center  ">
             {username ? (
               <button
-                className="flex items-center bg-slate-600 p-2  rounded-md hover:bg-slate-500"
+                className="flex items-center bg-slate-600 p-1  rounded-md hover:bg-slate-500"
                 onClick={() => navigate("/wk")}
                 target="_blank"
               >
-                <FiShoppingCart className=" text-white ml-10 w-24" /> Warenkorb
+                <FiShoppingCart className=" text-white w-24  text-3xl"/> Warenkorb
                 ({cartLength})
               </button>
             ) : (
@@ -153,7 +159,7 @@ const Navbar = () => {
                 className="flex items-center text-black  px-10 text-center  rounded-md bg-gradient-to-t from-[#f7dfa5] to-[#f0c14b] hover:bg-gradient-to-b border border-zinc-400 active:border-yellow-800 active:shadow-amazonInput"
                 onClick={handleSignInClick}
               >
-                <p className=" text-white w-20 py-2">Sign In</p>
+                <p className="  w-20 py-2">Sign In</p>
               </button>
             )}
           </div>
@@ -216,7 +222,7 @@ const Navbar = () => {
                 onClick={() => navigate("/wk")}
               >
                 <FiShoppingCart className="text-white" />
-                <span className="text-white ml-1">Warenkorb({cartLength})</span>
+                <span className="text-white ml-1">Warenkorb({cartCount})</span>
               </button>
               <div className="px-5 py-5 flex justify-center items-center">
                 <input

@@ -3,22 +3,24 @@ import { Link } from "react-router-dom";
 import { useProductContext } from "./ProductContext";
 import { FiShoppingCart } from "react-icons/fi";
 import "../ProductList.css";
+import { useCart } from "./CartContext";
 
 const ProductList = () => {
   const { json, showProductDetails } = useProductContext();
   const [cartItems, setCartItems] = useState([]);
+  const { increaseCartCount } = useCart();
 
-  
   useEffect(() => {
     const storedCartItems = localStorage.getItem("cartItems");
     if (storedCartItems) {
       const parsedCartItems = JSON.parse(storedCartItems);
       setCartItems(parsedCartItems);
-      const updateCartCount = () => {
-        localStorage.setItem("cartN", cartItems.length.toString());
-      };
     }
   }, []);
+
+  useEffect(() => {
+    localStorage.setItem("cartN", cartItems.length.toString());
+  }, [cartItems]);
 
   const addtoStorage = (product) => {
     const cartItem = {
@@ -26,16 +28,17 @@ const ProductList = () => {
       title: product.title,
       price: product.price,
       images: product.images,
+      
     };
-
+    increaseCartCount();
     const storedCartItems = localStorage.getItem("cartItems");
     let updatedCartItems = [];
     if (storedCartItems) {
       updatedCartItems = JSON.parse(storedCartItems);
     }
     updatedCartItems.push(cartItem);
+    setCartItems(updatedCartItems);
     localStorage.setItem("cartItems", JSON.stringify(updatedCartItems));
-    localStorage.setItem("cartN", updatedCartItems.length.toString());
   };
 
   const renderRatingStars = (rating) => {
@@ -100,8 +103,8 @@ const ProductList = () => {
               }}
               className="product__button-korb"
             >
-  <FiShoppingCart className="cart-icon" />
-</button>
+          <FiShoppingCart className="cart-icon" />
+          </button>
           </div>
         </div>
       ))}

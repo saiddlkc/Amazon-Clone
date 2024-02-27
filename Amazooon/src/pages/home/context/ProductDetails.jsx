@@ -85,7 +85,7 @@ function ProductDetails() {
       images: selectedProduct.images,
       quantity: selectedQuantity,
     };
-
+    
     const storedCartItems = localStorage.getItem("cartItems");
     let updatedCartItems = [];
     if (storedCartItems) {
@@ -94,7 +94,6 @@ function ProductDetails() {
     increaseCartCount();
     updatedCartItems.push(cartItem);
     localStorage.setItem("cartItems", JSON.stringify(updatedCartItems));
-
     localStorage.setItem("cartN", updatedCartItems.length.toString());
   };
   const selectedProduct = json.products.find(
