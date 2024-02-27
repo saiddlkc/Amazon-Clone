@@ -1,7 +1,4 @@
 import "./App.css";
-import Ok from "./pages/Ok";
-import Text from "./pages/Text";
-
 import Login from "./components/Login";
 import { Route, BrowserRouter as Router, Routes } from "react-router-dom";
 // import Registration from "./components/Registration";
@@ -15,8 +12,6 @@ function App() {
     <>
       <Layout>
         <Routes>
-          <Route path="/" element={<Ok />} />
-          <Route path="/text" element={<Text />} />
           <Route path="*" element={<PageNotFound />} />
         </Routes>
       </Layout>
