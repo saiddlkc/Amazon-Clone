@@ -12,18 +12,17 @@ import { useCart } from "../pages/home/context/CartContext";
 const Navbar = () => {
   const [isDropdownOpen, setIsDropdownOpen] = useState(false);
   const [isMenuOpen, setIsMenuOpen] = useState(false);
-  const cartLength = localStorage.getItem("cartN");
   const [cartItems, setCartItems] = useState([]);
   const [windowWidth, setWindowWidth] = useState(window.innerWidth);
   const location = useLocation();
   const navigate = useNavigate();
   const [username, setUsername] = useState("");
   const [loading, setLoading] = useState(false);
-
-  const { cartCount } = useCart();
+  const cartLength = localStorage.getItem("cartN");
   useEffect(() => {
     const usernameFromlocalStorage = localStorage.getItem("username");
     setUsername(usernameFromlocalStorage);
+    const cartLength = localStorage.getItem("cartN");
   }, []);
   const handleSignInClick = () => {
     navigate("/login");

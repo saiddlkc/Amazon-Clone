@@ -9,9 +9,10 @@ const Warenkorb = () => {
     const updatedCartItems = [...cartItems];
     updatedCartItems.splice(index, 1);
     setCartItems(updatedCartItems);
-
     localStorage.setItem("cartItems", JSON.stringify(updatedCartItems));
+    localStorage.setItem("cartN", updatedCartItems.length.toString()); 
   };
+  
 
   useEffect(() => {
     localStorage.setItem("cartN", cartItems.length.toString());

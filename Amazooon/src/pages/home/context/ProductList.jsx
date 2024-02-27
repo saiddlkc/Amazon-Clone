@@ -8,21 +8,24 @@ const ProductList = () => {
   const { json, showProductDetails } = useProductContext();
   const [cartItems, setCartItems] = useState([]);
 
+  
   useEffect(() => {
     const storedCartItems = localStorage.getItem("cartItems");
     if (storedCartItems) {
       const parsedCartItems = JSON.parse(storedCartItems);
       setCartItems(parsedCartItems);
+      const updateCartCount = () => {
+        localStorage.setItem("cartN", cartItems.length.toString());
+      };
     }
   }, []);
 
-  const addtoStorage = () => {
+  const addtoStorage = (product) => {
     const cartItem = {
-      id: selectedProduct.id,
-      title: selectedProduct.title,
-      price: selectedProduct.price,
-      images: selectedProduct.images,
-      quantity: selectedQuantity, // Hier wird die ausgewählte Menge hinzugefügt
+      id: product.id,
+      title: product.title,
+      price: product.price,
+      images: product.images,
     };
 
     const storedCartItems = localStorage.getItem("cartItems");
@@ -30,11 +33,8 @@ const ProductList = () => {
     if (storedCartItems) {
       updatedCartItems = JSON.parse(storedCartItems);
     }
-    increaseCartCount();
     updatedCartItems.push(cartItem);
     localStorage.setItem("cartItems", JSON.stringify(updatedCartItems));
-
-    // Hier wird die Anzahl der Artikel im Warenkorb aktualisiert
     localStorage.setItem("cartN", updatedCartItems.length.toString());
   };
 
@@ -93,9 +93,15 @@ const ProductList = () => {
                 View Details
               </Link>
             </button>
-            <button onClick={addtoStorage} className=" product__button-korb">
-              <FiShoppingCart className="cart-icon" />
-            </button>
+            <button
+              onClick={() => {
+                addtoStorage(product);
+                localStorage.setItem("cartN", cartItems.length.toString());
+              }}
+              className="product__button-korb"
+            >
+  <FiShoppingCart className="cart-icon" />
+</button>
           </div>
         </div>
       ))}
