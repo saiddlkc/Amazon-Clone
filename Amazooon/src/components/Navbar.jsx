@@ -61,7 +61,7 @@ const Navbar = () => {
     setCartItems([...cartItems, item]);
   };
   return (
-    <nav className="bg-gray-900 text-white">
+    <nav className="bg-gray-800">
       <div className="mx-auto flex items-center justify-between py-3 px-4">
         <div className="flex items-center">
           <a href="/" className="text-white text-xl font-bold">
