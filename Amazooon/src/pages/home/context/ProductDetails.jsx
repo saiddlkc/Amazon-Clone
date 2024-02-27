@@ -15,17 +15,24 @@ function ProductDetails() {
   const [name, setName] = useState('');
   const [comment, setComment] = useState('');
   const [comments, setComments] = useState([]);
+  const [errorMessage, setErrorMessage] = useState('');
 
   const handleNameChange = (e) => {
     setName(e.target.value);
+    setErrorMessage('');
+    
   };
   
   const handleCommentChange = (e) => {
     setComment(e.target.value);
+    setErrorMessage('');
   };
 
   const addComment = async (e) => {
     e.preventDefault()
+    if (!name.trim() || !comment.trim()) {
+      setErrorMessage('Bitte füllen Sie alle Felder aus.');
+      return;}
     const newComment = { name, comment,productId: id };
     try {
       const response = await fetch(`http://localhost:3004/comments/`, {
@@ -43,9 +50,7 @@ function ProductDetails() {
       }
     } catch (error) {
       console.error('Fehler beim Hinzufügen des Kommentars', error);
-      if (!name.trim() || !comment.trim()) {
-        console.error('Bitte füllen Sie alle Felder aus.');
-        return;}
+      
     }
   };
   const fetchComments = async () => {
@@ -292,20 +297,27 @@ function ProductDetails() {
             value={comment}
             onChange={handleCommentChange}
           />
+          {errorMessage && <p className="text-red-600  font-semibold tracking-wide flex items-center gap-2">{errorMessage}</p>}
           <button onClick={addComment} className="mt-5 py-2 px-4 text-black rounded-full bg-amber-600 hover:bg-[#f0c14b] transition duration-300">
             Senden
           </button>
         </div>
       </div>
       <div>
-      <h2 className="text-2xl mt-10 mb-5 ml-3">Kommentare</h2>
-        <div className="flex flex-col m-2  border-4">
-          {comments.map((comment, index) => (
-            <div key={index} className="flex flex-col m-2">
-              <p className="text-lg opacity-70"> <FaCircleUser  /> {comment.name}</p>
-              <p className="text-sm ">{comment.comment}</p>
-            </div>
-          ))}
+      <h2 className="text-2xl mt-10 mb-5 ml-5 bg-white">Kommentare von anderen Kunden</h2>
+          <div className="flex flex-row m-2 flex-wrap">
+          {comments.length === 0 ? (
+            <p className="text-lg opacity-70 ml-5">Überraschend leer hier...</p>
+          ) : (
+            comments.reverse().map((comment, index) => (
+              <div key={index} className="flex flex-col m-2 border-2 border-slate-500 p-2 ml-5 w-full bg-[#ebdaadcf]">
+                <button className="text-lg opacity-70 font-bold flex p-1">
+                  <FaCircleUser className="m-1 text-black text-2xl" /> {comment.name}
+                </button>
+                <p className="text-sm">{comment.comment}</p>
+              </div>
+            ))
+          )}
         </div>
       </div>
     </div>
