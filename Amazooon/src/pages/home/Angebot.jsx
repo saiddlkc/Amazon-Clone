@@ -2,6 +2,7 @@ import React from "react";
 import json from "../../database/db.json";
 import "./ProductList.css";
 import { Link } from "react-router-dom";
+import { FiShoppingCart } from "react-icons/fi";
 
 const Angebot = () => {
   const allProducts = json.products;
@@ -58,14 +59,19 @@ const Angebot = () => {
                   {product.price.currency}
                 </span>
               </p>
-              <button
-                className="product__button"
-                onClick={() => showProductDetails(product)}
-              >
-                <Link to={`/${product.category}/${product.id}`}>
-                  View Details
-                </Link>
-              </button>
+              <div>
+                <button
+                  className="product__button"
+                  onClick={() => showProductDetails(product)}
+                >
+                  <Link to={`/${product.category}/${product.id}`}>
+                    View Details
+                  </Link>
+                </button>
+                <button className="bg-[#FFA41B] ml-1 py-3 px-3 text-white rounded-full hover:bg-[#FFD815] transition duration-300">
+                  <FiShoppingCart className="cart-icon" />
+                </button>
+              </div>
             </div>
           ))}
         </div>

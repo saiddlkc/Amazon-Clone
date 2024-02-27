@@ -1,6 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import { useProductContext } from "./ProductContext";
+import { FiShoppingCart } from "react-icons/fi";
 import "../ProductList.css";
 
 const ProductList = () => {
@@ -52,13 +53,19 @@ const ProductList = () => {
               <Link to={`/${product.category}`}>View Category</Link>
             </p>
           </div>
-
-          <button
-            className="product__button"
-            onClick={() => showProductDetails(product)}
-          >
-            <Link to={`/${product.category}/${product.id}`}>View Details</Link>
-          </button>
+          <div className="">
+            <button
+              className="product__button"
+              onClick={() => showProductDetails(product)}
+            >
+              <Link to={`/${product.category}/${product.id}`}>
+                View Details
+              </Link>
+            </button>
+            <button className="bg-[#FFA41B] ml-1 py-3 px-3 text-white rounded-full hover:bg-[#FFD815] transition duration-300">
+              <FiShoppingCart className="cart-icon" />
+            </button>
+          </div>
         </div>
       ))}
     </div>

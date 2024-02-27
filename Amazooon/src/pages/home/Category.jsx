@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import json from "../../database/db.json";
 import "./ProductList.css";
 import { Link } from "react-router-dom";
+import { FiShoppingCart } from "react-icons/fi";
 
 const ProductList = () => {
   const renderRatingStars = (rating) => {
@@ -38,7 +39,7 @@ const ProductList = () => {
             {category}
             <Link
               to={`/${category}`}
-              className="text-sm flex justify-center item-end"
+              className="text-lg p-2 underline text-amber-600 flex justify-center item-end"
             >
               Alle anzeigen
             </Link>
@@ -61,12 +62,20 @@ const ProductList = () => {
                   <p className="product-price">
                     {product.price.value} {product.price.currency}
                   </p>
-                  <button
-                    className="product__button"
-                    onClick={() => showProductDetails(product)}
-                  >
-                    View Details
-                  </button>
+                  <div>
+                    <button
+                      className="product__button"
+                      onClick={() => showProductDetails(product)}
+                    >
+                      <Link to={`/${product.category}/${product.id}`}>
+                        {" "}
+                        View Details
+                      </Link>
+                    </button>
+                    <button className="bg-[#FFA41B] ml-1 py-3 px-3 text-white rounded-full hover:bg-[#FFD815] transition duration-300">
+                      <FiShoppingCart className="cart-icon" />
+                    </button>
+                  </div>
                 </div>
               ))}
           </div>
