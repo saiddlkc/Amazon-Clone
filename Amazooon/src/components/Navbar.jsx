@@ -1,40 +1,40 @@
-import React, { useState, useEffect,Link } from "react";
-import { FiSearch } from "react-icons/fi";
-import { FiShoppingCart } from "react-icons/fi";
+import React, { useState, useEffect, Link } from "react";
+import { FiSearch, FiShoppingCart } from "react-icons/fi";
 import Img from "../images/logo-transparent-png.png";
-import { FiNavigation } from "react-icons/fi";
 import { FiChevronDown } from "react-icons/fi";
-import { Navigate, useLocation, useNavigate,  } from "react-router-dom";
+import { LuMapPin } from "react-icons/lu";
+import { Navigate, useLocation, useNavigate } from "react-router-dom";
 import { RingLoader } from "react-spinners";
-import "./logout.css"
+import { FiNavigation } from "react-icons/fi";
+import "./logout.css";
 import { useCart } from "../pages/home/context/CartContext";
 
 const Navbar = () => {
-  const cartLength = localStorage.getItem('cartN');
   const [isDropdownOpen, setIsDropdownOpen] = useState(false);
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const cartLength = localStorage.getItem("cartN");
   const [cartItems, setCartItems] = useState([]);
   const [windowWidth, setWindowWidth] = useState(window.innerWidth);
   const location = useLocation();
   const navigate = useNavigate();
   const [username, setUsername] = useState("");
-  const [loading, setLoading] = useState(false)
-  
+  const [loading, setLoading] = useState(false);
+
   const { cartCount } = useCart();
   useEffect(() => {
     const usernameFromlocalStorage = localStorage.getItem("username");
     setUsername(usernameFromlocalStorage);
-    
   }, []);
   const handleSignInClick = () => {
     navigate("/login");
   };
   const logoutClick = () => {
-    setLoading(true)
+    setLoading(true);
     localStorage.clear();
     setTimeout(() => {
       window.location.reload();
       navigate("/");
-    }, 3000); 
+    }, 3000);
   };
 
   const dropdownItems = [
@@ -68,15 +68,13 @@ const Navbar = () => {
   const addToCart = (item) => {
     setCartItems([...cartItems, item]);
   };
-
   return (
-    <nav className="bg-gray-900 ">
-      <div className=" mx-auto flex flex-wrap justify-between items-center">
+    <nav className="bg-amazon-yellow">
+      <div className="mx-auto flex items-center justify-between py-3 px-4">
         <div className="flex items-center">
-          <a href="/" className="text-white text-lg font-bold">
-            <img className="w-24 text-white" src={Img} alt="" />
+          <a href="/" className="text-white text-xl font-bold">
+            <img className="w-24" src={Img} alt="Amazon Logo" />
           </a>
-          {/* Andere Navigationslinks */}
         </div>
 
         <div className=" text-white">
@@ -140,7 +138,7 @@ const Navbar = () => {
               <p>Hallo, {username}</p>
               <p>Konto und Liste</p> */}
 
-              {/* <svg
+          {/* <svg
                 xmlns="http://www.w3.org/2000/svg"
                 viewBox="0 0 20 20"
                 fill="currentColor"
@@ -151,7 +149,7 @@ const Navbar = () => {
                   clipRule="evenodd"
                 />
               </svg> */}
-            {/* </button>
+          {/* </button>
           </div> */}
 
           <div className="text-white text-center">
@@ -164,20 +162,26 @@ const Navbar = () => {
             {username ? (
               <button
                 className="flex items-center bg-slate-600 p-2 rounded-md hover:bg-slate-500"
-                onClick={()=>navigate("/wk")}
-                target="_blank" 
+                onClick={() => navigate("/wk")}
+                target="_blank"
               >
                 <FiShoppingCart className="m-1" /> Warenkorb ({cartLength})
               </button>
             ) : (
-              <button className="flex items-center text-black p-2 rounded-md bg-gradient-to-t from-[#f7dfa5] to-[#f0c14b] hover:bg-gradient-to-b border border-zinc-400 active:border-yellow-800 active:shadow-amazonInput" onClick={handleSignInClick}>
+              <button
+                className="flex items-center text-black p-2 rounded-md bg-gradient-to-t from-[#f7dfa5] to-[#f0c14b] hover:bg-gradient-to-b border border-zinc-400 active:border-yellow-800 active:shadow-amazonInput"
+                onClick={handleSignInClick}
+              >
                 Sign In
               </button>
             )}
           </div>
           {username && (
             <div>
-              <button className="bg-red-600 rounded-md text-white pt-3 p-2 m-5" onClick={logoutClick}>
+              <button
+                className="bg-red-600 rounded-md text-white pt-3 p-2 m-5"
+                onClick={logoutClick}
+              >
                 {loading ? (
                   <div className="overlay ">
                     <RingLoader size={100} color={"white"} loading={loading} />
@@ -187,10 +191,117 @@ const Navbar = () => {
                 )}
               </button>
             </div>
-              )}
+          )}
+        </div>
+      </div>
+
+      {/* Menüschalter für kleinere Bildschirme */}
+      <div className="lg:hidden">
+        <button
+          onClick={() => setIsMenuOpen(!isMenuOpen)}
+          className="text-white focus:outline-none"
+        >
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            className="h-6 w-6"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke="currentColor"
+          >
+            {isMenuOpen ? (
+              <path
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                strokeWidth={2}
+                d="M6 18L18 6M6 6l12 12"
+              />
+            ) : (
+              <path
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                strokeWidth={2}
+                d="M4 6h16M4 12h16m-7 6h7"
+              />
+            )}
+          </svg>
+        </button>
+      </div>
+
+      {/* Dropdown-Menü für kleinere Bildschirme */}
+      {isMenuOpen && (
+        <div className="lg:hidden absolute top-20 right-0 w-full z-10  bg-gray-800">
+          <div className="flex flex-col items-center py-4">
+            <button
+              className="flex items-center bg-amazon-dark px-4 py-2 rounded-md hover:bg-amazon-orange"
+              onClick={() => addToCart({ label: "Artikel 1", price: 10 })}
+            >
+              <FiShoppingCart className="text-white" />
+              <span className="text-white ml-1">
+                Warenkorb {cartItems.length}
+              </span>
+            </button>
+            <div className="px-5 py-5 flex justify-center items-center">
+              <input
+                type="text"
+                placeholder="Suche Amazon.de"
+                className="px-5 py-2 bg-white text-black rounded-l-md focus:outline-none"
+              />
+              <button className="bg-gray-500 px-5 py-3  rounded-r-md hover:bg-orange-400">
+                <FiSearch className="text-white" />
+              </button>
+            </div>
+
+            {dropdownItems.map((item, index) => (
+              <a
+                key={index}
+                href={item.url}
+                className="block px-4 py-2 text-gray-300 hover:bg-gray-700"
+              >
+                {item.label}
+              </a>
+            ))}
+
+            <div className="flex justify-center items-center flex-col">
+              <div>
+                <button className="bg-red-400 hover:bg-red-500 rounded-sm px-5 py-2 m-3">
+                  <a href="http://" target="_blank" rel="noopener noreferrer">
+                    {" "}
+                    Top Angebot
+                  </a>
+                </button>
+                <button className="bg-red-400 rounded-sm hover:bg-red-500 px-5 py-2">
+                  <a href="http://" target="_blank" rel="noopener noreferrer">
+                    {" "}
+                    Angebot der Woche
+                  </a>
+                </button>
+              </div>
+
+              <div>
+                <button className="bg-red-400 hover:bg-red-500 rounded-sm px-5 py-2 m-3">
+                  <a href="http://" target="_blank" rel="noopener noreferrer">
+                    {" "}
+                    Besteller in Bücher
+                  </a>
+                </button>
+                <button className="bg-red-400 hover:bg-red-500 rounded-sm px-5 py-2">
+                  <a href="http://" target="_blank" rel="noopener noreferrer">
+                    {" "}
+                    Bestseller in Elektronik
+                  </a>
+                </button>
+              </div>
+              <div>
+                <button className="bg-red-400 hover:bg-red-500 rounded-sm px-5 py-2">
+                  <a href="http://" target="_blank" rel="noopener noreferrer">
+                    Unsere Besteller-Angebote für dich
+                  </a>
+                </button>
+              </div>
+            </div>
           </div>
         </div>
-      
+      )}
     </nav>
   );
 };

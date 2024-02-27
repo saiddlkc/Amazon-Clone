@@ -14,7 +14,24 @@ const NavigationBar = () => {
     { label: "Kameras", url: "/kameras" },
     { label: "Fashion", url: "/fashion" },
 
-    // Weitere Dropdown-Elemente können hier hinzugefügt werden
+    { label: "Bücher", url: "/" },
+    { label: "Gesundheit", url: "/" },
+    { label: "Drogerie", url: "/" },
+    { label: "Spielzeug", url: "/" },
+    { label: "Computer", url: "/" },
+    { label: "Garten", url: "/" },
+    { label: "Auto", url: "/" },
+    { label: "Haustier", url: "/" },
+    { label: "Lebensmittel", url: "/" },
+    { label: "Sport", url: "/" },
+    { label: "Küche", url: "/" },
+    { label: "Beauty", url: "/" },
+    { label: "Baby", url: "/" },
+    { label: "Handmade", url: "/" },
+    { label: "Amazon Basics", url: "/" },
+    { label: "Neuheiten", url: "/" },
+    { label: "Geschenkideen", url: "/" },
+    { label: "Gutscheine", url: "/" },
   ];
 
   const nav = [
