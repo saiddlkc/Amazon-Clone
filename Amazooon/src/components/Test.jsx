@@ -1,19 +1,13 @@
 import React, { useState } from "react";
-import { Link } from "react-router-dom";
 
 const NavigationBar = () => {
   const [isDropdownOpen, setIsDropdownOpen] = useState(false);
 
   // Dropdown-Elemente
   const dropdownItems = [
-    { label: "Todays Deals", url: "/deals" },
-    { label: "Bücher", url: "/bücher" },
-    { label: "Spiele", url: "/spiele" },
-    { label: "Baby", url: "/baby" },
-    { label: "Lebensmittel", url: "/lebensmittel" },
-    { label: "Kameras", url: "/kameras" },
-    { label: "Fashion", url: "/fashion" },
-
+    { label: "Elektronik", url: "/" },
+    { label: "Bekleidung", url: "/" },
+    { label: "Haushalt", url: "/" },
     { label: "Bücher", url: "/" },
     { label: "Gesundheit", url: "/" },
     { label: "Drogerie", url: "/" },
@@ -33,15 +27,14 @@ const NavigationBar = () => {
     { label: "Geschenkideen", url: "/" },
     { label: "Gutscheine", url: "/" },
   ];
+
   const nav = [
-    { name: "All Products", to: "/allcategories" },
-    { name: "Todays Deals", to: "/deals" },
-    { name: "Bücher", to: "/bücher" },
-    { name: "Spiele", to: "/spiele" },
-    { name: "Baby", to: "/baby" },
-    { name: "Lebensmittel", to: "/lebensmittel" },
-    { name: "Kameras", to: "/cameras" },
-    { name: "Fashion", to: "/fashion" },
+    { name: "Prime", to: "/" },
+    { name: "Verkaufen", to: "/verkaufen" },
+    { name: "Kundenservice", to: "/kundenservice" },
+    { name: "Heute's Deals", to: "/heutes-deals" },
+    { name: "Elektronik", to: "/elektronik" },
+    { name: "Kundenkonto", to: "/kundenkonto" },
   ];
 
   const toggleDropdown = () => {
@@ -49,7 +42,7 @@ const NavigationBar = () => {
   };
 
   return (
-    <nav className="bg-gray-700 p-4">
+    <nav className="bg-gray-800 p-4">
       <div className="max-w-7xl mx-auto flex flex-wrap justify-between items-center">
         <div className="flex items-center">
           {/* Dropdown */}
@@ -93,7 +86,7 @@ const NavigationBar = () => {
           {nav.map((navb) => (
             <a
               key={navb.name}
-              href={navb.to}
+              to={navb.to}
               className="text-gray-300 ml-4 hover:text-white hidden md:block cursor-pointer"
             >
               {navb.name}
@@ -106,3 +99,42 @@ const NavigationBar = () => {
 };
 
 export default NavigationBar;
+
+// Dropdown-Elemente
+const dropdownItems = [
+  { label: "Todays Deals", url: "/deals" },
+  { label: "Bücher", url: "/bücher" },
+  { label: "Spiele", url: "/spiele" },
+  { label: "Baby", url: "/baby" },
+  { label: "Lebensmittel", url: "/lebensmittel" },
+  { label: "Kameras", url: "/kameras" },
+  { label: "Fashion", url: "/fashion" },
+
+  { label: "Bücher", url: "/" },
+  { label: "Gesundheit", url: "/" },
+  { label: "Drogerie", url: "/" },
+  { label: "Spielzeug", url: "/" },
+  { label: "Computer", url: "/" },
+  { label: "Garten", url: "/" },
+  { label: "Auto", url: "/" },
+  { label: "Haustier", url: "/" },
+  { label: "Lebensmittel", url: "/" },
+  { label: "Sport", url: "/" },
+  { label: "Küche", url: "/" },
+  { label: "Beauty", url: "/" },
+  { label: "Baby", url: "/" },
+  { label: "Handmade", url: "/" },
+  { label: "Amazon Basics", url: "/" },
+  { label: "Neuheiten", url: "/" },
+  { label: "Geschenkideen", url: "/" },
+  { label: "Gutscheine", url: "/" },
+];
+const nav = [
+  { name: "Todays Deals", to: "/deals" },
+  { name: "Bücher", to: "/bücher" },
+  { name: "Spiele", to: "/spiele" },
+  { name: "Baby", to: "/baby" },
+  { name: "Lebensmittel", to: "/lebensmittel" },
+  { name: "Kameras", to: "/cameras" },
+  { name: "Fashion", to: "/fashion" },
+];

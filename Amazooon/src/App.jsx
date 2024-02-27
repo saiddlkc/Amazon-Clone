@@ -17,6 +17,7 @@ import KorbPage from "./pages/KorbPage";
 import WkTest from "./components/wktest";
 import { CartProvider } from "./pages/home/context/CartContext";
 import PageNotFound from "./pages/PageNotFound";
+import AllCategories from "./pages/categorys/AllCategories";
 
 function App() {
   return (
@@ -38,6 +39,14 @@ function App() {
               element={
                 <Layout>
                   <Cameras />
+                </Layout>
+              }
+            />
+            <Route
+              path="/allcategories"
+              element={
+                <Layout>
+                  <AllCategories />
                 </Layout>
               }
             />

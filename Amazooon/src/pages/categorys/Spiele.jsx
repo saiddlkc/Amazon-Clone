@@ -1,6 +1,8 @@
 import React from "react";
 import json from "../../database/db.json";
 import "../home/ProductList.css";
+import "../home/ProductList.css";
+import { FiShoppingCart } from "react-icons/fi";
 
 const ProductList = () => {
   const renderRatingStars = (rating) => {
@@ -35,12 +37,17 @@ const ProductList = () => {
               {product.price.value} {product.price.currency}
             </p>
             <p className="product-category">Category: {product.category}</p>
-            <button
-              className="product__button"
-              onClick={() => showProductDetails(product)}
-            >
-              View Details
-            </button>
+            <div className="flex">
+              <button
+                className="product__button"
+                onClick={() => showProductDetails(product)}
+              >
+                View Details
+              </button>
+              <button className=" product__button-korb">
+                <FiShoppingCart className="cart-icon" />
+              </button>
+            </div>
           </div>
         ))}
       </div>
