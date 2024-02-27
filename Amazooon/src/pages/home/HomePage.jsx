@@ -4,7 +4,6 @@ import Pro from "./context/Productss";
 import Angebot from "./Angebot";
 import Banner from "./Banner";
 import Category from "./Category";
-import Cameras from "../categorys/Cameras";
 
 const HomePage = () => {
   return (

@@ -35,6 +35,7 @@ const NavigationBar = () => {
   ];
 
   const nav = [
+    { name: "All Products", to: "/allcategories" },
     { name: "Todays Deals", to: "/deals" },
     { name: "Bücher", to: "/bücher" },
     { name: "Spiele", to: "/spiele" },
@@ -49,7 +50,7 @@ const NavigationBar = () => {
   };
 
   return (
-    <nav className="bg-gray-800 p-4">
+    <nav className="bg-gray-700 p-4">
       <div className="max-w-7xl mx-auto flex flex-wrap justify-between items-center">
         <div className="flex items-center">
           {/* Dropdown */}
