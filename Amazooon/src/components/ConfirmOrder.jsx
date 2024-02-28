@@ -94,8 +94,8 @@ const ConfirmOrder = () => {
                             <div>
                             <img className="w-20" src={item.images} alt="" />
                             </div>
-                            <div className="ml-9 border-l-2 border-amber-700 pl-5 overflow-hidden">
-                            <p className=" w-30 text-2xl mb-2">{item.title}</p>
+                            <div className="ml-9 border-l-2 border-amber-700 pl-5 overflow-hidden font-">
+                            <p className=" w-30 text-base mb-2 ">{item.title}</p>
                             </div>
                             <div className="pl-8 pt-6">
                             <p className="text-2xl text-amber-600">
@@ -114,7 +114,7 @@ const ConfirmOrder = () => {
                         </div>
                         </div>
                     ))}
-                </div>
+                
                 {cartItems.length > 0 && (
           <div className="w-72 border p-4 bg-amber-100 ">
             <h2 className="mb-4 border-b-4 p-2">Ihre Bestellung abschliessen</h2>
@@ -176,12 +176,15 @@ const ConfirmOrder = () => {
                 €
               </span>
             </p>
-            <button className="bg-[#ffa41b] hover:bg-[#FFD815] text-black font-bold p-3 rounded m-2">
+            <button className="bg-[#ffa41b] hover:bg-green-500 text-black font-bold p-3 rounded m-2">
             Zahlungspflichtig bestellen
+            </button>
+            <button className="bg-[#ffa41b] hover:bg-red-600 text-black font-bold p-3 rounded m-2">
+            Abbrechen
             </button>
           </div>
         )}
-                
+             </div>   
             </div>
         </div>
     );

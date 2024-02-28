@@ -89,10 +89,10 @@ const Warenkorb = () => {
           ))}
         </div>
         {cartItems.length > 0 && (
-          <div className="w-72 border p-4 bg-amber-100 ">
+          <div className="w-72 border p-4 bg-amber-100 flex flex-col justify-end items-center">
             <h2 className="mb-4 border-b-4 p-2">Ihre Bestellung aufgeben</h2>
             {/* <p className="m-1">Der Empfänger:</p> */}
-            <div className="border rounded-xl p-3 bg-amber-300 my-5">
+            {/* <div className="border rounded-xl p-3 bg-amber-300 my-5">
               <p>RabattCode:</p>
               <input
                 type="text"
@@ -121,7 +121,7 @@ const Warenkorb = () => {
                   </p>
                 </div>
               )}
-            </div>
+            </div> */}
             <p>
               Versandkosten:{" "}
               <span className="text-amber-600 text-lg">
@@ -149,7 +149,7 @@ const Warenkorb = () => {
                 €
               </span>
             </p>
-            <button className="bg-[#ffa41b] hover:bg-[#FFD815] text-black font-bold py-2 px-4 rounded m-3">
+            <button className="bg-[#ffa41b] hover:bg-[#FFD815] text-black font-bold py-2 px-3 rounded mx-4 my-9">
               <Link to="/Order">Weiter zur Kasse</Link>
             </button>
           </div>
