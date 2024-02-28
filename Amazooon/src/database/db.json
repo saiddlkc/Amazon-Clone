@@ -3979,6 +3979,1137 @@
         "count": 120,
         "value": 4.6
       }
+    },{
+      "id": "141",
+      "title": "L'Oréal Paris Color Riche Lippenstift",
+      "category": "Kosmetik",
+      "price": {
+        "currency": "EUR",
+        "value": 9.99,
+        "discount": 0
+      },
+      "brand": "L'Oréal Paris",
+      "images": [
+        "https://m.media-amazon.com/images/I/61jd46RMj7L._AC_UL320_.jpg"
+      ],
+      "description": "Der L'Oréal Paris Color Riche Lippenstift verleiht Ihren Lippen intensive Farbe und Pflege. Die cremige Formel sorgt für ein geschmeidiges Tragegefühl den ganzen Tag über.",
+      "features": [
+        "Intensive Farbe mit langanhaltendem Ergebnis",
+        "Cremige Formel für geschmeidige Lippen",
+        "Vielfältige Farbauswahl für jeden Anlass"
+      ],
+      "specs": ["Farbe: Nudes", "Inhalt: 5 g"],
+      "rating": {
+        "count": 85,
+        "value": 4.8
+      }
+    },
+    {
+      "id": "142",
+      "title": "Maybelline New York Lash Sensational Mascara",
+      "category": "Kosmetik",
+      "price": {
+        "currency": "EUR",
+        "value": 8.49,
+        "discount": 0
+      },
+      "brand": "Maybelline New York",
+      "images": [
+        "https://m.media-amazon.com/images/I/71vVD9F5CqL._AC_UL320_.jpg"
+      ],
+      "description": "Die Maybelline New York Lash Sensational Mascara verleiht Ihren Wimpern ein sensationelles Volumen und eine atemberaubende Länge. Die geschwungene Bürste erreicht jede einzelne Wimper für einen intensiven Look.",
+      "features": [
+        "Sensationelles Volumen und Länge",
+        "Geschwungene Bürste für präzises Auftragen",
+        "Langanhaltendes Ergebnis ohne Verklumpen"
+      ],
+      "specs": ["Farbe: Schwarz", "Inhalt: 9.4 ml"],
+      "rating": {
+        "count": 95,
+        "value": 4.7
+      }
+    },
+    {
+      "id": "143",
+      "title": "Nivea Creme",
+      "category": "Kosmetik",
+      "price": {
+        "currency": "EUR",
+        "value": 4.49,
+        "discount": 0
+      },
+      "brand": "Nivea",
+      "images": [
+        "https://m.media-amazon.com/images/I/51cRc3GeG5L._AC_UL320_.jpg"
+      ],
+      "description": "Die Nivea Creme ist ein Klassiker unter den Hautpflegeprodukten. Mit ihrer reichhaltigen Formel spendet sie intensive Feuchtigkeit und pflegt trockene Haut.",
+      "features": [
+        "Intensive Feuchtigkeitspflege für trockene Haut",
+        "Reichhaltige Formel mit Eucerit",
+        "Vielseitig anwendbar für Gesicht, Körper und Hände"
+      ],
+      "specs": ["Inhalt: 150 ml", "Hauttyp: Trockene Haut"],
+      "rating": {
+        "count": 120,
+        "value": 4.6
+      }
+    },
+    {
+      "id": "144",
+      "title": "MAC Cosmetics Studio Fix Fluid Foundation",
+      "category": "Kosmetik",
+      "price": {
+        "currency": "EUR",
+        "value": 32.5,
+        "discount": 0
+      },
+      "brand": "MAC Cosmetics",
+      "images": [
+        "https://m.media-amazon.com/images/I/61mMLQpdmRL._AC_UL320_.jpg"
+      ],
+      "description": "Die MAC Cosmetics Studio Fix Fluid Foundation bietet Ihnen eine matte, langanhaltende Deckkraft für einen makellosen Teint. Die ölfreie Formel verschmilzt nahtlos mit der Haut und lässt sie strahlen.",
+      "features": [
+        "Matte Deckkraft mit langem Halt",
+        "Ölfreie Formel für ein natürliches Finish",
+        "Breite Farbpalette für alle Hauttöne"
+      ],
+      "specs": ["Farbe: NC20", "Inhalt: 30 ml"],
+      "rating": {
+        "count": 65,
+        "value": 4.9
+      }
+    },
+    {
+      "id": "145",
+      "title": "Garnier SkinActive Mizellenwasser",
+      "category": "Kosmetik",
+      "price": {
+        "currency": "EUR",
+        "value": 3.95,
+        "discount": 0
+      },
+      "brand": "Garnier",
+      "images": [
+        "https://m.media-amazon.com/images/I/81sOBgX5I7L._AC_UL320_.jpg"
+      ],
+      "description": "Das Garnier SkinActive Mizellenwasser reinigt sanft und entfernt Make-up sowie Unreinheiten ohne zu reizen. Die Mizellen-Technologie hinterlässt eine erfrischte und strahlende Haut.",
+      "features": [
+        "Sanfte Reinigung ohne Reiben",
+        "Entfernt Make-up und Unreinheiten",
+        "Erfrischte und strahlende Haut"
+      ],
+      "specs": ["Hauttyp: Alle Hauttypen", "Inhalt: 400 ml"],
+      "rating": {
+        "count": 110,
+        "value": 4.5
+      }
+    },
+    {
+      "id": "146",
+      "title": "Essie Nagellack",
+      "category": "Kosmetik",
+      "price": {
+        "currency": "EUR",
+        "value": 7.95,
+        "discount": 0
+      },
+      "brand": "Essie",
+      "images": [
+        "https://m.media-amazon.com/images/I/71w03Vi7uRL._AC_UL320_.jpg"
+      ],
+      "description": "Der Essie Nagellack bietet Ihnen eine riesige Farbauswahl und eine langanhaltende Formel für perfekt lackierte Nägel. Die intensive Farbe und der Glanz machen jeden Look komplett.",
+      "features": [
+        "Langanhaltende Farbe und Glanz",
+        "Große Farbauswahl für jeden Stil",
+        "Professionelles Ergebnis ohne Abblättern"
+      ],
+      "specs": ["Farbe: Ballet Slippers", "Inhalt: 13.5 ml"],
+      "rating": {
+        "count": 75,
+        "value": 4.7
+      }
+    },
+    {
+      "id": "147",
+      "title": "Neutrogena Hydro Boost Wasser Gel",
+      "category": "Kosmetik",
+      "price": {
+        "currency": "EUR",
+        "value": 14.99,
+        "discount": 0
+      },
+      "brand": "Neutrogena",
+      "images": [
+        "https://m.media-amazon.com/images/I/91uhooQY6HL._AC_UL320_.jpg"
+      ],
+      "description": "Das Neutrogena Hydro Boost Wasser Gel versorgt Ihre Haut intensiv mit Feuchtigkeit und polstert sie auf. Die leichte Formel zieht schnell ein und hinterlässt keinen fettigen Film.",
+      "features": [
+        "Intensive Feuchtigkeitspflege",
+        "Leichte Gel-Textur für schnelles Einziehen",
+        "Für normale bis Mischhaut geeignet"
+      ],
+      "specs": ["Hauttyp: Normale bis Mischhaut", "Inhalt: 50 ml"],
+      "rating": {
+        "count": 90,
+        "value": 4.6
+      }
+    },
+    {
+      "id": "148",
+      "title": "Rimmel London Stay Matte Puder",
+      "category": "Kosmetik",
+      "price": {
+        "currency": "EUR",
+        "value": 5.99,
+        "discount": 0
+      },
+      "brand": "Rimmel London",
+      "images": [
+        "https://m.media-amazon.com/images/I/512U43-c9kL._AC_UL320_.jpg"
+      ],
+      "description": "Das Rimmel London Stay Matte Puder mattiert Ihren Teint und fixiert Ihr Make-up für bis zu 8 Stunden. Die leichte Formel lässt die Haut atmen und verhindert Glanz.",
+      "features": [
+        "Mattiert den Teint und fixiert das Make-up",
+        "Leichte Formel für ein natürliches Finish",
+        "Langanhaltender Effekt ohne Nachbessern"
+      ],
+      "specs": ["Farbe: Transparent", "Inhalt: 14 g"],
+      "rating": {
+        "count": 80,
+        "value": 4.8
+      }
+    },
+    {
+      "id": "149",
+      "title": "NYX Professional Makeup Butter Gloss",
+      "category": "Kosmetik",
+      "price": {
+        "currency": "EUR",
+        "value": 6.99,
+        "discount": 0
+      },
+      "brand": "NYX Professional Makeup",
+      "images": [
+        "https://m.media-amazon.com/images/I/61SWjLCijsL._AC_UL320_.jpg"
+      ],
+      "description": "Das NYX Professional Makeup Butter Gloss verleiht Ihren Lippen eine zarte Farbe und einen unwiderstehlichen Glanz. Die cremige Textur pflegt die Lippen und sorgt für ein angenehmes Tragegefühl.",
+      "features": [
+        "Zarte Farbe und Glanz",
+        "Cremige Textur für gepflegte Lippen",
+        "Große Farbauswahl für jeden Geschmack"
+      ],
+      "specs": ["Farbe: Creme Brulee", "Inhalt: 8 ml"],
+      "rating": {
+        "count": 70,
+        "value": 4.6
+      }
+    },
+    {
+      "id": "150",
+      "title": "Revlon ColorStay Makeup Foundation",
+      "category": "Kosmetik",
+      "price": {
+        "currency": "EUR",
+        "value": 12.99,
+        "discount": 0
+      },
+      "brand": "Revlon",
+      "images": [
+        "https://m.media-amazon.com/images/I/814qnhb7SQL._AC_UL320_.jpg"
+      ],
+      "description": "Die Revlon ColorStay Makeup Foundation bietet Ihnen eine langanhaltende Deckkraft für einen makellosen Teint. Die ölfreie Formel sorgt für ein mattes Finish, das den ganzen Tag hält.",
+      "features": [
+        "Langanhaltende Deckkraft",
+        "Ölfreie Formel für mattes Finish",
+        "Breite Farbauswahl für alle Hauttöne"
+      ],
+      "specs": ["Farbe: Sand Beige", "Inhalt: 30 ml"],
+      "rating": {
+        "count": 60,
+        "value": 4.7
+      }
+    },
+    {
+      "id": "151",
+      "title": "Urban Decay Naked3 Lidschatten Palette",
+      "category": "Kosmetik",
+      "price": {
+        "currency": "EUR",
+        "value": 49.95,
+        "discount": 0
+      },
+      "brand": "Urban Decay",
+      "images": [
+        "https://m.media-amazon.com/images/I/91iCYT7xvvL._AC_UL320_.jpg"
+      ],
+      "description": "Die Urban Decay Naked3 Lidschatten Palette bietet eine vielfältige Auswahl an neutralen und rosafarbenen Tönen für zahlreiche Looks. Die hochpigmentierten Farben lassen sich mühelos verblenden und halten den ganzen Tag.",
+      "features": [
+        "12 hochpigmentierte Lidschatten",
+        "Neutral und rosafarbene Töne",
+        "Langanhaltende Formel für den ganzen Tag"
+      ],
+      "specs": ["Inhalt: 12 x 1.3 g", "Finish: Matt, Schimmer"],
+      "rating": {
+        "count": 75,
+        "value": 4.7
+      }
+    },
+    {
+      "id": "152",
+      "title": "Clinique Dramatically Different Moisturizing Gel",
+      "category": "Kosmetik",
+      "price": {
+        "currency": "EUR",
+        "value": 28.5,
+        "discount": 0
+      },
+      "brand": "Clinique",
+      "images": [
+        "https://m.media-amazon.com/images/I/61rjIWgNJoL._AC_UL320_.jpgg"
+      ],
+      "description": "Das Clinique Dramatically Different Moisturizing Gel spendet Ihrer Haut intensive Feuchtigkeit ohne zu beschweren. Die leichte, ölfreie Formel zieht schnell ein und hinterlässt ein angenehmes Hautgefühl.",
+      "features": [
+        "Intensive Feuchtigkeitspflege",
+        "Leichte, ölfreie Formel",
+        "Schnell einziehend für ein angenehmes Hautgefühl"
+      ],
+      "specs": ["Hauttyp: Mischhaut bis ölige Haut", "Inhalt: 50 ml"],
+      "rating": {
+        "count": 90,
+        "value": 4.6
+      }
+    },
+    {
+      "id": "153",
+      "title": "Revlon ColorStay Foundation",
+      "category": "Kosmetik",
+      "price": {
+        "currency": "EUR",
+        "value": 14.99,
+        "discount": 0
+      },
+      "brand": "Revlon",
+      "images": [
+        "https://m.media-amazon.com/images/I/81H92RgHhcL._AC_UL320_.jpg"
+      ],
+      "description": "Die Revlon ColorStay Foundation bietet Ihnen eine langanhaltende, natürlich aussehende Deckkraft für einen makellosen Teint. Die ölfreie Formel sorgt für ein mattes Finish und ist ideal für den ganzen Tag.",
+      "features": [
+        "Langanhaltende Deckkraft",
+        "Natürliches, mattes Finish",
+        "Ölfreie Formel für den ganzen Tag"
+      ],
+      "specs": ["Farbe: Buff", "Inhalt: 30 ml"],
+      "rating": {
+        "count": 110,
+        "value": 4.5
+      }
+    },
+    {
+      "id": "154",
+      "title": "The Body Shop Shea Body Butter",
+      "category": "Kosmetik",
+      "price": {
+        "currency": "EUR",
+        "value": 16.0,
+        "discount": 0
+      },
+      "brand": "The Body Shop",
+      "images": [
+        "https://m.media-amazon.com/images/I/811C-dwowlL._AC_UL320_.jpg"
+      ],
+      "description": "Die The Body Shop Shea Body Butter ist eine reichhaltige Feuchtigkeitspflege für trockene Haut. Die cremige Textur mit Sheabutter hinterlässt die Haut geschmeidig und zart duftend.",
+      "features": [
+        "Intensive Feuchtigkeitspflege",
+        "Reichhaltige Textur mit Sheabutter",
+        "Für trockene Haut geeignet"
+      ],
+      "specs": ["Inhalt: 200 ml", "Duft: Sheanuss"],
+      "rating": {
+        "count": 80,
+        "value": 4.7
+      }
+    },
+    {
+      "id": "155",
+      "title": "NYX Professional Makeup Soft Matte Lip Cream",
+      "category": "Kosmetik",
+      "price": {
+        "currency": "EUR",
+        "value": 6.5,
+        "discount": 0
+      },
+      "brand": "NYX Professional Makeup",
+      "images": [
+        "https://m.media-amazon.com/images/I/51U35Ncs0-L._AC_SR180,120_QL70_.jpg"
+      ],
+      "description": "Die NYX Professional Makeup Soft Matte Lip Cream bietet intensive Farbe mit einem matten Finish und einem angenehmen Tragegefühl. Die cremige Textur gleitet mühelos auf die Lippen und trocknet sie nicht aus.",
+      "features": [
+        "Intensive Farbe mit mattem Finish",
+        "Angenehmes Tragegefühl",
+        "Cremige Textur für einfaches Auftragen"
+      ],
+      "specs": ["Farbe: Stockholm", "Inhalt: 8 ml"],
+      "rating": {
+        "count": 95,
+        "value": 4.6
+      }
+    },
+    {
+      "id": "156",
+      "title": "Ikea MALM Bettgestell",
+      "category": "Möbel",
+      "price": {
+        "currency": "EUR",
+        "value": 149.0,
+        "discount": 0
+      },
+      "brand": "Ikea",
+      "images": [
+        "https://m.media-amazon.com/images/I/81gxSBV-+HS._AC_UL320_.jpg"
+      ],
+      "description": "Das Ikea MALM Bettgestell bietet Ihnen eine stabile und elegante Basis für erholsamen Schlaf. Das schlichte Design passt zu verschiedenen Einrichtungsstilen und lässt sich leicht kombinieren.",
+      "features": [
+        "Stabile Konstruktion",
+        "Schlichtes und zeitloses Design",
+        "Einfache Montage"
+      ],
+      "specs": ["Farbe: Weiß", "Maße: 140x200 cm"],
+      "rating": {
+        "count": 132,
+        "value": 4.3
+      }
+    },
+    {
+      "id": "157",
+      "title": "Eames Lounge Chair",
+      "category": "Möbel",
+      "price": {
+        "currency": "EUR",
+        "value": 699.0,
+        "discount": 0
+      },
+      "brand": "Vitra",
+      "images": [
+        "https://m.media-amazon.com/images/I/51H8TNhlcYL._AC_UL320_.jpg"
+      ],
+      "description": "Der Eames Lounge Chair ist ein zeitloser Klassiker, der Komfort und Eleganz vereint. Sein ikonisches Design macht ihn zu einem Blickfang in jedem Wohnzimmer.",
+      "features": [
+        "Hochwertige Verarbeitung",
+        "Komfortable Polsterung",
+        "Elegantes Design"
+      ],
+      "specs": ["Material: Echtleder", "Farbe: Schwarz"],
+      "rating": {
+        "count": 87,
+        "value": 4.8
+      }
+    },
+    {
+      "id": "158",
+      "title": "Ikea Kallax Regal",
+      "category": "Möbel",
+      "price": {
+        "currency": "EUR",
+        "value": 29.99,
+        "discount": 0
+      },
+      "brand": "Ikea",
+      "images": [
+        "https://m.media-amazon.com/images/I/81LAqerMrwL._AC_UL320_.jpg"
+      ],
+      "description": "Das Ikea Kallax Regal bietet Ihnen flexible Aufbewahrungsmöglichkeiten für Bücher, Dekoration und mehr. Mit seinem schlichten Design passt es in verschiedene Räume und Einrichtungsstile.",
+      "features": [
+        "Vielseitige Nutzungsmöglichkeiten",
+        "Robuste Konstruktion",
+        "Einfacher Aufbau"
+      ],
+      "specs": ["Farbe: Weiß", "Maße: 77x77 cm"],
+      "rating": {
+        "count": 248,
+        "value": 4.6
+      }
+    },
+    {
+      "id": "159",
+      "title": "Ikea Billy Bücherregal",
+      "category": "Möbel",
+      "price": {
+        "currency": "EUR",
+        "value": 49.99,
+        "discount": 0
+      },
+      "brand": "Ikea",
+      "images": [
+        "https://m.media-amazon.com/images/I/61MSEtP+VWL._AC_UL320_.jpg"
+      ],
+      "description": "Das Ikea Billy Bücherregal bietet Ihnen viel Stauraum für Bücher und Dekoration. Mit seinem schlichten Design passt es in verschiedene Räume und lässt sich leicht kombinieren.",
+      "features": [
+        "Großer Stauraum",
+        "Einfacher Aufbau",
+        "Robuste Konstruktion"
+      ],
+      "specs": ["Farbe: Weiß", "Maße: 80x202 cm"],
+      "rating": {
+        "count": 314,
+        "value": 4.4
+      }
+    },
+    {
+      "id": "160",
+      "title": "Ikea Hemnes Kommode",
+      "category": "Möbel",
+      "price": {
+        "currency": "EUR",
+        "value": 149.0,
+        "discount": 0
+      },
+      "brand": "Ikea",
+      "images": [
+        "https://m.media-amazon.com/images/I/71cEIur0HNL._AC_UL320_.jpg"
+      ],
+      "description": "Die Ikea Hemnes Kommode bietet Ihnen praktischen Stauraum mit Stil. Die drei geräumigen Schubladen bieten Platz für Kleidung, Accessoires und vieles mehr.",
+      "features": [
+        "Geräumige Schubladen",
+        "Schlichtes Design",
+        "Hochwertige Verarbeitung"
+      ],
+      "specs": ["Farbe: Weiß", "Maße: 108x96 cm"],
+      "rating": {
+        "count": 179,
+        "value": 4.5
+      }
+    },
+    {
+      "id": "161",
+      "title": "Ikea Billy Bücherregal",
+      "category": "Möbel",
+      "price": {
+        "currency": "EUR",
+        "value": 49.99,
+        "discount": 0
+      },
+      "brand": "Ikea",
+      "images": [
+        "https://m.media-amazon.com/images/I/71KQrhJdf7L._AC_UL320_.jpg"
+      ],
+      "description": "Das Ikea Billy Bücherregal ist ein zeitloser Klassiker. Mit seinen verstellbaren Regalböden bietet es viel Platz für Bücher, Dekorationen und vieles mehr.",
+      "features": [
+        "Verstellbare Regalböden",
+        "Einfacher Aufbau",
+        "Verschiedene Farboptionen erhältlich"
+      ],
+      "specs": ["Farbe: Weiß", "Maße: 80x28x202 cm"],
+      "rating": {
+        "count": 215,
+        "value": 4.2
+      }
+    },
+    {
+      "id": "162",
+      "title": "Ikea Lack Couchtisch",
+      "category": "Möbel",
+      "price": {
+        "currency": "EUR",
+        "value": 19.99,
+        "discount": 0
+      },
+      "brand": "Ikea",
+      "images": [
+        "https://m.media-amazon.com/images/I/71liwrZAsQL._AC_UL320_.jpg"
+      ],
+      "description": "Der Ikea Lack Couchtisch ist ein preiswertes und praktisches Möbelstück. Mit seiner schlichten Gestaltung passt er zu vielen Einrichtungsstilen.",
+      "features": [
+        "Leicht zu montieren",
+        "Leicht zu reinigen",
+        "Platzsparendes Design"
+      ],
+      "specs": ["Farbe: Weiß", "Maße: 90x55 cm"],
+      "rating": {
+        "count": 124,
+        "value": 4.0
+      }
+    },
+    {
+      "id": "163",
+      "title": "Ikea Malm Bettgestell",
+      "category": "Möbel",
+      "price": {
+        "currency": "EUR",
+        "value": 99.0,
+        "discount": 0
+      },
+      "brand": "Ikea",
+      "images": [
+        "https://m.media-amazon.com/images/I/71dVX-ZsZdL._AC_UL320_.jpg"
+      ],
+      "description": "Das Ikea Malm Bettgestell bietet Ihnen einen stabilen und komfortablen Schlafplatz. Mit seinem schlichten Design passt es zu vielen verschiedenen Einrichtungsstilen.",
+      "features": [
+        "Stabile Konstruktion",
+        "Zeitloses Design",
+        "Erhältlich in verschiedenen Größen"
+      ],
+      "specs": ["Farbe: Weiß", "Maße: 140x200 cm"],
+      "rating": {
+        "count": 150,
+        "value": 4.3
+      }
+    },
+    {
+      "id": "164",
+      "title": "schlafzimmer Philips Hue White and Color Ambiance Starter Kit",
+      "category": "Möbel",
+      "price": {
+        "currency": "EUR",
+        "value": 199.99,
+        "discount": 0
+      },
+      "brand": "Philips",
+      "images": [
+        "https://m.media-amazon.com/images/I/612+9n2Uf7L._AC_UL320_.jpg"
+      ],
+      "description": "Das Philips Hue White and Color Ambiance Starter Kit verwandelt Ihr Zuhause mit individuell steuerbarem Licht. Erstellen Sie Stimmungen, steuern Sie das Licht von überall und genießen Sie intelligente Beleuchtung.",
+      "features": [
+        "Individuell steuerbares Licht",
+        "Kompatibel mit Smart-Home-Systemen",
+        "Große Auswahl an Farben und Helligkeiten"
+      ],
+      "specs": [
+        "Enthält 3 Lampen und eine Bridge",
+        "Kompatibel mit Alexa, Google Assistant und Apple HomeKit"
+      ],
+      "rating": {
+        "count": 98,
+        "value": 4.6
+      }
+    },
+    {
+      "id": "165",
+      "title": "Samsung schlafzimmer",
+      "category": "Möbel",
+      "price": {
+        "currency": "EUR",
+        "value": 849.0,
+        "discount": 0
+      },
+      "brand": "Samsung",
+      "images": [
+        "https://m.media-amazon.com/images/S/al-eu-726f4d26-7fdb/10e1a30c-46c6-4b5b-9d7e-bd1baff63d70._CR0,0,1200,628_SX920_QL70_.png"
+      ],
+      "description": "Das Samsung Galaxy S21 ist ein leistungsstarkes Smartphone mit einer herausragenden Kamera und einem atemberaubenden Design. Erleben Sie erstklassige Technologie in Ihrer Hand.",
+      "features": [
+        "Leistungsstarke Kamera",
+        "Hochwertiges Display",
+        "Schneller Prozessor"
+      ],
+      "specs": [
+        "6,2 Zoll Dynamic AMOLED 2X Display",
+        "Exynos 2100 Prozessor",
+        "12 GB RAM, 128 GB Speicher"
+      ],
+      "rating": {
+        "count": 320,
+        "value": 4.8
+      }
+    },
+    {
+      "id": "166",
+      "title": "Bose QuietComfort 45 Kopfhörer",
+      "category": "Möbel",
+      "price": {
+        "currency": "EUR",
+        "value": 329.95,
+        "discount": 0
+      },
+      "brand": "Bose",
+      "images": [
+        "https://m.media-amazon.com/images/I/51VdPZTxmGL._AC_UY218_.jpg"
+      ],
+      "description": "Die Bose QuietComfort 45 Kopfhörer bieten erstklassige Geräuschunterdrückung und überragenden Klang für ein ungestörtes Hörerlebnis. Genießen Sie Ihre Musik in aller Ruhe.",
+      "features": [
+        "Erstklassige Geräuschunterdrückung",
+        "Kabellos mit Bluetooth",
+        "Bis zu 24 Stunden Akkulaufzeit"
+      ],
+      "specs": ["Farbe: Schwarz", "Gewicht: 223 g"],
+      "rating": {
+        "count": 89,
+        "value": 4.7
+      }
+    },
+    {
+      "id": "167",
+      "title": "Nintendo Switch",
+      "category": "Möbel",
+      "price": {
+        "currency": "EUR",
+        "value": 329.99,
+        "discount": 0
+      },
+      "brand": "Nintendo",
+      "images": [
+        "https://m.media-amazon.com/images/I/61SyVbCP9xL._AC_UL320_.jpg"
+      ],
+      "description": "Die Nintendo Switch ist eine vielseitige Spielkonsole, die Ihnen ermöglicht, sowohl zu Hause als auch unterwegs zu spielen. Entdecken Sie eine breite Palette an Spielen für jeden Geschmack.",
+      "features": [
+        "Sowohl Handheld- als auch TV-Modus",
+        "Breite Auswahl an exklusiven Spielen",
+        "Mehrspielermodus mit Joy-Con-Controllern"
+      ],
+      "specs": [
+        "6,2 Zoll Touchscreen",
+        "32 GB interner Speicher",
+        "Bis zu 9 Stunden Akkulaufzeit"
+      ],
+      "rating": {
+        "count": 405,
+        "value": 4.9
+      }
+    },
+    {
+      "id": "168",
+      "title": "Sony Bravia XR-55A90J OLED-Fernseher",
+      "category": "Möbel",
+      "price": {
+        "currency": "EUR",
+        "value": 2199.0,
+        "discount": 0
+      },
+      "brand": "Sony",
+      "images": [
+        "https://m.media-amazon.com/images/I/81q-+1YhXCL._AC_UL320_.jpg"
+      ],
+      "description": "Der Sony Bravia XR-55A90J OLED-Fernseher bietet ein atemberaubendes Bild mit lebendigen Farben und tiefen Schwarztönen. Tauchen Sie ein in ein fesselndes Fernseherlebnis.",
+      "features": [
+        "4K OLED-Display",
+        "Dolby Vision und Dolby Atmos",
+        "Google TV für Smart-Entertainment"
+      ],
+      "specs": [
+        "Bildschirmdiagonale: 55 Zoll",
+        "XR Triluminos Pro",
+        "Acoustic Surface Audio+"
+      ],
+      "rating": {
+        "count": 56,
+        "value": 4.8
+      }
+    },
+    {
+      "id": "169",
+      "title": "Dyson schlafzimmer filter V11 Absolute Akkustaubsauger",
+      "category": "Möbel",
+      "price": {
+        "currency": "EUR",
+        "value": 649.0,
+        "discount": 0
+      },
+      "brand": "Dyson",
+      "images": [
+        "https://m.media-amazon.com/images/I/81KDg5Z4ahL._AC_UY218_.jpg"
+      ],
+      "description": "Der Dyson V11 Absolute Akkustaubsauger bietet starke Saugleistung und hohe Effizienz für eine gründliche Reinigung Ihres Zuhauses. Entdecken Sie die Zukunft des Staubsaugens.",
+      "features": [
+        "Digitales Motor V11",
+        "LCD-Display mit Echtzeit-Feedback",
+        "Hohe Kapazität für längere Reinigungszeit"
+      ],
+      "specs": [
+        "Gewicht: 3,05 kg",
+        "Behältervolumen: 0,76 l",
+        "Bis zu 60 Minuten Laufzeit"
+      ],
+      "rating": {
+        "count": 102,
+        "value": 4.7
+      }
+    },
+    {
+      "id": "170",
+      "title": "Adidas Herren Trainingshose",
+      "category": "Sport",
+      "price": {
+        "currency": "EUR",
+        "value": 39.99,
+        "discount": 0
+      },
+      "brand": "Adidas",
+      "images": [
+        "https://m.media-amazon.com/images/I/51gL6SD2LiL._AC_UL320_.jpg"
+      ],
+      "description": "Hochwertige Trainingshose für Herren von Adidas. Perfekt für Sport und Freizeit.",
+      "features": [
+        "Atmungsaktiv",
+        "Elastischer Bund",
+        "Seitentaschen mit Reißverschluss"
+      ],
+      "specs": ["Material: 100% Polyester", "Maschinenwaschbar"],
+      "rating": {
+        "count": 56,
+        "value": 4.5
+      }
+    },
+    {
+      "id": "171",
+      "title": "Nike Air Zoom Pegasus 38 Laufschuhe",
+      "category": "Sport",
+      "price": {
+        "currency": "EUR",
+        "value": 129.99,
+        "discount": 0
+      },
+      "brand": "Nike",
+      "images": [
+        "https://m.media-amazon.com/images/I/518Ve+pFJKL._AC_UY218_.jpg"
+      ],
+      "description": "Die Nike Air Zoom Pegasus 38 Laufschuhe bieten hervorragende Dämpfung und Reaktionsfähigkeit für ein komfortables Lauferlebnis. Ideal für Lauftraining und Wettkämpfe.",
+      "features": [
+        "Zoom Air-Dämpfungseinheit im Vorfuß",
+        "Atmungsaktives Obermaterial aus Mesh",
+        "Robuste Gummi-Außensohle für Traktion"
+      ],
+      "specs": ["Gewicht: ca. 280 g (Größe 42)", "Sprengung: 10 mm"],
+      "rating": {
+        "count": 89,
+        "value": 4.8
+      }
+    },
+    {
+      "id": "172",
+      "title": "Garmin Forerunner 945 GPS-Laufuhr",
+      "category": "Sport",
+      "price": {
+        "currency": "EUR",
+        "value": 599.99,
+        "discount": 0
+      },
+      "brand": "Garmin",
+      "images": [
+        "https://m.media-amazon.com/images/I/71Wtdqyk9PL._AC_UY218_.jpg"
+      ],
+      "description": "Die Garmin Forerunner 945 GPS-Laufuhr ist ein leistungsstarker Begleiter für Läufer. Mit fortschrittlichen Funktionen wie Herzfrequenzmessung, GPS und Trainingsstatistiken.",
+      "features": [
+        "Integrierter GPS-Empfänger",
+        "Herzfrequenzmessung am Handgelenk",
+        "Umfangreiche Trainingsanalyse und Statistiken"
+      ],
+      "specs": ["Gewicht: 50 g", "Wasserdichtigkeit: 5 ATM"],
+      "rating": {
+        "count": 124,
+        "value": 4.9
+      }
+    },
+    {
+      "id": "173",
+      "title": "Wilson Pro Staff RF97 Autograph Tennisschläger",
+      "category": "Sport",
+      "price": {
+        "currency": "EUR",
+        "value": 219.99,
+        "discount": 0
+      },
+      "brand": "Wilson",
+      "images": [
+        "https://m.media-amazon.com/images/I/61JTJB9QaZL._AC_UL320_.jpg"
+      ],
+      "description": "Der Wilson Pro Staff RF97 Autograph Tennisschläger wurde von Roger Federer inspiriert und bietet erstklassige Leistung und Präzision auf dem Platz.",
+      "features": [
+        "Großer Kopf für mehr Power",
+        "Stabiles und kontrolliertes Spielgefühl",
+        "Hochwertiges Graphitmaterial"
+      ],
+      "specs": [
+        "Kopfgröße: 97 sq in",
+        "Gewicht (unbespannt): 340 g",
+        "Balance: 30,5 cm"
+      ],
+      "rating": {
+        "count": 42,
+        "value": 4.7
+      }
+    },
+    {
+      "id": "174",
+      "title": "Under Armour Herren ColdGear Armour Compression Leggings",
+      "category": "Sport",
+      "price": {
+        "currency": "EUR",
+        "value": 49.99,
+        "discount": 0
+      },
+      "brand": "Under Armour",
+      "images": [
+        "https://m.media-amazon.com/images/I/61lhKkICdYL._AC_UL320_.jpg"
+      ],
+      "description": "Die Under Armour ColdGear Armour Compression Leggings bieten Kompression und Wärme für optimale Leistung bei kaltem Wetter. Perfekt für Trainingseinheiten im Freien.",
+      "features": [
+        "Kompressionspassform für Muskelunterstützung",
+        "ColdGear-Technologie hält dich warm und trocken",
+        "Elastischer Bund für eine bequeme Passform"
+      ],
+      "specs": ["Material: 87% Polyester, 13% Elasthan", "Maschinenwaschbar"],
+      "rating": {
+        "count": 68,
+        "value": 4.6
+      }
+    },
+    {
+      "id": "175",
+      "title": "Under Armour Herren HeatGear Armour Compression Shorts",
+      "category": "Sport",
+      "price": {
+        "currency": "EUR",
+        "value": 24.99,
+        "discount": 0
+      },
+      "brand": "Under Armour",
+      "images": [
+        "https://m.media-amazon.com/images/I/61mMndHq2NL._AC_UL320_.jpg"
+      ],
+      "description": "Die Under Armour HeatGear Armour Compression Shorts bieten eine enge, komfortable Passform und unterstützen die Muskelkompression während des Trainings. Ideal für intensive Workouts.",
+      "features": [
+        "Kompressionspassform für Muskelunterstützung",
+        "HeatGear-Gewebe für optimale Belüftung",
+        "Elastischer Bund für eine sichere Passform"
+      ],
+      "specs": [
+        "Material: 84% Polyester, 16% Elasthan",
+        "Flache Nähte für weniger Reibung"
+      ],
+      "rating": {
+        "count": 63,
+        "value": 4.7
+      }
+    },
+    {
+      "id": "176",
+      "title": "Nike Unisex Sportswear Heritage Hip Pack",
+      "category": "Sport",
+      "price": {
+        "currency": "EUR",
+        "value": 19.99,
+        "discount": 0
+      },
+      "brand": "Nike",
+      "images": [
+        "https://m.media-amazon.com/images/I/51FNQegKu1S._AC_UL320_.jpg"
+      ],
+      "description": "Das Nike Sportswear Heritage Hip Pack bietet praktische Aufbewahrung für kleine Gegenstände während des Trainings oder unterwegs. Ein unverzichtbares Accessoire für aktive Menschen.",
+      "features": [
+        "Verstellbarer Gurt für individuellen Tragekomfort",
+        "Reißverschlusstasche für sichere Aufbewahrung",
+        "Leichtes und strapazierfähiges Material"
+      ],
+      "specs": ["Maße: 15 x 5 x 23 cm", "Material: 100% Polyester"],
+      "rating": {
+        "count": 37,
+        "value": 4.5
+      }
+    },
+    {
+      "id": "177",
+      "title": "Puma Herren Evostripe Sweatshirt",
+      "category": "Sport",
+      "price": {
+        "currency": "EUR",
+        "value": 49.99,
+        "discount": 0
+      },
+      "brand": "Puma",
+      "images": [
+        "https://m.media-amazon.com/images/I/51PE+OPv5OL._AC_UL320_.jpg"
+      ],
+      "description": "Das Puma Evostripe Sweatshirt für Herren bietet optimalen Komfort und Bewegungsfreiheit. Ideal für das Training im Fitnessstudio oder im Freien.",
+      "features": [
+        "Weiches Baumwollmischgewebe",
+        "Ergonomische Passform für Bewegungsfreiheit",
+        "Raglanärmel für natürliche Bewegungen"
+      ],
+      "specs": ["Material: 66% Baumwolle, 34% Polyester", "Maschinenwaschbar"],
+      "rating": {
+        "count": 52,
+        "value": 4.6
+      }
+    },
+    {
+      "id": "178",
+      "title": "Adidas Damen Edge Lux 4 Laufschuhe",
+      "category": "Sport",
+      "price": {
+        "currency": "EUR",
+        "value": 89.99,
+        "discount": 0
+      },
+      "brand": "Adidas",
+      "images": [
+        "https://m.media-amazon.com/images/I/61L0y6UzZ+L._AC_UL320_.jpg"
+      ],
+      "description": "Die Adidas Edge Lux 4 Laufschuhe für Damen bieten eine optimale Kombination aus Komfort und Leistung. Perfekt für Laufanfängerinnen und erfahrene Läuferinnen.",
+      "features": [
+        "Atmungsaktives Obermaterial aus Mesh",
+        "Leichte Dämpfung für Komfort",
+        "Gummi-Außensohle für Traktion"
+      ],
+      "specs": ["Gewicht: ca. 230 g (Größe 38)", "Sprengung: 8 mm"],
+      "rating": {
+        "count": 96,
+        "value": 4.7
+      }
+    },
+    {
+      "id": "179",
+      "title": "Wilson Federer Team Rucksack",
+      "category": "Sport",
+      "price": {
+        "currency": "EUR",
+        "value": 59.99,
+        "discount": 0
+      },
+      "brand": "Wilson",
+      "images": [
+        "https://m.media-amazon.com/images/I/91tCBkATXOL._AC_UL320_.jpg"
+      ],
+      "description": "Der Wilson Federer Team Rucksack bietet viel Stauraum für Ihre Tennisausrüstung und Zubehör. Ein Must-have für alle Roger Federer Fans.",
+      "features": [
+        "Großes Hauptfach mit Reißverschluss",
+        "Separates Schlägerfach mit Thermoisolierung",
+        "Verstellbare Schultergurte für Tragekomfort"
+      ],
+      "specs": ["Maße: 30 x 20 x 47 cm", "Material: 100% Polyester"],
+      "rating": {
+        "count": 29,
+        "value": 4.8
+      }
+    },
+    {
+      "id": "180",
+      "title": "Gaiam Classic Balance Ball Stuhl",
+      "category": "Sport",
+      "price": {
+        "currency": "EUR",
+        "value": 79.99,
+        "discount": 0
+      },
+      "brand": "Gaiam",
+      "images": [
+        "https://m.media-amazon.com/images/I/71pgzmc1pqL._AC_UL320_.jpg"
+      ],
+      "description": "Der Gaiam Classic Balance Ball Stuhl fördert eine gesunde Sitzhaltung und stärkt den Kern während des Arbeitens oder Studierens. Ein innovatives Sitzmöbel für Zuhause oder im Büro.",
+      "features": [
+        "Stabilitätsball mit Stuhlrahmen",
+        "Verstellbare Höhe für individuellen Komfort",
+        "Entwickelt, um die Wirbelsäule auszurichten"
+      ],
+      "specs": [
+        "Maximale Belastung: 113 kg",
+        "Inklusive Luftpumpe und Trainingsanleitung"
+      ],
+      "rating": {
+        "count": 18,
+        "value": 4.6
+      }
+    },
+    {
+      "id": "181",
+      "title": "Everlast Pro Style Boxhandschuhe",
+      "category": "Sport",
+      "price": {
+        "currency": "EUR",
+        "value": 34.99,
+        "discount": 0
+      },
+      "brand": "Everlast",
+      "images": [
+        "https://m.media-amazon.com/images/I/71H3Qv4EJWL._AC_UL320_.jpg"
+      ],
+      "description": "Die Everlast Pro Style Boxhandschuhe bieten erstklassigen Schutz und Komfort für Boxtraining und Sparring. Ideal für Anfänger und fortgeschrittene Boxer.",
+      "features": [
+        "Hochwertiges Kunstleder",
+        "Gepolsterte Handflächen für Stoßdämpfung",
+        "Atmungsaktives Innenfutter"
+      ],
+      "specs": [
+        "Verfügbare Größen: 8 oz, 10 oz, 12 oz, 14 oz, 16 oz",
+        "Verschluss: Klettverschluss"
+      ],
+      "rating": {
+        "count": 45,
+        "value": 4.7
+      }
+    },
+    {
+      "id": "182",
+      "title": "Fitbit Charge 5 Fitness-Tracker",
+      "category": "Sport",
+      "price": {
+        "currency": "EUR",
+        "value": 149.99,
+        "discount": 0
+      },
+      "brand": "Fitbit",
+      "images": [
+        "https://m.media-amazon.com/images/I/61Gh-5pErbL._AC_UY218_.jpg"
+      ],
+      "description": "Der Fitbit Charge 5 Fitness-Tracker bietet umfassende Gesundheits- und Fitnessfunktionen, darunter Herzfrequenzmessung, Schlafüberwachung und vieles mehr. Bleiben Sie auf dem richtigen Weg zu Ihren Fitnesszielen.",
+      "features": [
+        "Integriertes GPS für Lauf- und Outdoor-Aktivitäten",
+        "SpO2-Sensor zur Sauerstoffsättigungsmessung",
+        "Smartphone-Benachrichtigungen und Apps"
+      ],
+      "specs": ["Akkulaufzeit: Bis zu 7 Tage", "Wasserdichtigkeit: Bis 50 m"],
+      "rating": {
+        "count": 109,
+        "value": 4.8
+      }
+    },
+    {
+      "id": "183",
+      "title": "Speedo Unisex Schwimmbrille",
+      "category": "Sport",
+      "price": {
+        "currency": "EUR",
+        "value": 17.99,
+        "discount": 0
+      },
+      "brand": "Speedo",
+      "images": [
+        "https://m.media-amazon.com/images/I/510P5PxBkML._AC_UL320_.jpg"
+      ],
+      "description": "Die Speedo Unisex Schwimmbrille bietet klare Sicht und angenehmen Tragekomfort für Schwimmtraining und Wettkämpfe. Entwickelt für Leistung und Langlebigkeit.",
+      "features": [
+        "Anti-Beschlag-Beschichtung",
+        "UV-Schutz für die Augen",
+        "Verstellbares Kopfband für individuelle Passform"
+      ],
+      "specs": ["Gläsertyp: Polycarbonat", "Latexfrei"],
+      "rating": {
+        "count": 68,
+        "value": 4.7
+      }
+    },
+    {
+      "id": "184",
+      "title": "Columbia Unisex Regenhose",
+      "category": "Sport",
+      "price": {
+        "currency": "EUR",
+        "value": 49.99,
+        "discount": 0
+      },
+      "brand": "Columbia",
+      "images": [
+        "https://m.media-amazon.com/images/I/71O7egiXmmL._AC_UL320_.jpg"
+      ],
+      "description": "Die Columbia Unisex Regenhose hält Sie bei schlechtem Wetter trocken und komfortabel. Perfekt für Outdoor-Aktivitäten wie Wandern, Camping und Angeln.",
+      "features": [
+        "Wasserdichtes und atmungsaktives Material",
+        "Verstellbarer Bund für eine individuelle Passform",
+        "Verstärkte Nähte für zusätzliche Haltbarkeit"
+      ],
+      "specs": ["Material: 100% Nylon", "Maschinenwaschbar"],
+      "rating": {
+        "count": 39,
+        "value": 4.6
+      }
     }
   ],
   "users": [
