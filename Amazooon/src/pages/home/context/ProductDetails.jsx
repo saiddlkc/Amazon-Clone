@@ -3,6 +3,7 @@ import { useParams, useNavigate, Link } from "react-router-dom";
 import { useProductContext } from "./ProductContext";
 import ReactImageZoom from "react-image-zoom";
 import { useCart } from "./CartContext";
+import { FaCircleUser } from "react-icons/fa6";
 
 function ProductDetails() {
   const [cartItems, setCartItems] = useState([]);
@@ -10,7 +11,91 @@ function ProductDetails() {
   const { id } = useParams();
   const navigate = useNavigate();
   const [selectedQuantity, setSelectedQuantity] = useState(1);
+  const { increaseCartCount } = useCart();
+  const [name, setName] = useState("");
+  const [comment, setComment] = useState("");
+  const [comments, setComments] = useState([]);
+  const [errorMessage, setErrorMessage] = useState("");
 
+  const handleNameChange = (e) => {
+    setName(e.target.value);
+    setErrorMessage("");
+  };
+
+  const handleCommentChange = (e) => {
+    setComment(e.target.value);
+    setErrorMessage("");
+  };
+
+  const addComment = async (e) => {
+    e.preventDefault();
+    if (!name.trim() || !comment.trim()) {
+      setErrorMessage("Bitte füllen Sie alle Felder aus.");
+      return;
+    }
+    const newComment = { name, comment, productId: id };
+    try {
+      const response = await fetch(`http://localhost:3004/comments/`, {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify(newComment),
+      });
+
+      if (response.ok) {
+        console.log("ok");
+      } else {
+        console.error("Fehler beim Hinzufügen des Kommentars");
+      }
+    } catch (error) {
+      console.error("Fehler beim Hinzufügen des Kommentars", error);
+    }
+  };
+  const fetchComments = async () => {
+    try {
+      const response = await fetch(
+        `http://localhost:3004/comments/?productId=${id}`
+      );
+      if (response.ok) {
+        const data = await response.json();
+        setComments(data);
+      } else {
+        console.error("Fehler beim Laden der Kommentare");
+      }
+    } catch (error) {
+      console.error("Fehler beim Laden der Kommentare", error);
+    }
+  };
+
+  useEffect(() => {
+    fetchComments();
+    const storedCartItems = localStorage.getItem("cartItems");
+    if (storedCartItems) {
+      const parsedCartItems = JSON.parse(storedCartItems);
+      setCartItems(parsedCartItems);
+    }
+  }, []);
+
+  const addtoStorage = () => {
+    const cartItem = {
+      id: selectedProduct.id,
+      title: selectedProduct.title,
+      price: selectedProduct.price,
+      images: selectedProduct.images,
+      quantity: selectedQuantity,
+    };
+    
+    const storedCartItems = localStorage.getItem("cartItems");
+    let updatedCartItems = [];
+    if (storedCartItems) {
+      updatedCartItems = JSON.parse(storedCartItems);
+    }
+    increaseCartCount();
+    updatedCartItems.push(cartItem);
+    localStorage.setItem("cartItems", JSON.stringify(updatedCartItems));
+    localStorage.setItem("cartN", updatedCartItems.length.toString());
+  };
   const selectedProduct = json.products.find(
     (product) => product.id.toString() === id
   );
@@ -40,6 +125,7 @@ function ProductDetails() {
   };
 
   React.useEffect(() => {
+    fetchComments();
     if (!selectedProduct) {
       navigate("/");
     }
@@ -108,28 +194,10 @@ function ProductDetails() {
         <div className="max-w-sm border border-gray-800 rounded p-5">
           <p className="font-bold">Buy new:</p>
           <p className="text-xl text-amber-600">
-            <span style={{ textDecoration: "line-through" }}>
+            <span>
               {selectedProduct.price.value} {selectedProduct.price.currency}
             </span>
-            {" / "}
-            <span>
-              {(selectedProduct.price.value * 0.5).toFixed(2)}{" "}
-              {selectedProduct.price.currency}
-            </span>
           </p>
-          <p
-            style={{
-              backgroundColor: "#CC0C39",
-              color: "#fff",
-              display: "inline-block",
-              padding: "5px",
-              textAlign: "left",
-              margin: "0",
-            }}
-          >
-            Bis zu 50% Rabatt
-          </p>
-          <p></p>
           <hr />
           <p className="text-lg mt-2">{selectedProduct.title}</p>
           <p className="text-sm mt-2">
@@ -153,8 +221,15 @@ function ProductDetails() {
               ))}
             </select>
           </p>
+<<<<<<<<< Temporary merge branch 1
 
-          <button className="bg-amber-600 mt-5 py-2 px-4 text-white rounded hover:bg-blue-700 transition duration-300">
+          <button onClick={addtoStorage} className="bg-amber-600 mt-5 py-2 px-4 text-white rounded hover:bg-blue-700 transition duration-300">
+=========
+          <button className="block bg-[#FFA41B] mt-5 py-2 px-4 text-black rounded-full hover:bg-[#f0c14b] transition duration-300">
+            Buy Now
+          </button>
+          <button className="bg-[#f0c14b] mt-5 py-2 px-4 text-black rounded-full hover:bg-[#ff9900] transition duration-300">
+>>>>>>>>> Temporary merge branch 2
             In den Einkaufswagen
           </button>
         </div>
@@ -180,7 +255,9 @@ function ProductDetails() {
               </p>
               <button
                 className="product__button"
-                onClick={() => navigate(`/${product.category}/${product.id}`)}
+                onClick={() => {
+                  navigate(`/${product.category}/${product.id}`);
+                }}
               >
                 View Details
               </button>
@@ -195,45 +272,51 @@ function ProductDetails() {
             type="text"
             className="bg-slate-200 p-2 rounded mb-2"
             placeholder="Name eingeben..."
+            value={name}
+            onChange={handleNameChange}
           />
           <textarea
             placeholder="kommentar schreiben..."
             className="bg-slate-200 p-2 rounded"
             rows="5"
             cols="50"
+            value={comment}
+            onChange={handleCommentChange}
           />
-          <button className="mt-5 py-2 px-4 text-black rounded-full bg-amber-600 hover:bg-[#f0c14b] transition duration-300">
+          {errorMessage && (
+            <p className="text-red-600  font-semibold tracking-wide flex items-center gap-2">
+              {errorMessage}
+            </p>
+          )}
+          <button
+            onClick={addComment}
+            className="mt-5 py-2 px-4 text-black rounded-full bg-amber-600 hover:bg-[#f0c14b] transition duration-300"
+          >
             Senden
           </button>
         </div>
       </div>
       <div>
-        <h2 className="text-2xl mt-10 mb-5 ml-3">Kommentare</h2>
-        <div className="flex flex-col m-2">
-          <div className="flex flex-col m-2">
-            <p className="text-lg">Max Mustermann</p>
-            <p className="text-sm">vor 3 Tagen</p>
-            <p className="text-sm">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla
-              convallis, justo auctor ultricies.
-            </p>
-          </div>
-          <div className="flex flex-col m-2">
-            <p className="text-lg">Max Mustermann</p>
-            <p className="text-sm">vor 3 Tagen</p>
-            <p className="text-sm">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla
-              convallis, justo auctor ultricies.
-            </p>
-          </div>
-          <div className="flex flex-col m-2">
-            <p className="text-lg">Max Mustermann</p>
-            <p className="text-sm">vor 3 Tagen</p>
-            <p className="text-sm">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla
-              convallis, justo auctor ultricies.
-            </p>
-          </div>
+        <h2 className="text-2xl mt-10 mb-5 ml-5 bg-white">
+          Kommentare von anderen Kunden
+        </h2>
+        <div className="flex flex-row m-2 flex-wrap">
+          {comments.length === 0 ? (
+            <p className="text-lg opacity-70 ml-5">Überraschend leer hier...</p>
+          ) : (
+            comments.reverse().map((comment, index) => (
+              <div
+                key={index}
+                className="flex flex-col m-2 border-2 border-slate-500 p-2 ml-5 w-full bg-[#ebdaadcf]"
+              >
+                <button className="text-lg opacity-70 font-bold flex p-1">
+                  <FaCircleUser className="m-1 text-black text-2xl" />{" "}
+                  {comment.name}
+                </button>
+                <p className="text-sm">{comment.comment}</p>
+              </div>
+            ))
+          )}
         </div>
       </div>
     </div>

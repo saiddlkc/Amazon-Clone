@@ -1,4 +1,4 @@
-import { Route, Routes, } from "react-router-dom";
+import { Route, Routes } from "react-router-dom";
 import "./index.css";
 import HomePage from "./pages/home/HomePage";
 import RegistrationPage from "./pages/RegistrationPage";
@@ -16,96 +16,120 @@ import ProductDetails from "./pages/home/context/ProductDetails";
 import KorbPage from "./pages/KorbPage";
 import WkTest from "./components/wktest";
 import { CartProvider } from "./pages/home/context/CartContext";
+import PageNotFound from "./pages/PageNotFound";
+import AllCategories from "./pages/categorys/AllCategories";
 
 function App() {
   return (
     <>
       <CartProvider>
-      <ProductProvider>
-        <Routes>
-          <Route
-            exact
-            path="/"
-            element={
-              <Layout>
-                <HomePage />
-              </Layout>
-            }
-          ></Route>
-          <Route
-            path="/Cameras"
-            element={
-              <Layout>
-                <Cameras />
-              </Layout>
-            }
-          />
-          <Route
-            path="/Baby"
-            element={
-              <Layout>
-                <Baby />
-              </Layout>
-            }
-          />
-          <Route
-            path="/Bücher"
-            element={
-              <Layout>
-                <Bücher />
-              </Layout>
-            }
-          />
-          <Route
-            path="/Deals"
-            element={
-              <Layout>
-                <Deals />
-              </Layout>
-            }
-          />
-          <Route
-            path="/Fashion"
-            element={
-              <Layout>
-                <Fashion />
-              </Layout>
-            }
-          />
-          <Route
-            path="/Lebensmittel"
-            element={
-              <Layout>
-                <Lebensmittel />
-              </Layout>
-            }
-          />
-          <Route
-            path="/Spiele"
-            element={
-              <Layout>
-                <Spiele />
-              </Layout>
-            }
-          />
-        
-        <Route path="wk" element={<Layout><KorbPage/></Layout>}/>
+        <ProductProvider>
+          <Routes>
+            <Route
+              exact
+              path="/"
+              element={
+                <Layout>
+                  <HomePage />
+                </Layout>
+              }
+            ></Route>
+            <Route
+              path="/Cameras"
+              element={
+                <Layout>
+                  <Cameras />
+                </Layout>
+              }
+            />
+            <Route
+              path="/allcategories"
+              element={
+                <Layout>
+                  <AllCategories />
+                </Layout>
+              }
+            />
+            <Route
+              path="/Baby"
+              element={
+                <Layout>
+                  <Baby />
+                </Layout>
+              }
+            />
+            <Route
+              path="/Bücher"
+              element={
+                <Layout>
+                  <Bücher />
+                </Layout>
+              }
+            />
+            <Route
+              path="/Deals"
+              element={
+                <Layout>
+                  <Deals />
+                </Layout>
+              }
+            />
+            <Route
+              path="/Fashion"
+              element={
+                <Layout>
+                  <Fashion />
+                </Layout>
+              }
+            />
+            <Route
+              path="/Lebensmittel"
+              element={
+                <Layout>
+                  <Lebensmittel />
+                </Layout>
+              }
+            />
+            <Route
+              path="/Spiele"
+              element={
+                <Layout>
+                  <Spiele />
+                </Layout>
+              }
+            />
 
-          <Route
-            path="/:category/:id"
-            element={
-              <Layout>
-                <ProductDetails />
-              </Layout>
-            }
-          />
+            <Route
+              path="wk"
+              element={
+                <Layout>
+                  <KorbPage />
+                </Layout>
+              }
+            />
 
-          <Route path="/Login" element={<LoginPage />} />
-          <Route path="/RegistrationPage" element={<RegistrationPage />} />
-          <Route path="*" element={<h1>Not Found</h1>} />
-        </Routes>
-      </ProductProvider>
-        </CartProvider>
+            <Route
+              path="/:category/:id"
+              element={
+                <Layout>
+                  <ProductDetails />
+                </Layout>
+              }
+            />
+
+            <Route path="/Login" element={<LoginPage />} />
+            <Route path="/RegistrationPage" element={<RegistrationPage />} />
+            <Route
+              path="*"
+              element={
+                <Layout>
+                  <PageNotFound />
+                </Layout>
+              }
+            />
+          </Routes>
+        </ProductProvider>
+      </CartProvider>
     </>
   );
 }

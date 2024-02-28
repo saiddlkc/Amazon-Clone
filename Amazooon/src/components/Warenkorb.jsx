@@ -1,20 +1,53 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect } from "react";
+import { Link } from "react-router-dom";
+import { useCart } from "../pages/home/context/CartContext";
+
 
 const Warenkorb = () => {
   const [cartItems, setCartItems] = useState([]);
+  const [discountCode, setDiscountCode] = useState("");
+  const { decreaseCartCount } = useCart();
+
   const removeFromCart = (index) => {
     const updatedCartItems = [...cartItems];
     updatedCartItems.splice(index, 1);
     setCartItems(updatedCartItems); 
-    
     localStorage.setItem('cartItems', JSON.stringify(updatedCartItems));
+    localStorage.setItem("cartN", updatedCartItems.length.toString()); 
+    decreaseCartCount();
   };
+
+  
+  
+
   useEffect(() => {
     localStorage.setItem('cartN', cartItems.length.toString());
   }, [cartItems]);
-  const calculateTotalPrice = () => {
-    return cartItems.reduce((total, item) => total + item.price.value, 0);
+
+  const calculateShippingCost = () => {
+    let shippingCost = 0;
+    if (discountCode !== "#DCI-2024") {
+      shippingCost = 10;
+    }
+    return shippingCost;
   };
+
+  const calculateTotalPrice = () => {
+    let totalPrice = cartItems.reduce(
+      (total, item) => total + item.price.value,
+      0
+    );
+
+    let discountedPrice = totalPrice;
+    if (discountCode === "#DCI-2024") {
+      discountedPrice *= 0.85;
+    }
+    return {
+      original: totalPrice.toFixed(2),
+      discounted: discountedPrice.toFixed(2),
+    };
+  };
+
   useEffect(() => {
     const storedCartItems = localStorage.getItem('cartItems');
     if (storedCartItems) {
@@ -22,30 +55,118 @@ const Warenkorb = () => {
       setCartItems(parsedCartItems.reverse());
     }
   }, []); 
+
   return (
     <div>
-    <h2>Warenkorb</h2>
-    <div className="flex flex-col flex-wrap border-solid border-red-500">
-      {cartItems.map((item, index) => (
-        <div key={index} className="border-solid border-red-500 border-4 m-3 p-3">
-          <p>ID: {item.id}</p>
-          <p>Name: {item.title}</p>
-          <p>Preis: {item.price.value} {item.price.currency}</p>
-          <img className='w-20' src={item.images} alt="" />
-          <button className='p-1 text-xl border-solid border-black border-2 bg-red-600 text-white mt-5' onClick={() => removeFromCart(index)}>Entfernen</button>
+      <h2 className="text-2xl mb-7 mt-4 pl-5">Warenkorb</h2>
+      <div className="w-full flex flex-wrap justify-evenly">
+        <div>
+          {cartItems.map((item, index) => (
+            <div key={index} className="m-5 w-full">
+              <div className="w-full flex flex-wrap justify-between item-center border p-2">
+                <div>
+                  <img className="w-20" src={item.images} alt="" />
+                </div>
+                <div className="ml-9 border-l-2 border-amber-700 pl-5">
+                  <p className=" w-30 text-2xl mb-2">{item.title}</p>
+                </div>
+                <div className="pl-8 pt-6">
+                  <p className="text-2xl text-amber-600">
+                    {item.price.value} {item.price.currency}
+                  </p>
+                  <hr />
+                </div>
+                <div className="pt-3 pl-4">
+                  <button
+                    className="bg-red-700 hover:bg-[#FFA41B] text-white font-bold py-2 px-4 rounded m-3"
+                    onClick={() => removeFromCart(index)}
+                  >
+                    Entfernen
+                  </button>
+                </div>
+              </div>
+            </div>
+          ))}
         </div>
-      ))}
+        {cartItems.length > 0 && (
+          <div className="w-72 border p-4 bg-amber-100 ">
+            <h2 className="mb-4 border-b-4 p-2">Ihre Bestellung aufgeben</h2>
+            {/* <p className="m-1">Der Empfänger:</p> */}
+            <div className="border rounded-xl p-3 bg-amber-300 my-5">
+              <p>RabattCode:</p>
+              <input
+                type="text"
+                className="border border-2"
+                value={discountCode}
+                onChange={(e) => setDiscountCode(e.target.value)}
+              />
+              {discountCode === "#DCI-2024" && (
+                <div>
+                  <p className="bg-[#CC0C39] text-white inline-block p-1 mt-2">
+                    Bis zu 15% Rabatt
+                  </p>
+                  <p className="mt-2 font-bold">Rabattierter Preis: </p>
+                  <p className="font-bold">
+                    <span className="text-amber-600 text-xl">
+                      {calculateTotalPrice().discounted} €
+                    </span>
+                  </p>
+                  <p className="mt-2 underline underline-offset-4">
+                    <span className=" text-amber-600">Sie sparen: </span>
+                    {(
+                      calculateTotalPrice().original -
+                      calculateTotalPrice().discounted
+                    ).toFixed(2)}{" "}
+                    €
+                  </p>
+                </div>
+              )}
+            </div>
+            <p>
+              Versandkosten:{" "}
+              <span className="text-amber-600 text-lg">
+                {calculateShippingCost()} €
+              </span>
+            </p>
+            <hr />
+            <p className="mt-3">Lieferdatum: 3-5 Tage</p>
+            <hr />
+            {/* <p className="mt-7">Die Zahlungsmethode:</p>
+            <select className="w-full border border-2">
+              <option value="paypal">Paypal</option>
+              <option value="creditcard">Kreditkarte</option>
+              <option value="banktransfer">Überweisung</option>
+            </select>
+            <hr /> */}
+
+            <p className="px-2 mt-5 font-bold">Gesamtsumme:</p>
+            <p className="px-5 mt-2 font-bold">
+              <span className="text-amber-600 text-2xl">
+                {(
+                  parseFloat(calculateTotalPrice().discounted) +
+                  calculateShippingCost()
+                ).toFixed(2)}{" "}
+                €
+              </span>
+            </p>
+            <button className="bg-[#ffa41b] hover:bg-[#FFD815] text-black font-bold py-2 px-4 rounded m-3">
+              Bestellen
+            </button>
+          </div>
+        )}
+      </div>
+      <div>
+        {cartItems.length === 0 && (
+          <div className="m-60  flex justify-center items-center flex-col">
+            <p className="text-2xl m-5">Der Warenkorb ist leer!</p>
+            <button className="bg-[#ffa41b] hover:bg-[#FFD815] text-black font-bold py-2 px-4 rounded m-3">
+              <Link to="/">Zurück zum Shop</Link>
+            </button>
+          </div>
+        )}
+      </div>
     </div>
-    {cartItems.length === 0 && <p>Der Warenkorb ist leer.</p>}
-    <div className='ml-1'>
-    <p>RabattCode</p>
-     <input type="text"className="border-black border-2  "/>
-     <button className='border-black border-2'>GO</button>
-    <p>Gesamtsumme: {calculateTotalPrice()} Euro</p>
-     </div>
-    <button className='bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded m-3'>Bestellen</button>
-  </div>
-);
+  );
 };
 
 export default Warenkorb;

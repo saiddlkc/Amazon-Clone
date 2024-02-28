@@ -1,10 +1,45 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import { useProductContext } from "./ProductContext";
+import { FiShoppingCart } from "react-icons/fi";
 import "../ProductList.css";
+import { useCart } from "./CartContext";
 
 const ProductList = () => {
   const { json, showProductDetails } = useProductContext();
+  const [cartItems, setCartItems] = useState([]);
+  const { increaseCartCount } = useCart();
+
+  useEffect(() => {
+    const storedCartItems = localStorage.getItem("cartItems");
+    if (storedCartItems) {
+      const parsedCartItems = JSON.parse(storedCartItems);
+      setCartItems(parsedCartItems);
+    }
+  }, []);
+
+  useEffect(() => {
+    localStorage.setItem("cartN", cartItems.length.toString());
+  }, [cartItems]);
+
+  const addtoStorage = (product) => {
+    const cartItem = {
+      id: product.id,
+      title: product.title,
+      price: product.price,
+      images: product.images,
+      
+    };
+    increaseCartCount();
+    const storedCartItems = localStorage.getItem("cartItems");
+    let updatedCartItems = [];
+    if (storedCartItems) {
+      updatedCartItems = JSON.parse(storedCartItems);
+    }
+    updatedCartItems.push(cartItem);
+    setCartItems(updatedCartItems);
+    localStorage.setItem("cartItems", JSON.stringify(updatedCartItems));
+  };
 
   const renderRatingStars = (rating) => {
     const stars = [];
@@ -52,13 +87,25 @@ const ProductList = () => {
               <Link to={`/${product.category}`}>View Category</Link>
             </p>
           </div>
-
-          <button
-            className="product__button"
-            onClick={() => showProductDetails(product)}
-          >
-            <Link to={`/${product.category}/${product.id}`}>View Details</Link>
+          <div className="flex">
+            <button
+              className="product__button"
+              onClick={() => showProductDetails(product)}
+            >
+              <Link to={`/${product.category}/${product.id}`}>
+                View Details
+              </Link>
+            </button>
+            <button
+              onClick={() => {
+                addtoStorage(product);
+                localStorage.setItem("cartN", cartItems.length.toString());
+              }}
+              className="product__button-korb"
+            >
+          <FiShoppingCart className="cart-icon" />
           </button>
+          </div>
         </div>
       ))}
     </div>
