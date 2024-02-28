@@ -61,69 +61,21 @@ const ConfirmOrder = () => {
             </nav>
             <div className='flex flex-col justify-between mx-4  '>
                 <h3 className='py-2 font-bold '>1 Versandadresse </h3>
-                <div className='flex flex-col w-72 '>
-                <input className='border-2 border-black rounded-md m-1 p-1' type="text"placeholder='Name' />
-                <input className='border-2 border-black rounded-md m-1 p-1'  type="text"placeholder='Addresse...' />
-                <input className='border-2 border-black rounded-md m-1 p-1' type="text"placeholder='Stadt PLZ' />
-                </div>
-                <p className='border-t-2 border-gray-400 mt-6'></p>
-                <h3 className='py-2 font-bold '>2 Zahlungsart</h3>
-                <div className='flex flex-col w-72'>
-                    <select className='border-2 border-black rounded-md m-1 p-1' name="" id="">
-                    <option value="">Bezahlen mit...
-                    </option>
-                    <option value="">Paypal
-                    </option>
-                    <option value="">Klarna 
-                    </option>
-                    <option value="">Rechnung
-                    </option>
-                    <option value="">Sofortüberweisung
-                    </option>
-                    <option value="">Paysafecard
-                    </option>
-                    </select>
-                    <input className='border-2 border-black rounded-md m-1 p-1' type="email"placeholder='Email für Zahlungsvorgang' />
-                </div>
-                <p className='border-t-2 border-gray-400 pb-3 mt-6'></p>
-                <h3 className='py-2 font-bold '>3 Artikel und Versand überprüfen</h3>
-                <div className='mr-4 flex flex-row flex-wrap '>
-                    {cartItems.map((item, index) => (
-                        <div key={index} className="m-5 ">
-                        <div className="w-52 h-80 flex flex-wrap justify-between border p-2">
-                            <div>
-                            <img className="w-20" src={item.images} alt="" />
-                            </div>
-                            <div className="ml-9 border-l-2 border-amber-700 pl-5 overflow-hidden font-">
-                            <p className=" w-30 text-base mb-2 ">{item.title}</p>
-                            </div>
-                            <div className="pl-8 pt-6">
-                            <p className="text-2xl text-amber-600">
-                                {item.price.value} {item.price.currency}
-                            </p>
-                            <hr />
-                            </div>
-                            <div className="pt-3 pl-4">
-                            <button
-                                className="bg-red-700 hover:bg-[#FFA41B] text-white font-bold py-2 px-4 rounded m-3"
-                                onClick={() => removeFromCart(index)}
-                            >
-                                Entfernen
-                            </button>
-                            </div>
-                        </div>
-                        </div>
-                    ))}
-                
+                <div className='flex justify-between'>
+                  <div className='flex flex-col w-72 '>
+                  <input className='border-2 border-black rounded-md m-1 p-1' type="text"placeholder='Name' />
+                  <input className='border-2 border-black rounded-md m-1 p-1'  type="text"placeholder='Addresse...' />
+                  <input className='border-2 border-black rounded-md m-1 p-1' type="text"placeholder='Stadt PLZ' />
+                  </div>
+                <div>
                 {cartItems.length > 0 && (
-          <div className="w-72 border p-4 bg-amber-100 ">
+          <div className="w-72 h- border p-4 bg-amber-100 ">
             <h2 className="mb-4 border-b-4 p-2">Ihre Bestellung abschliessen</h2>
-            {/* <p className="m-1">Der Empfänger:</p> */}
             <div className="border rounded-xl p-3 bg-amber-300 my-5">
               <p>RabattCode:</p>
               <input
                 type="text"
-                className="border border-2"
+                className="border-2"
                 value={discountCode}
                 onChange={(e) => setDiscountCode(e.target.value)}
               />
@@ -184,6 +136,58 @@ const ConfirmOrder = () => {
             </button>
           </div>
         )}
+                </div>
+                </div>
+                <p className='border-t-2 border-gray-400 mt-6'></p>
+                <h3 className='py-2 font-bold '>2 Zahlungsart</h3>
+                <div className='flex flex-col w-72'>
+                    <select className='border-2 border-black rounded-md m-1 p-1' name="" id="">
+                    <option value="">Bezahlen mit...
+                    </option>
+                    <option value="">Paypal
+                    </option>
+                    <option value="">Klarna 
+                    </option>
+                    <option value="">Rechnung
+                    </option>
+                    <option value="">Sofortüberweisung
+                    </option>
+                    <option value="">Paysafecard
+                    </option>
+                    </select>
+                    <input className='border-2 border-black rounded-md m-1 p-1' type="email"placeholder='Email für Zahlungsvorgang' />
+                </div>
+                <p className='border-t-2 border-gray-400 pb-3 mt-6'></p>
+                <h3 className='py-2 font-bold '>3 Artikel und Versand überprüfen</h3>
+                <div className='mr-4 flex flex-row flex-wrap '>
+                    {cartItems.map((item, index) => (
+                        <div key={index} className="m-5 ">
+                        <div className="w-52 h-80 flex flex-wrap justify-between border p-2">
+                            <div>
+                            <img className="w-20" src={item.images} alt="" />
+                            </div>
+                            <div className="ml-9 border-l-2 border-amber-700 pl-5 overflow-hidden font-">
+                            <p className=" w-30 text-base mb-2 ">{item.title}</p>
+                            </div>
+                            <div className="pl-8 pt-6">
+                            <p className="text-2xl text-amber-600">
+                                {item.price.value} {item.price.currency}
+                            </p>
+                            <hr />
+                            </div>
+                            <div className="pt-3 pl-4">
+                            <button
+                                className="bg-red-700 hover:bg-[#FFA41B] text-white font-bold py-2 px-4 rounded m-3"
+                                onClick={() => removeFromCart(index)}
+                            >
+                                Entfernen
+                            </button>
+                            </div>
+                        </div>
+                        </div>
+                    ))}
+                
+              
              </div>   
             </div>
         </div>

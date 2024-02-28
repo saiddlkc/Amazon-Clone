@@ -3,9 +3,43 @@ import json from "../../database/db.json";
 import "./ProductList.css";
 import { Link } from "react-router-dom";
 import { FiShoppingCart } from "react-icons/fi";
+import { useCart } from "./context/CartContext";
+import { useState, useEffect } from "react";
 
 const Angebot = () => {
   const allProducts = json.products;
+  const [cartItems, setCartItems] = useState([]);
+  const { increaseCartCount } = useCart();
+
+  useEffect(() => {
+    const storedCartItems = localStorage.getItem("cartItems");
+    if (storedCartItems) {
+      const parsedCartItems = JSON.parse(storedCartItems);
+      setCartItems(parsedCartItems);
+    }
+  }, []);
+
+  useEffect(() => {
+    localStorage.setItem("cartN", cartItems.length.toString());
+  }, [cartItems]);
+
+  const addtoStorage = (product) => {
+    const cartItem = {
+      id: product.id,
+      title: product.title,
+      price: product.price,
+      images: product.images,
+    };
+    increaseCartCount();
+    const storedCartItems = localStorage.getItem("cartItems");
+    let updatedCartItems = [];
+    if (storedCartItems) {
+      updatedCartItems = JSON.parse(storedCartItems);
+    }
+    updatedCartItems.push(cartItem);
+    setCartItems(updatedCartItems);
+    localStorage.setItem("cartItems", JSON.stringify(updatedCartItems));
+  };
 
   const getRandomProducts = (products, count) => {
     const randomProducts = [];
@@ -68,7 +102,13 @@ const Angebot = () => {
                     View Details
                   </Link>
                 </button>
-                <button className="product__button-korb">
+                <button
+                  onClick={() => {
+                    addtoStorage(product);
+                    localStorage.setItem("cartN", cartItems.length.toString());
+                  }}
+                  className="product__button-korb"
+                >
                   <FiShoppingCart className="cart-icon" />
                 </button>
               </div>

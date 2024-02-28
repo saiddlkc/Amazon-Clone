@@ -85,7 +85,7 @@ function ProductDetails() {
       images: selectedProduct.images,
       quantity: selectedQuantity,
     };
-    
+
     const storedCartItems = localStorage.getItem("cartItems");
     let updatedCartItems = [];
     if (storedCartItems) {
@@ -235,7 +235,7 @@ function ProductDetails() {
           </button>
         </div>
       </div>
-      ;
+
       <div className="mx-3">
         <h2 className="text-2xl mt-10 mb-5 ml-3">Ähnliche Produkte</h2>
         <div className="flex flex-wrap justify-evenly gap-5">
@@ -266,6 +266,7 @@ function ProductDetails() {
           ))}
         </div>
       </div>
+
       <div className="mx-3">
         <h2 className="text-2xl mt-10 mb-5 ml-3">Bewertungen und Kommentare</h2>
         <div className="flex flex-col m-2 ">
@@ -297,6 +298,7 @@ function ProductDetails() {
           </button>
         </div>
       </div>
+
       <div>
         <h2 className="text-2xl mt-10 mb-5 ml-5 bg-white">
           Kommentare von anderen Kunden

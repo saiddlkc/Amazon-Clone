@@ -1,6 +1,7 @@
 import React from "react";
 import ProductList from "./ProductList";
 import { ProductProvider } from "./ProductContext";
+import ProductDetails from "./ProductDetails";
 
 function Pro() {
   return (

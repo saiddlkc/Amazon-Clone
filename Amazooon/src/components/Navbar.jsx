@@ -1,14 +1,56 @@
-import React, { useState, useEffect,  } from "react";
+import React, { useState, useEffect } from "react";
 import { FiSearch, FiShoppingCart } from "react-icons/fi";
 import Img from "../images/logo-transparent-png.png";
-import { FiChevronDown } from "react-icons/fi";
 import { LuMapPin } from "react-icons/lu";
-import {Link, useLocation, useNavigate } from "react-router-dom";
+import { Link, useLocation, useNavigate } from "react-router-dom";
 import { RingLoader } from "react-spinners";
-import { FiNavigation } from "react-icons/fi";
 import "./logout.css";
 import { useCart } from "../pages/home/context/CartContext";
+import Suchen from "../pages/SuchSeite";
+import jsonData from "../database/db.json";
 
+function Product({ product }) {
+  return (
+    <div className="w-1/4 mb-4 px-4">
+      <div className="border border-gray-300 bg-white rounded-lg shadow-md">
+        <h2 className="text-lg font-semibold text-center py-4 border-b border-gray-300">
+          {product.title}
+        </h2>
+        <p className="text-sm text-gray-600 px-4 py-2">
+          Category: {product.category}
+        </p>
+        <p className="text-sm text-gray-600 px-4 py-2">
+          Price: {product.price.currency} {product.price.value}
+        </p>
+        <img
+          className="w-full h-48 object-contain cursor-pointer"
+          src={product.images[0]}
+          alt={product.title}
+        />
+        <p className="text-sm text-gray-600 px-4 py-2">
+          Rating: {product.rating.value} ({product.rating.count} reviews)
+        </p>
+        <div className="flex justify-evenly mb-3">
+          <button
+            className="product__button"
+            onClick={() => showProductDetails(product)}
+          >
+            <Link to={`/${product.category}/${product.id}`}>View Details</Link>
+          </button>
+          <button
+            onClick={() => {
+              addtoStorage(product);
+              localStorage.setItem("cartN", cartItems.length.toString());
+            }}
+            className="product__button-korb"
+          >
+            <FiShoppingCart className="cart-icon" />
+          </button>
+        </div>
+      </div>
+    </div>
+  );
+}
 const Navbar = () => {
   const [isDropdownOpen, setIsDropdownOpen] = useState(false);
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -18,17 +60,27 @@ const Navbar = () => {
   const navigate = useNavigate();
   const [username, setUsername] = useState("");
   const [loading, setLoading] = useState(false);
- const cartLength = localStorage.getItem('cartN');
-  const { increaseCartCount } = useCart();  
-  const { cartCount } = useCart();  
+  const cartLength = localStorage.getItem("cartN");
+  const { increaseCartCount } = useCart();
+  const { cartCount } = useCart();
+  const [searchTerm, setSearchTerm] = useState("");
+  const [searchResults, setSearchResults] = useState([]);
+
+  const handleChange = (event) => {
+    setSearchTerm(event.target.value);
+  };
+
+  const handleSearch = () => {
+    const results = jsonData.products.filter((product) =>
+      product.title.toLowerCase().includes(searchTerm.toLowerCase())
+    );
+    setSearchResults(results);
+  };
 
   useEffect(() => {
     const usernameFromlocalStorage = localStorage.getItem("username");
     setUsername(usernameFromlocalStorage);
-    
   }, []);
-  
-  
 
   const handleSignInClick = () => {
     navigate("/login");
@@ -43,10 +95,17 @@ const Navbar = () => {
   };
 
   const dropdownItems = [
-    { name: "Elektronik", url: "/Elektronik" },
-    { name: "Bekleidung", url: "/Bekleidung" },
-    { name: "Haushalt", url: "/Haushalt" },
-    { name: "HAllo", url: "/Haushalt" },
+    { name: "All Products", to: "/allcategories" },
+    { name: "Todays Deals", to: "/deals" },
+    { name: "Bücher", to: "/bücher" },
+    { name: "Spiele", to: "/spiele" },
+    { name: "Baby", to: "/baby" },
+    { name: "Lebensmittel", to: "/lebensmittel" },
+    { name: "Kameras", to: "/cameras" },
+    { name: "Fashion", to: "/fashion" },
+    { name: "Kosmetik", to: "/Kosmetik" },
+    { name: "Sport", to: "/Sport" },
+    { name: "Möbel", to: "/Möbel" },
     // Weitere Dropdown-Elemente können hier hinzugefügt werden
   ];
 
@@ -69,7 +128,7 @@ const Navbar = () => {
     <nav className="bg-gray-900 text-white">
       <div className="mx-auto flex items-center justify-between py-3 px-4">
         <div className="flex items-center">
-        <Link to="/" className="text-white text-xl font-bold">
+          <Link to="/" className="text-white text-xl font-bold">
             <img className="w-24" src={Img} alt="Amazon Logo" />
           </Link>
         </div>
@@ -118,7 +177,7 @@ const Navbar = () => {
                         to={item.url}
                         className="block px-4 py-2 text-gray-300 hover:bg-gray-700"
                       >
-                        {item.label}
+                        {item.name}
                       </Link>
                     ))}
                   </div>
@@ -128,17 +187,24 @@ const Navbar = () => {
             <input
               type="text"
               placeholder="Suche Amazooon.de"
+              value={searchTerm}
+              onChange={handleChange}
               className="px-2 py-2 w-full bg-white text-black focus:outline-none"
             />
-            <button className="bg-orange-300 px-4 py-3  rounded-r-md hover:bg-orange-400">
-              <FiSearch className="text-white" />
-            </button>
+            <Link to={`/search`}>
+              <button
+                onClick={handleSearch}
+                className="bg-orange-300 px-4 py-3  rounded-r-md hover:bg-orange-400"
+              >
+                <FiSearch className="text-white" />
+              </button>
+            </Link>
           </div>
 
           {/* Konto und Liste */}
           <div className=" flex">
             <div className="flex flex-col justify-center  w-28">
-              <p>Hallo, {username} </p>
+              <p>Hallo, {username.toUpperCase()} </p>
               <span className="text-xs">Konto und Liste</span>
             </div>
           </div>
@@ -147,12 +213,12 @@ const Navbar = () => {
           <div className="relative flex   justify-center  ">
             {username ? (
               <button
-                className="flex items-center bg-slate-600 p-1  rounded-md hover:bg-slate-500"
+                className="flex items-center bg-slate-600 p-2 rounded-md hover:bg-slate-500"
                 onClick={() => navigate("/wk")}
                 target="_blank"
               >
-                <FiShoppingCart className=" text-white w-24  text-3xl"/> Warenkorb
-                ({cartLength})
+                <FiShoppingCart className=" text-white w-12 text-3xl" /> (
+                {cartLength})
               </button>
             ) : (
               <button
@@ -236,50 +302,50 @@ const Navbar = () => {
               </div>
 
               {dropdownItems.map((item, index) => (
-                <a
+                <Link
                   key={index}
-                  href={item.url}
+                  to={item.url}
                   className="block px-4 py-2 text-gray-300 hover:bg-gray-700"
                 >
-                  {item.label}
-                </a>
+                  {item.name}
+                </Link>
               ))}
 
               <div className="flex justify-center items-center flex-col">
                 <div>
                   <button className="bg-red-400 hover:bg-red-500 rounded-sm px-5 py-2 m-3">
-                    <a href="http://" target="_blank" rel="noopener noreferrer">
+                    <Link to={"/"} rel="noopener noreferrer">
                       {" "}
                       Top Angebot
-                    </a>
+                    </Link>
                   </button>
                   <button className="bg-red-400 rounded-sm hover:bg-red-500 px-5 py-2">
-                    <a href="http://" target="_blank" rel="noopener noreferrer">
+                    <Link to={"/"} rel="noopener noreferrer">
                       {" "}
                       Angebot der Woche
-                    </a>
+                    </Link>
                   </button>
                 </div>
 
                 <div>
                   <button className="bg-red-400 hover:bg-red-500 rounded-sm px-5 py-2 m-3">
-                    <a href="http://" target="_blank" rel="noopener noreferrer">
+                    <Link to={"/"} rel="noopener noreferrer">
                       {" "}
                       Besteller in Bücher
-                    </a>
+                    </Link>
                   </button>
                   <button className="bg-red-400 hover:bg-red-500 rounded-sm px-5 py-2">
-                    <a href="http://" target="_blank" rel="noopener noreferrer">
+                    <Link to={"/"} rel="noopener noreferrer">
                       {" "}
                       Bestseller in Elektronik
-                    </a>
+                    </Link>
                   </button>
                 </div>
                 <div>
                   <button className="bg-red-400 hover:bg-red-500 rounded-sm px-5 py-2">
-                    <a href="http://" target="_blank" rel="noopener noreferrer">
+                    <Link to={"/"} rel="noopener noreferrer">
                       Unsere Besteller-Angebote für dich
-                    </a>
+                    </Link>
                   </button>
                 </div>
               </div>
