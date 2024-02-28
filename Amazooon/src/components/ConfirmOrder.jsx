@@ -177,10 +177,10 @@ const ConfirmOrder = () => {
               </span>
             </p>
             <button className="bg-[#ffa41b] hover:bg-green-500 text-black font-bold p-3 rounded m-2">
-            Zahlungspflichtig bestellen
+            <Link to="/succes">Zahlungspflichtig bestellen</Link>
             </button>
             <button className="bg-[#ffa41b] hover:bg-red-600 text-black font-bold p-3 rounded m-2">
-            Abbrechen
+            <Link to="/">Zurück zum Shop</Link>
             </button>
           </div>
         )}
