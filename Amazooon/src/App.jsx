@@ -18,6 +18,8 @@ import WkTest from "./components/wktest";
 import { CartProvider } from "./pages/home/context/CartContext";
 import PageNotFound from "./pages/PageNotFound";
 import AllCategories from "./pages/categorys/AllCategories";
+import Suchleiste from "./pages/SuchSeite";
+import Suchen from "./pages/SuchSeite";
 
 function App() {
   return (
@@ -42,6 +44,15 @@ function App() {
                 </Layout>
               }
             />
+            <Route
+              path="/search"
+              element={
+                <Layout>
+                  <Suchleiste />
+                </Layout>
+              }
+            />
+            <Route path="/search/:searchTerm" Component={<Suchen />} />
             <Route
               path="/allcategories"
               element={

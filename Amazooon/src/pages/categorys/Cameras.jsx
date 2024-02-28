@@ -1,7 +1,6 @@
 import React from "react";
 import json from "../../database/db.json";
 import "../home/ProductList.css";
-import "../home/ProductList.css";
 import { FiShoppingCart } from "react-icons/fi";
 import { useCart } from "../home/context/CartContext";
 import { useState, useEffect } from "react";
