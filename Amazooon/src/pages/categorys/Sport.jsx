@@ -48,12 +48,12 @@ const ProductList = () => {
   };
 
   const camerasProducts = json.products.filter(
-    (product) => product.category === "Elektronik"
+    (product) => product.category === "Sport"
   );
 
   return (
     <div>
-      <h2 className="product-name">Todays Deals</h2>
+      <h2 className="product-name">Sport</h2>
       <div className="product-container">
         {camerasProducts.map((product) => (
           <div key={product.id} className="product-item">

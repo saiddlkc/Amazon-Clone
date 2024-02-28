@@ -1,20 +1,27 @@
 import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
+import { useCart } from "../pages/home/context/CartContext";
+
 
 const Warenkorb = () => {
   const [cartItems, setCartItems] = useState([]);
   const [discountCode, setDiscountCode] = useState("");
+  const { decreaseCartCount } = useCart();
 
   const removeFromCart = (index) => {
     const updatedCartItems = [...cartItems];
     updatedCartItems.splice(index, 1);
-    setCartItems(updatedCartItems);
-
-    localStorage.setItem("cartItems", JSON.stringify(updatedCartItems));
+    setCartItems(updatedCartItems); 
+    localStorage.setItem('cartItems', JSON.stringify(updatedCartItems));
+    localStorage.setItem("cartN", updatedCartItems.length.toString()); 
+    decreaseCartCount();
   };
 
+  
+  
+
   useEffect(() => {
-    localStorage.setItem("cartN", cartItems.length.toString());
+    localStorage.setItem('cartN', cartItems.length.toString());
   }, [cartItems]);
 
   const calculateShippingCost = () => {
@@ -42,12 +49,12 @@ const Warenkorb = () => {
   };
 
   useEffect(() => {
-    const storedCartItems = localStorage.getItem("cartItems");
+    const storedCartItems = localStorage.getItem('cartItems');
     if (storedCartItems) {
       const parsedCartItems = JSON.parse(storedCartItems);
       setCartItems(parsedCartItems.reverse());
     }
-  }, []);
+  }, []); 
 
   return (
     <div>
