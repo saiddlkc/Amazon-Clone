@@ -3,8 +3,43 @@ import json from "../../database/db.json";
 import "../home/ProductList.css";
 import "../home/ProductList.css";
 import { FiShoppingCart } from "react-icons/fi";
+import { useCart } from "../home/context/CartContext";
+import { useState, useEffect } from "react";
+import { Link } from "react-router-dom";
 
 const ProductList = () => {
+  const [cartItems, setCartItems] = useState([]);
+  const { increaseCartCount } = useCart();
+
+  useEffect(() => {
+    const storedCartItems = localStorage.getItem("cartItems");
+    if (storedCartItems) {
+      const parsedCartItems = JSON.parse(storedCartItems);
+      setCartItems(parsedCartItems);
+    }
+  }, []);
+
+  useEffect(() => {
+    localStorage.setItem("cartN", cartItems.length.toString());
+  }, [cartItems]);
+
+  const addtoStorage = (product) => {
+    const cartItem = {
+      id: product.id,
+      title: product.title,
+      price: product.price,
+      images: product.images,
+    };
+    increaseCartCount();
+    const storedCartItems = localStorage.getItem("cartItems");
+    let updatedCartItems = [];
+    if (storedCartItems) {
+      updatedCartItems = JSON.parse(storedCartItems);
+    }
+    updatedCartItems.push(cartItem);
+    setCartItems(updatedCartItems);
+    localStorage.setItem("cartItems", JSON.stringify(updatedCartItems));
+  };
   const renderRatingStars = (rating) => {
     const stars = [];
     for (let i = 0; i < rating; i++) {
@@ -42,9 +77,17 @@ const ProductList = () => {
                 className="product__button"
                 onClick={() => showProductDetails(product)}
               >
-                View Details
+                <Link to={`/${product.category}/${product.id}`}>
+                  View Details
+                </Link>
               </button>
-              <button className=" product__button-korb">
+              <button
+                onClick={() => {
+                  addtoStorage(product);
+                  localStorage.setItem("cartN", cartItems.length.toString());
+                }}
+                className="product__button-korb"
+              >
                 <FiShoppingCart className="cart-icon" />
               </button>
             </div>
