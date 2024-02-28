@@ -18,6 +18,7 @@ import WkTest from "./components/wktest";
 import { CartProvider } from "./pages/home/context/CartContext";
 import PageNotFound from "./pages/PageNotFound";
 import AllCategories from "./pages/categorys/AllCategories";
+import OrderPage from "./pages/OrderPage";
 
 function App() {
   return (
@@ -107,7 +108,14 @@ function App() {
                 </Layout>
               }
             />
-
+              <Route
+              path="/Order"
+              element={
+                
+                  <OrderPage />
+                
+              }
+            />
             <Route
               path="/:category/:id"
               element={

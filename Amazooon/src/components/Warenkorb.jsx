@@ -139,7 +139,7 @@ const Warenkorb = () => {
             </select>
             <hr /> */}
 
-            <p className="px-2 mt-5 font-bold">Gesamtsumme:</p>
+            <p className="px-2 mt-5 font-bold">Zwischensumme:</p>
             <p className="px-5 mt-2 font-bold">
               <span className="text-amber-600 text-2xl">
                 {(
@@ -150,7 +150,7 @@ const Warenkorb = () => {
               </span>
             </p>
             <button className="bg-[#ffa41b] hover:bg-[#FFD815] text-black font-bold py-2 px-4 rounded m-3">
-              Bestellen
+              <Link to="/Order">Weiter zur Kasse</Link>
             </button>
           </div>
         )}

@@ -222,7 +222,7 @@ const Navbar = () => {
                 onClick={() => navigate("/wk")}
               >
                 <FiShoppingCart className="text-white" />
-                <span className="text-white ml-1">Warenkorb({cartCount})</span>
+                <span className="text-white ml-1">Warenkorb({cartItems.length})</span>
               </button>
               <div className="px-5 py-5 flex justify-center items-center">
                 <input
