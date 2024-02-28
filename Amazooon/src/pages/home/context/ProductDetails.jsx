@@ -85,7 +85,7 @@ function ProductDetails() {
       images: selectedProduct.images,
       quantity: selectedQuantity,
     };
-    
+
     const storedCartItems = localStorage.getItem("cartItems");
     let updatedCartItems = [];
     if (storedCartItems) {
@@ -221,21 +221,23 @@ function ProductDetails() {
               ))}
             </select>
           </p>
+
           <button
             onClick={addtoStorage}
-            className="block bg-[#FFA41B] mt-5 py-2 px-4 text-white rounded-full hover:bg-[#FFD815] transition duration-300"
+            className="bg-amber-600 mt-5 py-2 px-4 text-white rounded hover:bg-blue-700 transition duration-300"
           >
-            <Link to={`/wk`}>Buy Now</Link>
+            Add to Cart
           </button>
-          <button
-            onClick={addtoStorage}
-            className="bg-[#FFD815] mt-5 py-2 px-4 text-black rounded-full hover:bg-[#FFA41B] transition duration-300"
-          >
+
+          <button className="block bg-[#FFA41B] mt-5 py-2 px-4 text-black rounded-full hover:bg-[#f0c14b] transition duration-300">
+            Buy Now
+          </button>
+          <button className="bg-[#f0c14b] mt-5 py-2 px-4 text-black rounded-full hover:bg-[#ff9900] transition duration-300">
             In den Einkaufswagen
           </button>
         </div>
       </div>
-      ;
+
       <div className="mx-3">
         <h2 className="text-2xl mt-10 mb-5 ml-3">Ähnliche Produkte</h2>
         <div className="flex flex-wrap justify-evenly gap-5">
@@ -266,6 +268,7 @@ function ProductDetails() {
           ))}
         </div>
       </div>
+
       <div className="mx-3">
         <h2 className="text-2xl mt-10 mb-5 ml-3">Bewertungen und Kommentare</h2>
         <div className="flex flex-col m-2 ">
@@ -297,6 +300,7 @@ function ProductDetails() {
           </button>
         </div>
       </div>
+
       <div>
         <h2 className="text-2xl mt-10 mb-5 ml-5 bg-white">
           Kommentare von anderen Kunden
