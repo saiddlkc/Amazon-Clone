@@ -14,7 +14,6 @@ const NavigationBar = () => {
     { label: "Kameras", url: "/kameras" },
     { label: "Fashion", url: "/fashion" },
 
-    { label: "Bücher", url: "/" },
     { label: "Gesundheit", url: "/" },
     { label: "Drogerie", url: "/" },
     { label: "Spielzeug", url: "/" },
@@ -78,26 +77,26 @@ const NavigationBar = () => {
               <div className="absolute z-10 bg-gray-800 mt-2 md:mt-0 w-full md:w-40 rounded-lg shadow-lg">
                 <div className="py-1">
                   {dropdownItems.map((item, index) => (
-                    <a
+                    <Link
                       key={index}
-                      href={item.url}
+                      to={item.url}
                       className="block px-4 py-2 text-gray-300 hover:bg-gray-700"
                     >
                       {item.label}
-                    </a>
+                    </Link>
                   ))}
                 </div>
               </div>
             )}
           </div>
           {nav.map((navb) => (
-            <a
+            <Link
               key={navb.name}
-              href={navb.to}
+              to={navb.to}
               className="text-gray-300 ml-4 hover:text-white hidden md:block cursor-pointer"
             >
               {navb.name}
-            </a>
+            </Link>
           ))}
         </div>
       </div>

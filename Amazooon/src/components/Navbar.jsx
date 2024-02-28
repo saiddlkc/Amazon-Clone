@@ -1,11 +1,9 @@
-import React, { useState, useEffect,  } from "react";
+import React, { useState, useEffect } from "react";
 import { FiSearch, FiShoppingCart } from "react-icons/fi";
 import Img from "../images/logo-transparent-png.png";
-import { FiChevronDown } from "react-icons/fi";
 import { LuMapPin } from "react-icons/lu";
-import {Link, useLocation, useNavigate } from "react-router-dom";
+import { Link, useLocation, useNavigate } from "react-router-dom";
 import { RingLoader } from "react-spinners";
-import { FiNavigation } from "react-icons/fi";
 import "./logout.css";
 import { useCart } from "../pages/home/context/CartContext";
 
@@ -18,17 +16,14 @@ const Navbar = () => {
   const navigate = useNavigate();
   const [username, setUsername] = useState("");
   const [loading, setLoading] = useState(false);
- const cartLength = localStorage.getItem('cartN');
-  const { increaseCartCount } = useCart();  
-  const { cartCount } = useCart();  
+  const cartLength = localStorage.getItem("cartN");
+  const { increaseCartCount } = useCart();
+  const { cartCount } = useCart();
 
   useEffect(() => {
     const usernameFromlocalStorage = localStorage.getItem("username");
     setUsername(usernameFromlocalStorage);
-    
   }, []);
-  
-  
 
   const handleSignInClick = () => {
     navigate("/login");
@@ -43,10 +38,11 @@ const Navbar = () => {
   };
 
   const dropdownItems = [
-    { name: "Elektronik", url: "/Elektronik" },
-    { name: "Bekleidung", url: "/Bekleidung" },
-    { name: "Haushalt", url: "/Haushalt" },
-    { name: "HAllo", url: "/Haushalt" },
+    { name: "Alle", url: "/allcategories" },
+    { name: "Todays Deals", url: "/deals" },
+    { name: "Bücher", url: "/bücher" },
+    { name: "Lebensmittel", url: "/lebensmittel" },
+    { name: "Spiele", url: "/spiele" },
     // Weitere Dropdown-Elemente können hier hinzugefügt werden
   ];
 
@@ -69,7 +65,7 @@ const Navbar = () => {
     <nav className="bg-gray-900 text-white">
       <div className="mx-auto flex items-center justify-between py-3 px-4">
         <div className="flex items-center">
-        <Link to="/" className="text-white text-xl font-bold">
+          <Link to="/" className="text-white text-xl font-bold">
             <img className="w-24" src={Img} alt="Amazon Logo" />
           </Link>
         </div>
@@ -118,7 +114,7 @@ const Navbar = () => {
                         to={item.url}
                         className="block px-4 py-2 text-gray-300 hover:bg-gray-700"
                       >
-                        {item.label}
+                        {item.name}
                       </Link>
                     ))}
                   </div>
@@ -138,7 +134,7 @@ const Navbar = () => {
           {/* Konto und Liste */}
           <div className=" flex">
             <div className="flex flex-col justify-center  w-28">
-              <p>Hallo, {username} </p>
+              <p>Hallo, {username.toUpperCase()} </p>
               <span className="text-xs">Konto und Liste</span>
             </div>
           </div>
@@ -147,12 +143,12 @@ const Navbar = () => {
           <div className="relative flex   justify-center  ">
             {username ? (
               <button
-                className="flex items-center bg-slate-600 p-1  rounded-md hover:bg-slate-500"
+                className="flex items-center bg-slate-600 p-2 rounded-md hover:bg-slate-500"
                 onClick={() => navigate("/wk")}
                 target="_blank"
               >
-                <FiShoppingCart className=" text-white w-24  text-3xl"/> Warenkorb
-                ({cartLength})
+                <FiShoppingCart className=" text-white w-12 text-3xl" /> (
+                {cartLength})
               </button>
             ) : (
               <button
@@ -236,50 +232,50 @@ const Navbar = () => {
               </div>
 
               {dropdownItems.map((item, index) => (
-                <a
+                <Link
                   key={index}
-                  href={item.url}
+                  to={item.url}
                   className="block px-4 py-2 text-gray-300 hover:bg-gray-700"
                 >
-                  {item.label}
-                </a>
+                  {item.name}
+                </Link>
               ))}
 
               <div className="flex justify-center items-center flex-col">
                 <div>
                   <button className="bg-red-400 hover:bg-red-500 rounded-sm px-5 py-2 m-3">
-                    <a href="http://" target="_blank" rel="noopener noreferrer">
+                    <Link to={"/"} rel="noopener noreferrer">
                       {" "}
                       Top Angebot
-                    </a>
+                    </Link>
                   </button>
                   <button className="bg-red-400 rounded-sm hover:bg-red-500 px-5 py-2">
-                    <a href="http://" target="_blank" rel="noopener noreferrer">
+                    <Link to={"/"} rel="noopener noreferrer">
                       {" "}
                       Angebot der Woche
-                    </a>
+                    </Link>
                   </button>
                 </div>
 
                 <div>
                   <button className="bg-red-400 hover:bg-red-500 rounded-sm px-5 py-2 m-3">
-                    <a href="http://" target="_blank" rel="noopener noreferrer">
+                    <Link to={"/"} rel="noopener noreferrer">
                       {" "}
                       Besteller in Bücher
-                    </a>
+                    </Link>
                   </button>
                   <button className="bg-red-400 hover:bg-red-500 rounded-sm px-5 py-2">
-                    <a href="http://" target="_blank" rel="noopener noreferrer">
+                    <Link to={"/"} rel="noopener noreferrer">
                       {" "}
                       Bestseller in Elektronik
-                    </a>
+                    </Link>
                   </button>
                 </div>
                 <div>
                   <button className="bg-red-400 hover:bg-red-500 rounded-sm px-5 py-2">
-                    <a href="http://" target="_blank" rel="noopener noreferrer">
+                    <Link to={"/"} rel="noopener noreferrer">
                       Unsere Besteller-Angebote für dich
-                    </a>
+                    </Link>
                   </button>
                 </div>
               </div>
