@@ -1,6 +1,6 @@
 import React, { useState, useEffect, Link } from "react";
 import { FiSearch, FiShoppingCart } from "react-icons/fi";
-import Img from "../images/logo-transparent-png.png";
+import Img from "../images/amazooon.png";
 import { FiChevronDown } from "react-icons/fi";
 import { LuMapPin } from "react-icons/lu";
 import { Navigate, useLocation, useNavigate } from "react-router-dom";
@@ -63,9 +63,13 @@ const Navbar = () => {
   return (
     <nav className="bg-gray-900 text-white">
       <div className="mx-auto flex items-center justify-between py-3 px-4">
-        <div className="flex items-center">
+        <div className="flex items-cente mr-5">
           <a href="/" className="text-white text-xl font-bold">
-            <img className="w-24" src={Img} alt="Amazon Logo" />
+            <img
+              className="w-24 flex justify-center items-center"
+              src={Img}
+              alt="Amazon Logo"
+            />
           </a>
         </div>
 
@@ -210,7 +214,7 @@ const Navbar = () => {
 
         {/* Dropdown-Menü für kleinere Bildschirme */}
         {isMenuOpen && (
-          <div className="lg:hidden absolute top-20 right-0 w-full z-10  bg-gray-800">
+          <div className="lg:hidden absolute top-16 right-0 w-full z-10  bg-gray-800">
             <div className="flex flex-col items-center py-4">
               <button
                 className="flex items-center bg-amazon-dark px-4 py-2 rounded-md hover:bg-amazon-orange"
