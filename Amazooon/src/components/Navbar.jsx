@@ -198,7 +198,7 @@ const Navbar = () => {
           {/* Konto und Liste */}
           <div className=" flex">
             <div className="flex flex-col justify-center  w-28">
-              <p>Hallo, {username.toUpperCase()} </p>
+              <p>Hallo, {username} </p>
               <span className="text-xs">Konto und Liste</span>
             </div>
           </div>
