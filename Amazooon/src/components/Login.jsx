@@ -15,12 +15,12 @@ const Login = () => {
   const navigate = useNavigate();
 
   const generateRandomToken = () => {
-   
     const length = 64;
-   
-    const characters = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789';
-    let token = '';
-   
+
+    const characters =
+      "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789";
+    let token = "";
+
     for (let i = 0; i < length; i++) {
       token += characters.charAt(Math.floor(Math.random() * characters.length));
     }
@@ -49,7 +49,7 @@ const Login = () => {
     setLoading(true);
     try {
       const response = await fetch(
-        `http://localhost:3004/users?email=${email}&password=${password}`,
+        `http://localhost:3000/users?email=${email}&password=${password}`,
         {
           method: "GET",
           headers: {
@@ -76,10 +76,10 @@ const Login = () => {
       setTimeout(() => {
         setLoading(false);
         setLoginSuccess(true);
-        localStorage.setItem("username",data[0].clientName)
-        localStorage.setItem("token",generateRandomToken())
-        localStorage.setItem("cartN",0)
-        navigate("/")
+        localStorage.setItem("username", data[0].clientName);
+        localStorage.setItem("token", generateRandomToken());
+        localStorage.setItem("cartN", 0);
+        navigate("/");
       }, 2000);
     } catch (error) {
       console.error("Error:", error);
