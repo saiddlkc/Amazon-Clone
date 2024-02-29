@@ -125,7 +125,7 @@ const Navbar = () => {
   return (
     <nav className="bg-gray-900 text-white">
       <div className="mx-auto flex items-center justify-between py-3 px-4">
-        <div className="flex items-center">
+        <div className="flex items-center mr-4">
           <Link to="/" className="text-white text-xl font-bold">
             <img className="w-24" src={amzn} alt="Amazon Logo" />
           </Link>
