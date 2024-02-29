@@ -18,117 +18,172 @@ import WkTest from "./components/wktest";
 import { CartProvider } from "./pages/home/context/CartContext";
 import PageNotFound from "./pages/PageNotFound";
 import AllCategories from "./pages/categorys/AllCategories";
+import Suchleiste from "./pages/SuchSeite";
+import Suchen from "./pages/SuchSeite";
+import Möbel from "./pages/categorys/Möbel";
+import Sport from "./pages/categorys/Sport";
+import Kosmetik from "./pages/categorys/Kosmetik";
+import OrderPage from "./pages/OrderPage";
+import SuccesPage from "./pages/SuccesPage";
 
 function App() {
   return (
     <>
       <CartProvider>
-        <ProductProvider>
-          <Routes>
-            <Route
-              exact
-              path="/"
-              element={
-                <Layout>
-                  <HomePage />
-                </Layout>
-              }
-            ></Route>
-            <Route
-              path="/Cameras"
-              element={
-                <Layout>
-                  <Cameras />
-                </Layout>
-              }
-            />
-            <Route
-              path="/allcategories"
-              element={
-                <Layout>
-                  <AllCategories />
-                </Layout>
-              }
-            />
-            <Route
-              path="/Baby"
-              element={
-                <Layout>
-                  <Baby />
-                </Layout>
-              }
-            />
-            <Route
-              path="/Bücher"
-              element={
-                <Layout>
-                  <Bücher />
-                </Layout>
-              }
-            />
-            <Route
-              path="/Deals"
-              element={
-                <Layout>
-                  <Deals />
-                </Layout>
-              }
-            />
-            <Route
-              path="/Fashion"
-              element={
-                <Layout>
-                  <Fashion />
-                </Layout>
-              }
-            />
-            <Route
-              path="/Lebensmittel"
-              element={
-                <Layout>
-                  <Lebensmittel />
-                </Layout>
-              }
-            />
-            <Route
-              path="/Spiele"
-              element={
-                <Layout>
-                  <Spiele />
-                </Layout>
-              }
-            />
+        <Routes>
+          <Route
+            exact
+            path="/"
+            element={
+              <Layout>
+                <HomePage />
+              </Layout>
+            }
+          ></Route>
+          <Route
+            path="/Cameras"
+            element={
+              <Layout>
+                <Cameras />
+              </Layout>
+            }
+          />
+          <Route
+            path="/search"
+            element={
+              <Layout>
+                <Suchleiste />
+              </Layout>
+            }
+          />
+          <Route path="/search/:searchTerm" Component={<Suchen />} />
+          <Route
+            path="/allcategories"
+            element={
+              <Layout>
+                <AllCategories />
+              </Layout>
+            }
+          />
+          <Route
+            path="/Baby"
+            element={
+              <Layout>
+                <Baby />
+              </Layout>
+            }
+          />
+          <Route
+            path="/Bücher"
+            element={
+              <Layout>
+                <Bücher />
+              </Layout>
+            }
+          />
+          <Route
+            path="/Deals"
+            element={
+              <Layout>
+                <Deals />
+              </Layout>
+            }
+          />
+          <Route
+            path="/Fashion"
+            element={
+              <Layout>
+                <Fashion />
+              </Layout>
+            }
+          />
+          <Route
+            path="/Lebensmittel"
+            element={
+              <Layout>
+                <Lebensmittel />
+              </Layout>
+            }
+          />
+          <Route
+            path="/Spiele"
+            element={
+              <Layout>
+                <Spiele />
+              </Layout>
+            }
+          />
+          <Route
+            path="/Möbel"
+            element={
+              <Layout>
+                <Möbel />
+              </Layout>
+            }
+          />
+          <Route
+            path="/Sport"
+            element={
+              <Layout>
+                <Sport />
+              </Layout>
+            }
+          />
+          <Route
+            path="/Kosmetik"
+            element={
+              <Layout>
+                <Kosmetik />
+              </Layout>
+            }
+          />
+          <Route
+            path="/succes"
+            element={
+              <Layout>
+                <SuccesPage />
+              </Layout>
+            }
+          />
 
-            <Route
-              path="wk"
+          <Route
+            path="wk"
+            element={
+              <Layout>
+                <KorbPage />
+              </Layout>
+            }
+          />
+              <Route
+              path="/Order"
               element={
-                <Layout>
-                  <KorbPage />
-                </Layout>
+                
+                  <OrderPage />
+                
               }
             />
-
-            <Route
-              path="/:category/:id"
-              element={
-                <Layout>
+          <Route
+            path="/:category/:id"
+            element={
+              <Layout>
+                <ProductProvider>
                   <ProductDetails />
-                </Layout>
-              }
-            />
+                </ProductProvider>
+              </Layout>
+            }
+          />
 
-            <Route path="/Login" element={<LoginPage />} />
-            <Route path="/RegistrationPage" element={<RegistrationPage />} />
-            <Route
-              path="*"
-              element={
-                <Layout>
-                  <PageNotFound />
-                </Layout>
-              }
-            />
-          </Routes>
-        </ProductProvider>
+          <Route path="/Login" element={<LoginPage />} />
+          <Route path="/RegistrationPage" element={<RegistrationPage />} />
+          <Route
+            path="*"
+            element={
+              <Layout>
+                <PageNotFound />
+              </Layout>
+            }
+          />
+        </Routes>
       </CartProvider>
     </>
   );

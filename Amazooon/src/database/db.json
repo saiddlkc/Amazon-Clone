@@ -3995,6 +3995,80 @@
         "count": 120,
         "value": 4.6
       }
+    },{
+      "id": "141",
+      "title": "L'Oréal Paris Color Riche Lippenstift",
+      "category": "Kosmetik",
+      "price": {
+        "currency": "EUR",
+        "value": 9.99,
+        "discount": 0
+      },
+      "brand": "L'Oréal Paris",
+      "images": [
+        "https://m.media-amazon.com/images/I/61jd46RMj7L._AC_UL320_.jpg"
+      ],
+      "description": "Der L'Oréal Paris Color Riche Lippenstift verleiht Ihren Lippen intensive Farbe und Pflege. Die cremige Formel sorgt für ein geschmeidiges Tragegefühl den ganzen Tag über.",
+      "features": [
+        "Intensive Farbe mit langanhaltendem Ergebnis",
+        "Cremige Formel für geschmeidige Lippen",
+        "Vielfältige Farbauswahl für jeden Anlass"
+      ],
+      "specs": ["Farbe: Nudes", "Inhalt: 5 g"],
+      "rating": {
+        "count": 85,
+        "value": 4.8
+      }
+    },
+    {
+      "id": "142",
+      "title": "Maybelline New York Lash Sensational Mascara",
+      "category": "Kosmetik",
+      "price": {
+        "currency": "EUR",
+        "value": 8.49,
+        "discount": 0
+      },
+      "brand": "Maybelline New York",
+      "images": [
+        "https://m.media-amazon.com/images/I/71vVD9F5CqL._AC_UL320_.jpg"
+      ],
+      "description": "Die Maybelline New York Lash Sensational Mascara verleiht Ihren Wimpern ein sensationelles Volumen und eine atemberaubende Länge. Die geschwungene Bürste erreicht jede einzelne Wimper für einen intensiven Look.",
+      "features": [
+        "Sensationelles Volumen und Länge",
+        "Geschwungene Bürste für präzises Auftragen",
+        "Langanhaltendes Ergebnis ohne Verklumpen"
+      ],
+      "specs": ["Farbe: Schwarz", "Inhalt: 9.4 ml"],
+      "rating": {
+        "count": 95,
+        "value": 4.7
+      }
+    },
+    {
+      "id": "143",
+      "title": "Nivea Creme",
+      "category": "Kosmetik",
+      "price": {
+        "currency": "EUR",
+        "value": 4.49,
+        "discount": 0
+      },
+      "brand": "Nivea",
+      "images": [
+        "https://m.media-amazon.com/images/I/51cRc3GeG5L._AC_UL320_.jpg"
+      ],
+      "description": "Die Nivea Creme ist ein Klassiker unter den Hautpflegeprodukten. Mit ihrer reichhaltigen Formel spendet sie intensive Feuchtigkeit und pflegt trockene Haut.",
+      "features": [
+        "Intensive Feuchtigkeitspflege für trockene Haut",
+        "Reichhaltige Formel mit Eucerit",
+        "Vielseitig anwendbar für Gesicht, Körper und Hände"
+      ],
+      "specs": ["Inhalt: 150 ml", "Hauttyp: Trockene Haut"],
+      "rating": {
+        "count": 120,
+        "value": 4.6
+      }
     },
     {
       "id": "144",

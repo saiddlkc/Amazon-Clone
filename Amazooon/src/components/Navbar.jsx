@@ -6,7 +6,51 @@ import { Link, useLocation, useNavigate } from "react-router-dom";
 import { RingLoader } from "react-spinners";
 import "./logout.css";
 import { useCart } from "../pages/home/context/CartContext";
+import Suchen from "../pages/SuchSeite";
+import jsonData from "../database/db.json";
 
+function Product({ product }) {
+  return (
+    <div className="w-1/4 mb-4 px-4">
+      <div className="border border-gray-300 bg-white rounded-lg shadow-md">
+        <h2 className="text-lg font-semibold text-center py-4 border-b border-gray-300">
+          {product.title}
+        </h2>
+        <p className="text-sm text-gray-600 px-4 py-2">
+          Category: {product.category}
+        </p>
+        <p className="text-sm text-gray-600 px-4 py-2">
+          Price: {product.price.currency} {product.price.value}
+        </p>
+        <img
+          className="w-full h-48 object-contain cursor-pointer"
+          src={product.images[0]}
+          alt={product.title}
+        />
+        <p className="text-sm text-gray-600 px-4 py-2">
+          Rating: {product.rating.value} ({product.rating.count} reviews)
+        </p>
+        <div className="flex justify-evenly mb-3">
+          <button
+            className="product__button"
+            onClick={() => showProductDetails(product)}
+          >
+            <Link to={`/${product.category}/${product.id}`}>View Details</Link>
+          </button>
+          <button
+            onClick={() => {
+              addtoStorage(product);
+              localStorage.setItem("cartN", cartItems.length.toString());
+            }}
+            className="product__button-korb"
+          >
+            <FiShoppingCart className="cart-icon" />
+          </button>
+        </div>
+      </div>
+    </div>
+  );
+}
 const Navbar = () => {
   const [isDropdownOpen, setIsDropdownOpen] = useState(false);
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -19,6 +63,19 @@ const Navbar = () => {
   const cartLength = localStorage.getItem("cartN");
   const { increaseCartCount } = useCart();
   const { cartCount } = useCart();
+  const [searchTerm, setSearchTerm] = useState("");
+  const [searchResults, setSearchResults] = useState([]);
+
+  const handleChange = (event) => {
+    setSearchTerm(event.target.value);
+  };
+
+  const handleSearch = () => {
+    const results = jsonData.products.filter((product) =>
+      product.title.toLowerCase().includes(searchTerm.toLowerCase())
+    );
+    setSearchResults(results);
+  };
 
   useEffect(() => {
     const usernameFromlocalStorage = localStorage.getItem("username");
@@ -38,11 +95,17 @@ const Navbar = () => {
   };
 
   const dropdownItems = [
-    { name: "Alle", url: "/allcategories" },
-    { name: "Todays Deals", url: "/deals" },
-    { name: "Bücher", url: "/bücher" },
-    { name: "Lebensmittel", url: "/lebensmittel" },
-    { name: "Spiele", url: "/spiele" },
+    { name: "All Products", to: "/allcategories" },
+    { name: "Todays Deals", to: "/deals" },
+    { name: "Bücher", to: "/bücher" },
+    { name: "Spiele", to: "/spiele" },
+    { name: "Baby", to: "/baby" },
+    { name: "Lebensmittel", to: "/lebensmittel" },
+    { name: "Kameras", to: "/cameras" },
+    { name: "Fashion", to: "/fashion" },
+    { name: "Kosmetik", to: "/Kosmetik" },
+    { name: "Sport", to: "/Sport" },
+    { name: "Möbel", to: "/Möbel" },
     // Weitere Dropdown-Elemente können hier hinzugefügt werden
   ];
 
@@ -124,11 +187,18 @@ const Navbar = () => {
             <input
               type="text"
               placeholder="Suche Amazooon.de"
+              value={searchTerm}
+              onChange={handleChange}
               className="px-2 py-2 w-full bg-white text-black focus:outline-none"
             />
-            <button className="bg-orange-300 px-4 py-3  rounded-r-md hover:bg-orange-400">
-              <FiSearch className="text-white" />
-            </button>
+            <Link to={`/search`}>
+              <button
+                onClick={handleSearch}
+                className="bg-orange-300 px-4 py-3  rounded-r-md hover:bg-orange-400"
+              >
+                <FiSearch className="text-white" />
+              </button>
+            </Link>
           </div>
 
           {/* Konto und Liste */}
@@ -218,7 +288,7 @@ const Navbar = () => {
                 onClick={() => navigate("/wk")}
               >
                 <FiShoppingCart className="text-white" />
-                <span className="text-white ml-1">Warenkorb({cartCount})</span>
+                <span className="text-white ml-1">Warenkorb({cartItems.length})</span>
               </button>
               <div className="px-5 py-5 flex justify-center items-center">
                 <input
