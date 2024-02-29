@@ -23,7 +23,7 @@ function ProductDetails() {
   };
 
   const handleCommentChange = (e) => {
-    setComment(e.target.value);
+    setComment(e.target.value); 
     setErrorMessage("");
   };
 
