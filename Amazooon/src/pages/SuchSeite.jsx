@@ -63,22 +63,35 @@ function Suchen() {
 
   return (
     <div>
-      <input
-        type="text"
-        placeholder="Search..."
-        value={searchTerm}
-        onChange={handleChange}
-      />
-      <button onClick={handleSearch}>Search</button>
-      {searchResults.length > 0 ? (
-        <div className="flex flex-wrap">
-          {searchResults.map((product) => (
-            <Product key={product.id} product={product} />
-          ))}
+      <div class="flex justify-center m-5">
+        <div class="w-96 flex">
+          <input
+            type="text"
+            placeholder="Search..."
+            value={searchTerm}
+            onChange={handleChange}
+            class="flex-grow px-4 py-2 rounded-l-md border border-gray-300 focus:outline-none focus:border-indigo-500"
+          />
+          <button
+            onClick={handleSearch}
+            class="bg-amber-500 hover:bg-amber-600 text-white font-bold py-2 px-4 rounded-r-md"
+          >
+            Search
+          </button>
         </div>
-      ) : (
-        <p>No results found.</p>
-      )}
+      </div>
+
+      <div>
+        {searchResults.length > 0 ? (
+          <div className="flex flex-wrap">
+            {searchResults.map((product) => (
+              <Product key={product.id} product={product} />
+            ))}
+          </div>
+        ) : (
+          <p>No results found.</p>
+        )}
+      </div>
     </div>
   );
 }

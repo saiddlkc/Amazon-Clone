@@ -221,18 +221,16 @@ function ProductDetails() {
               ))}
             </select>
           </p>
-
           <button
             onClick={addtoStorage}
-            className="bg-amber-600 mt-5 py-2 px-4 text-white rounded hover:bg-blue-700 transition duration-300"
+            className="block bg-[#FFA41B] mt-5 py-2 px-4 text-white rounded-full hover:bg-[#FFD815] transition duration-300"
           >
-            Add to Cart
+            <Link to={`/wk`}>Buy Now</Link>
           </button>
-
-          <button className="block bg-[#FFA41B] mt-5 py-2 px-4 text-black rounded-full hover:bg-[#f0c14b] transition duration-300">
-            Buy Now
-          </button>
-          <button className="bg-[#f0c14b] mt-5 py-2 px-4 text-black rounded-full hover:bg-[#ff9900] transition duration-300">
+          <button
+            onClick={addtoStorage}
+            className="bg-[#FFD815] mt-5 py-2 px-4 text-black rounded-full hover:bg-[#FFA41B] transition duration-300"
+          >
             In den Einkaufswagen
           </button>
         </div>

@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { FiSearch, FiShoppingCart } from "react-icons/fi";
 import Img from "../images/logo-transparent-png.png";
+import amzn from "../images/amazooon.png";
 import { LuMapPin } from "react-icons/lu";
 import { Link, useLocation, useNavigate } from "react-router-dom";
 import { RingLoader } from "react-spinners";
@@ -95,11 +96,14 @@ const Navbar = () => {
   };
 
   const dropdownItems = [
-    { name: "Alle", url: "/allcategories" },
-    { name: "Todays Deals", url: "/deals" },
-    { name: "Bücher", url: "/bücher" },
-    { name: "Lebensmittel", url: "/lebensmittel" },
-    { name: "Spiele", url: "/spiele" },
+    { name: "All Products", to: "/allcategories" },
+    { name: "Todays Deals", to: "/deals" },
+    { name: "Bücher", to: "/bücher" },
+    { name: "Spiele", to: "/spiele" },
+    { name: "Baby", to: "/baby" },
+    { name: "Lebensmittel", to: "/lebensmittel" },
+    { name: "Kameras", to: "/cameras" },
+    { name: "Fashion", to: "/fashion" },
     // Weitere Dropdown-Elemente können hier hinzugefügt werden
   ];
 
@@ -123,7 +127,7 @@ const Navbar = () => {
       <div className="mx-auto flex items-center justify-between py-3 px-4">
         <div className="flex items-center">
           <Link to="/" className="text-white text-xl font-bold">
-            <img className="w-24" src={Img} alt="Amazon Logo" />
+            <img className="w-24" src={amzn} alt="Amazon Logo" />
           </Link>
         </div>
 
@@ -282,7 +286,9 @@ const Navbar = () => {
                 onClick={() => navigate("/wk")}
               >
                 <FiShoppingCart className="text-white" />
-                <span className="text-white ml-1">Warenkorb({cartCount})</span>
+                <span className="text-white ml-1">
+                  Warenkorb({cartItems.length})
+                </span>
               </button>
               <div className="px-5 py-5 flex justify-center items-center">
                 <input

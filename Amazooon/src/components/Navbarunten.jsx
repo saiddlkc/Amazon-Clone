@@ -52,7 +52,7 @@ const NavigationBar = () => {
       <div className="max-w-7xl mx-auto flex flex-wrap justify-between items-center">
         <div className="flex items-center">
           {/* Dropdown */}
-          <div className="relative mt-4 md:mt-0">
+          {/* <div className="relative mt-4 md:mt-0">
             <button
               onClick={toggleDropdown}
               className="text-white flex items-center"
@@ -88,7 +88,7 @@ const NavigationBar = () => {
                 </div>
               </div>
             )}
-          </div>
+          </div> */}
           {nav.map((navb) => (
             <Link
               key={navb.name}

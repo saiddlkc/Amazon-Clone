@@ -23,6 +23,8 @@ import Suchen from "./pages/SuchSeite";
 import Möbel from "./pages/categorys/Möbel";
 import Sport from "./pages/categorys/Sport";
 import Kosmetik from "./pages/categorys/Kosmetik";
+import OrderPage from "./pages/OrderPage";
+import SuccesPage from "./pages/SuccesPage";
 
 function App() {
   return (
@@ -135,6 +137,14 @@ function App() {
               </Layout>
             }
           />
+          <Route
+            path="/succes"
+            element={
+              <Layout>
+                <SuccesPage />
+              </Layout>
+            }
+          />
 
           <Route
             path="wk"
@@ -144,7 +154,14 @@ function App() {
               </Layout>
             }
           />
-
+              <Route
+              path="/Order"
+              element={
+                
+                  <OrderPage />
+                
+              }
+            />
           <Route
             path="/:category/:id"
             element={
