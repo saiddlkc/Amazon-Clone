@@ -58,6 +58,13 @@ const Angebot = () => {
     }
     return randomProducts;
   };
+  const renderRatingStars = (rating) => {
+    const stars = [];
+    for (let i = 0; i < rating; i++) {
+      stars.push(<span key={i}>⭐</span>);
+    }
+    return stars;
+  };
 
   return (
     <>
@@ -83,6 +90,10 @@ const Angebot = () => {
                 }}
               >
                 Bis zu 50% Rabatt
+              </p>
+              <p className="product-rating">
+                {renderRatingStars(product.rating.value)}
+                {product.rating.value} ({product.rating.count})
               </p>
               <p className="product-price">
                 <span style={{ textDecoration: "line-through" }}>

@@ -28,7 +28,6 @@ const ProductList = () => {
       title: product.title,
       price: product.price,
       images: product.images,
-      
     };
     increaseCartCount();
     const storedCartItems = localStorage.getItem("cartItems");
@@ -83,9 +82,6 @@ const ProductList = () => {
             <p className="product-price">
               {product.price.value} {product.price.currency}
             </p>
-            <p>
-              <Link to={`/${product.category}`}>View Category</Link>
-            </p>
           </div>
           <div className="flex">
             <button
@@ -103,8 +99,8 @@ const ProductList = () => {
               }}
               className="product__button-korb"
             >
-          <FiShoppingCart className="cart-icon" />
-          </button>
+              <FiShoppingCart className="cart-icon" />
+            </button>
           </div>
         </div>
       ))}

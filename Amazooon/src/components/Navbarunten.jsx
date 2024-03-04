@@ -41,9 +41,6 @@ const NavigationBar = () => {
     { name: "Lebensmittel", to: "/lebensmittel" },
     { name: "Kameras", to: "/cameras" },
     { name: "Fashion", to: "/fashion" },
-    { name: "Kosmetik", to: "/Kosmetik" },
-    { name: "Sport", to: "/Sport" },
-    { name: "Möbel", to: "/Möbel" },
   ];
 
   const toggleDropdown = () => {

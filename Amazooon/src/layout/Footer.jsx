@@ -1,5 +1,5 @@
 import React from "react";
-import Img from "../images/logo-transparent-png.png";
+import Img from "../images/amazooon.png";
 // import Footersprache from "./Footersprache";
 
 const Footer = () => {
