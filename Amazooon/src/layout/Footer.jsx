@@ -1,5 +1,6 @@
 import React from "react";
 import Img from "../images/amazooon.png";
+import { Link } from "react-router-dom";
 // import Footersprache from "./Footersprache";
 
 const Footer = () => {
@@ -12,37 +13,37 @@ const Footer = () => {
         <ul className="py-5 px-5">
           <h4 className="font-bold">Über Amazooon</h4>
           <li>
-            <a href="">karriere bei Amazooon</a>
+            <Link to="/">karriere bei Amazooon</Link>
           </li>
           <li>
-            <a href="">Pressenmitteilungen</a>
+            <Link to="/">Pressenmitteilungen</Link>
           </li>
           <li>
-            <a href=""> Erfahre mehr über amazooon</a>
+            <Link to="/"> Erfahre mehr über amazooon</Link>
           </li>
           <li>
-            <a href=""> Impressum</a>
+            <Link to="/"> Impressum</Link>
           </li>
           <li>
-            <a href="">Amazooon Science</a>
+            <Link to="/">Amazooon Science</Link>
           </li>
         </ul>
         <ul className="py-5 px-5">
           <h4 className="font-bold">Geld verdienen mit Amazooon</h4>
           <li>
-            <a href="">Verkaufen bei Amazooon</a>
+            <Link to="/">Verkaufen bei Amazooon</Link>
           </li>
           <li>
-            <a href="">Verkaufen bei Amazooon Business</a>
+            <Link to="/">Verkaufen bei Amazooon Business</Link>
           </li>
           <li>
-            <a href="">Partnerprogramm</a>
+            <Link to="/">Partnerprogramm</Link>
           </li>
           <li>
-            <a href="">Fulfillment by Amazooon</a>
+            <Link to="/">Fulfillment by Amazooon</Link>
           </li>
           <li>
-            <a href="">Bewerben Sie Ihre Produkte</a>
+            <Link to="/">Bewerben Sie Ihre Produkte</Link>
           </li>
         </ul>
 

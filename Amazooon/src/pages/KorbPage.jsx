@@ -1,13 +1,13 @@
-import React from 'react'
+import React from "react";
 
-import Warenkorb from '../components/Warenkorb'
+import Warenkorb from "../components/Warenkorb";
 
 const KorbPage = () => {
   return (
     <>
-    <Warenkorb/>
+      <Warenkorb />
     </>
-  )
-}
+  );
+};
 
-export default KorbPage
+export default KorbPage;

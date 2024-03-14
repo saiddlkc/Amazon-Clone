@@ -191,13 +191,6 @@ const ConfirmOrder = () => {
               <hr />
               <p className="mt-3">Lieferdatum: 3-5 Tage</p>
               <hr />
-              {/* <p className="mt-7">Die Zahlungsmethode:</p>
-            <select className="w-full border border-2">
-              <option value="paypal">Paypal</option>
-              <option value="creditcard">Kreditkarte</option>
-              <option value="banktransfer">Überweisung</option>
-            </select>
-            <hr /> */}
 
               <p className="px-2 mt-5 font-bold">Gesamtsumme:</p>
               <p className="px-5 mt-2 font-bold">

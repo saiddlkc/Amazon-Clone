@@ -2,7 +2,6 @@ import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import { useCart } from "../pages/home/context/CartContext";
 
-
 const Warenkorb = () => {
   const [cartItems, setCartItems] = useState([]);
   const [discountCode, setDiscountCode] = useState("");
@@ -11,17 +10,14 @@ const Warenkorb = () => {
   const removeFromCart = (index) => {
     const updatedCartItems = [...cartItems];
     updatedCartItems.splice(index, 1);
-    setCartItems(updatedCartItems); 
-    localStorage.setItem('cartItems', JSON.stringify(updatedCartItems));
-    localStorage.setItem("cartN", updatedCartItems.length.toString()); 
+    setCartItems(updatedCartItems);
+    localStorage.setItem("cartItems", JSON.stringify(updatedCartItems));
+    localStorage.setItem("cartN", updatedCartItems.length.toString());
     decreaseCartCount();
   };
 
-  
-  
-
   useEffect(() => {
-    localStorage.setItem('cartN', cartItems.length.toString());
+    localStorage.setItem("cartN", cartItems.length.toString());
   }, [cartItems]);
 
   const calculateShippingCost = () => {
@@ -49,12 +45,12 @@ const Warenkorb = () => {
   };
 
   useEffect(() => {
-    const storedCartItems = localStorage.getItem('cartItems');
+    const storedCartItems = localStorage.getItem("cartItems");
     if (storedCartItems) {
       const parsedCartItems = JSON.parse(storedCartItems);
       setCartItems(parsedCartItems.reverse());
     }
-  }, []); 
+  }, []);
 
   return (
     <div>
@@ -91,37 +87,6 @@ const Warenkorb = () => {
         {cartItems.length > 0 && (
           <div className="w-72 border p-4 bg-amber-100 flex flex-col justify-end items-center">
             <h2 className="mb-4 border-b-4 p-2">Ihre Bestellung aufgeben</h2>
-            {/* <p className="m-1">Der Empfänger:</p> */}
-            {/* <div className="border rounded-xl p-3 bg-amber-300 my-5">
-              <p>RabattCode:</p>
-              <input
-                type="text"
-                className="border border-2"
-                value={discountCode}
-                onChange={(e) => setDiscountCode(e.target.value)}
-              />
-              {discountCode === "#DCI-2024" && (
-                <div>
-                  <p className="bg-[#CC0C39] text-white inline-block p-1 mt-2">
-                    Bis zu 15% Rabatt
-                  </p>
-                  <p className="mt-2 font-bold">Rabattierter Preis: </p>
-                  <p className="font-bold">
-                    <span className="text-amber-600 text-xl">
-                      {calculateTotalPrice().discounted} €
-                    </span>
-                  </p>
-                  <p className="mt-2 underline underline-offset-4">
-                    <span className=" text-amber-600">Sie sparen: </span>
-                    {(
-                      calculateTotalPrice().original -
-                      calculateTotalPrice().discounted
-                    ).toFixed(2)}{" "}
-                    €
-                  </p>
-                </div>
-              )}
-            </div> */}
             <p>
               Versandkosten:{" "}
               <span className="text-amber-600 text-lg">
@@ -131,14 +96,6 @@ const Warenkorb = () => {
             <hr />
             <p className="mt-3">Lieferdatum: 3-5 Tage</p>
             <hr />
-            {/* <p className="mt-7">Die Zahlungsmethode:</p>
-            <select className="w-full border border-2">
-              <option value="paypal">Paypal</option>
-              <option value="creditcard">Kreditkarte</option>
-              <option value="banktransfer">Überweisung</option>
-            </select>
-            <hr /> */}
-
             <p className="px-2 mt-5 font-bold">Zwischensumme:</p>
             <p className="px-5 mt-2 font-bold">
               <span className="text-amber-600 text-2xl">

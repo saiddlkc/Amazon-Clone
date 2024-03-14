@@ -14,7 +14,6 @@ import Spiele from "./pages/categorys/Spiele";
 import { ProductProvider } from "./pages/home/context/ProductContext";
 import ProductDetails from "./pages/home/context/ProductDetails";
 import KorbPage from "./pages/KorbPage";
-import WkTest from "./components/wktest";
 import { CartProvider } from "./pages/home/context/CartContext";
 import PageNotFound from "./pages/PageNotFound";
 import AllCategories from "./pages/categorys/AllCategories";
@@ -154,14 +153,7 @@ function App() {
               </Layout>
             }
           />
-              <Route
-              path="/Order"
-              element={
-                
-                  <OrderPage />
-                
-              }
-            />
+          <Route path="/Order" element={<OrderPage />} />
           <Route
             path="/:category/:id"
             element={
